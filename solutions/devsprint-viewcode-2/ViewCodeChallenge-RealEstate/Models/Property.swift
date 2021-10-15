@@ -10,6 +10,7 @@ import Foundation
 public struct Property: Codable {
 
     var id: String
+    var description: String
     var listingStatus: String
     var createdAt: String
     var updatedAt: String
