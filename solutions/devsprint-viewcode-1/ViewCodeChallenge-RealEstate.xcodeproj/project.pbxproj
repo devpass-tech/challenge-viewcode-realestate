@@ -16,6 +16,9 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		B4D11F01271F367E00B5462E /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D11F00271F367E00B5462E /* CarouselView.swift */; };
+		B4D11F04271F3AAF00B5462E /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D11F03271F3AAF00B5462E /* CarouselCollectionViewCell.swift */; };
+		B4D11F07271F4A1300B5462E /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D11F06271F4A1300B5462E /* ViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
+		B4D11F00271F367E00B5462E /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		B4D11F03271F3AAF00B5462E /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		B4D11F06271F4A1300B5462E /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B4D11F02271F3A6000B5462E /* Components */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 			);
@@ -120,6 +127,7 @@
 		986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */ = {
 			isa = PBXGroup;
 			children = (
+				B4D11F05271F4A0100B5462E /* Protocols */,
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
 				980C0C1A2704F1F100F8100A /* AppDelegate */,
 				980C0C172704F1D500F8100A /* Screens */,
@@ -138,6 +146,31 @@
 				986153DD2704EE2F00838CA6 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B4D11EFF271F361800B5462E /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				B4D11F00271F367E00B5462E /* CarouselView.swift */,
+				B4D11F03271F3AAF00B5462E /* CarouselCollectionViewCell.swift */,
+			);
+			path = CarouselView;
+			sourceTree = "<group>";
+		};
+		B4D11F02271F3A6000B5462E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B4D11EFF271F361800B5462E /* CarouselView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B4D11F05271F4A0100B5462E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B4D11F06271F4A1300B5462E /* ViewProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,11 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D11F04271F3AAF00B5462E /* CarouselCollectionViewCell.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
+				B4D11F01271F367E00B5462E /* CarouselView.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
+				B4D11F07271F4A1300B5462E /* ViewProtocol.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
