@@ -26,7 +26,7 @@ class CarouselView: UIView {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CarouselViewCell")
+        collectionView.register(CarouselCollectionViewCell.self, forCellWithReuseIdentifier: "CarouselViewCell")
         self.layout.scrollDirection = .horizontal
         
         return collectionView
@@ -49,6 +49,7 @@ class CarouselView: UIView {
     
 }
 
+//MARK: - SetupView Protocol Properties
 extension CarouselView: ViewProtocol {
     func configureSubviews() {
         self.backgroundColor = .white
@@ -66,6 +67,7 @@ extension CarouselView: ViewProtocol {
     }
 }
 
+//MARK: - Collection View Properties
 extension CarouselView: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
