@@ -17,7 +17,7 @@ public final class RealEstateAPIClient: RealEstateAPIClientType {
 
     public var baseURL: URL {
 
-        return URL(string: "")!
+        return URL(string: "https://trackingbr.dairan.com/v1/codigo/NX409895735BR")!
     }
 
     public var httpHeaders: [HTTPHeaderField : String] {
