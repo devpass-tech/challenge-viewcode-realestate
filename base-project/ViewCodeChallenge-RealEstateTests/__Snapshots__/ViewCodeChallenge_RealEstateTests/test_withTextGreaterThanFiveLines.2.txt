@@ -1,0 +1,7 @@
+<ViewCodeChallenge_RealEstate.PropertyDescriptionView; frame = (0 0; 434 200); layer = <CALayer>>
+   | <UIStackView; frame = (8 8; 418 184); layer = <CALayer>>
+   |    | <UILabel; frame = (0 0; 418 30); text = 'Descrição'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UILabelContentLayer> (layer)
+   |    | <UILabel; frame = (0 42; 418 96); text = 'Mussum Ipsum, cacilds vid...'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    | <UIButton; frame = (0 150; 418 34); opaque = NO; layer = <CALayer>>
+   |    |    | <UIButtonLabel; frame = (174 6; 70 22); text = 'Ver mais'; opaque = NO; userInteractionEnabled = NO; layer = <_UILabelLayer>>

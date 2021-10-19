@@ -1,0 +1,5 @@
+<ViewCodeChallenge_RealEstate.PropertyDescriptionView; frame = (0 0; 434 200); layer = <CALayer>>
+   | <UIStackView; frame = (8 8; 418 184); layer = <CALayer>>
+   |    | <UILabel; frame = (0 0; 418 30); text = 'Descrição'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UILabelContentLayer> (layer)
+   |    | <UILabel; frame = (0 42; 418 142); text = 'Casamentiss faiz malandri...'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
