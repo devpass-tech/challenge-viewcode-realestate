@@ -21,7 +21,21 @@
 		986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153D32704EE2B00838CA6 /* PropertyListViewController.swift */; };
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
+		B1F3A608271E426E005DC720 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3A607271E426E005DC720 /* PropertyDescriptionView.swift */; };
+		B1F3A613271E454B005DC720 /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3A612271E454B005DC720 /* ViewCodeChallenge_RealEstateTests.swift */; };
+		B1F3A61B271E46F8005DC720 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B1F3A61A271E46F8005DC720 /* SnapshotTesting */; };
+		B1F3A61D271E5DDC005DC720 /* PropertyDescriptionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3A61C271E5DDC005DC720 /* PropertyDescriptionViewViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1F3A614271E454B005DC720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 986153C42704EE2B00838CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 986153CB2704EE2B00838CA6;
+			remoteInfo = "ViewCodeChallenge-RealEstate";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		980C0C082704F1C700F8100A /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -40,6 +54,10 @@
 		986153D82704EE2F00838CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F3A607271E426E005DC720 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
+		B1F3A610271E454B005DC720 /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F3A612271E454B005DC720 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
+		B1F3A61C271E5DDC005DC720 /* PropertyDescriptionViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F3A60D271E454B005DC720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F3A61B271E46F8005DC720 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +99,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B1F3A61E271E5DF2005DC720 /* CustomViews */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 			);
@@ -129,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */,
+				B1F3A611271E454B005DC720 /* ViewCodeChallenge-RealEstateTests */,
 				986153CD2704EE2B00838CA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */,
+				B1F3A610271E454B005DC720 /* ViewCodeChallenge-RealEstateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +184,31 @@
 			path = "ViewCodeChallenge-RealEstate";
 			sourceTree = "<group>";
 		};
+		B1F3A606271E4254005DC720 /* PropertyDescriptionView */ = {
+			isa = PBXGroup;
+			children = (
+				B1F3A61C271E5DDC005DC720 /* PropertyDescriptionViewViewModel.swift */,
+				B1F3A607271E426E005DC720 /* PropertyDescriptionView.swift */,
+			);
+			path = PropertyDescriptionView;
+			sourceTree = "<group>";
+		};
+		B1F3A611271E454B005DC720 /* ViewCodeChallenge-RealEstateTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1F3A612271E454B005DC720 /* ViewCodeChallenge_RealEstateTests.swift */,
+			);
+			path = "ViewCodeChallenge-RealEstateTests";
+			sourceTree = "<group>";
+		};
+		B1F3A61E271E5DF2005DC720 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B1F3A606271E4254005DC720 /* PropertyDescriptionView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,9 +225,32 @@
 			dependencies = (
 			);
 			name = "ViewCodeChallenge-RealEstate";
+			packageProductDependencies = (
+			);
 			productName = "ViewCodeChallenge-RealEstate";
 			productReference = 986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B1F3A60F271E454B005DC720 /* ViewCodeChallenge-RealEstateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F3A616271E454B005DC720 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */;
+			buildPhases = (
+				B1F3A60C271E454B005DC720 /* Sources */,
+				B1F3A60D271E454B005DC720 /* Frameworks */,
+				B1F3A60E271E454B005DC720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1F3A615271E454B005DC720 /* PBXTargetDependency */,
+			);
+			name = "ViewCodeChallenge-RealEstateTests";
+			packageProductDependencies = (
+				B1F3A61A271E46F8005DC720 /* SnapshotTesting */,
+			);
+			productName = "ViewCodeChallenge-RealEstateTests";
+			productReference = B1F3A610271E454B005DC720 /* ViewCodeChallenge-RealEstateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -188,6 +265,10 @@
 					986153CB2704EE2B00838CA6 = {
 						CreatedOnToolsVersion = 13.0;
 					};
+					B1F3A60F271E454B005DC720 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 986153CB2704EE2B00838CA6;
+					};
 				};
 			};
 			buildConfigurationList = 986153C72704EE2B00838CA6 /* Build configuration list for PBXProject "ViewCodeChallenge-RealEstate" */;
@@ -199,11 +280,15 @@
 				Base,
 			);
 			mainGroup = 986153C32704EE2B00838CA6;
+			packageReferences = (
+				B1F3A619271E46F8005DC720 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 986153CD2704EE2B00838CA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				986153CB2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */,
+				B1F3A60F271E454B005DC720 /* ViewCodeChallenge-RealEstateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +303,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1F3A60E271E454B005DC720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -226,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
+				B1F3A61D271E5DDC005DC720 /* PropertyDescriptionViewViewModel.swift in Sources */,
 				980C0C122704F1C700F8100A /* HTTPHeaderField.swift in Sources */,
 				980C0C142704F1C700F8100A /* HTTPClient.swift in Sources */,
 				980C0C132704F1C700F8100A /* HTTPMethod.swift in Sources */,
@@ -235,12 +328,29 @@
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
+				B1F3A608271E426E005DC720 /* PropertyDescriptionView.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				980C0C102704F1C700F8100A /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1F3A60C271E454B005DC720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F3A613271E454B005DC720 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1F3A615271E454B005DC720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 986153CB2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */;
+			targetProxy = B1F3A614271E454B005DC720 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */ = {
@@ -377,7 +487,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ViewCodeChallenge-RealEstate/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -404,7 +514,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ViewCodeChallenge-RealEstate/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -421,6 +531,50 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1F3A617271E454B005DC720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devpass.ViewCodeChallenge-RealEstateTests.ViewCodeChallenge-RealEstateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewCodeChallenge-RealEstate.app/ViewCodeChallenge-RealEstate";
+			};
+			name = Debug;
+		};
+		B1F3A618271E454B005DC720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devpass.ViewCodeChallenge-RealEstateTests.ViewCodeChallenge-RealEstateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewCodeChallenge-RealEstate.app/ViewCodeChallenge-RealEstate";
 			};
 			name = Release;
 		};
@@ -445,7 +599,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B1F3A616271E454B005DC720 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F3A617271E454B005DC720 /* Debug */,
+				B1F3A618271E454B005DC720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B1F3A619271E46F8005DC720 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B1F3A61A271E46F8005DC720 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1F3A619271E46F8005DC720 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 986153C42704EE2B00838CA6 /* Project object */;
 }
