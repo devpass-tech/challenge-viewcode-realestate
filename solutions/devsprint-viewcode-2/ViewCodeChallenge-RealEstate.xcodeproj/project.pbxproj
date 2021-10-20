@@ -16,8 +16,10 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
-		BC4459BE271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */; };
 		BC4459C6271E37E400F7E0E9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = BC4459C5271E37E400F7E0E9 /* SnapshotTesting */; };
+		BCD26C8A272081BD0082C6B0 /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD26C89272081BD0082C6B0 /* PropertyInfoView.swift */; };
+		BCD26C8C272094A00082C6B0 /* PropertyInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD26C8B272094A00082C6B0 /* PropertyInfoViewModel.swift */; };
+		BCD26C9027209B800082C6B0 /* PropertyInfoViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD26C8F27209B7F0082C6B0 /* PropertyInfoViewSnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +45,9 @@
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
 		BC4459BB271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
+		BCD26C89272081BD0082C6B0 /* PropertyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
+		BCD26C8B272094A00082C6B0 /* PropertyInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewModel.swift; sourceTree = "<group>"; };
+		BCD26C8F27209B7F0082C6B0 /* PropertyInfoViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewSnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				BCD26C88272081890082C6B0 /* PropertyInfoView */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 			);
@@ -167,9 +172,26 @@
 		BC4459BC271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests */ = {
 			isa = PBXGroup;
 			children = (
-				BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */,
+				BCD26C8E27209B090082C6B0 /* SnapshotTests */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
+			sourceTree = "<group>";
+		};
+		BCD26C88272081890082C6B0 /* PropertyInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				BCD26C89272081BD0082C6B0 /* PropertyInfoView.swift */,
+				BCD26C8B272094A00082C6B0 /* PropertyInfoViewModel.swift */,
+			);
+			path = PropertyInfoView;
+			sourceTree = "<group>";
+		};
+		BCD26C8E27209B090082C6B0 /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCD26C8F27209B7F0082C6B0 /* PropertyInfoViewSnapshotTests.swift */,
+			);
+			path = SnapshotTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +304,11 @@
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
+				BCD26C8C272094A00082C6B0 /* PropertyInfoViewModel.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				BCD26C8A272081BD0082C6B0 /* PropertyInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4459BE271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
+				BCD26C9027209B800082C6B0 /* PropertyInfoViewSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
