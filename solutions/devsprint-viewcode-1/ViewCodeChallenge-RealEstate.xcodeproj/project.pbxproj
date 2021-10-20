@@ -16,6 +16,8 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		B1377D852720BCCF00E42CFB /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1377D842720BCCF00E42CFB /* DividerView.swift */; };
+		B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1377D862720BDEF00E42CFB /* DividerViewTests.swift */; };
 		B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */; };
 		B15DEF71271F769E00C03F29 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B15DEF70271F769E00C03F29 /* SnapshotTesting */; };
 		B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */; };
@@ -44,6 +46,8 @@
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
+		B1377D842720BCCF00E42CFB /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		B1377D862720BDEF00E42CFB /* DividerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerViewTests.swift; sourceTree = "<group>"; };
 		B15DEF66271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
 		B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
@@ -169,10 +173,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B1377D832720BC8800E42CFB /* DividerView */ = {
+			isa = PBXGroup;
+			children = (
+				B1377D842720BCCF00E42CFB /* DividerView.swift */,
+			);
+			path = DividerView;
+			sourceTree = "<group>";
+		};
 		B15DEF67271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests */ = {
 			isa = PBXGroup;
 			children = (
 				B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */,
+				B1377D862720BDEF00E42CFB /* DividerViewTests.swift */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
 			sourceTree = "<group>";
@@ -180,6 +193,7 @@
 		B15DEF72271F777000C03F29 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B1377D832720BC8800E42CFB /* DividerView */,
 				B15DEF73271F777D00C03F29 /* PropertyDescriptionView */,
 			);
 			path = Views;
@@ -302,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */,
+				B1377D852720BCCF00E42CFB /* DividerView.swift in Sources */,
 				B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
@@ -316,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */,
 				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
