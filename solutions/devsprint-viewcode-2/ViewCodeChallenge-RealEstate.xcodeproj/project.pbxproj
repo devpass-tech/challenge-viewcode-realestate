@@ -16,7 +16,19 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		BC4459BE271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */; };
+		BC4459C6271E37E400F7E0E9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = BC4459C5271E37E400F7E0E9 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC4459BF271E357500F7E0E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 986153C42704EE2B00838CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 986153CB2704EE2B00838CA6;
+			remoteInfo = "ViewCodeChallenge-RealEstate";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstateAPIClient.swift; sourceTree = "<group>"; };
@@ -30,6 +42,8 @@
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
+		BC4459BB271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC4459B8271E357500F7E0E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4459C6271E37E400F7E0E9 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */,
+				BC4459BC271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests */,
 				986153CD2704EE2B00838CA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */,
+				BC4459BB271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +164,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		BC4459BC271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */,
+			);
+			path = "ViewCodeChallenge-RealEstateTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +192,27 @@
 			productReference = 986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BC4459BA271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC4459C3271E357500F7E0E9 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */;
+			buildPhases = (
+				BC4459B7271E357500F7E0E9 /* Sources */,
+				BC4459B8271E357500F7E0E9 /* Frameworks */,
+				BC4459B9271E357500F7E0E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC4459C0271E357500F7E0E9 /* PBXTargetDependency */,
+			);
+			name = "ViewCodeChallenge-RealEstateTests";
+			packageProductDependencies = (
+				BC4459C5271E37E400F7E0E9 /* SnapshotTesting */,
+			);
+			productName = "ViewCodeChallenge-RealEstateTests";
+			productReference = BC4459BB271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,6 +226,10 @@
 					986153CB2704EE2B00838CA6 = {
 						CreatedOnToolsVersion = 13.0;
 					};
+					BC4459BA271E357500F7E0E9 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 986153CB2704EE2B00838CA6;
+					};
 				};
 			};
 			buildConfigurationList = 986153C72704EE2B00838CA6 /* Build configuration list for PBXProject "ViewCodeChallenge-RealEstate" */;
@@ -184,11 +241,15 @@
 				Base,
 			);
 			mainGroup = 986153C32704EE2B00838CA6;
+			packageReferences = (
+				BC4459C4271E37E400F7E0E9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 986153CD2704EE2B00838CA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				986153CB2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */,
+				BC4459BA271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +262,13 @@
 				986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */,
 				986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */,
 				98DAB5322718CBE400BDC6B8 /* listings.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC4459B9271E357500F7E0E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +288,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC4459B7271E357500F7E0E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4459BE271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC4459C0271E357500F7E0E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 986153CB2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */;
+			targetProxy = BC4459BF271E357500F7E0E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */ = {
@@ -404,6 +488,52 @@
 			};
 			name = Release;
 		};
+		BC4459C1271E357500F7E0E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25XCUFMQUU;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexandrecardoso.ViewCodeChallenge-RealEstateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewCodeChallenge-RealEstate.app/ViewCodeChallenge-RealEstate";
+			};
+			name = Debug;
+		};
+		BC4459C2271E357500F7E0E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25XCUFMQUU;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexandrecardoso.ViewCodeChallenge-RealEstateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewCodeChallenge-RealEstate.app/ViewCodeChallenge-RealEstate";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -425,7 +555,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		BC4459C3271E357500F7E0E9 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC4459C1271E357500F7E0E9 /* Debug */,
+				BC4459C2271E357500F7E0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC4459C4271E37E400F7E0E9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC4459C5271E37E400F7E0E9 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC4459C4271E37E400F7E0E9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 986153C42704EE2B00838CA6 /* Project object */;
 }
