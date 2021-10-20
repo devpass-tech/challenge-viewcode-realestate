@@ -26,15 +26,6 @@ class PropertyDescriptionView: UIView {
 
   // MARK: Internal
 
-  var stackView: UIStackView = {
-    let stackView = UIStackView()
-    stackView.translatesAutoresizingMaskIntoConstraints = false
-    stackView.axis = .vertical
-    stackView.distribution = .fill
-    stackView.spacing = 12
-    return stackView
-  }()
-
   override func layoutSubviews() {
     super.layoutSubviews()
 
@@ -42,6 +33,15 @@ class PropertyDescriptionView: UIView {
   }
 
   // MARK: Private
+
+  private var stackView: UIStackView = {
+    let stackView = UIStackView()
+    stackView.translatesAutoresizingMaskIntoConstraints = false
+    stackView.axis = .vertical
+    stackView.distribution = .fill
+    stackView.spacing = 12
+    return stackView
+  }()
 
   private lazy var titleLabel: UILabel = {
     let label = UILabel()
@@ -77,7 +77,9 @@ class PropertyDescriptionView: UIView {
   private var viewModel: PropertyDescriptionViewViewModel
 
   private func configureButtonMore() {
-    if descriptionLabel.calculateMaxLines() >= 5 {
+    let lines = calculateNumberOfLines(for: descriptionLabel, in: descriptionLabel.frame)
+
+    if lines >= 5 {
       stackView.addArrangedSubview(buttonDefault)
     }
   }
@@ -105,14 +107,12 @@ class PropertyDescriptionView: UIView {
       titleLabel.heightAnchor.constraint(equalToConstant: 30),
     ])
   }
-}
 
-extension UILabel {
-  func calculateMaxLines() -> Int {
+  private func calculateNumberOfLines(for label: UILabel, in frame: CGRect) -> Int {
     let maxSize = CGSize(width: frame.size.width, height: CGFloat(Float.infinity))
-    let charSize = font.lineHeight
-    let text = (self.text ?? "") as NSString
-    let textSize = text.boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font!], context: nil)
+    let charSize = label.font.lineHeight
+    let text = (label.text ?? "") as NSString
+    let textSize = text.boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: label.font!], context: nil)
     let linesRoundedUp = Int(ceil(textSize.height / charSize))
     return linesRoundedUp
   }
