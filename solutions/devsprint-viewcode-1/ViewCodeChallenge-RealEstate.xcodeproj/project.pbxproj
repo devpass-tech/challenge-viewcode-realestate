@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130328C627219C3C00A9C505 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130328C527219C3C00A9C505 /* ButtonView.swift */; };
+		130328CB2721A59600A9C505 /* ButtonViewSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130328CA2721A59600A9C505 /* ButtonViewSnapshotTest.swift */; };
 		980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */; };
 		980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */; };
 		980C0C1F2704F3C400F8100A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1E2704F3C400F8100A /* Property.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130328C527219C3C00A9C505 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		130328CA2721A59600A9C505 /* ButtonViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewSnapshotTest.swift; sourceTree = "<group>"; };
 		980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstateAPIClient.swift; sourceTree = "<group>"; };
 		980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
 		980C0C1E2704F3C400F8100A /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
@@ -69,6 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130328C427219C1400A9C505 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				130328C727219DF000A9C505 /* ButtonView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		130328C727219DF000A9C505 /* ButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				130328C527219C3C00A9C505 /* ButtonView.swift */,
+			);
+			path = ButtonView;
+			sourceTree = "<group>";
+		};
 		980C0C062704F1C700F8100A /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +108,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				130328C427219C1400A9C505 /* Components */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 			);
@@ -173,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */,
+				130328CA2721A59600A9C505 /* ButtonViewSnapshotTest.swift */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
 			sourceTree = "<group>";
@@ -309,6 +331,7 @@
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				130328C627219C3C00A9C505 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130328CB2721A59600A9C505 /* ButtonViewSnapshotTest.swift in Sources */,
 				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
