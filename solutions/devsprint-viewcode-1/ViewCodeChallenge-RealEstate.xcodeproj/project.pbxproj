@@ -20,6 +20,8 @@
 		B15DEF71271F769E00C03F29 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B15DEF70271F769E00C03F29 /* SnapshotTesting */; };
 		B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */; };
 		B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */; };
+		B4805D3D2721D26900DF82B0 /* Components in Resources */ = {isa = PBXBuildFile; fileRef = B4805D3C2721D26900DF82B0 /* Components */; };
+		B4805D3F2721D28700DF82B0 /* Protocols in Resources */ = {isa = PBXBuildFile; fileRef = B4805D3E2721D28700DF82B0 /* Protocols */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
 		B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewViewModel.swift; sourceTree = "<group>"; };
+		B4805D3C2721D26900DF82B0 /* Components */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Components; sourceTree = "<group>"; };
+		B4805D3E2721D28700DF82B0 /* Protocols */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Protocols; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				B4D11F02271F3A6000B5462E /* Components */,
+				B4805D3C2721D26900DF82B0 /* Components */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 			);
@@ -150,7 +154,7 @@
 		986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */ = {
 			isa = PBXGroup;
 			children = (
-				B4D11F05271F4A0100B5462E /* Protocols */,
+				B4805D3E2721D28700DF82B0 /* Protocols */,
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
 				980C0C1A2704F1F100F8100A /* AppDelegate */,
 				980C0C172704F1D500F8100A /* Screens */,
@@ -283,8 +287,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4805D3D2721D26900DF82B0 /* Components in Resources */,
 				986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */,
 				986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */,
+				B4805D3F2721D28700DF82B0 /* Protocols in Resources */,
 				98DAB5322718CBE400BDC6B8 /* listings.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,9 +315,7 @@
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
-				B4D11F01271F367E00B5462E /* CarouselView.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
-				B4D11F07271F4A1300B5462E /* ViewProtocol.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
