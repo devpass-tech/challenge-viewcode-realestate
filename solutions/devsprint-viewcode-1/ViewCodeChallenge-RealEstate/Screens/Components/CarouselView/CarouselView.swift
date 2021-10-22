@@ -13,14 +13,17 @@ class CarouselView: UIView {
     
     weak var delegate: CarouselCollectionViewCellProtocol?
     
-    private let stackView: UIStackView = {
-        
-        let stackView = UIStackView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .horizontal
-        
-        return stackView
-    }()
+//    let properties: Property = Property()
+    let images: [String] = ["pic1", "pic2", "pic3"]
+ 
+//    private let stackView: UIStackView = {
+//
+//        let stackView = UIStackView()
+//        stackView.translatesAutoresizingMaskIntoConstraints = false
+//        stackView.axis = .horizontal
+//
+//        return stackView
+//    }()
     
     private lazy var collectionView: UICollectionView = {
         
@@ -29,7 +32,7 @@ class CarouselView: UIView {
         collectionView.dataSource = self
 //        collectionView.delegate = self
         collectionView.register(CarouselCollectionViewCell.self, forCellWithReuseIdentifier: "CarouselViewCell")
-        self.layout.scrollDirection = .horizontal
+//        self.layout.scrollDirection = .horizontal
         
         return collectionView
     }()
@@ -55,16 +58,17 @@ class CarouselView: UIView {
 extension CarouselView: ViewProtocol {
     func configureSubviews() {
         self.backgroundColor = .white
-        self.addSubview(self.stackView)
-        self.stackView.addArrangedSubview(self.collectionView)
+        self.addSubview(self.collectionView)
+        self.layout.scrollDirection = .horizontal
+//        self..addArrangedSubview(self.collectionView)
     }
     
     func configureConstraints() {
         NSLayoutConstraint.activate([
-            self.stackView.topAnchor.constraint(equalTo: topAnchor),
-            self.stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            self.stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            self.collectionView.heightAnchor.constraint(equalToConstant: 200)
+            self.collectionView.topAnchor.constraint(equalTo: topAnchor),
+            self.collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            self.collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            self.collectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
 }
@@ -73,13 +77,13 @@ extension CarouselView: ViewProtocol {
 extension CarouselView: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: CarouselCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: "CarouselViewCell", for: indexPath) as? CarouselCollectionViewCell
         
-        self.delegate = cell as? CarouselCollectionViewCellProtocol
+        cell?.imageView.image = UIImage(named: "\(images[indexPath.row])")
         
         return cell ?? UICollectionViewCell()
     }

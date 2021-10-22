@@ -22,6 +22,8 @@ class CarouselCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
+        configureSubviews()
+        configureConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -31,4 +33,21 @@ class CarouselCollectionViewCell: UICollectionViewCell {
     func configure(with viewModel: CarouselCellViewModel) {
         self.imageView.image = UIImage(named: "\(viewModel.images)")
     }
+}
+
+extension CarouselCollectionViewCell: ViewProtocol {
+    func configureSubviews() {
+        self.contentView.addSubview(self.imageView)
+    }
+    
+    func configureConstraints() {
+        NSLayoutConstraint.activate([
+            self.imageView.topAnchor.constraint(equalTo: self.contentView.topAnchor),
+            self.imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
+            self.imageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
+            self.imageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor)
+        ])
+    }
+    
+    
 }
