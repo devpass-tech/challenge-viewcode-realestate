@@ -36,8 +36,8 @@ class ButtonView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setButtonTitle(_ title: String) {
-        button.setTitle(title, for: .normal)
+    func setButtonTitle(_ titleLabel: String) {
+        button.setTitle(titleLabel, for: .normal)
     }
     
     @objc func buttonPressed() {
