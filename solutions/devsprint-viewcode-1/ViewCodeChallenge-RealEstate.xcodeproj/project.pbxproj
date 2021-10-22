@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */; };
 		71F7453D27204C4B00681584 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7453C27204C4B00681584 /* MapLocationView.swift */; };
 		980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */; };
 		980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewTests.swift; sourceTree = "<group>"; };
 		71F7453C27204C4B00681584 /* MapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
 		980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstateAPIClient.swift; sourceTree = "<group>"; };
 		980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71D176C32722EBF700DB0EAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71F7453B27204C2500681584 /* MapLocationView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		71F7453B27204C2500681584 /* MapLocationView */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +130,8 @@
 		980C0C192704F1E800F8100A /* PropertyDetails */ = {
 			isa = PBXGroup;
 			children = (
+				71D176C32722EBF700DB0EAA /* Views */,
 				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
-				71F7453B27204C2500681584 /* MapLocationView */,
 			);
 			path = PropertyDetails;
 			sourceTree = "<group>";
@@ -197,6 +207,7 @@
 			children = (
 				B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */,
 				B1377D862720BDEF00E42CFB /* DividerViewTests.swift */,
+				71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
 			sourceTree = "<group>";
@@ -344,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */,
+				71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */,
 				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
