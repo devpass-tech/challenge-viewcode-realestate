@@ -11,6 +11,8 @@ class CarouselView: UIView {
     
     let layout = UICollectionViewFlowLayout()
     
+    weak var delegate: CarouselCollectionViewCellProtocol?
+    
     private let stackView: UIStackView = {
         
         let stackView = UIStackView()
@@ -25,7 +27,7 @@ class CarouselView: UIView {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
-        collectionView.delegate = self
+//        collectionView.delegate = self
         collectionView.register(CarouselCollectionViewCell.self, forCellWithReuseIdentifier: "CarouselViewCell")
         self.layout.scrollDirection = .horizontal
         
@@ -75,9 +77,11 @@ extension CarouselView: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CarouselViewCell", for: indexPath)
+        let cell: CarouselCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: "CarouselViewCell", for: indexPath) as? CarouselCollectionViewCell
         
-        return cell
+        self.delegate = cell as? CarouselCollectionViewCellProtocol
+        
+        return cell ?? UICollectionViewCell()
     }
     
     

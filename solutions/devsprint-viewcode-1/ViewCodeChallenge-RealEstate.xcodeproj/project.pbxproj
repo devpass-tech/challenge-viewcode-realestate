@@ -20,6 +20,7 @@
 		B15DEF71271F769E00C03F29 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B15DEF70271F769E00C03F29 /* SnapshotTesting */; };
 		B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */; };
 		B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */; };
+		B44A65482722469B0018179A /* CarouselCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A65472722469B0018179A /* CarouselCellViewModel.swift */; };
 		B47754EC2722143C00C2F6D6 /* CarouselViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754EB2722143C00C2F6D6 /* CarouselViewTest.swift */; };
 		B47754F027221A6600C2F6D6 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */; };
 		B47754F227221A6C00C2F6D6 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754F127221A6C00C2F6D6 /* CarouselView.swift */; };
@@ -52,6 +53,7 @@
 		B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
 		B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewViewModel.swift; sourceTree = "<group>"; };
+		B44A65472722469B0018179A /* CarouselCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCellViewModel.swift; sourceTree = "<group>"; };
 		B47754EB2722143C00C2F6D6 /* CarouselViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewTest.swift; sourceTree = "<group>"; };
 		B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		B47754F127221A6C00C2F6D6 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
@@ -205,6 +207,15 @@
 			path = PropertyDescriptionView;
 			sourceTree = "<group>";
 		};
+		B44A6546272246720018179A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */,
+				B44A65472722469B0018179A /* CarouselCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B47754ED27221A5700C2F6D6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,7 +227,7 @@
 		B47754EE27221A6000C2F6D6 /* CarouselView */ = {
 			isa = PBXGroup;
 			children = (
-				B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */,
+				B44A6546272246720018179A /* Cells */,
 				B47754F127221A6C00C2F6D6 /* CarouselView.swift */,
 			);
 			path = CarouselView;
@@ -341,6 +352,7 @@
 				B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */,
 				B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
+				B44A65482722469B0018179A /* CarouselCellViewModel.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				B47754F027221A6600C2F6D6 /* CarouselCollectionViewCell.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
