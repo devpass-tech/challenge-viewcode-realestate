@@ -31,12 +31,11 @@ class MapLocationViewSnapshotTests: XCTestCase {
 
 	func testMapLocationView() {
 		let initialLocation = CLLocationCoordinate2D(latitude: -23.554389, longitude: -46.608185)
-//		let initialLocation = CLLocationCoordinate2D(latitude: 21.282778, longitude: -157.829444)
 		let viewModel = MapLocationViewModel(coordinate: initialLocation)
 		
 		sut.configure(with: viewModel)
 		
-		assertSnapshot(matching: sut, as: .wait(for: 10, on: .image), record: false)
+		assertSnapshot(matching: sut, as: .image, record: false)		
 	}
 
 }
