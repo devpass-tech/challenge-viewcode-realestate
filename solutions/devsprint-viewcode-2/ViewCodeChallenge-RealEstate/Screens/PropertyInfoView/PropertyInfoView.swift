@@ -10,35 +10,113 @@ import UIKit
 class PropertyInfoView: UIView {
 	
 	// MARK: - UI Element
-	private let contentView: UIView
-	private let propertyStackView: UIStackView
-	private let salePriceLabel: UILabel
-	private let propertyValuesStackView: UIStackView
-	private let condominiumPriceLabel: UILabel
-	private let IptuPriceLabel: UILabel
-	private let propertyInfoStackView: UIStackView
-	private let footageLabel: UILabel
-	private let bedroomLabel: UILabel
-	private let bathroomLabel: UILabel
-	private let parkingSpacesLabel: UILabel
-	private let addressLabel: UILabel
+	private let contentView: UIView = {
+		let view = UIView()
+		view.translatesAutoresizingMaskIntoConstraints = false
+		view.backgroundColor = .white
+		return view
+	}()
+	
+	private lazy var propertyStackView: UIStackView = {
+		let stackView = UIStackView()
+		stackView.translatesAutoresizingMaskIntoConstraints = false
+		stackView.axis = .vertical
+		stackView.distribution = .fillProportionally
+		stackView.spacing = 5
+		stackView.addArrangedSubview(salePriceLabel)
+		stackView.addArrangedSubview(propertyValuesStackView)
+		stackView.addArrangedSubview(propertyInfoStackView)
+		stackView.addArrangedSubview(addressLabel)
+		return stackView
+	}()
+	
+	private let salePriceLabel: UILabel = {
+		let label = UILabel()
+		label.textColor = .black
+		label.font = .systemFont(ofSize: 30, weight: .bold)
+		label.numberOfLines = 1
+		return label
+	}()
+	
+	private lazy var propertyValuesStackView: UIStackView = {
+		let stackView = UIStackView()
+		stackView.axis = .horizontal
+		stackView.distribution = .fillProportionally
+		stackView.addArrangedSubview(condominiumPriceLabel)
+		stackView.addArrangedSubview(IptuPriceLabel)
+		return stackView
+	}()
+	
+	private let condominiumPriceLabel: UILabel = {
+		let label = UILabel()
+		label.textColor = .black
+		label.font = .systemFont(ofSize: 17, weight: .regular)
+		label.numberOfLines = 1
+		return label
+	}()
+	
+	private let IptuPriceLabel: UILabel = {
+		let label = UILabel()
+		label.textColor = .black
+		label.font = .systemFont(ofSize: 17, weight: .regular)
+		label.numberOfLines = 1
+		return label
+	}()
+	
+	private lazy var propertyInfoStackView: UIStackView = {
+		let stackView = UIStackView()
+		stackView.axis = .horizontal
+		stackView.distribution = .fillProportionally
+		stackView.addArrangedSubview(footageLabel)
+		stackView.addArrangedSubview(bedroomLabel)
+		stackView.addArrangedSubview(bathroomLabel)
+		stackView.addArrangedSubview(parkingSpacesLabel)
+		return stackView
+	}()
+	
+	private let footageLabel: UILabel = {
+		let label = UILabel()
+		label.textColor = .gray
+		label.font = .systemFont(ofSize: 17, weight: .regular)
+		label.numberOfLines = 1
+		return label
+	}()
+	
+	private let bedroomLabel: UILabel = {
+		let label = UILabel()
+		label.textColor = .gray
+		label.font = .systemFont(ofSize: 17, weight: .regular)
+		label.numberOfLines = 1
+		return label
+	}()
+	
+	private let bathroomLabel: UILabel = {
+		let label = UILabel()
+		label.textColor = .gray
+		label.font = .systemFont(ofSize: 17, weight: .regular)
+		label.numberOfLines = 1
+		return label
+	}()
+	
+	private let parkingSpacesLabel: UILabel = {
+		let label = UILabel()
+		label.textColor = .gray
+		label.font = .systemFont(ofSize: 17, weight: .regular)
+		label.numberOfLines = 1
+		return label
+	}()
+	
+	private let addressLabel: UILabel = {
+		let label = UILabel()
+		label.textColor = .gray
+		label.font = .systemFont(ofSize: 17, weight: .regular)
+		label.numberOfLines = 0
+		return label
+	}()
 	
 	
 	// MARK: - Initialize
 	override init(frame: CGRect) {
-		contentView = UIView()
-		propertyStackView = UIStackView()
-		salePriceLabel = UILabel()
-		propertyValuesStackView = UIStackView()
-		condominiumPriceLabel = UILabel()
-		IptuPriceLabel = UILabel()
-		propertyInfoStackView = UIStackView()
-		footageLabel = UILabel()
-		bedroomLabel = UILabel()
-		bathroomLabel = UILabel()
-		parkingSpacesLabel = UILabel()
-		addressLabel = UILabel()
-		
 		super.init(frame: frame)
 		setupView()
 	}
@@ -51,7 +129,6 @@ class PropertyInfoView: UIView {
 	private func setupView() {
 		configureSubviews()
 		configureConstraints()
-		configureRender()
 	}
 	
 	func configure(with viewModel: PropertyInfoViewModel) {
@@ -69,25 +146,11 @@ class PropertyInfoView: UIView {
 extension PropertyInfoView {
 	
 	private func configureSubviews() {
-		propertyValuesStackView.addArrangedSubview(condominiumPriceLabel)
-		propertyValuesStackView.addArrangedSubview(IptuPriceLabel)
-		propertyInfoStackView.addArrangedSubview(footageLabel)
-		propertyInfoStackView.addArrangedSubview(bedroomLabel)
-		propertyInfoStackView.addArrangedSubview(bathroomLabel)
-		propertyInfoStackView.addArrangedSubview(parkingSpacesLabel)
-		propertyStackView.addArrangedSubview(salePriceLabel)
-		propertyStackView.addArrangedSubview(propertyValuesStackView)
-		propertyStackView.addArrangedSubview(propertyInfoStackView)
-		propertyStackView.addArrangedSubview(addressLabel)
 		contentView.addSubview(propertyStackView)
-		
 		addSubview(contentView)
 	}
 	
 	private func configureConstraints() {
-		contentView.translatesAutoresizingMaskIntoConstraints = false
-		propertyStackView.translatesAutoresizingMaskIntoConstraints = false
-		
 		NSLayoutConstraint.activate([
 			contentView.topAnchor.constraint(equalTo: topAnchor),
 			contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -99,52 +162,6 @@ extension PropertyInfoView {
 			propertyStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
 			propertyStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
 		])
-	}
-	
-	private func configureRender() {
-		contentView.backgroundColor = .white
-		
-		propertyStackView.axis = .vertical
-		propertyStackView.distribution = .fillProportionally
-		propertyStackView.spacing = 5
-		
-		salePriceLabel.textColor = .black
-		salePriceLabel.font = .systemFont(ofSize: 30, weight: .bold)
-		salePriceLabel.numberOfLines = 1
-
-		propertyValuesStackView.axis = .horizontal
-		propertyValuesStackView.distribution = .fillProportionally
-		
-		condominiumPriceLabel.textColor = .black
-		condominiumPriceLabel.font = .systemFont(ofSize: 17, weight: .regular)
-		condominiumPriceLabel.numberOfLines = 1
-
-		IptuPriceLabel.textColor = .black
-		IptuPriceLabel.font = .systemFont(ofSize: 17, weight: .regular)
-		IptuPriceLabel.numberOfLines = 1
-
-		propertyInfoStackView.axis = .horizontal
-		propertyInfoStackView.distribution = .fillProportionally
-		
-		footageLabel.textColor = .gray
-		footageLabel.font = .systemFont(ofSize: 17, weight: .regular)
-		footageLabel.numberOfLines = 1
-
-		bedroomLabel.textColor = .gray
-		bedroomLabel.font = .systemFont(ofSize: 17, weight: .regular)
-		bedroomLabel.numberOfLines = 1
-		
-		bathroomLabel.textColor = .gray
-		bathroomLabel.font = .systemFont(ofSize: 17, weight: .regular)
-		bathroomLabel.numberOfLines = 1
-		
-		parkingSpacesLabel.textColor = .gray
-		parkingSpacesLabel.font = .systemFont(ofSize: 17, weight: .regular)
-		parkingSpacesLabel.numberOfLines = 1
-		
-		addressLabel.textColor = .gray
-		addressLabel.font = .systemFont(ofSize: 17, weight: .regular)
-		addressLabel.numberOfLines = 0
 	}
 	
 }
