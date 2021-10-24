@@ -10,7 +10,7 @@ import UIKit
 class DividerView: UIView {
     
     // MARK: - Inits
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -29,16 +29,9 @@ class DividerView: UIView {
     // MARK: - Private Func
     
     private func configure() {
-        backgroundColor = .lightGray
-        heightAnchor.constraint(equalToConstant: 1.0).isActive = true
-        translatesAutoresizingMaskIntoConstraints = false
+        self.backgroundColor = .lightGray
+        self.heightAnchor.constraint(equalToConstant: 1.0).isActive = true
     }
 }
-
-
-
-
-
-
 
 

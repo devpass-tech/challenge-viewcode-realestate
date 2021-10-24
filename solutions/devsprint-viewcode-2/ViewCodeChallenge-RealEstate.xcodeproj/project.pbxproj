@@ -19,6 +19,7 @@
 		BC4459BE271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */; };
 		BC4459C6271E37E400F7E0E9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = BC4459C5271E37E400F7E0E9 /* SnapshotTesting */; };
 		F55ACB5D2725B223004A8663 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ACB5C2725B223004A8663 /* DividerView.swift */; };
+		F55ACB612725BD8B004A8663 /* DividerViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ACB602725BD8B004A8663 /* DividerViewSnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		BC4459BB271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
 		F55ACB5C2725B223004A8663 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		F55ACB602725BD8B004A8663 /* DividerViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerViewSnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */,
+				F55ACB602725BD8B004A8663 /* DividerViewSnapshotTests.swift */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55ACB612725BD8B004A8663 /* DividerViewSnapshotTests.swift in Sources */,
 				BC4459BE271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
