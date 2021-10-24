@@ -16,6 +16,7 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		BCF2C3BF271E361D001E7706 /* PropertyCorouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2C3BE271E361D001E7706 /* PropertyCorouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
+		BCF2C3BE271E361D001E7706 /* PropertyCorouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCorouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
 				980C0C1A2704F1F100F8100A /* AppDelegate */,
+				BCF2C3BC271E35DB001E7706 /* Scenes */,
 				980C0C172704F1D500F8100A /* Screens */,
 				980C0C062704F1C700F8100A /* DataManager */,
 				980C0C1D2704F29100F8100A /* Models */,
@@ -138,6 +141,22 @@
 				986153DD2704EE2F00838CA6 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCF2C3BC271E35DB001E7706 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BCF2C3BD271E35FE001E7706 /* CarouselView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BCF2C3BD271E35FE001E7706 /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				BCF2C3BE271E361D001E7706 /* PropertyCorouselView.swift */,
+			);
+			path = CarouselView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +234,7 @@
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
+				BCF2C3BF271E361D001E7706 /* PropertyCorouselView.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 			);
