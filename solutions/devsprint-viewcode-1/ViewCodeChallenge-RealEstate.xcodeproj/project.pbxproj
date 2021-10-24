@@ -23,6 +23,7 @@
 		B15DEF71271F769E00C03F29 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B15DEF70271F769E00C03F29 /* SnapshotTesting */; };
 		B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */; };
 		B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */; };
+		B168D2F32725E3B70079B617 /* ClassName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168D2F22725E3B70079B617 /* ClassName+Extension.swift */; };
 		B1E81A7A2722300A00EEC210 /* PropertyListViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */; };
 		B1E81A7C2722315B00EEC210 /* PropertyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A7B2722315B00EEC210 /* PropertyViewCell.swift */; };
 		B1E81A7F27223D3400EEC210 /* PropertyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */; };
@@ -57,6 +58,7 @@
 		B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
 		B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewViewModel.swift; sourceTree = "<group>"; };
+		B168D2F22725E3B70079B617 /* ClassName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClassName+Extension.swift"; sourceTree = "<group>"; };
 		B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewControllerViewModel.swift; sourceTree = "<group>"; };
 		B1E81A7B2722315B00EEC210 /* PropertyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewCell.swift; sourceTree = "<group>"; };
 		B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewModel.swift; sourceTree = "<group>"; };
@@ -127,9 +129,9 @@
 			children = (
 				B1E81A7D27223D2400EEC210 /* ViewModels */,
 				B15DEF72271F777000C03F29 /* Views */,
+				B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */,
 				986153D32704EE2B00838CA6 /* PropertyListViewController.swift */,
 				B1E81A7B2722315B00EEC210 /* PropertyViewCell.swift */,
-				B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */,
 			);
 			path = PropertyList;
 			sourceTree = "<group>";
@@ -186,6 +188,7 @@
 				980C0C172704F1D500F8100A /* Screens */,
 				980C0C062704F1C700F8100A /* DataManager */,
 				980C0C1D2704F29100F8100A /* Models */,
+				B168D2F12725E3100079B617 /* Extensions */,
 			);
 			path = "ViewCodeChallenge-RealEstate";
 			sourceTree = "<group>";
@@ -235,6 +238,14 @@
 				B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */,
 			);
 			path = PropertyDescriptionView;
+			sourceTree = "<group>";
+		};
+		B168D2F12725E3100079B617 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B168D2F22725E3B70079B617 /* ClassName+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B1E81A7D27223D2400EEC210 /* ViewModels */ = {
@@ -362,6 +373,7 @@
 				B1E81A7F27223D3400EEC210 /* PropertyListViewModel.swift in Sources */,
 				B1E81A7C2722315B00EEC210 /* PropertyViewCell.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
+				B168D2F32725E3B70079B617 /* ClassName+Extension.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 			);

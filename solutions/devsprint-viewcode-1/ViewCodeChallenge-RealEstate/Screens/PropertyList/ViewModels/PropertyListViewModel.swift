@@ -4,24 +4,39 @@
 //
 //  Created by Dairan on 21/10/21.
 //
-
 import Foundation
+
+// MARK: - PropertyListViewModelDelegate
+
+protocol PropertyListViewModelDelegate: AnyObject {
+  func startedLoading()
+  func stoppedLoading()
+  func updatedListing()
+}
+
+// MARK: - PropertyListViewModel
 
 class PropertyListViewModel {
   // MARK: Lifecycle
 
-//  init?(properties: [Property]) {
-//    self.properties = properties
-//  }
+  init(service: RealEstateAPIClient) {
+    self.service = service
 
-  init(servico: RealEstateAPIClient) {
-    self.servico = servico
-    servico.fetchProperties { properties in
-      self.properties = properties
+    service.fetchProperties { properties in
+      DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+        self.delegate?.startedLoading()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+          self.properties = properties
+          self.delegate?.stoppedLoading()
+          self.delegate?.updatedListing()
+        }
+      }
     }
   }
 
   // MARK: Internal
+
+  weak var delegate: PropertyListViewModelDelegate?
 
   var numberOfRows: Int {
     properties?.count ?? 0
@@ -33,6 +48,6 @@ class PropertyListViewModel {
 
   // MARK: Private
 
+  private let service: RealEstateAPIClient
   private var properties: [Property]?
-  private let servico: RealEstateAPIClient
 }

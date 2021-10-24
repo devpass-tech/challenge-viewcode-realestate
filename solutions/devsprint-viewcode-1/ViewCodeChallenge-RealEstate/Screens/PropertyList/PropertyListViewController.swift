@@ -18,27 +18,27 @@ class PropertyListViewController: UIViewController {
     configure()
     configureSubviews()
     configureConstraits()
+    bind()
   }
 
   // MARK: Private
 
   private let apiClient = RealEstateAPIClient()
-  private var properties: [Property] = []
 
   private lazy var viewModel: PropertyListViewModel = {
-    let vm = PropertyListViewModel(servico: apiClient)
-    return vm
+    let viewModel = PropertyListViewModel(service: apiClient)
+    viewModel.delegate = self
+    return viewModel
   }()
 
   private lazy var listingTableView: UITableView = {
     let tableView = UITableView()
     tableView.translatesAutoresizingMaskIntoConstraints = false
-    tableView.register(PropertyViewCell.self, forCellReuseIdentifier: PropertyViewCell.cellIdentifier)
+    tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.className)
     tableView.delegate = self
     tableView.dataSource = self
     return tableView
   }()
-
 
   private func configure() {
     self.view.backgroundColor = .white
@@ -71,12 +71,39 @@ extension PropertyListViewController: UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: PropertyViewCell.cellIdentifier,
-                                                   for: indexPath) as? PropertyViewCell else { fatalError() }
+    let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.className, for: indexPath)
+    return configureCell(cell, at: indexPath)
+  }
 
-    let property = (viewModel.property(at: indexPath))!
-    cell.configure(property)
+  private func configureCell(_ cell: UITableViewCell, at indexPath: IndexPath) -> UITableViewCell {
+    let property = (viewModel.property(at: indexPath))
+
+    var config = cell.defaultContentConfiguration()
+    config.text = property?.address.city
+    config.secondaryText = property?.pricingInfos.monthlyCondoFee
+
+    cell.contentConfiguration = config
 
     return cell
+  }
+
+  private func bind() {
+  }
+}
+
+// MARK: PropertyListViewModelDelegate
+
+extension PropertyListViewController: PropertyListViewModelDelegate {
+  func startedLoading() {
+    print("++++ iniciu download")
+  }
+
+  func stoppedLoading() {
+    print("---- finalizou download")
+  }
+
+  func updatedListing() {
+    listingTableView.reloadData()
+    print("recarregad dados")
   }
 }
