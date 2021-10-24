@@ -13,33 +13,27 @@ class CarouselView: UIView {
     
     weak var delegate: CarouselCollectionViewCellProtocol?
     
-//    let properties: Property = Property()
-    let images: [String] = ["pic1", "pic2", "pic3"]
- 
-//    private let stackView: UIStackView = {
-//
-//        let stackView = UIStackView()
-//        stackView.translatesAutoresizingMaskIntoConstraints = false
-//        stackView.axis = .horizontal
-//
-//        return stackView
-//    }()
+    var properties: Property?
+    let images: [String] = ["pic1", "pic2", "pic3", "pic4", "pic5", "pic6", "pic7", "pic8", "pic9", "pic10", "pic11", "pic12", "pic13", "pic14", "pic15", "pic16", "pic17", "pic18", "pic19", "pic20"]
     
     private lazy var collectionView: UICollectionView = {
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
-//        collectionView.delegate = self
+        collectionView.delegate = self
         collectionView.register(CarouselCollectionViewCell.self, forCellWithReuseIdentifier: "CarouselViewCell")
-//        self.layout.scrollDirection = .horizontal
+        collectionView.isUserInteractionEnabled = true
+        layout.itemSize = CGSize(width: 375, height: 200 / 2)
+        layout.minimumInteritemSpacing = 1
+        layout.minimumLineSpacing = 1
         
         return collectionView
     }()
     
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
-        
+//        self.properties = properties
         configureView()
         configureConstraints()
     }
@@ -52,6 +46,10 @@ class CarouselView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configure(with viewModel: CarouselCellViewModel) {
+        self.properties = viewModel.propertiesImages
+        self.collectionView.reloadData()
+    }
 }
 
 //MARK: - SetupView Protocol Properties
@@ -60,7 +58,6 @@ extension CarouselView: ViewProtocol {
         self.backgroundColor = .white
         self.addSubview(self.collectionView)
         self.layout.scrollDirection = .horizontal
-//        self..addArrangedSubview(self.collectionView)
     }
     
     func configureConstraints() {
@@ -68,7 +65,8 @@ extension CarouselView: ViewProtocol {
             self.collectionView.topAnchor.constraint(equalTo: topAnchor),
             self.collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
             self.collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            self.collectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            self.collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            self.collectionView.heightAnchor.constraint(equalToConstant: 200)
         ])
     }
 }
@@ -77,17 +75,28 @@ extension CarouselView: ViewProtocol {
 extension CarouselView: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        return properties?.images.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: CarouselCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: "CarouselViewCell", for: indexPath) as? CarouselCollectionViewCell
         
-        cell?.imageView.image = UIImage(named: "\(images[indexPath.row])")
+        cell?.imageView.image = UIImage(named: "\(String(describing: properties?.images[indexPath.row]))")
         
         return cell ?? UICollectionViewCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+    }
+    
+}
+
+extension CarouselView: CarouselCollectionViewCellProtocol {
+    func getImages(with viewModel: CarouselCellViewModel) {
+        self.properties = viewModel.propertiesImages
+        self.collectionView.reloadData()
+    }
     
     
 }

@@ -9,9 +9,9 @@ import Foundation
 
 struct CarouselCellViewModel {
     
-    let images: Property
+    let propertiesImages: Property
     
-    init(images: Property) {
-        self.images = images
+    init(propertiesImages: Property) {
+        self.propertiesImages = propertiesImages
     }
 }

@@ -15,7 +15,7 @@ class CarouselViewTest: XCTestCase {
         
         let carouselView = CarouselView()
         
-        assertSnapshot(matching: carouselView, as: Snapshotting.image(size: CGSize(width: 414, height: 200)), record: true)
+        assertSnapshot(matching: carouselView, as: Snapshotting.image(size: CGSize(width: 200, height: 200)), record: true)
         
         
     }

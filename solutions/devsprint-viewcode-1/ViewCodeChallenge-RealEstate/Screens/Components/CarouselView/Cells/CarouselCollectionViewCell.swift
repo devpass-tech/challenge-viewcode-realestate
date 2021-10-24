@@ -31,7 +31,7 @@ class CarouselCollectionViewCell: UICollectionViewCell {
     }
     
     func configure(with viewModel: CarouselCellViewModel) {
-        self.imageView.image = UIImage(named: "\(viewModel.images)")
+        self.imageView.image = UIImage(named: "\(viewModel.propertiesImages.images)")
     }
 }
 
