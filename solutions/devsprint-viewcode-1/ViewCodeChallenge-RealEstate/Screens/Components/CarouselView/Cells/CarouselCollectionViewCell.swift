@@ -7,11 +7,9 @@
 
 import UIKit
 
-protocol CarouselCollectionViewCellProtocol: AnyObject {
-    func getImages(with viewModel: CarouselCellViewModel)
-}
-
 class CarouselCollectionViewCell: UICollectionViewCell {
+    
+    static let cellIdentifier = "CarouselViewCell"
     
     lazy var imageView: UIImageView = {
        
@@ -29,12 +27,9 @@ class CarouselCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    func configure(with viewModel: CarouselCellViewModel) {
-        self.imageView.image = UIImage(named: "\(viewModel.propertiesImages.images)")
-    }
 }
 
+//MARK: - Setup View Cell
 extension CarouselCollectionViewCell: ViewProtocol {
     func configureSubviews() {
         self.contentView.addSubview(self.imageView)

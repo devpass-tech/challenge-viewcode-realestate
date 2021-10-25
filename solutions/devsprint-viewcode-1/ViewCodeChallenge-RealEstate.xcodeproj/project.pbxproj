@@ -25,6 +25,7 @@
 		B47754F027221A6600C2F6D6 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */; };
 		B47754F227221A6C00C2F6D6 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754F127221A6C00C2F6D6 /* CarouselView.swift */; };
 		B47754F527221AA600C2F6D6 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754F427221AA600C2F6D6 /* ViewProtocol.swift */; };
+		B4A8E9D1272704F3003094DC /* PropertyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A8E9D0272704F3003094DC /* PropertyListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		B47754F127221A6C00C2F6D6 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		B47754F427221AA600C2F6D6 /* ViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		B4A8E9D0272704F3003094DC /* PropertyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				B15DEF72271F777000C03F29 /* Views */,
 				986153D32704EE2B00838CA6 /* PropertyListViewController.swift */,
+				B4A8E9D0272704F3003094DC /* PropertyListViewModel.swift */,
 			);
 			path = PropertyList;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				B47754F027221A6600C2F6D6 /* CarouselCollectionViewCell.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
+				B4A8E9D1272704F3003094DC /* PropertyListViewModel.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				B47754F527221AA600C2F6D6 /* ViewProtocol.swift in Sources */,
