@@ -17,16 +17,12 @@ class PropertyInfoView: UIView {
 		return view
 	}()
 	
-	private lazy var propertyStackView: UIStackView = {
+	private let propertyStackView: UIStackView = {
 		let stackView = UIStackView()
 		stackView.translatesAutoresizingMaskIntoConstraints = false
 		stackView.axis = .vertical
 		stackView.distribution = .fillProportionally
 		stackView.spacing = 5
-		stackView.addArrangedSubview(salePriceLabel)
-		stackView.addArrangedSubview(propertyValuesStackView)
-		stackView.addArrangedSubview(propertyInfoStackView)
-		stackView.addArrangedSubview(addressLabel)
 		return stackView
 	}()
 	
@@ -38,12 +34,10 @@ class PropertyInfoView: UIView {
 		return label
 	}()
 	
-	private lazy var propertyValuesStackView: UIStackView = {
+	private let propertyValuesStackView: UIStackView = {
 		let stackView = UIStackView()
 		stackView.axis = .horizontal
 		stackView.distribution = .fillProportionally
-		stackView.addArrangedSubview(condominiumPriceLabel)
-		stackView.addArrangedSubview(IptuPriceLabel)
 		return stackView
 	}()
 	
@@ -63,14 +57,10 @@ class PropertyInfoView: UIView {
 		return label
 	}()
 	
-	private lazy var propertyInfoStackView: UIStackView = {
+	private let propertyInfoStackView: UIStackView = {
 		let stackView = UIStackView()
 		stackView.axis = .horizontal
 		stackView.distribution = .fillProportionally
-		stackView.addArrangedSubview(footageLabel)
-		stackView.addArrangedSubview(bedroomLabel)
-		stackView.addArrangedSubview(bathroomLabel)
-		stackView.addArrangedSubview(parkingSpacesLabel)
 		return stackView
 	}()
 	
@@ -146,6 +136,16 @@ class PropertyInfoView: UIView {
 extension PropertyInfoView {
 	
 	private func configureSubviews() {
+		propertyValuesStackView.addArrangedSubview(condominiumPriceLabel)
+		propertyValuesStackView.addArrangedSubview(IptuPriceLabel)
+		propertyInfoStackView.addArrangedSubview(footageLabel)
+		propertyInfoStackView.addArrangedSubview(bedroomLabel)
+		propertyInfoStackView.addArrangedSubview(bathroomLabel)
+		propertyInfoStackView.addArrangedSubview(parkingSpacesLabel)
+		propertyStackView.addArrangedSubview(salePriceLabel)
+		propertyStackView.addArrangedSubview(propertyValuesStackView)
+		propertyStackView.addArrangedSubview(propertyInfoStackView)
+		propertyStackView.addArrangedSubview(addressLabel)
 		contentView.addSubview(propertyStackView)
 		addSubview(contentView)
 	}
