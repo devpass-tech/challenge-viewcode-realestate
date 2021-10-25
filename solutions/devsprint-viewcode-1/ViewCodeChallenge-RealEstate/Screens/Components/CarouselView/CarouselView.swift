@@ -11,19 +11,24 @@ class CarouselView: UIView {
     
     let layout = UICollectionViewFlowLayout()
     
-    private let apiClient = RealEstateAPIClient()
-
-    private lazy var viewModel: PropertyListViewModel = {
-        let viewModel = PropertyListViewModel(service: apiClient)
-        viewModel.delegate = self
-        return viewModel
-     }()
+//    private let apiClient = RealEstateAPIClient()
+//
+//    private lazy var viewModel: PropertyListViewModel = {
+//        let viewModel = PropertyListViewModel(service: apiClient)
+//        viewModel.delegate = self
+//        return viewModel
+//     }()
     
-//    let images: [String] = ["pic1", "pic2", "pic3", "pic4", "pic5", "pic6", "pic7", "pic8", "pic9", "pic10", "pic11", "pic12", "pic13", "pic14", "pic15", "pic16", "pic17", "pic18", "pic19", "pic20"]
+    var property: Property? {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
+    let images: [String] = ["pic1", "pic2", "pic3", "pic4", "pic5", "pic6", "pic7", "pic8", "pic9", "pic10", "pic11", "pic12", "pic13", "pic14", "pic15", "pic16", "pic17", "pic18", "pic19", "pic20"]
     
     private lazy var collectionView: UICollectionView = {
         
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: self.frame, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -74,11 +79,11 @@ extension CarouselView: ViewProtocol {
 extension CarouselView: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.numberOfItems
+        return property?.images.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let property = (viewModel.property(at: indexPath))
+//        let property = (viewModel.property(at: indexPath))
         let cell: CarouselCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: "CarouselViewCell", for: indexPath) as? CarouselCollectionViewCell
         
         cell?.imageView.image = UIImage(named: property?.images[indexPath.row] ?? "")
@@ -105,6 +110,6 @@ extension CarouselView: PropertyListViewModelDelegate {
     
     func updatedListing() {
         print("Lista atualizada na view controller")
-        self.collectionView.reloadData()
+//        self.collectionView.reloadData()
     }
 }

@@ -15,6 +15,7 @@ class CarouselCollectionViewCell: UICollectionViewCell {
        
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
