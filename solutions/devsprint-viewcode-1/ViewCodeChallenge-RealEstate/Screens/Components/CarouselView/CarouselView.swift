@@ -11,14 +11,6 @@ class CarouselView: UIView {
     
     let layout = UICollectionViewFlowLayout()
     
-//    private let apiClient = RealEstateAPIClient()
-//
-//    private lazy var viewModel: PropertyListViewModel = {
-//        let viewModel = PropertyListViewModel(service: apiClient)
-//        viewModel.delegate = self
-//        return viewModel
-//     }()
-    
     var property: Property? {
         didSet {
             self.collectionView.reloadData()
@@ -28,15 +20,16 @@ class CarouselView: UIView {
     
     private lazy var collectionView: UICollectionView = {
         
-        let collectionView = UICollectionView(frame: self.frame, collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(CarouselCollectionViewCell.self, forCellWithReuseIdentifier: "CarouselViewCell")
         collectionView.isUserInteractionEnabled = true
         layout.itemSize = CGSize(width: 375, height: 200 / 2)
-        layout.minimumInteritemSpacing = 1
         layout.minimumLineSpacing = 1
+        layout.minimumLineSpacing = 1
+        layout.scrollDirection = .horizontal
         
         return collectionView
     }()
@@ -61,7 +54,6 @@ extension CarouselView: ViewProtocol {
     func configureSubviews() {
         self.backgroundColor = .white
         self.addSubview(self.collectionView)
-        self.layout.scrollDirection = .horizontal
     }
     
     func configureConstraints() {
@@ -83,7 +75,6 @@ extension CarouselView: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let property = (viewModel.property(at: indexPath))
         let cell: CarouselCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: "CarouselViewCell", for: indexPath) as? CarouselCollectionViewCell
         
         cell?.imageView.image = UIImage(named: property?.images[indexPath.row] ?? "")
@@ -96,20 +87,4 @@ extension CarouselView: UICollectionViewDataSource, UICollectionViewDelegate {
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
-}
-
-//MARK: - Delegate funcs
-extension CarouselView: PropertyListViewModelDelegate {
-    func startedLoading() {
-        print("Iniciou o download dos dados")
-    }
-    
-    func stoppedLoading() {
-        print("Finalizou o download dos dados")
-    }
-    
-    func updatedListing() {
-        print("Lista atualizada na view controller")
-//        self.collectionView.reloadData()
-    }
 }
