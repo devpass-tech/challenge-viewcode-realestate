@@ -155,6 +155,7 @@
 		986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */ = {
 			isa = PBXGroup;
 			children = (
+				F5ADFC88272824DC00799138 /* CustomTextField */,
 				F5580845272745A500EEEA42 /* ContactFormView */,
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
 				980C0C1A2704F1F100F8100A /* AppDelegate */,
@@ -206,9 +207,16 @@
 			isa = PBXGroup;
 			children = (
 				F5580846272745D100EEEA42 /* ContactFormView.swift */,
-				F55808482727482B00EEEA42 /* CustomTextField.swift */,
 			);
 			path = ContactFormView;
+			sourceTree = "<group>";
+		};
+		F5ADFC88272824DC00799138 /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F55808482727482B00EEEA42 /* CustomTextField.swift */,
+			);
+			path = CustomTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
