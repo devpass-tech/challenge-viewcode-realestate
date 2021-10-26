@@ -20,6 +20,9 @@
 		BC131F3D2720E85900CF0848 /* MapLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC131F3C2720E85900CF0848 /* MapLocationViewModel.swift */; };
 		BC131F412720E8E600CF0848 /* MapLocationViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC131F402720E8E600CF0848 /* MapLocationViewSnapshotTests.swift */; };
 		BC4459C6271E37E400F7E0E9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = BC4459C5271E37E400F7E0E9 /* SnapshotTesting */; };
+		F5580847272745D100EEEA42 /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5580846272745D100EEEA42 /* ContactFormView.swift */; };
+		F55808492727482B00EEEA42 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55808482727482B00EEEA42 /* CustomTextField.swift */; };
+		F558084B2727768600EEEA42 /* ContactFormViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558084A2727768400EEEA42 /* ContactFormViewSnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		BC131F3C2720E85900CF0848 /* MapLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewModel.swift; sourceTree = "<group>"; };
 		BC131F402720E8E600CF0848 /* MapLocationViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewSnapshotTests.swift; sourceTree = "<group>"; };
 		BC4459BB271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5580846272745D100EEEA42 /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
+		F55808482727482B00EEEA42 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F558084A2727768400EEEA42 /* ContactFormViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewSnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 		986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */ = {
 			isa = PBXGroup;
 			children = (
+				F5580845272745A500EEEA42 /* ContactFormView */,
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
 				980C0C1A2704F1F100F8100A /* AppDelegate */,
 				980C0C172704F1D500F8100A /* Screens */,
@@ -182,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				BC131F402720E8E600CF0848 /* MapLocationViewSnapshotTests.swift */,
+				F558084A2727768400EEEA42 /* ContactFormViewSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -192,6 +200,15 @@
 				BC131F3F2720E8C300CF0848 /* SnapshotTests */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
+			sourceTree = "<group>";
+		};
+		F5580845272745A500EEEA42 /* ContactFormView */ = {
+			isa = PBXGroup;
+			children = (
+				F5580846272745D100EEEA42 /* ContactFormView.swift */,
+				F55808482727482B00EEEA42 /* CustomTextField.swift */,
+			);
+			path = ContactFormView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,9 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5580847272745D100EEEA42 /* ContactFormView.swift in Sources */,
 				BC131F3D2720E85900CF0848 /* MapLocationViewModel.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
+				F55808492727482B00EEEA42 /* CustomTextField.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				BC131F3B2720E81100CF0848 /* MapLocationView.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
@@ -317,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC131F412720E8E600CF0848 /* MapLocationViewSnapshotTests.swift in Sources */,
+				F558084B2727768600EEEA42 /* ContactFormViewSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
