@@ -10,12 +10,11 @@ import SnapshotTesting
 import XCTest
 
 class DividerViewTests: XCTestCase {
-
   func test_dividerWith1pxAndBackgroundColorLightGray() {
+    let frame = CGRect(x: 0, y: 0, width: 434, height: 10)
+    let sut = DividerView(frame: frame)
 
-    let sut = DividerView()
-
-    assertSnapshot(matching: sut, as: .image(size: .init(width: 434, height: 200)), record: false)
-    assertSnapshot(matching: sut, as: .recursiveDescription)
+    assertSnapshot(matching: sut, as: .image, record: false)
+    assertSnapshot(matching: sut, as: .recursiveDescription, record: false)
   }
 }
