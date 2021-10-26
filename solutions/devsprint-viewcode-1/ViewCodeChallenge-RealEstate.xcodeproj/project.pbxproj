@@ -7,29 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+ feature/ImplementarMapLocationView
+		71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */; };
+		71F7453D27204C4B00681584 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7453C27204C4B00681584 /* MapLocationView.swift */; };
+
+		130328C627219C3C00A9C505 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130328C527219C3C00A9C505 /* ButtonView.swift */; };
+		130328CB2721A59600A9C505 /* ButtonViewSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130328CA2721A59600A9C505 /* ButtonViewSnapshotTest.swift */; };
+ main
 		980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */; };
 		980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */; };
 		980C0C1F2704F3C400F8100A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1E2704F3C400F8100A /* Property.swift */; };
 		986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153CF2704EE2B00838CA6 /* AppDelegate.swift */; };
 		986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153D12704EE2B00838CA6 /* SceneDelegate.swift */; };
-		986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153D32704EE2B00838CA6 /* PropertyListViewController.swift */; };
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		B1377D852720BCCF00E42CFB /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1377D842720BCCF00E42CFB /* DividerView.swift */; };
+		B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1377D862720BDEF00E42CFB /* DividerViewTests.swift */; };
+		B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */; };
+		B15DEF71271F769E00C03F29 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B15DEF70271F769E00C03F29 /* SnapshotTesting */; };
+		B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */; };
+		B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B15DEF6A271F762C00C03F29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 986153C42704EE2B00838CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 986153CB2704EE2B00838CA6;
+			remoteInfo = "ViewCodeChallenge-RealEstate";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+ feature/ImplementarMapLocationView
+		71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewTests.swift; sourceTree = "<group>"; };
+		71F7453C27204C4B00681584 /* MapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
+
+		130328C527219C3C00A9C505 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		130328CA2721A59600A9C505 /* ButtonViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewSnapshotTest.swift; sourceTree = "<group>"; };
+  main
 		980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstateAPIClient.swift; sourceTree = "<group>"; };
 		980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
 		980C0C1E2704F3C400F8100A /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewCodeChallenge-RealEstate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		986153CF2704EE2B00838CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		986153D12704EE2B00838CA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		986153D32704EE2B00838CA6 /* PropertyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewController.swift; sourceTree = "<group>"; };
 		986153D82704EE2F00838CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
+		B1377D842720BCCF00E42CFB /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		B1377D862720BDEF00E42CFB /* DividerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerViewTests.swift; sourceTree = "<group>"; };
+		B15DEF66271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
+		B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
+		B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,9 +74,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B15DEF63271F762C00C03F29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15DEF71271F769E00C03F29 /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+ feature/ImplementarMapLocationView
+		71D176C32722EBF700DB0EAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71F7453B27204C2500681584 /* MapLocationView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71F7453B27204C2500681584 /* MapLocationView */ = {
+			isa = PBXGroup;
+			children = (
+				71F7453C27204C4B00681584 /* MapLocationView.swift */,
+			);
+			path = MapLocationView;
+
+		130328C427219C1400A9C505 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				130328C727219DF000A9C505 /* ButtonView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		130328C727219DF000A9C505 /* ButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				130328C527219C3C00A9C505 /* ButtonView.swift */,
+			);
+			path = ButtonView;
+  main
+			sourceTree = "<group>";
+		};
 		980C0C062704F1C700F8100A /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +137,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				130328C427219C1400A9C505 /* Components */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 			);
@@ -71,7 +147,7 @@
 		980C0C182704F1DE00F8100A /* PropertyList */ = {
 			isa = PBXGroup;
 			children = (
-				986153D32704EE2B00838CA6 /* PropertyListViewController.swift */,
+				B15DEF72271F777000C03F29 /* Views */,
 			);
 			path = PropertyList;
 			sourceTree = "<group>";
@@ -79,6 +155,7 @@
 		980C0C192704F1E800F8100A /* PropertyDetails */ = {
 			isa = PBXGroup;
 			children = (
+				71D176C32722EBF700DB0EAA /* Views */,
 				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
 			);
 			path = PropertyDetails;
@@ -105,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */,
+				B15DEF67271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests */,
 				986153CD2704EE2B00838CA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */,
+				B15DEF66271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +219,42 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B1377D832720BC8800E42CFB /* DividerView */ = {
+			isa = PBXGroup;
+			children = (
+				B1377D842720BCCF00E42CFB /* DividerView.swift */,
+			);
+			path = DividerView;
+			sourceTree = "<group>";
+		};
+		B15DEF67271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests */ = {
+			isa = PBXGroup;
+			children = (
+				B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */,
+				B1377D862720BDEF00E42CFB /* DividerViewTests.swift */,
+				71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */,
+			);
+			path = "ViewCodeChallenge-RealEstateTests";
+			sourceTree = "<group>";
+		};
+		B15DEF72271F777000C03F29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1377D832720BC8800E42CFB /* DividerView */,
+				B15DEF73271F777D00C03F29 /* PropertyDescriptionView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B15DEF73271F777D00C03F29 /* PropertyDescriptionView */ = {
+			isa = PBXGroup;
+			children = (
+				B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */,
+				B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */,
+			);
+			path = PropertyDescriptionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +275,27 @@
 			productReference = 986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B15DEF65271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15DEF6E271F762C00C03F29 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */;
+			buildPhases = (
+				B15DEF62271F762C00C03F29 /* Sources */,
+				B15DEF63271F762C00C03F29 /* Frameworks */,
+				B15DEF64271F762C00C03F29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B15DEF6B271F762C00C03F29 /* PBXTargetDependency */,
+			);
+			name = "ViewCodeChallenge-RealEstateTests";
+			packageProductDependencies = (
+				B15DEF70271F769E00C03F29 /* SnapshotTesting */,
+			);
+			productName = "ViewCodeChallenge-RealEstateTests";
+			productReference = B15DEF66271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,6 +309,10 @@
 					986153CB2704EE2B00838CA6 = {
 						CreatedOnToolsVersion = 13.0;
 					};
+					B15DEF65271F762C00C03F29 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 986153CB2704EE2B00838CA6;
+					};
 				};
 			};
 			buildConfigurationList = 986153C72704EE2B00838CA6 /* Build configuration list for PBXProject "ViewCodeChallenge-RealEstate" */;
@@ -184,11 +324,15 @@
 				Base,
 			);
 			mainGroup = 986153C32704EE2B00838CA6;
+			packageReferences = (
+				B15DEF6F271F769E00C03F29 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 986153CD2704EE2B00838CA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				986153CB2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */,
+				B15DEF65271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -204,6 +348,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B15DEF64271F762C00C03F29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -211,16 +362,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
+				B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */,
+				B1377D852720BCCF00E42CFB /* DividerView.swift in Sources */,
+				B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
+				71F7453D27204C4B00681584 /* MapLocationView.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				130328C627219C3C00A9C505 /* ButtonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15DEF62271F762C00C03F29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */,
+				71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */,
+				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B15DEF6B271F762C00C03F29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 986153CB2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */;
+			targetProxy = B15DEF6A271F762C00C03F29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */ = {
@@ -404,6 +577,50 @@
 			};
 			name = Release;
 		};
+		B15DEF6C271F762C00C03F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devpass.ViewCodeChallenge-RealEstateTests.ViewCodeChallenge-RealEstateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewCodeChallenge-RealEstate.app/ViewCodeChallenge-RealEstate";
+			};
+			name = Debug;
+		};
+		B15DEF6D271F762C00C03F29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devpass.ViewCodeChallenge-RealEstateTests.ViewCodeChallenge-RealEstateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewCodeChallenge-RealEstate.app/ViewCodeChallenge-RealEstate";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -425,7 +642,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B15DEF6E271F762C00C03F29 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15DEF6C271F762C00C03F29 /* Debug */,
+				B15DEF6D271F762C00C03F29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B15DEF6F271F769E00C03F29 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B15DEF70271F769E00C03F29 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B15DEF6F271F769E00C03F29 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 986153C42704EE2B00838CA6 /* Project object */;
 }
