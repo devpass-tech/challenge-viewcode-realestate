@@ -231,7 +231,6 @@
 			isa = PBXGroup;
 			children = (
 				B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */,
-				130328CA2721A59600A9C505 /* ButtonViewSnapshotTest.swift */,
 				B1377D862720BDEF00E42CFB /* DividerViewTests.swift */,
 				71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */,
 			);
@@ -380,7 +379,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				130328CB2721A59600A9C505 /* ButtonViewSnapshotTest.swift in Sources */,
 				B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */,
 				71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */,
 				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,

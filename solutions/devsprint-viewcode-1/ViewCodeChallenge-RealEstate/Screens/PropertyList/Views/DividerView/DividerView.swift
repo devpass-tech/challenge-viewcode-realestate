@@ -10,8 +10,8 @@ import UIKit
 class DividerView: UIView {
   // MARK: Lifecycle
 
-  init() {
-    super.init(frame: .zero)
+  override init(frame: CGRect) {
+    super.init(frame: frame)
     configure()
     configureConstraits()
   }
@@ -22,24 +22,16 @@ class DividerView: UIView {
 
   // MARK: Private
 
-  private var dividerView: UIView = {
-    let view = UIView()
-    view.translatesAutoresizingMaskIntoConstraints = false
-    view.accessibilityIdentifier = "divider-view"
-    view.backgroundColor = .lightGray
-    return view
-  }()
-
-  private func configure() {
-    addSubview(dividerView)
-  }
-
   private func configureConstraits() {
     NSLayoutConstraint.activate([
-      dividerView.leadingAnchor.constraint(equalTo: leadingAnchor),
-      dividerView.centerYAnchor.constraint(equalTo: centerYAnchor),
-      dividerView.trailingAnchor.constraint(equalTo: trailingAnchor),
-      dividerView.heightAnchor.constraint(equalToConstant: 1),
+      widthAnchor.constraint(equalToConstant: frame.width),
+      heightAnchor.constraint(equalToConstant: 1),
     ])
+  }
+
+  private func configure() {
+    translatesAutoresizingMaskIntoConstraints = false
+    accessibilityIdentifier = "divider-view"
+    backgroundColor = .lightGray
   }
 }

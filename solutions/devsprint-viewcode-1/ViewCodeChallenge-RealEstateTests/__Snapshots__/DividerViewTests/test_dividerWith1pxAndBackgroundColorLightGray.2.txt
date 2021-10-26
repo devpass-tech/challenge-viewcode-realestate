@@ -1,2 +1,1 @@
-<ViewCodeChallenge_RealEstate.DividerView; frame = (0 0; 0 0); layer = <CALayer>>
-   | <UIView; frame = (0 -0.666667; 0 1.33333); layer = <CALayer>>
+<ViewCodeChallenge_RealEstate.DividerView; frame = (0 0; 434 1); layer = <CALayer>>
