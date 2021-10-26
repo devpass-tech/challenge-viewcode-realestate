@@ -16,7 +16,6 @@ class CarouselView: UIView {
             self.collectionView.reloadData()
         }
     }
-    let images: [String] = ["pic1", "pic2", "pic3", "pic4", "pic5", "pic6", "pic7", "pic8", "pic9", "pic10", "pic11", "pic12", "pic13", "pic14", "pic15", "pic16", "pic17", "pic18", "pic19", "pic20"]
     
     private lazy var collectionView: UICollectionView = {
         
@@ -26,22 +25,23 @@ class CarouselView: UIView {
         collectionView.delegate = self
         collectionView.register(CarouselCollectionViewCell.self, forCellWithReuseIdentifier: "CarouselViewCell")
         collectionView.isUserInteractionEnabled = true
-        layout.itemSize = CGSize(width: 375, height: 200 / 2)
-        layout.minimumLineSpacing = 1
-        layout.minimumLineSpacing = 1
+        layout.itemSize = CGSize(width: 400, height: 225)
+        layout.minimumLineSpacing = 0
+        layout.minimumLineSpacing = 0
         layout.scrollDirection = .horizontal
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         return collectionView
     }()
     
-    override init(frame: CGRect = .zero) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         configureView()
         configureConstraints()
     }
     
     convenience init() {
-        self.init(frame: .zero)
+        self.init(frame: CGRect(x: 0, y: 200, width: 450, height: 225))
     }
     
     required init?(coder: NSCoder) {

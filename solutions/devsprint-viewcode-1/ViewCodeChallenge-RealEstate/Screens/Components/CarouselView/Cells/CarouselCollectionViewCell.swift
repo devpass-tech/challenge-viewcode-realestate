@@ -15,7 +15,7 @@ class CarouselCollectionViewCell: UICollectionViewCell {
        
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
@@ -41,7 +41,9 @@ extension CarouselCollectionViewCell: ViewProtocol {
             self.imageView.topAnchor.constraint(equalTo: self.contentView.topAnchor),
             self.imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
             self.imageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
-            self.imageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor)
+            self.imageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor),
+            self.imageView.heightAnchor.constraint(equalToConstant: 225),
+            self.imageView.widthAnchor.constraint(equalToConstant: 400)
         ])
     }
     
