@@ -9,11 +9,9 @@ import SnapshotTesting
 @testable import ViewCodeChallenge_RealEstate
 import XCTest
 
-class DividerViewTests: XCTestCase { 
-
+class DividerViewTests: XCTestCase {
   func test_dividerWith1pxAndBackgroundColorLightGray() {
     let frame = CGRect(x: 0, y: 0, width: 434, height: 10)
-
     let sut = DividerView(frame: frame)
 
     assertSnapshot(matching: sut, as: .image, record: false)
