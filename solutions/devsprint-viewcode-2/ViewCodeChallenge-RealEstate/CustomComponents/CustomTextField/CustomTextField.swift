@@ -37,5 +37,6 @@ class CustomTextField: UITextField {
         backgroundColor             = .tertiarySystemBackground
         autocorrectionType          = .no
         clearButtonMode             = .whileEditing
+        setLeftPaddingPoints(10)
     }
 }
