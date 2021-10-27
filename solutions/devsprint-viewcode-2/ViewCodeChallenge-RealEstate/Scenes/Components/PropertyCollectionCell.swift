@@ -34,7 +34,7 @@ final class PropertyCollectionCell: UICollectionViewCell {
         ])
     }
     
-    func setup(image: UIImage?){
-//        self.propertyImageView.image = UIImage(named: "\(vi)")
+    func setup(image: String){
+        self.propertyImageView.image = UIImage(named: image)
     }
 }
