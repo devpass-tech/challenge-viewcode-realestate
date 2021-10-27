@@ -16,19 +16,19 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		9F5D43F72729C30D00C380B0 /* DividerViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D43EE2729C30D00C380B0 /* DividerViewSnapshotTests.swift */; };
+		9F5D43F82729C30D00C380B0 /* MapLocationViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D43F02729C30D00C380B0 /* MapLocationViewSnapshotTests.swift */; };
+		9F5D43F92729C30D00C380B0 /* PropertyInfoViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D43F12729C30D00C380B0 /* PropertyInfoViewSnapshotTests.swift */; };
+		9F5D43FE2729C48C00C380B0 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9F5D43FD2729C48C00C380B0 /* SnapshotTesting */; };
 		BC131F3B2720E81100CF0848 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC131F3A2720E81100CF0848 /* MapLocationView.swift */; };
 		BC131F3D2720E85900CF0848 /* MapLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC131F3C2720E85900CF0848 /* MapLocationViewModel.swift */; };
-		BC131F412720E8E600CF0848 /* MapLocationViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC131F402720E8E600CF0848 /* MapLocationViewSnapshotTests.swift */; };
-		BC4459C6271E37E400F7E0E9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = BC4459C5271E37E400F7E0E9 /* SnapshotTesting */; };
-		F55ACB5D2725B223004A8663 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ACB5C2725B223004A8663 /* DividerView.swift */; };
-		F55ACB612725BD8B004A8663 /* DividerViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ACB602725BD8B004A8663 /* DividerViewSnapshotTests.swift */; };
-		BCF2A3832727599000BADEFC /* PropertyInfoViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2A3822727599000BADEFC /* PropertyInfoViewSnapshotTests.swift */; };
 		BCF2A387272759B400BADEFC /* PropertyInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2A385272759B400BADEFC /* PropertyInfoViewModel.swift */; };
 		BCF2A388272759B400BADEFC /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2A386272759B400BADEFC /* PropertyInfoView.swift */; };
+		F55ACB5D2725B223004A8663 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ACB5C2725B223004A8663 /* DividerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BC4459BF271E357500F7E0E9 /* PBXContainerItemProxy */ = {
+		9F5D43E92729C2EA00C380B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 986153C42704EE2B00838CA6 /* Project object */;
 			proxyType = 1;
@@ -49,14 +49,15 @@
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
+		9F5D43E52729C2EA00C380B0 /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5D43EE2729C30D00C380B0 /* DividerViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerViewSnapshotTests.swift; sourceTree = "<group>"; };
+		9F5D43F02729C30D00C380B0 /* MapLocationViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewSnapshotTests.swift; sourceTree = "<group>"; };
+		9F5D43F12729C30D00C380B0 /* PropertyInfoViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewSnapshotTests.swift; sourceTree = "<group>"; };
 		BC131F3A2720E81100CF0848 /* MapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
 		BC131F3C2720E85900CF0848 /* MapLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewModel.swift; sourceTree = "<group>"; };
-		BC131F402720E8E600CF0848 /* MapLocationViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewSnapshotTests.swift; sourceTree = "<group>"; };
-		F55ACB5C2725B223004A8663 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
-		F55ACB602725BD8B004A8663 /* DividerViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerViewSnapshotTests.swift; sourceTree = "<group>"; };
-		BCF2A3822727599000BADEFC /* PropertyInfoViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewSnapshotTests.swift; sourceTree = "<group>"; };
 		BCF2A385272759B400BADEFC /* PropertyInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewModel.swift; sourceTree = "<group>"; };
 		BCF2A386272759B400BADEFC /* PropertyInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
+		F55ACB5C2725B223004A8663 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +68,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC4459B8271E357500F7E0E9 /* Frameworks */ = {
+		9F5D43E22729C2EA00C380B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4459C6271E37E400F7E0E9 /* SnapshotTesting in Frameworks */,
+				9F5D43FE2729C48C00C380B0 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */,
-				BC4459BC271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests */,
+				9F5D43E62729C2EA00C380B0 /* ViewCodeChallenge-RealEstateTests */,
 				986153CD2704EE2B00838CA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */,
-				BC4459BB271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests.xctest */,
+				9F5D43E52729C2EA00C380B0 /* ViewCodeChallenge-RealEstateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +181,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		9F5D43E62729C2EA00C380B0 /* ViewCodeChallenge-RealEstateTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D43EE2729C30D00C380B0 /* DividerViewSnapshotTests.swift */,
+				9F5D43EF2729C30D00C380B0 /* SnapshotTests */,
+			);
+			path = "ViewCodeChallenge-RealEstateTests";
+			sourceTree = "<group>";
+		};
+		9F5D43EF2729C30D00C380B0 /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D43F02729C30D00C380B0 /* MapLocationViewSnapshotTests.swift */,
+				9F5D43F12729C30D00C380B0 /* PropertyInfoViewSnapshotTests.swift */,
+			);
+			path = SnapshotTests;
+			sourceTree = "<group>";
+		};
 		BC131F392720E7DD00CF0848 /* MapLocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,23 +208,13 @@
 			path = MapLocation;
 			sourceTree = "<group>";
 		};
-		BC131F3F2720E8C300CF0848 /* SnapshotTests */ = {
+		BCF2A384272759B400BADEFC /* PropertyInfoView */ = {
 			isa = PBXGroup;
 			children = (
-				BCF2A3822727599000BADEFC /* PropertyInfoViewSnapshotTests.swift */,
-				BC131F402720E8E600CF0848 /* MapLocationViewSnapshotTests.swift */,
+				BCF2A385272759B400BADEFC /* PropertyInfoViewModel.swift */,
+				BCF2A386272759B400BADEFC /* PropertyInfoView.swift */,
 			);
-			path = SnapshotTests;
-			sourceTree = "<group>";
-		};
-		BC4459BC271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests */ = {
-			isa = PBXGroup;
-			children = (
-				BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */,
-				F55ACB602725BD8B004A8663 /* DividerViewSnapshotTests.swift */,
-				BC131F3F2720E8C300CF0848 /* SnapshotTests */,
-			);
-			path = "ViewCodeChallenge-RealEstateTests";
+			path = PropertyInfoView;
 			sourceTree = "<group>";
 		};
 		F55ACB5B2725B1C8004A8663 /* CustomComponents */ = {
@@ -214,15 +223,6 @@
 				F55ACB5C2725B223004A8663 /* DividerView.swift */,
 			);
 			path = CustomComponents;
-            sourceTree = "<group>";
-        };
-		BCF2A384272759B400BADEFC /* PropertyInfoView */ = {
-			isa = PBXGroup;
-			children = (
-				BCF2A385272759B400BADEFC /* PropertyInfoViewModel.swift */,
-				BCF2A386272759B400BADEFC /* PropertyInfoView.swift */,
-			);
-			path = PropertyInfoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,25 +245,25 @@
 			productReference = 986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BC4459BA271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests */ = {
+		9F5D43E42729C2EA00C380B0 /* ViewCodeChallenge-RealEstateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC4459C3271E357500F7E0E9 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */;
+			buildConfigurationList = 9F5D43EB2729C2EA00C380B0 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */;
 			buildPhases = (
-				BC4459B7271E357500F7E0E9 /* Sources */,
-				BC4459B8271E357500F7E0E9 /* Frameworks */,
-				BC4459B9271E357500F7E0E9 /* Resources */,
+				9F5D43E12729C2EA00C380B0 /* Sources */,
+				9F5D43E22729C2EA00C380B0 /* Frameworks */,
+				9F5D43E32729C2EA00C380B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BC4459C0271E357500F7E0E9 /* PBXTargetDependency */,
+				9F5D43EA2729C2EA00C380B0 /* PBXTargetDependency */,
 			);
 			name = "ViewCodeChallenge-RealEstateTests";
 			packageProductDependencies = (
-				BC4459C5271E37E400F7E0E9 /* SnapshotTesting */,
+				9F5D43FD2729C48C00C380B0 /* SnapshotTesting */,
 			);
 			productName = "ViewCodeChallenge-RealEstateTests";
-			productReference = BC4459BB271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests.xctest */;
+			productReference = 9F5D43E52729C2EA00C380B0 /* ViewCodeChallenge-RealEstateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -279,8 +279,9 @@
 					986153CB2704EE2B00838CA6 = {
 						CreatedOnToolsVersion = 13.0;
 					};
-					BC4459BA271E357500F7E0E9 = {
+					9F5D43E42729C2EA00C380B0 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 						TestTargetID = 986153CB2704EE2B00838CA6;
 					};
 				};
@@ -295,14 +296,14 @@
 			);
 			mainGroup = 986153C32704EE2B00838CA6;
 			packageReferences = (
-				BC4459C4271E37E400F7E0E9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				9F5D43FC2729C48C00C380B0 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 986153CD2704EE2B00838CA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				986153CB2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */,
-				BC4459BA271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests */,
+				9F5D43E42729C2EA00C380B0 /* ViewCodeChallenge-RealEstateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -318,7 +319,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC4459B9271E357500F7E0E9 /* Resources */ = {
+		9F5D43E32729C2EA00C380B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -346,23 +347,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC4459B7271E357500F7E0E9 /* Sources */ = {
+		9F5D43E12729C2EA00C380B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F55ACB612725BD8B004A8663 /* DividerViewSnapshotTests.swift in Sources */,
-				BC131F412720E8E600CF0848 /* MapLocationViewSnapshotTests.swift in Sources */,
-				BCF2A3832727599000BADEFC /* PropertyInfoViewSnapshotTests.swift in Sources */,
+				9F5D43F82729C30D00C380B0 /* MapLocationViewSnapshotTests.swift in Sources */,
+				9F5D43F72729C30D00C380B0 /* DividerViewSnapshotTests.swift in Sources */,
+				9F5D43F92729C30D00C380B0 /* PropertyInfoViewSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BC4459C0271E357500F7E0E9 /* PBXTargetDependency */ = {
+		9F5D43EA2729C2EA00C380B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 986153CB2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */;
-			targetProxy = BC4459BF271E357500F7E0E9 /* PBXContainerItemProxy */;
+			targetProxy = 9F5D43E92729C2EA00C380B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -548,13 +549,14 @@
 			};
 			name = Release;
 		};
-		BC4459C1271E357500F7E0E9 /* Debug */ = {
+		9F5D43EC2729C2EA00C380B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 25XCUFMQUU;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -562,22 +564,26 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexandrecardoso.ViewCodeChallenge-RealEstateTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.btas.developer.ViewCodeChallenge-RealEstateTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewCodeChallenge-RealEstate.app/ViewCodeChallenge-RealEstate";
 			};
 			name = Debug;
 		};
-		BC4459C2271E357500F7E0E9 /* Release */ = {
+		9F5D43ED2729C2EA00C380B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 25XCUFMQUU;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -585,8 +591,10 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexandrecardoso.ViewCodeChallenge-RealEstateTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.btas.developer.ViewCodeChallenge-RealEstateTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -615,11 +623,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC4459C3271E357500F7E0E9 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */ = {
+		9F5D43EB2729C2EA00C380B0 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC4459C1271E357500F7E0E9 /* Debug */,
-				BC4459C2271E357500F7E0E9 /* Release */,
+				9F5D43EC2729C2EA00C380B0 /* Debug */,
+				9F5D43ED2729C2EA00C380B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -627,20 +635,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BC4459C4271E37E400F7E0E9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+		9F5D43FC2729C48C00C380B0 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.9.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BC4459C5271E37E400F7E0E9 /* SnapshotTesting */ = {
+		9F5D43FD2729C48C00C380B0 /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BC4459C4271E37E400F7E0E9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			package = 9F5D43FC2729C48C00C380B0 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
