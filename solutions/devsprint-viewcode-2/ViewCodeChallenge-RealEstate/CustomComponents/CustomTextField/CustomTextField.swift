@@ -8,7 +8,7 @@
 import UIKit
 
 class CustomTextField: UITextField {
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -23,20 +23,20 @@ class CustomTextField: UITextField {
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
         
-        layer.cornerRadius          = 10
-        layer.borderWidth           = 2
-        layer.borderColor           = UIColor.systemGray4.cgColor
+        layer.cornerRadius = 10
+        layer.borderWidth = 2
+        layer.borderColor = UIColor.systemGray4.cgColor
         
-        textColor                   = .label
-        tintColor                   = .label
-        textAlignment               = .left
-        font                        = UIFont.preferredFont(forTextStyle: .body)
-        adjustsFontSizeToFitWidth   = true
-        minimumFontSize             = 10
+        textColor = .label
+        tintColor = .label
+        textAlignment = .left
+        font = UIFont.preferredFont(forTextStyle: .body)
+        adjustsFontSizeToFitWidth = true
+        minimumFontSize = 10
         
-        backgroundColor             = .tertiarySystemBackground
-        autocorrectionType          = .no
-        clearButtonMode             = .whileEditing
+        backgroundColor = .tertiarySystemBackground
+        autocorrectionType = .no
+        clearButtonMode = .whileEditing
         
         setLeftPaddingPoints(10)
     }
