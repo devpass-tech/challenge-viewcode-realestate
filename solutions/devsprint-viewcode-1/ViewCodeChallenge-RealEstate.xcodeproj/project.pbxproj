@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		130328C627219C3C00A9C505 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130328C527219C3C00A9C505 /* ButtonView.swift */; };
 		130328CB2721A59600A9C505 /* ButtonViewSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130328CA2721A59600A9C505 /* ButtonViewSnapshotTest.swift */; };
+		130FB81D27235FF60093FCF1 /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130FB81C27235FF60093FCF1 /* ContactFormView.swift */; };
+		13F2F89A272B147500FDA430 /* ContactFormViewSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2F899272B147500FDA430 /* ContactFormViewSnapshotTest.swift */; };
 		980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */; };
 		980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */; };
 		980C0C1F2704F3C400F8100A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1E2704F3C400F8100A /* Property.swift */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		130328C527219C3C00A9C505 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		130328CA2721A59600A9C505 /* ButtonViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewSnapshotTest.swift; sourceTree = "<group>"; };
+		130FB81C27235FF60093FCF1 /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
+		13F2F899272B147500FDA430 /* ContactFormViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewSnapshotTest.swift; sourceTree = "<group>"; };
 		980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstateAPIClient.swift; sourceTree = "<group>"; };
 		980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
 		980C0C1E2704F3C400F8100A /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		130328C427219C1400A9C505 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				130FB81B27235FA00093FCF1 /* ContactFormView */,
 				130328C727219DF000A9C505 /* ButtonView */,
 			);
 			path = Components;
@@ -91,6 +96,14 @@
 				130328C527219C3C00A9C505 /* ButtonView.swift */,
 			);
 			path = ButtonView;
+			sourceTree = "<group>";
+		};
+		130FB81B27235FA00093FCF1 /* ContactFormView */ = {
+			isa = PBXGroup;
+			children = (
+				130FB81C27235FF60093FCF1 /* ContactFormView.swift */,
+			);
+			path = ContactFormView;
 			sourceTree = "<group>";
 		};
 		980C0C062704F1C700F8100A /* DataManager */ = {
@@ -208,6 +221,7 @@
 				B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */,
 				130328CA2721A59600A9C505 /* ButtonViewSnapshotTest.swift */,
 				B1377D862720BDEF00E42CFB /* DividerViewTests.swift */,
+				13F2F899272B147500FDA430 /* ContactFormViewSnapshotTest.swift */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
 			sourceTree = "<group>";
@@ -344,6 +358,7 @@
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
+				130FB81D27235FF60093FCF1 /* ContactFormView.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				130328C627219C3C00A9C505 /* ButtonView.swift in Sources */,
@@ -355,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				130328CB2721A59600A9C505 /* ButtonViewSnapshotTest.swift in Sources */,
+				13F2F89A272B147500FDA430 /* ContactFormViewSnapshotTest.swift in Sources */,
 				B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */,
 				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 			);

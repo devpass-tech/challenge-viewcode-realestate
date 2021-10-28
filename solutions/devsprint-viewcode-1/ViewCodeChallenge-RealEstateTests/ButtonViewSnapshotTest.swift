@@ -16,6 +16,6 @@ class ButtonViewSnapshotTest: XCTestCase {
         let button = ButtonView()
         button.setButtonTitle("Click")
         
-        assertSnapshot(matching: button, as: .image(size: .init(width: 350, height: 80)))
+        assertSnapshot(matching: button, as: .image(size: .init(width: 200, height: 80)))
     }
 }

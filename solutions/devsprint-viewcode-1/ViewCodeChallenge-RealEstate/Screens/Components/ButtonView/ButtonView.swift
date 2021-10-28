@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol ButtonViewProtocol: AnyObject {
-    func buttonPressAction(sender: UIButton)
+protocol ButtonViewDelegate: AnyObject {
+    func buttonPressAction(sender: ButtonView)
 }
 
 class ButtonView: UIView {
     
-    weak var delegate: ButtonViewProtocol?
+    weak var delegate: ButtonViewDelegate?
         
     private lazy var button: UIButton = {
         let button = UIButton()
@@ -41,20 +41,20 @@ class ButtonView: UIView {
     }
     
     @objc func buttonPressed() {
-        self.delegate?.buttonPressAction(sender: button)
+        self.delegate?.buttonPressAction(sender: self)
     }
     
     private func configView() {
         self.addSubview(self.button)
     }
     
-    private func configConstraints() {
+    func configConstraints() {
         
         NSLayoutConstraint.activate([
-            self.button.topAnchor.constraint(equalTo: self.topAnchor,constant: 10),
-            self.button.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            self.button.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-            self.button.heightAnchor.constraint(equalToConstant: 50)
+            self.button.topAnchor.constraint(equalTo: self.topAnchor),
+            self.button.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            self.button.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            self.button.bottomAnchor.constraint(equalTo: self.bottomAnchor),
         ])
     }
 }
