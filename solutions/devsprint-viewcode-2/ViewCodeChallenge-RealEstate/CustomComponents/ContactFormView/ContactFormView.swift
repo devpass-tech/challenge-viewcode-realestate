@@ -64,7 +64,7 @@ class ContactFormView: UIView {
     func getEmail() -> String {
         return emailTextField.text ?? ""
     }
-
+    
     // MARK: - Private Func
     
     private func configure() {

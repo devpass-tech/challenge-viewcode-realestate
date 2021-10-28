@@ -24,10 +24,12 @@
 		BC131F3D2720E85900CF0848 /* MapLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC131F3C2720E85900CF0848 /* MapLocationViewModel.swift */; };
 		BCF2A387272759B400BADEFC /* PropertyInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2A385272759B400BADEFC /* PropertyInfoViewModel.swift */; };
 		BCF2A388272759B400BADEFC /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2A386272759B400BADEFC /* PropertyInfoView.swift */; };
-		F55ACB5D2725B223004A8663 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ACB5C2725B223004A8663 /* DividerView.swift */; };
 		F5580847272745D100EEEA42 /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5580846272745D100EEEA42 /* ContactFormView.swift */; };
 		F55808492727482B00EEEA42 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55808482727482B00EEEA42 /* CustomTextField.swift */; };
 		F558084B2727768600EEEA42 /* ContactFormViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558084A2727768400EEEA42 /* ContactFormViewSnapshotTests.swift */; };
+		F55ACB5D2725B223004A8663 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ACB5C2725B223004A8663 /* DividerView.swift */; };
+		F5FB1792272B252600360024 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB1791272B252500360024 /* UITextField+Ext.swift */; };
+		F5FB1794272B266700360024 /* CustomTextFieldSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB1793272B266700360024 /* CustomTextFieldSnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +62,12 @@
 		BC131F3C2720E85900CF0848 /* MapLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewModel.swift; sourceTree = "<group>"; };
 		BCF2A385272759B400BADEFC /* PropertyInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewModel.swift; sourceTree = "<group>"; };
 		BCF2A386272759B400BADEFC /* PropertyInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
-		F55ACB5C2725B223004A8663 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		F5580846272745D100EEEA42 /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
 		F55808482727482B00EEEA42 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F558084A2727768400EEEA42 /* ContactFormViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewSnapshotTests.swift; sourceTree = "<group>"; };
+		F55ACB5C2725B223004A8663 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		F5FB1791272B252500360024 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		F5FB1793272B266700360024 /* CustomTextFieldSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldSnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,9 +170,8 @@
 		986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */ = {
 			isa = PBXGroup;
 			children = (
+				F5FB1790272B24FC00360024 /* Extensions */,
 				F55ACB5B2725B1C8004A8663 /* CustomComponents */,
-				F5ADFC88272824DC00799138 /* CustomTextField */,
-				F5580845272745A500EEEA42 /* ContactFormView */,
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
 				980C0C1A2704F1F100F8100A /* AppDelegate */,
 				980C0C172704F1D500F8100A /* Screens */,
@@ -192,7 +195,6 @@
 		9F5D43E62729C2EA00C380B0 /* ViewCodeChallenge-RealEstateTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F5D43EE2729C30D00C380B0 /* DividerViewSnapshotTests.swift */,
 				9F5D43EF2729C30D00C380B0 /* SnapshotTests */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
@@ -201,9 +203,11 @@
 		9F5D43EF2729C30D00C380B0 /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
+				9F5D43EE2729C30D00C380B0 /* DividerViewSnapshotTests.swift */,
 				9F5D43F02729C30D00C380B0 /* MapLocationViewSnapshotTests.swift */,
 				9F5D43F12729C30D00C380B0 /* PropertyInfoViewSnapshotTests.swift */,
 				F558084A2727768400EEEA42 /* ContactFormViewSnapshotTests.swift */,
+				F5FB1793272B266700360024 /* CustomTextFieldSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -226,14 +230,6 @@
 			path = PropertyInfoView;
 			sourceTree = "<group>";
 		};
-		F55ACB5B2725B1C8004A8663 /* CustomComponents */ = {
-			isa = PBXGroup;
-			children = (
-				F55ACB5C2725B223004A8663 /* DividerView.swift */,
-			);
-			path = CustomComponents;
-			sourceTree = "<group>";
-		};
 		F5580845272745A500EEEA42 /* ContactFormView */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,12 +238,38 @@
 			path = ContactFormView;
 			sourceTree = "<group>";
 		};
+		F55ACB5B2725B1C8004A8663 /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F5580845272745A500EEEA42 /* ContactFormView */,
+				F5ADFC88272824DC00799138 /* CustomTextField */,
+				F5FB178F272B24DB00360024 /* DividerView */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
 		F5ADFC88272824DC00799138 /* CustomTextField */ = {
 			isa = PBXGroup;
 			children = (
 				F55808482727482B00EEEA42 /* CustomTextField.swift */,
 			);
 			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		F5FB178F272B24DB00360024 /* DividerView */ = {
+			isa = PBXGroup;
+			children = (
+				F55ACB5C2725B223004A8663 /* DividerView.swift */,
+			);
+			path = DividerView;
+			sourceTree = "<group>";
+		};
+		F5FB1790272B24FC00360024 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB1791272B252500360024 /* UITextField+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +383,7 @@
 				F5580847272745D100EEEA42 /* ContactFormView.swift in Sources */,
 				BC131F3D2720E85900CF0848 /* MapLocationViewModel.swift in Sources */,
 				BCF2A387272759B400BADEFC /* PropertyInfoViewModel.swift in Sources */,
+				F5FB1792272B252600360024 /* UITextField+Ext.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				F55ACB5D2725B223004A8663 /* DividerView.swift in Sources */,
@@ -381,6 +404,7 @@
 				9F5D43F82729C30D00C380B0 /* MapLocationViewSnapshotTests.swift in Sources */,
 				9F5D43F72729C30D00C380B0 /* DividerViewSnapshotTests.swift in Sources */,
 				9F5D43F92729C30D00C380B0 /* PropertyInfoViewSnapshotTests.swift in Sources */,
+				F5FB1794272B266700360024 /* CustomTextFieldSnapshotTests.swift in Sources */,
 				F558084B2727768600EEEA42 /* ContactFormViewSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
