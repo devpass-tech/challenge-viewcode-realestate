@@ -9,8 +9,6 @@ import UIKit
 
 class CarouselCollectionViewCell: UICollectionViewCell {
     
-    static let cellIdentifier = "CarouselViewCell"
-    
     lazy var imageView: UIImageView = {
        
         let imageView = UIImageView()
@@ -41,9 +39,7 @@ extension CarouselCollectionViewCell: ViewProtocol {
             self.imageView.topAnchor.constraint(equalTo: self.contentView.topAnchor),
             self.imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
             self.imageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
-            self.imageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor),
-            self.imageView.heightAnchor.constraint(equalToConstant: 225),
-            self.imageView.widthAnchor.constraint(equalToConstant: 400)
+            self.imageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor)
         ])
     }
     
