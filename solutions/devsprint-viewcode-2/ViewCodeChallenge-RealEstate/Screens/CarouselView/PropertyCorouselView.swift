@@ -33,7 +33,6 @@ final class PropertyCollectionView: UIView {
     }()
     
     private var carouselData = [Property]()
-    private var currentPage = 0 
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -75,6 +74,7 @@ extension PropertyCollectionView: UICollectionViewDelegate, UICollectionViewData
         
         let cell: PropertyCollectionCell? = collectionView.dequeueReusableCell(withReuseIdentifier: PropertyCollectionCell.reuseID, for: indexPath) as?  PropertyCollectionCell
         
+        cell?.setup(image: carouselData[indexPath.section].images[indexPath.row])
         return cell ?? UICollectionViewCell()
     }
 }
