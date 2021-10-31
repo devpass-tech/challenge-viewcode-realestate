@@ -9,8 +9,16 @@ import UIKit
 
 class PropertyListViewController: UIViewController {
 
+    var mapLocationView: MapLocationView?
+    
+    override func loadView() {
+        self.mapLocationView = MapLocationView()
+        self.view = mapLocationView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
         self.view.backgroundColor = .white
 
@@ -18,7 +26,8 @@ class PropertyListViewController: UIViewController {
 
         apiClient.fetchProperties { properties in
 
-//            print(properties)
+            self.mapLocationView?.configMapLocation(geoLocation: properties[0].address.geoLocation)
+            print(properties)
         }
     }
 }
