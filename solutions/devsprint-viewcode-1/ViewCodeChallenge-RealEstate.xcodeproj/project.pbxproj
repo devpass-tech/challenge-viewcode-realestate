@@ -23,6 +23,9 @@
 		B15DEF71271F769E00C03F29 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B15DEF70271F769E00C03F29 /* SnapshotTesting */; };
 		B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */; };
 		B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */; };
+		B1E81A7A2722300A00EEC210 /* PropertyListViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */; };
+		B1E81A7C2722315B00EEC210 /* PropertyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A7B2722315B00EEC210 /* PropertyViewCell.swift */; };
+		B1E81A7F27223D3400EEC210 /* PropertyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
 		B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewViewModel.swift; sourceTree = "<group>"; };
+		B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewControllerViewModel.swift; sourceTree = "<group>"; };
+		B1E81A7B2722315B00EEC210 /* PropertyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewCell.swift; sourceTree = "<group>"; };
+		B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +125,11 @@
 		980C0C182704F1DE00F8100A /* PropertyList */ = {
 			isa = PBXGroup;
 			children = (
+				B1E81A7D27223D2400EEC210 /* ViewModels */,
 				B15DEF72271F777000C03F29 /* Views */,
+				986153D32704EE2B00838CA6 /* PropertyListViewController.swift */,
+				B1E81A7B2722315B00EEC210 /* PropertyViewCell.swift */,
+				B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */,
 			);
 			path = PropertyList;
 			sourceTree = "<group>";
@@ -225,6 +235,14 @@
 				B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */,
 			);
 			path = PropertyDescriptionView;
+			sourceTree = "<group>";
+		};
+		B1E81A7D27223D2400EEC210 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,12 +352,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E81A7A2722300A00EEC210 /* PropertyListViewControllerViewModel.swift in Sources */,
 				B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */,
 				B1377D852720BCCF00E42CFB /* DividerView.swift in Sources */,
 				B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				71F7453D27204C4B00681584 /* MapLocationView.swift in Sources */,
+				B1E81A7F27223D3400EEC210 /* PropertyListViewModel.swift in Sources */,
+				B1E81A7C2722315B00EEC210 /* PropertyViewCell.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
