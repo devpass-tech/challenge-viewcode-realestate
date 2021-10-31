@@ -26,6 +26,9 @@
 		B168D2F32725E3B70079B617 /* ClassName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168D2F22725E3B70079B617 /* ClassName+Extension.swift */; };
 		B1E81A7A2722300A00EEC210 /* PropertyListViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */; };
 		B1E81A7C2722315B00EEC210 /* PropertyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A7B2722315B00EEC210 /* PropertyViewCell.swift */; };
+		B17F16F4272A180F0087B994 /* PropertyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F16F3272A180F0087B994 /* PropertyListViewController.swift */; };
+		B17F16F6272A18C50087B994 /* PropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F16F5272A18C50087B994 /* PropertyListView.swift */; };
+		B1AF44B0272A0B3D00DC4368 /* PropertyListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AF44AF272A0B3D00DC4368 /* PropertyListViewControllerTests.swift */; };
 		B1E81A7F27223D3400EEC210 /* PropertyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		B168D2F22725E3B70079B617 /* ClassName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClassName+Extension.swift"; sourceTree = "<group>"; };
 		B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewControllerViewModel.swift; sourceTree = "<group>"; };
 		B1E81A7B2722315B00EEC210 /* PropertyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewCell.swift; sourceTree = "<group>"; };
+		B17F16F3272A180F0087B994 /* PropertyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListViewController.swift; sourceTree = "<group>"; };
+		B17F16F5272A18C50087B994 /* PropertyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListView.swift; sourceTree = "<group>"; };
+		B1AF44AF272A0B3D00DC4368 /* PropertyListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewControllerTests.swift; sourceTree = "<group>"; };
 		B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +133,7 @@
 		980C0C182704F1DE00F8100A /* PropertyList */ = {
 			isa = PBXGroup;
 			children = (
+				B17F16F7272A1B4F0087B994 /* Controllers */,
 				B1E81A7D27223D2400EEC210 /* ViewModels */,
 				B15DEF72271F777000C03F29 /* Views */,
 				B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */,
@@ -225,6 +232,7 @@
 		B15DEF72271F777000C03F29 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B17F16F5272A18C50087B994 /* PropertyListView.swift */,
 				B1377D832720BC8800E42CFB /* DividerView */,
 				B15DEF73271F777D00C03F29 /* PropertyDescriptionView */,
 			);
@@ -246,6 +254,14 @@
 				B168D2F22725E3B70079B617 /* ClassName+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B17F16F7272A1B4F0087B994 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B17F16F3272A180F0087B994 /* PropertyListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B1E81A7D27223D2400EEC210 /* ViewModels */ = {
@@ -365,11 +381,13 @@
 			files = (
 				B1E81A7A2722300A00EEC210 /* PropertyListViewControllerViewModel.swift in Sources */,
 				B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */,
+				B17F16F6272A18C50087B994 /* PropertyListView.swift in Sources */,
 				B1377D852720BCCF00E42CFB /* DividerView.swift in Sources */,
 				B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				71F7453D27204C4B00681584 /* MapLocationView.swift in Sources */,
+				B17F16F4272A180F0087B994 /* PropertyListViewController.swift in Sources */,
 				B1E81A7F27223D3400EEC210 /* PropertyListViewModel.swift in Sources */,
 				B1E81A7C2722315B00EEC210 /* PropertyViewCell.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,

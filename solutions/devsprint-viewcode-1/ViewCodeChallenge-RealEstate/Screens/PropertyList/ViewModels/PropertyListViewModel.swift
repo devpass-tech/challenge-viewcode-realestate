@@ -4,7 +4,8 @@
 //
 //  Created by Dairan on 21/10/21.
 //
-import Foundation
+
+import UIKit
 
 // MARK: - PropertyListViewModelDelegate
 
@@ -21,17 +22,7 @@ class PropertyListViewModel {
 
   init(service: RealEstateAPIClient) {
     self.service = service
-
-    service.fetchProperties { properties in
-      DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-        self.delegate?.startedLoading()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-          self.properties = properties
-          self.delegate?.stoppedLoading()
-          self.delegate?.updatedListing()
-        }
-      }
-    }
+    getProperties()
   }
 
   // MARK: Internal
@@ -42,12 +33,34 @@ class PropertyListViewModel {
     properties?.count ?? 0
   }
 
-  func property(at indexPath: IndexPath) -> Property? {
-    properties?[indexPath.row] ?? nil
+  func getProperty(at indexPath: IndexPath) -> Property? {
+    properties?[indexPath.row]
+  }
+
+  func configCell(at cell: UITableViewCell, at indexPath: IndexPath) -> UITableViewCell {
+    guard let property = getProperty(at: indexPath) else { return UITableViewCell() }
+
+    var config = cell.defaultContentConfiguration()
+    config.text = property.address.city
+    config.secondaryText = property.pricingInfos.monthlyCondoFee
+
+    cell.contentConfiguration = config
+    return cell
+  }
+
+  func getProperties() {
+    service.fetchProperties { properties in
+      self.properties = properties
+    }
   }
 
   // MARK: Private
 
-  private let service: RealEstateAPIClient
-  private var properties: [Property]?
+  private var service: RealEstateAPIClient
+
+  private var properties: [Property]? {
+    didSet {
+      self.delegate?.updatedListing()
+    }
+  }
 }
