@@ -31,6 +31,10 @@ class MapLocationView: UIView {
     
     func configSubView() {
         self.addSubview(self.mapLocation)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8aa60f6 (resolucao de conflitos no .pbxproj)
     }
     
     public func configMapLocation(geoLocation: GeoLocation) {
@@ -42,10 +46,18 @@ class MapLocationView: UIView {
         let pin = MKPointAnnotation()
         pin.coordinate = location
         self.mapLocation.addAnnotation(pin)
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 8aa60f6 (resolucao de conflitos no .pbxproj)
     }
     
     func configConstraints() {
         NSLayoutConstraint.activate([
+<<<<<<< HEAD
+=======
+            //MapLocationView
+>>>>>>> 8aa60f6 (resolucao de conflitos no .pbxproj)
             mapLocation.topAnchor.constraint(equalTo: self.topAnchor),
             mapLocation.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             mapLocation.trailingAnchor.constraint(equalTo: self.trailingAnchor),

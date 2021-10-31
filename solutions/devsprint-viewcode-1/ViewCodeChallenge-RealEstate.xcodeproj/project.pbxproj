@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */; };
-=======
->>>>>>> bf29976 (remocao do conflito no .pbxproj)
+		71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */; };
 		71F7453D27204C4B00681584 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7453C27204C4B00681584 /* MapLocationView.swift */; };
 		980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */; };
 		980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */; };
@@ -22,10 +20,7 @@
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
 		B1377D852720BCCF00E42CFB /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1377D842720BCCF00E42CFB /* DividerView.swift */; };
 		B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1377D862720BDEF00E42CFB /* DividerViewTests.swift */; };
-<<<<<<< HEAD
 		B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */; };
-=======
->>>>>>> bf29976 (remocao do conflito no .pbxproj)
 		B15DEF71271F769E00C03F29 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B15DEF70271F769E00C03F29 /* SnapshotTesting */; };
 		B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */; };
 		B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */; };
@@ -42,10 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
 		71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewTests.swift; sourceTree = "<group>"; };
-=======
->>>>>>> bf29976 (remocao do conflito no .pbxproj)
+		71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewTests.swift; sourceTree = "<group>"; };
 		71F7453C27204C4B00681584 /* MapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
 		980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstateAPIClient.swift; sourceTree = "<group>"; };
 		980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
@@ -60,10 +53,7 @@
 		B1377D842720BCCF00E42CFB /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		B1377D862720BDEF00E42CFB /* DividerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerViewTests.swift; sourceTree = "<group>"; };
 		B15DEF66271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-<<<<<<< HEAD
 		B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
-=======
->>>>>>> bf29976 (remocao do conflito no .pbxproj)
 		B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,10 +204,7 @@
 		B15DEF67271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */,
-=======
->>>>>>> bf29976 (remocao do conflito no .pbxproj)
 				B1377D862720BDEF00E42CFB /* DividerViewTests.swift */,
 				71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */,
 			);
@@ -366,11 +353,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */,
-<<<<<<< HEAD
 				71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */,
 				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
-=======
->>>>>>> bf29976 (remocao do conflito no .pbxproj)
+				71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */,
+				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
