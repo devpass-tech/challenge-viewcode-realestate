@@ -30,6 +30,8 @@
 		F55ACB5D2725B223004A8663 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ACB5C2725B223004A8663 /* DividerView.swift */; };
 		F5FB1792272B252600360024 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB1791272B252500360024 /* UITextField+Ext.swift */; };
 		F5FB1794272B266700360024 /* CustomTextFieldSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB1793272B266700360024 /* CustomTextFieldSnapshotTests.swift */; };
+		BC4459BE271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */; };
+		BC4459C6271E37E400F7E0E9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = BC4459C5271E37E400F7E0E9 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		F55ACB5C2725B223004A8663 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		F5FB1791272B252500360024 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		F5FB1793272B266700360024 /* CustomTextFieldSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldSnapshotTests.swift; sourceTree = "<group>"; };
+		BC4459BB271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +248,15 @@
 				F5580845272745A500EEEA42 /* ContactFormView */,
 				F5ADFC88272824DC00799138 /* CustomTextField */,
 				F5FB178F272B24DB00360024 /* DividerView */,
+				F55ACB5C2725B223004A8663 /* DividerView.swift */,
+		);
+			path = PropertyInfoView;
+			sourceTree = "<group>";
+		};
+		BC4459BC271E357500F7E0E9 /* ViewCodeChallenge-RealEstateTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC4459BD271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -389,7 +402,6 @@
 				F55ACB5D2725B223004A8663 /* DividerView.swift in Sources */,
 				F55808492727482B00EEEA42 /* CustomTextField.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
-				BC131F3B2720E81100CF0848 /* MapLocationView.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
@@ -406,6 +418,7 @@
 				9F5D43F92729C30D00C380B0 /* PropertyInfoViewSnapshotTests.swift in Sources */,
 				F5FB1794272B266700360024 /* CustomTextFieldSnapshotTests.swift in Sources */,
 				F558084B2727768600EEEA42 /* ContactFormViewSnapshotTests.swift in Sources */,
+				BC4459BE271E357500F7E0E9 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
