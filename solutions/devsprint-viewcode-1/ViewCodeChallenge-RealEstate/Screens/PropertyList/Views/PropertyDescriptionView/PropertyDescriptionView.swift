@@ -15,6 +15,7 @@ class PropertyDescriptionView: UIView {
   init(with viewModel: PropertyDescriptionViewViewModel) {
     self.viewModel = viewModel
     super.init(frame: .zero)
+
     configure()
     configureViews()
     configureConstraints()
@@ -34,12 +35,13 @@ class PropertyDescriptionView: UIView {
 
   // MARK: Private
 
-  private var stackView: UIStackView = {
+  private var containerStackView: UIStackView = {
     let stackView = UIStackView()
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.axis = .vertical
     stackView.distribution = .fill
     stackView.spacing = 12
+    stackView.accessibilityIdentifier = "container-Stack-View"
     return stackView
   }()
 
@@ -51,6 +53,7 @@ class PropertyDescriptionView: UIView {
     let font = UIFont.systemFont(ofSize: desc.pointSize, weight: .bold)
     label.font = metrics.scaledFont(for: font)
     label.text = viewModel.title
+    label.accessibilityIdentifier = "title-Label"
     return label
   }()
 
@@ -61,6 +64,7 @@ class PropertyDescriptionView: UIView {
     label.lineBreakMode = .byTruncatingTail
     label.font = .preferredFont(forTextStyle: .caption1)
     label.text = viewModel.description
+    label.accessibilityIdentifier = "description-Label"
     return label
   }()
 
@@ -71,6 +75,7 @@ class PropertyDescriptionView: UIView {
     button.backgroundColor = .link
     button.addTarget(self, action: #selector(didTappedButton), for: .touchUpInside)
     button.setTitle(viewModel.textButton, for: .normal)
+    button.accessibilityIdentifier = "button-Default"
     return button
   }()
 
@@ -80,7 +85,8 @@ class PropertyDescriptionView: UIView {
     let lines = calculateNumberOfLines(for: descriptionLabel, in: descriptionLabel.frame)
 
     if lines >= 5 {
-      stackView.addArrangedSubview(buttonDefault)
+      containerStackView.addArrangedSubview(buttonDefault)
+      layoutIfNeeded()
     }
   }
 
@@ -88,23 +94,26 @@ class PropertyDescriptionView: UIView {
   }
 
   private func configure() {
+    accessibilityIdentifier = "property-Description-View"
+    translatesAutoresizingMaskIntoConstraints = false
     backgroundColor = .systemBackground
   }
 
   private func configureViews() {
-    addSubview(stackView)
-    stackView.addArrangedSubview(titleLabel)
-    stackView.addArrangedSubview(descriptionLabel)
+    addSubview(containerStackView)
+    containerStackView.addArrangedSubview(titleLabel)
+    containerStackView.addArrangedSubview(descriptionLabel)
   }
 
   private func configureConstraints() {
     NSLayoutConstraint.activate([
-      stackView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
-      stackView.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor),
-      stackView.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor),
-      stackView.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor),
+      widthAnchor.constraint(equalToConstant: 400),
 
-      titleLabel.heightAnchor.constraint(equalToConstant: 30),
+      containerStackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+      containerStackView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
+      containerStackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
+      containerStackView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
+
     ])
   }
 
@@ -112,7 +121,10 @@ class PropertyDescriptionView: UIView {
     let maxSize = CGSize(width: frame.size.width, height: CGFloat(Float.infinity))
     let charSize = label.font.lineHeight
     let text = (label.text ?? "") as NSString
-    let textSize = text.boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: label.font!], context: nil)
+    let textSize = text.boundingRect(with: maxSize,
+                                     options: .usesLineFragmentOrigin,
+                                     attributes: [NSAttributedString.Key.font: label.font!],
+                                     context: nil)
     let linesRoundedUp = Int(ceil(textSize.height / charSize))
     return linesRoundedUp
   }
