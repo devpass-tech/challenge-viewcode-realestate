@@ -1,7 +1,7 @@
-<ViewCodeChallenge_RealEstate.PropertyDescriptionView; frame = (0 0; 0 0); layer = <CALayer>>
-   | <UIStackView; frame = (8 28; 0 54); layer = <CALayer>>
-   |    | <UILabel; frame = (0 0; 0 30); text = 'Descrição'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+<ViewCodeChallenge_RealEstate.PropertyDescriptionView; frame = (0 0; 400 174.333); layer = <CALayer>>
+   | <UIStackView; frame = (0 20; 400 154.333); layer = <CALayer>>
+   |    | <UILabel; frame = (0 0; 400 18); text = 'Descrição'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
    |    |    | <_UILabelContentLayer> (layer)
-   |    | <UILabel; frame = (0 42; 0 0); text = 'Mussum Ipsum, cacilds vid...'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
-   |    | <UIButton; frame = (0 54; 0 0); opaque = NO; layer = <CALayer>>
-   |    |    | <UIButtonLabel; frame = (0 -11; 0 22); text = 'Ver mais'; opaque = NO; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    | <UILabel; frame = (0 30; 400 78.3333); text = 'Mussum Ipsum, cacilds vid...'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    | <UIButton; frame = (0 120.333; 400 34); opaque = NO; layer = <CALayer>>
+   |    |    | <UIButtonLabel; frame = (165 6; 70 22); text = 'Ver mais'; opaque = NO; userInteractionEnabled = NO; layer = <_UILabelLayer>>

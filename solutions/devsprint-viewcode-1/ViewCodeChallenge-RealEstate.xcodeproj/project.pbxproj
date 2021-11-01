@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */; };
-		71F7453D27204C4B00681584 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7453C27204C4B00681584 /* MapLocationView.swift */; };
 		980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */; };
 		980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */; };
 		980C0C1F2704F3C400F8100A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1E2704F3C400F8100A /* Property.swift */; };
@@ -30,6 +28,10 @@
 		B17F16F6272A18C50087B994 /* PropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F16F5272A18C50087B994 /* PropertyListView.swift */; };
 		B1AF44B0272A0B3D00DC4368 /* PropertyListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AF44AF272A0B3D00DC4368 /* PropertyListViewControllerTests.swift */; };
 		B1E81A7F27223D3400EEC210 /* PropertyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */; };
+		B47754EC2722143C00C2F6D6 /* CarouselViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754EB2722143C00C2F6D6 /* CarouselViewTest.swift */; };
+		B47754F027221A6600C2F6D6 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */; };
+		B47754F227221A6C00C2F6D6 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754F127221A6C00C2F6D6 /* CarouselView.swift */; };
+		B47754F527221AA600C2F6D6 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754F427221AA600C2F6D6 /* ViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewTests.swift; sourceTree = "<group>"; };
-		71F7453C27204C4B00681584 /* MapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
 		980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstateAPIClient.swift; sourceTree = "<group>"; };
 		980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
 		980C0C1E2704F3C400F8100A /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
@@ -68,6 +68,10 @@
 		B17F16F5272A18C50087B994 /* PropertyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListView.swift; sourceTree = "<group>"; };
 		B1AF44AF272A0B3D00DC4368 /* PropertyListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewControllerTests.swift; sourceTree = "<group>"; };
 		B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewModel.swift; sourceTree = "<group>"; };
+		B47754EB2722143C00C2F6D6 /* CarouselViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewTest.swift; sourceTree = "<group>"; };
+		B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		B47754F127221A6C00C2F6D6 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		B47754F427221AA600C2F6D6 /* ViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,22 +93,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		71D176C32722EBF700DB0EAA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				71F7453B27204C2500681584 /* MapLocationView */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		71F7453B27204C2500681584 /* MapLocationView */ = {
-			isa = PBXGroup;
-			children = (
-				71F7453C27204C4B00681584 /* MapLocationView.swift */,
-			);
-			path = MapLocationView;
-			sourceTree = "<group>";
-		};
 		980C0C062704F1C700F8100A /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +134,6 @@
 		980C0C192704F1E800F8100A /* PropertyDetails */ = {
 			isa = PBXGroup;
 			children = (
-				71D176C32722EBF700DB0EAA /* Views */,
 				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
 			);
 			path = PropertyDetails;
@@ -190,6 +177,7 @@
 		986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */ = {
 			isa = PBXGroup;
 			children = (
+				B47754F327221A9F00C2F6D6 /* Protocols */,
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
 				980C0C1A2704F1F100F8100A /* AppDelegate */,
 				980C0C172704F1D500F8100A /* Screens */,
@@ -224,7 +212,6 @@
 			children = (
 				B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */,
 				B1377D862720BDEF00E42CFB /* DividerViewTests.swift */,
-				71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
 			sourceTree = "<group>";
@@ -270,6 +257,39 @@
 				B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */,
 			);
 			path = ViewModels;
+      sourceTree = "<group>";
+		};
+		B44A6546272246720018179A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B47754ED27221A5700C2F6D6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B47754EE27221A6000C2F6D6 /* CarouselView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B47754EE27221A6000C2F6D6 /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				B44A6546272246720018179A /* Cells */,
+				B47754F127221A6C00C2F6D6 /* CarouselView.swift */,
+			);
+			path = CarouselView;
+			sourceTree = "<group>";
+		};
+		B47754F327221A9F00C2F6D6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B47754F427221AA600C2F6D6 /* ViewProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,11 +400,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E81A7A2722300A00EEC210 /* PropertyListViewControllerViewModel.swift in Sources */,
+				B47754F227221A6C00C2F6D6 /* CarouselView.swift in Sources */,
 				B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */,
 				B17F16F6272A18C50087B994 /* PropertyListView.swift in Sources */,
 				B1377D852720BCCF00E42CFB /* DividerView.swift in Sources */,
 				B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
+				B47754F027221A6600C2F6D6 /* CarouselCollectionViewCell.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				71F7453D27204C4B00681584 /* MapLocationView.swift in Sources */,
 				B17F16F4272A180F0087B994 /* PropertyListViewController.swift in Sources */,
@@ -393,6 +415,7 @@
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				B168D2F32725E3B70079B617 /* ClassName+Extension.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
+				B47754F527221AA600C2F6D6 /* ViewProtocol.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,7 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */,
-				71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */,
+				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

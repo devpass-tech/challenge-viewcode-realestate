@@ -22,6 +22,9 @@
 		9F5D43FE2729C48C00C380B0 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9F5D43FD2729C48C00C380B0 /* SnapshotTesting */; };
 		BC131F3B2720E81100CF0848 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC131F3A2720E81100CF0848 /* MapLocationView.swift */; };
 		BC131F3D2720E85900CF0848 /* MapLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC131F3C2720E85900CF0848 /* MapLocationViewModel.swift */; };
+		BC4658BD272CA35E00371C5A /* CollectionPropertySnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4658BC272CA35E00371C5A /* CollectionPropertySnapshotTests.swift */; };
+		BC4658C0272CA4D600371C5A /* PropertyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4658BF272CA4D600371C5A /* PropertyCollectionCell.swift */; };
+		BC4658C3272CA4E900371C5A /* PropertyCorouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4658C2272CA4E900371C5A /* PropertyCorouselView.swift */; };
 		BCF2A387272759B400BADEFC /* PropertyInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2A385272759B400BADEFC /* PropertyInfoViewModel.swift */; };
 		BCF2A388272759B400BADEFC /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2A386272759B400BADEFC /* PropertyInfoView.swift */; };
 		F5580847272745D100EEEA42 /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5580846272745D100EEEA42 /* ContactFormView.swift */; };
@@ -62,6 +65,9 @@
 		9F5D43F12729C30D00C380B0 /* PropertyInfoViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewSnapshotTests.swift; sourceTree = "<group>"; };
 		BC131F3A2720E81100CF0848 /* MapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
 		BC131F3C2720E85900CF0848 /* MapLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewModel.swift; sourceTree = "<group>"; };
+		BC4658BC272CA35E00371C5A /* CollectionPropertySnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPropertySnapshotTests.swift; sourceTree = "<group>"; };
+		BC4658BF272CA4D600371C5A /* PropertyCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyCollectionCell.swift; sourceTree = "<group>"; };
+		BC4658C2272CA4E900371C5A /* PropertyCorouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyCorouselView.swift; sourceTree = "<group>"; };
 		BCF2A385272759B400BADEFC /* PropertyInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewModel.swift; sourceTree = "<group>"; };
 		BCF2A386272759B400BADEFC /* PropertyInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
 		F5580846272745D100EEEA42 /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
@@ -112,6 +118,8 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				BC4658C1272CA4E900371C5A /* CarouselView */,
+				BC4658BE272CA4D600371C5A /* Components */,
 				BCF2A384272759B400BADEFC /* PropertyInfoView */,
 				BC131F392720E7DD00CF0848 /* MapLocation */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
@@ -207,6 +215,7 @@
 		9F5D43EF2729C30D00C380B0 /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
+				BC4658BC272CA35E00371C5A /* CollectionPropertySnapshotTests.swift */,
 				9F5D43EE2729C30D00C380B0 /* DividerViewSnapshotTests.swift */,
 				9F5D43F02729C30D00C380B0 /* MapLocationViewSnapshotTests.swift */,
 				9F5D43F12729C30D00C380B0 /* PropertyInfoViewSnapshotTests.swift */,
@@ -223,6 +232,22 @@
 				BC131F3C2720E85900CF0848 /* MapLocationViewModel.swift */,
 			);
 			path = MapLocation;
+			sourceTree = "<group>";
+		};
+		BC4658BE272CA4D600371C5A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BC4658BF272CA4D600371C5A /* PropertyCollectionCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BC4658C1272CA4E900371C5A /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				BC4658C2272CA4E900371C5A /* PropertyCorouselView.swift */,
+			);
+			path = CarouselView;
 			sourceTree = "<group>";
 		};
 		BCF2A384272759B400BADEFC /* PropertyInfoView */ = {
@@ -393,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4658C0272CA4D600371C5A /* PropertyCollectionCell.swift in Sources */,
 				F5580847272745D100EEEA42 /* ContactFormView.swift in Sources */,
 				BC131F3D2720E85900CF0848 /* MapLocationViewModel.swift in Sources */,
 				BCF2A387272759B400BADEFC /* PropertyInfoViewModel.swift in Sources */,
@@ -402,6 +428,8 @@
 				F55ACB5D2725B223004A8663 /* DividerView.swift in Sources */,
 				F55808492727482B00EEEA42 /* CustomTextField.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
+				BC131F3B2720E81100CF0848 /* MapLocationView.swift in Sources */,
+				BC4658C3272CA4E900371C5A /* PropertyCorouselView.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
@@ -413,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4658BD272CA35E00371C5A /* CollectionPropertySnapshotTests.swift in Sources */,
 				9F5D43F82729C30D00C380B0 /* MapLocationViewSnapshotTests.swift in Sources */,
 				9F5D43F72729C30D00C380B0 /* DividerViewSnapshotTests.swift in Sources */,
 				9F5D43F92729C30D00C380B0 /* PropertyInfoViewSnapshotTests.swift in Sources */,
