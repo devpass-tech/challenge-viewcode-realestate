@@ -1,0 +1,98 @@
+<ViewCodeChallenge_RealEstate.PropertyListView; frame = (0 0; 414 736); autoresize = W+H; layer = <CALayer>>
+   | <UITableView; frame = (0 0; 414 736); clipsToBounds = YES; gestureRecognizers = <NSArray>; layer = <CALayer>; contentOffset: {0, -20}; contentSize: {414, 1950.6666666666667}; adjustedContentInset: {20, 0, 0, 0}; dataSource: <ViewCodeChallenge_RealEstate.PropertyListView; frame = (0 0; 414 736); autoresize = W+H; layer = <CALayer>>>
+   |    | <UITableViewCell; frame = (0 688.667; 414 60); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 60); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 60); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 60); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = "São Paulo"; secondaryText = "650">>
+   |    |    |    | <UILabel; frame = (20 11; 75.3333 20.3333); text = 'São Paulo'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 34.3333; 22.6667 14.3333); text = '650'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 59.6667; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 628.667; 414 60); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 60); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 60); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 60); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = "São Paulo"; secondaryText = "0">>
+   |    |    |    | <UILabel; frame = (20 11; 75.3333 20.3333); text = 'São Paulo'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 34.3333; 7.66667 14.3333); text = '0'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 59.6667; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 568.667; 414 60); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 60); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 60); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 60); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = "São Paulo"; secondaryText = "365">>
+   |    |    |    | <UILabel; frame = (20 11; 75.3333 20.3333); text = 'São Paulo'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 34.3333; 22.6667 14.3333); text = '365'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 59.6667; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 508.667; 414 60); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 60); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 60); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 60); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = "São Paulo"; secondaryText = "1137">>
+   |    |    |    | <UILabel; frame = (20 11; 75.3333 20.3333); text = 'São Paulo'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 34.3333; 25.6667 14.3333); text = '1137'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 59.6667; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 448.667; 414 60); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 60); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 60); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 60); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = "São Paulo"; secondaryText = "0">>
+   |    |    |    | <UILabel; frame = (20 11; 75.3333 20.3333); text = 'São Paulo'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 34.3333; 7.66667 14.3333); text = '0'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 59.6667; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 388.667; 414 60); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 60); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 60); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 60); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = "São Paulo"; secondaryText = "0">>
+   |    |    |    | <UILabel; frame = (20 11; 75.3333 20.3333); text = 'São Paulo'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 34.3333; 7.66667 14.3333); text = '0'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 59.6667; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 328.667; 414 60); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 60); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 60); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 60); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = "São Paulo"; secondaryText = "1250">>
+   |    |    |    | <UILabel; frame = (20 11; 75.3333 20.3333); text = 'São Paulo'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 34.3333; 28 14.3333); text = '1250'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 59.6667; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 268.667; 414 60); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 60); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 60); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 60); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = "São Paulo"; secondaryText = "590">>
+   |    |    |    | <UILabel; frame = (20 11; 75.3333 20.3333); text = 'São Paulo'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 34.3333; 22.6667 14.3333); text = '590'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 59.6667; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 208.667; 414 60); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 60); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 60); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 60); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = "São Paulo"; secondaryText = "260">>
+   |    |    |    | <UILabel; frame = (20 11; 75.3333 20.3333); text = 'São Paulo'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 34.3333; 22.6667 14.3333); text = '260'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 59.6667; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 148.667; 414 60); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 60); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 60); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 60); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = "São Paulo"; secondaryText = "1100">>
+   |    |    |    | <UILabel; frame = (20 11; 75.3333 20.3333); text = 'São Paulo'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 34.3333; 26.3333 14.3333); text = '1100'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 59.6667; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 88.6667; 414 60); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 60); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 60); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 60); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = "São Paulo"; secondaryText = "940">>
+   |    |    |    | <UILabel; frame = (20 11; 75.3333 20.3333); text = 'São Paulo'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 34.3333; 23 14.3333); text = '940'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 59.6667; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 44.3333; 414 44.3333); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 44.3333); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 44.3333); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 44.3333); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = ""; secondaryText = "495">>
+   |    |    |    | <UILabel; frame = (20 13.3333; 0 0); text = ''; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 16.3333; 23 14.3333); text = '495'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 44; 394 0.333333); layer = <CALayer>>
+   |    | <UITableViewCell; frame = (0 0; 414 44.3333); autoresize = W; layer = <CALayer>>
+   |    |    | <_UISystemBackgroundView; frame = (0 0; 414 44.3333); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    | <UIView; frame = (0 0; 414 44.3333); layer = <CALayer>>
+   |    |    | <UIListContentView; frame = (0 0; 414 44.3333); gestureRecognizers = <NSArray>; layer = <CALayer>; configuration = <UIListContentConfiguration; text = ""; secondaryText = "0">>
+   |    |    |    | <UILabel; frame = (20 13.3333; 0 0); text = ''; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (20 16.3333; 7.66667 14.3333); text = '0'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (20 44; 394 0.333333); layer = <CALayer>>
+   |    | <UIView; frame = (0 1950.67; 414 0); layer = <CALayer>>
+   |    | <_UIScrollViewScrollIndicator; frame = (408 3; 3 268.667); alpha = 0; autoresize = LM; layer = <CALayer>>
+   |    |    | <UIView; frame = (0 0; 3 268.667); layer = <CALayer>>
+   |    | <_UIScrollViewScrollIndicator; frame = (3 710; 405 3); alpha = 0; autoresize = TM; layer = <CALayer>>
+   |    |    | <UIView; frame = (0 0; 405 3); layer = <CALayer>>
