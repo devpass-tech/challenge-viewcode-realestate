@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
- feature/ImplementarMapLocationView
 		71D8C7182722F1A0002E2C91 /* MapLocationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */; };
 		71F7453D27204C4B00681584 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7453C27204C4B00681584 /* MapLocationView.swift */; };
-
-		130328C627219C3C00A9C505 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130328C527219C3C00A9C505 /* ButtonView.swift */; };
-		130328CB2721A59600A9C505 /* ButtonViewSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130328CA2721A59600A9C505 /* ButtonViewSnapshotTest.swift */; };
- main
 		980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */; };
 		980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */; };
 		980C0C1F2704F3C400F8100A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1E2704F3C400F8100A /* Property.swift */; };
@@ -41,13 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
- feature/ImplementarMapLocationView
 		71D8C7172722F1A0002E2C91 /* MapLocationViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewTests.swift; sourceTree = "<group>"; };
 		71F7453C27204C4B00681584 /* MapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
-
-		130328C527219C3C00A9C505 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		130328CA2721A59600A9C505 /* ButtonViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewSnapshotTest.swift; sourceTree = "<group>"; };
-  main
 		980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstateAPIClient.swift; sourceTree = "<group>"; };
 		980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
 		980C0C1E2704F3C400F8100A /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
@@ -85,7 +75,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
- feature/ImplementarMapLocationView
 		71D176C32722EBF700DB0EAA /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,22 +89,6 @@
 				71F7453C27204C4B00681584 /* MapLocationView.swift */,
 			);
 			path = MapLocationView;
-
-		130328C427219C1400A9C505 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				130328C727219DF000A9C505 /* ButtonView */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		130328C727219DF000A9C505 /* ButtonView */ = {
-			isa = PBXGroup;
-			children = (
-				130328C527219C3C00A9C505 /* ButtonView.swift */,
-			);
-			path = ButtonView;
-  main
 			sourceTree = "<group>";
 		};
 		980C0C062704F1C700F8100A /* DataManager */ = {
@@ -137,7 +110,6 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				130328C427219C1400A9C505 /* Components */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 			);
@@ -371,7 +343,6 @@
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
-				130328C627219C3C00A9C505 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
