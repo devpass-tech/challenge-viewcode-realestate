@@ -15,14 +15,26 @@
 		980C0C1F2704F3C400F8100A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1E2704F3C400F8100A /* Property.swift */; };
 		986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153CF2704EE2B00838CA6 /* AppDelegate.swift */; };
 		986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153D12704EE2B00838CA6 /* SceneDelegate.swift */; };
-		986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153D32704EE2B00838CA6 /* PropertyListViewController.swift */; };
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		B1377D852720BCCF00E42CFB /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1377D842720BCCF00E42CFB /* DividerView.swift */; };
+		B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1377D862720BDEF00E42CFB /* DividerViewTests.swift */; };
 		B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */; };
 		B15DEF71271F769E00C03F29 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B15DEF70271F769E00C03F29 /* SnapshotTesting */; };
 		B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */; };
 		B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */; };
+		B168D2F32725E3B70079B617 /* ClassName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168D2F22725E3B70079B617 /* ClassName+Extension.swift */; };
+		B1E81A7A2722300A00EEC210 /* PropertyListViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */; };
+		B1E81A7C2722315B00EEC210 /* PropertyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A7B2722315B00EEC210 /* PropertyViewCell.swift */; };
+		B17F16F4272A180F0087B994 /* PropertyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F16F3272A180F0087B994 /* PropertyListViewController.swift */; };
+		B17F16F6272A18C50087B994 /* PropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F16F5272A18C50087B994 /* PropertyListView.swift */; };
+		B1AF44B0272A0B3D00DC4368 /* PropertyListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AF44AF272A0B3D00DC4368 /* PropertyListViewControllerTests.swift */; };
+		B1E81A7F27223D3400EEC210 /* PropertyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */; };
+		B47754EC2722143C00C2F6D6 /* CarouselViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754EB2722143C00C2F6D6 /* CarouselViewTest.swift */; };
+		B47754F027221A6600C2F6D6 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */; };
+		B47754F227221A6C00C2F6D6 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754F127221A6C00C2F6D6 /* CarouselView.swift */; };
+		B47754F527221AA600C2F6D6 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47754F427221AA600C2F6D6 /* ViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,15 +57,27 @@
 		986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewCodeChallenge-RealEstate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		986153CF2704EE2B00838CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		986153D12704EE2B00838CA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		986153D32704EE2B00838CA6 /* PropertyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewController.swift; sourceTree = "<group>"; };
 		986153D82704EE2F00838CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
+		B1377D842720BCCF00E42CFB /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		B1377D862720BDEF00E42CFB /* DividerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerViewTests.swift; sourceTree = "<group>"; };
 		B15DEF66271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
 		B15DEF74271F778600C03F29 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewViewModel.swift; sourceTree = "<group>"; };
+		B168D2F22725E3B70079B617 /* ClassName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClassName+Extension.swift"; sourceTree = "<group>"; };
+		B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewControllerViewModel.swift; sourceTree = "<group>"; };
+		B1E81A7B2722315B00EEC210 /* PropertyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewCell.swift; sourceTree = "<group>"; };
+		B17F16F3272A180F0087B994 /* PropertyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListViewController.swift; sourceTree = "<group>"; };
+		B17F16F5272A18C50087B994 /* PropertyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListView.swift; sourceTree = "<group>"; };
+		B1AF44AF272A0B3D00DC4368 /* PropertyListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewControllerTests.swift; sourceTree = "<group>"; };
+		B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewModel.swift; sourceTree = "<group>"; };
+		B47754EB2722143C00C2F6D6 /* CarouselViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewTest.swift; sourceTree = "<group>"; };
+		B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		B47754F127221A6C00C2F6D6 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		B47754F427221AA600C2F6D6 /* ViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +137,12 @@
 		980C0C182704F1DE00F8100A /* PropertyList */ = {
 			isa = PBXGroup;
 			children = (
+				B17F16F7272A1B4F0087B994 /* Controllers */,
+				B1E81A7D27223D2400EEC210 /* ViewModels */,
 				B15DEF72271F777000C03F29 /* Views */,
+				B1E81A792722300A00EEC210 /* PropertyListViewControllerViewModel.swift */,
 				986153D32704EE2B00838CA6 /* PropertyListViewController.swift */,
+				B1E81A7B2722315B00EEC210 /* PropertyViewCell.swift */,
 			);
 			path = PropertyList;
 			sourceTree = "<group>";
@@ -165,11 +193,13 @@
 		986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */ = {
 			isa = PBXGroup;
 			children = (
+				B47754F327221A9F00C2F6D6 /* Protocols */,
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
 				980C0C1A2704F1F100F8100A /* AppDelegate */,
 				980C0C172704F1D500F8100A /* Screens */,
 				980C0C062704F1C700F8100A /* DataManager */,
 				980C0C1D2704F29100F8100A /* Models */,
+				B168D2F12725E3100079B617 /* Extensions */,
 			);
 			path = "ViewCodeChallenge-RealEstate";
 			sourceTree = "<group>";
@@ -185,11 +215,20 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B1377D832720BC8800E42CFB /* DividerView */ = {
+			isa = PBXGroup;
+			children = (
+				B1377D842720BCCF00E42CFB /* DividerView.swift */,
+			);
+			path = DividerView;
+			sourceTree = "<group>";
+		};
 		B15DEF67271F762C00C03F29 /* ViewCodeChallenge-RealEstateTests */ = {
 			isa = PBXGroup;
 			children = (
 				B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */,
 				5ADD560F2721B61300839CD0 /* PropertyInfoViewTests.swift */,
+				B1377D862720BDEF00E42CFB /* DividerViewTests.swift */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
 			sourceTree = "<group>";
@@ -197,6 +236,8 @@
 		B15DEF72271F777000C03F29 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B17F16F5272A18C50087B994 /* PropertyListView.swift */,
+				B1377D832720BC8800E42CFB /* DividerView */,
 				B15DEF73271F777D00C03F29 /* PropertyDescriptionView */,
 			);
 			path = Views;
@@ -209,6 +250,63 @@
 				B15DEF75271F778700C03F29 /* PropertyDescriptionViewViewModel.swift */,
 			);
 			path = PropertyDescriptionView;
+			sourceTree = "<group>";
+		};
+		B168D2F12725E3100079B617 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B168D2F22725E3B70079B617 /* ClassName+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B17F16F7272A1B4F0087B994 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B17F16F3272A180F0087B994 /* PropertyListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B1E81A7D27223D2400EEC210 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B1E81A7E27223D3400EEC210 /* PropertyListViewModel.swift */,
+			);
+			path = ViewModels;
+      sourceTree = "<group>";
+		};
+		B44A6546272246720018179A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B47754EF27221A6600C2F6D6 /* CarouselCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B47754ED27221A5700C2F6D6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B47754EE27221A6000C2F6D6 /* CarouselView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B47754EE27221A6000C2F6D6 /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				B44A6546272246720018179A /* Cells */,
+				B47754F127221A6C00C2F6D6 /* CarouselView.swift */,
+			);
+			path = CarouselView;
+			sourceTree = "<group>";
+		};
+		B47754F327221A9F00C2F6D6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B47754F427221AA600C2F6D6 /* ViewProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,14 +416,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E81A7A2722300A00EEC210 /* PropertyListViewControllerViewModel.swift in Sources */,
+				B47754F227221A6C00C2F6D6 /* CarouselView.swift in Sources */,
 				B15DEF76271F778700C03F29 /* PropertyDescriptionView.swift in Sources */,
+				B17F16F6272A18C50087B994 /* PropertyListView.swift in Sources */,
+				B1377D852720BCCF00E42CFB /* DividerView.swift in Sources */,
 				B15DEF77271F778700C03F29 /* PropertyDescriptionViewViewModel.swift in Sources */,
-				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
+				B47754F027221A6600C2F6D6 /* CarouselCollectionViewCell.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				5ADD560C2721B57700839CD0 /* PropertyInfoView.swift in Sources */,
+				71F7453D27204C4B00681584 /* MapLocationView.swift in Sources */,
+				B17F16F4272A180F0087B994 /* PropertyListViewController.swift in Sources */,
+				B1E81A7F27223D3400EEC210 /* PropertyListViewModel.swift in Sources */,
+				B1E81A7C2722315B00EEC210 /* PropertyViewCell.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
+				B168D2F32725E3B70079B617 /* ClassName+Extension.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
+				B47754F527221AA600C2F6D6 /* ViewProtocol.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				5ADD560E2721B5AF00839CD0 /* PropertyInfoViewModel.swift in Sources */,
 			);
@@ -335,6 +443,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */,
+				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 				5ADD56102721B61300839CD0 /* PropertyInfoViewTests.swift in Sources */,
 			);

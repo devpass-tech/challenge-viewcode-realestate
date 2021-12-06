@@ -1,5 +1,5 @@
-<ViewCodeChallenge_RealEstate.PropertyDescriptionView; frame = (0 0; 0 0); layer = <CALayer>>
-   | <UIStackView; frame = (8 28; 0 42); layer = <CALayer>>
-   |    | <UILabel; frame = (0 0; 0 30); text = 'Descrição'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+<ViewCodeChallenge_RealEstate.PropertyDescriptionView; frame = (0 0; 400 80.3333); layer = <CALayer>>
+   | <UIStackView; frame = (0 20; 400 60.3333); layer = <CALayer>>
+   |    | <UILabel; frame = (0 0; 400 18); text = 'Descrição'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
    |    |    | <_UILabelContentLayer> (layer)
-   |    | <UILabel; frame = (0 42; 0 0); text = 'Casamentiss faiz malandri...'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    | <UILabel; frame = (0 30; 400 30.3333); text = 'Casamentiss faiz malandri...'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
