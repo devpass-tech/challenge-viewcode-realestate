@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ADD560C2721B57700839CD0 /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD560B2721B57700839CD0 /* PropertyInfoView.swift */; };
+		5ADD560E2721B5AF00839CD0 /* PropertyInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD560D2721B5AF00839CD0 /* PropertyInfoViewModel.swift */; };
+		5ADD56102721B61300839CD0 /* PropertyInfoViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD560F2721B61300839CD0 /* PropertyInfoViewTests.swift */; };
 		980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */; };
 		980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */; };
 		980C0C1F2704F3C400F8100A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1E2704F3C400F8100A /* Property.swift */; };
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5ADD560B2721B57700839CD0 /* PropertyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
+		5ADD560D2721B5AF00839CD0 /* PropertyInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewModel.swift; sourceTree = "<group>"; };
+		5ADD560F2721B61300839CD0 /* PropertyInfoViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewTests.swift; sourceTree = "<group>"; };
 		980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstateAPIClient.swift; sourceTree = "<group>"; };
 		980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
 		980C0C1E2704F3C400F8100A /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
@@ -93,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5ADD560A2721B4AC00839CD0 /* PropertyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				5ADD560B2721B57700839CD0 /* PropertyInfoView.swift */,
+				5ADD560D2721B5AF00839CD0 /* PropertyInfoViewModel.swift */,
+			);
+			path = PropertyInfo;
+			sourceTree = "<group>";
+		};
 		980C0C062704F1C700F8100A /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +127,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5ADD560A2721B4AC00839CD0 /* PropertyInfo */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 			);
@@ -211,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				B15DEF68271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift */,
+				5ADD560F2721B61300839CD0 /* PropertyInfoViewTests.swift */,
 				B1377D862720BDEF00E42CFB /* DividerViewTests.swift */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
@@ -408,6 +425,7 @@
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				B47754F027221A6600C2F6D6 /* CarouselCollectionViewCell.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
+				5ADD560C2721B57700839CD0 /* PropertyInfoView.swift in Sources */,
 				71F7453D27204C4B00681584 /* MapLocationView.swift in Sources */,
 				B17F16F4272A180F0087B994 /* PropertyListViewController.swift in Sources */,
 				B1E81A7F27223D3400EEC210 /* PropertyListViewModel.swift in Sources */,
@@ -417,6 +435,7 @@
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				B47754F527221AA600C2F6D6 /* ViewProtocol.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				5ADD560E2721B5AF00839CD0 /* PropertyInfoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +446,7 @@
 				B1377D872720BDEF00E42CFB /* DividerViewTests.swift in Sources */,
 				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 				B15DEF69271F762C00C03F29 /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
+				5ADD56102721B61300839CD0 /* PropertyInfoViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +595,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = 2APF6AH5C2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ViewCodeChallenge-RealEstate/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -602,7 +622,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = 2APF6AH5C2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ViewCodeChallenge-RealEstate/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
