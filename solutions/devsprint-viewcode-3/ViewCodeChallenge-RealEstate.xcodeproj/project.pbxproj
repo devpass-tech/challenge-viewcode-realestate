@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
+		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
+		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
+		980789DC275EA40200CED39A /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789DB275EA40200CED39A /* ViewCode.swift */; };
 		980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */; };
 		980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */; };
 		980C0C1F2704F3C400F8100A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1E2704F3C400F8100A /* Property.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		980789DB275EA40200CED39A /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstateAPIClient.swift; sourceTree = "<group>"; };
 		980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
 		980C0C1E2704F3C400F8100A /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
@@ -43,6 +51,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		980789C9275E8F8E00CED39A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				980789CA275E8FAF00CED39A /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		980789CC275E942300CED39A /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				980789CD275E943C00CED39A /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		980789D7275EA3BC00CED39A /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				980789D8275EA3C900CED39A /* AccountViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		980789DA275EA3EE00CED39A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				980789DB275EA40200CED39A /* ViewCode.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		980C0C062704F1C700F8100A /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +104,9 @@
 			children = (
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
+				980789CC275E942300CED39A /* Favorites */,
+				980789C9275E8F8E00CED39A /* Settings */,
+				980789D7275EA3BC00CED39A /* Account */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -125,6 +168,7 @@
 				980C0C172704F1D500F8100A /* Screens */,
 				980C0C062704F1C700F8100A /* DataManager */,
 				980C0C1D2704F29100F8100A /* Models */,
+				980789DA275EA3EE00CED39A /* Protocols */,
 			);
 			path = "ViewCodeChallenge-RealEstate";
 			sourceTree = "<group>";
@@ -212,11 +256,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
+				980789DC275EA40200CED39A /* ViewCode.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
+				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
+				980789CB275E8FAF00CED39A /* Settings.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
