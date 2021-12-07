@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		78BD9057A1FB8D2DBBABB1A1 /* Pods_ViewCodeChallenge_RealEstateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */; };
+		5B821DFE275FA2C600E5DFEF /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B821DFD275FA2C600E5DFEF /* DividerView.swift */; };
+		5B821E02275FD31100E5DFEF /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B821E01275FD31100E5DFEF /* UIViewPreview.swift */; };
 		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
 		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
@@ -39,6 +41,8 @@
 		17C8AC21B918A0A4A97A1C63 /* Pods-ViewCodeChallenge-RealEstate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstate.debug.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstate/Pods-ViewCodeChallenge-RealEstate.debug.xcconfig"; sourceTree = "<group>"; };
 		2D9029D3074EB85D8EC9AF96 /* Pods-ViewCodeChallenge-RealEstateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstateTests.debug.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeChallenge_RealEstate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B821DFD275FA2C600E5DFEF /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		5B821E01275FD31100E5DFEF /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,22 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		}
+		5B821DFC275FA2B900E5DFEF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5B821DFD275FA2C600E5DFEF /* DividerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5B821E00275FD2FF00E5DFEF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5B821E01275FD31100E5DFEF /* UIViewPreview.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
 		};
 		980789C9275E8F8E00CED39A /* Settings */ = {
 			isa = PBXGroup;
@@ -122,13 +142,6 @@
 				980789DB275EA40200CED39A /* ViewCode.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		980789DD275EC49000CED39A /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		980C0C062704F1C700F8100A /* DataManager */ = {
@@ -215,9 +228,10 @@
 		986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */ = {
 			isa = PBXGroup;
 			children = (
+				5B821E00275FD2FF00E5DFEF /* Utils */,
+				5B821DFC275FA2B900E5DFEF /* Components */,
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
 				980C0C1A2704F1F100F8100A /* AppDelegate */,
-				980789DD275EC49000CED39A /* Components */,
 				980C0C172704F1D500F8100A /* Screens */,
 				980C0C062704F1C700F8100A /* DataManager */,
 				980C0C1D2704F29100F8100A /* Models */,
@@ -422,10 +436,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B821DFE275FA2C600E5DFEF /* DividerView.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				980789DC275EA40200CED39A /* ViewCode.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
+				5B821E02275FD31100E5DFEF /* UIViewPreview.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980789CB275E8FAF00CED39A /* Settings.swift in Sources */,
