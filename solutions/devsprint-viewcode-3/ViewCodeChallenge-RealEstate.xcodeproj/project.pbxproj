@@ -20,6 +20,8 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		B1907815275ED59300A344B7 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1907814275ED59300A344B7 /* CarouselView.swift */; };
+		B1907827275EDDC700A344B7 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1907826275EDDC700A344B7 /* CarouselCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
+		B1907814275ED59300A344B7 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		B1907826275EDDC700A344B7 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		980789DD275EC49000CED39A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B1907813275ED58300A344B7 /* CarouselView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -192,6 +197,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B1907813275ED58300A344B7 /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				B1907814275ED59300A344B7 /* CarouselView.swift */,
+				B1907826275EDDC700A344B7 /* CarouselCollectionViewCell.swift */,
+			);
+			path = CarouselView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,7 +233,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					986153CB2704EE2B00838CA6 = {
@@ -236,6 +250,8 @@
 				Base,
 			);
 			mainGroup = 986153C32704EE2B00838CA6;
+			packageReferences = (
+			);
 			productRefGroup = 986153CD2704EE2B00838CA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -265,7 +281,9 @@
 			files = (
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				980789DC275EA40200CED39A /* ViewCode.swift in Sources */,
+				B1907815275ED59300A344B7 /* CarouselView.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
+				B1907827275EDDC700A344B7 /* CarouselCollectionViewCell.swift in Sources */,
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
