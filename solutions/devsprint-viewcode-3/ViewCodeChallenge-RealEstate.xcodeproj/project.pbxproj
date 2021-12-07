@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78BD9057A1FB8D2DBBABB1A1 /* Pods_ViewCodeChallenge_RealEstateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */; };
 		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
 		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
@@ -20,11 +21,26 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		B12570B0275FADC000D8CAB3 /* CarouselView_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12570AF275FADC000D8CAB3 /* CarouselView_Tests.swift */; };
 		B1907815275ED59300A344B7 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1907814275ED59300A344B7 /* CarouselView.swift */; };
 		B1907827275EDDC700A344B7 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1907826275EDDC700A344B7 /* CarouselCollectionViewCell.swift */; };
+		BA0E622192F02A954B644344 /* Pods_ViewCodeChallenge_RealEstate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */; };
+		E5D24EFF275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D24EFE275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E5D24F00275F8E8400E54F9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 986153C42704EE2B00838CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 986153CB2704EE2B00838CA6;
+			remoteInfo = "ViewCodeChallenge-RealEstate";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5CECF823CCAAF6BBED8C9E56 /* Pods-ViewCodeChallenge-RealEstate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstate.debug.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstate/Pods-ViewCodeChallenge-RealEstate.debug.xcconfig"; sourceTree = "<group>"; };
+		823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeChallenge_RealEstate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -40,8 +56,15 @@
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
+		9CBFFC21F22F882A8493875E /* Pods-ViewCodeChallenge-RealEstate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstate.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstate/Pods-ViewCodeChallenge-RealEstate.release.xcconfig"; sourceTree = "<group>"; };
+		B12570AF275FADC000D8CAB3 /* CarouselView_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView_Tests.swift; sourceTree = "<group>"; };
 		B1907814275ED59300A344B7 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		B1907826275EDDC700A344B7 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		C0F77C1694D966A39B35CC75 /* Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeChallenge_RealEstateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D24EFC275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D24EFE275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
+		EE855243731EEC6E244B5179 /* Pods-ViewCodeChallenge-RealEstateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstateTests.debug.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +72,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0E622192F02A954B644344 /* Pods_ViewCodeChallenge_RealEstate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D24EF9275F8E8400E54F9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78BD9057A1FB8D2DBBABB1A1 /* Pods_ViewCodeChallenge_RealEstateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +192,10 @@
 			isa = PBXGroup;
 			children = (
 				986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */,
+				E5D24EFD275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests */,
 				986153CD2704EE2B00838CA6 /* Products */,
+				A7C45A09BE88FB7633158067 /* Frameworks */,
+				AD6E1B54186B28D3B0665D19 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */,
+				E5D24EFC275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,6 +233,26 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A7C45A09BE88FB7633158067 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */,
+				DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD6E1B54186B28D3B0665D19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CECF823CCAAF6BBED8C9E56 /* Pods-ViewCodeChallenge-RealEstate.debug.xcconfig */,
+				9CBFFC21F22F882A8493875E /* Pods-ViewCodeChallenge-RealEstate.release.xcconfig */,
+				EE855243731EEC6E244B5179 /* Pods-ViewCodeChallenge-RealEstateTests.debug.xcconfig */,
+				C0F77C1694D966A39B35CC75 /* Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B1907813275ED58300A344B7 /* CarouselView */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +262,15 @@
 			path = CarouselView;
 			sourceTree = "<group>";
 		};
+		E5D24EFD275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5D24EFE275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift */,
+				B12570AF275FADC000D8CAB3 /* CarouselView_Tests.swift */,
+			);
+			path = "ViewCodeChallenge-RealEstateTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 986153E02704EE3000838CA6 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstate" */;
 			buildPhases = (
+				3E56C0B5E53897A525B0A66B /* [CP] Check Pods Manifest.lock */,
 				986153C82704EE2B00838CA6 /* Sources */,
 				986153C92704EE2B00838CA6 /* Frameworks */,
 				986153CA2704EE2B00838CA6 /* Resources */,
@@ -225,6 +291,26 @@
 			productName = "ViewCodeChallenge-RealEstate";
 			productReference = 986153CC2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E5D24EFB275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5D24F04275F8E8400E54F9F /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */;
+			buildPhases = (
+				5D96A9C4BC4547699B54BDD9 /* [CP] Check Pods Manifest.lock */,
+				E5D24EF8275F8E8400E54F9F /* Sources */,
+				E5D24EF9275F8E8400E54F9F /* Frameworks */,
+				E5D24EFA275F8E8400E54F9F /* Resources */,
+				F1915E820059ED34832C85E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5D24F01275F8E8400E54F9F /* PBXTargetDependency */,
+			);
+			name = "ViewCodeChallenge-RealEstateTests";
+			productName = "ViewCodeChallenge-RealEstateTests";
+			productReference = E5D24EFC275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -239,6 +325,10 @@
 					986153CB2704EE2B00838CA6 = {
 						CreatedOnToolsVersion = 13.0;
 					};
+					E5D24EFB275F8E8400E54F9F = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 986153CB2704EE2B00838CA6;
+					};
 				};
 			};
 			buildConfigurationList = 986153C72704EE2B00838CA6 /* Build configuration list for PBXProject "ViewCodeChallenge-RealEstate" */;
@@ -250,13 +340,12 @@
 				Base,
 			);
 			mainGroup = 986153C32704EE2B00838CA6;
-			packageReferences = (
-			);
 			productRefGroup = 986153CD2704EE2B00838CA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				986153CB2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */,
+				E5D24EFB275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,7 +361,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5D24EFA275F8E8400E54F9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E56C0B5E53897A525B0A66B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViewCodeChallenge-RealEstate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D96A9C4BC4547699B54BDD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViewCodeChallenge-RealEstateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1915E820059ED34832C85E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		986153C82704EE2B00838CA6 /* Sources */ = {
@@ -294,7 +454,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5D24EF8275F8E8400E54F9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12570B0275FADC000D8CAB3 /* CarouselView_Tests.swift in Sources */,
+				E5D24EFF275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5D24F01275F8E8400E54F9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 986153CB2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */;
+			targetProxy = E5D24F00275F8E8400E54F9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */ = {
@@ -426,6 +603,7 @@
 		};
 		986153E12704EE3000838CA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CECF823CCAAF6BBED8C9E56 /* Pods-ViewCodeChallenge-RealEstate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -453,6 +631,7 @@
 		};
 		986153E22704EE3000838CA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CBFFC21F22F882A8493875E /* Pods-ViewCodeChallenge-RealEstate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,6 +657,54 @@
 			};
 			name = Release;
 		};
+		E5D24F02275F8E8400E54F9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE855243731EEC6E244B5179 /* Pods-ViewCodeChallenge-RealEstateTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S438V552C2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FabioMartinez.ViewCodeChallenge-RealEstateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewCodeChallenge-RealEstate.app/ViewCodeChallenge-RealEstate";
+			};
+			name = Debug;
+		};
+		E5D24F03275F8E8400E54F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F77C1694D966A39B35CC75 /* Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S438V552C2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FabioMartinez.ViewCodeChallenge-RealEstateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewCodeChallenge-RealEstate.app/ViewCodeChallenge-RealEstate";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -495,6 +722,15 @@
 			buildConfigurations = (
 				986153E12704EE3000838CA6 /* Debug */,
 				986153E22704EE3000838CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5D24F04275F8E8400E54F9F /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D24F02275F8E8400E54F9F /* Debug */,
+				E5D24F03275F8E8400E54F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
