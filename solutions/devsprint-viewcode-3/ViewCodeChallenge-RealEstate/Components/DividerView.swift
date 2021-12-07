@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct DividerViewConfiguration {
+struct DividerViewModel {
     let color: UIColor?
     let height: CGFloat?
 }
@@ -28,7 +28,7 @@ final class DividerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with configuration: DividerViewConfiguration) {
+    func configure(with configuration: DividerViewModel) {
         dividerView.backgroundColor = configuration.color ?? .lightGray
         NSLayoutConstraint.activate([
             dividerView.heightAnchor.constraint(equalToConstant: configuration.height ?? 2)
@@ -58,7 +58,7 @@ struct FeaturePreviews: PreviewProvider {
     static var previews: some View {
         UIViewPreview {
             let dividerView = DividerView()
-            dividerView.configure(with: DividerViewConfiguration(color: .blue,
+            dividerView.configure(with: DividerViewModel(color: .blue,
                                                                  height: 2))
             return dividerView
         }
