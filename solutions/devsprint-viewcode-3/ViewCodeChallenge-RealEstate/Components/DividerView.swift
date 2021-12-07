@@ -7,18 +7,7 @@
 
 import UIKit
 
-struct DividerViewModel {
-    let color: UIColor?
-    let height: CGFloat?
-}
-
 final class DividerView: UIView {
-    private let dividerView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
     init() {
         super.init(frame: .zero)
         self.setupViews()
@@ -28,27 +17,19 @@ final class DividerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with configuration: DividerViewModel) {
-        dividerView.backgroundColor = configuration.color ?? .lightGray
-        NSLayoutConstraint.activate([
-            dividerView.heightAnchor.constraint(equalToConstant: configuration.height ?? 2)
-        ])
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: UIView.noIntrinsicMetric, height: 1)
     }
 }
 
 extension DividerView: ViewCode {
-    func configureSubviews() {
-        addSubview(dividerView)
-    }
+    func configureSubviews() {}
     
-    func configureSubviewsConstraints() {
-        NSLayoutConstraint.activate([
-            dividerView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            dividerView.trailingAnchor.constraint(equalTo: trailingAnchor),
-        ])
-    }
+    func configureSubviewsConstraints() {}
     
-    func configureAdditionalBehaviors() {}
+    func configureAdditionalBehaviors() {
+        self.backgroundColor = .lightGray
+    }
 }
 
 #if canImport(SwiftUI) && DEBUG
@@ -58,12 +39,11 @@ struct FeaturePreviews: PreviewProvider {
     static var previews: some View {
         UIViewPreview {
             let dividerView = DividerView()
-            dividerView.configure(with: DividerViewModel(color: .blue,
-                                                                 height: 2))
+       
             return dividerView
         }
         .previewLayout(.fixed(width: UIScreen.main.bounds.width,
-                              height: 2))
+                              height: 100))
     }
 }
 #endif
