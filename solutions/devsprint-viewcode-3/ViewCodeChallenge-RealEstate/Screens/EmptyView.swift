@@ -9,30 +9,35 @@ import Foundation
 import UIKit
 
 
+struct EmptyViewConfiguration {
+    var titleInformation: String
+    var msgInformation: String
+}
+
 final class EmptyView: UIView {
     
-    private var titleText: UILabel {
+    private var titleText: UILabel = {
         let lb = UILabel()
         lb.translatesAutoresizingMaskIntoConstraints = false
         lb.textColor = .black
         lb.font = UIFont.preferredFont(forTextStyle: .title1)
         lb.textAlignment = .center
         return lb
-    }
+    }()
     
-    private var msgText: UILabel {
+    private var msgText: UILabel = {
         let lb = UILabel()
         lb.translatesAutoresizingMaskIntoConstraints = false
         lb.textColor = .black
         lb.font = UIFont.preferredFont(forTextStyle: .caption1)
         lb.textAlignment = .center
+        lb.numberOfLines = 0
         return lb
-    }
+    }()
     
     init() {
         super.init(frame: .zero)
         setupView()
-        updateTextView()
     }
     
     required init?(coder: NSCoder) {
@@ -45,7 +50,7 @@ final class EmptyView: UIView {
     }
     
     private func setupAddView() {
-        self.backgroundColor = .blue
+        self.backgroundColor = .white
         self.addSubview(self.titleText)
         self.addSubview(self.msgText)
     }
@@ -58,9 +63,9 @@ final class EmptyView: UIView {
         self.msgText.topAnchor.constraint(equalTo: titleText.bottomAnchor, constant: 10).isActive = true
     }
     
-    public func updateTextView() {
-        self.titleText.text = "No listings found"
-        self.msgText.text = "Search for cities and neighborhoods using the seacr bar above"
+    public func updateTextView(msg: EmptyViewConfiguration) {
+        self.titleText.text = msg.titleInformation
+        self.msgText.text = msg.msgInformation
     }
 }
 
