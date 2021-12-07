@@ -95,7 +95,7 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		}
+		};
 		5B821DFC275FA2B900E5DFEF /* Components */ = {
 			isa = PBXGroup;
 			children = (
