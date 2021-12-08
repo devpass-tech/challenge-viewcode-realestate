@@ -28,6 +28,7 @@
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
 		A2BA38B42761557800E8CAF1 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA38B32761557800E8CAF1 /* ButtonView.swift */; };
+		A2BA38B62761704200E8CAF1 /* ButtonViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA38B52761704200E8CAF1 /* ButtonViewSnapshotTests.swift */; };
 		BA0E622192F02A954B644344 /* Pods_ViewCodeChallenge_RealEstate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */; };
 		E5D24EFF275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D24EFE275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
 		A248A9DF28701EC3ACB31AE4 /* Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2BA38B32761557800E8CAF1 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		A2BA38B52761704200E8CAF1 /* ButtonViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewSnapshotTests.swift; sourceTree = "<group>"; };
 		C0768454975FD818D8504AC0 /* Pods-ViewCodeChallenge-RealEstate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstate.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstate/Pods-ViewCodeChallenge-RealEstate.release.xcconfig"; sourceTree = "<group>"; };
 		DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeChallenge_RealEstateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D24EFC275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				5B821E04275FE84400E5DFEF /* DividerViewSnapshotTests.swift */,
+				A2BA38B52761704200E8CAF1 /* ButtonViewSnapshotTests.swift */,
 				5BE2E69727607F09005E5597 /* ContactFormViewSnapshotTest.swift */,
 			);
 			path = SnapshotTests;
@@ -491,6 +494,7 @@
 			files = (
 				5B821E05275FE84400E5DFEF /* DividerViewSnapshotTests.swift in Sources */,
 				5BE2E69827607F09005E5597 /* ContactFormViewSnapshotTest.swift in Sources */,
+				A2BA38B62761704200E8CAF1 /* ButtonViewSnapshotTests.swift in Sources */,
 				E5D24EFF275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
