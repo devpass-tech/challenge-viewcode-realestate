@@ -36,7 +36,7 @@ final class EmptyView: UIView {
     
     init() {
         super.init(frame: .zero)
-        configureSubviews()
+        setupViews()
     }
     
     required init?(coder: NSCoder) {
@@ -68,5 +68,7 @@ extension EmptyView: ViewCode {
     func configureAdditionalBehaviors() {
         self.backgroundColor = .white
     }
+    
 }
+
 
