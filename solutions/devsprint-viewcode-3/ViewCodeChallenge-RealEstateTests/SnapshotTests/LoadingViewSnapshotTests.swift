@@ -13,7 +13,7 @@ class LoadingViewSnapshootTests: XCTestCase {
     func testingLoadingView() {
         let loadingView = LoadingView()
         let loadingViewModel = LoadingViewConfiguration(labelText: "Loading...")
-        loadingView.configure(with: loadingViewModel)
+        loadingView.configureLabelLoadingView(with: loadingViewModel)
         
         assertSnapshot(matching: loadingView,
                        as: Snapshotting.image(size: CGSize(width: 200, height: 200)))
