@@ -154,3 +154,21 @@ extension PropertyInfoView: ViewCode {
         backgroundColor = .white
     }
 }
+
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
+
+struct PropertyInfoPreviews: PreviewProvider {
+    static var previews: some View {
+        UIViewPreview {
+            let propertyInfo = PropertyInfoView()
+            let configuration = PropertyInfoConfiguration(price: "400.000", iptu: "670", condoFee: "560", usableAreas: 60, parkingSpaces: 2, bathrooms: 2, bedrooms: 2, address: "Av. Taylor Swift")
+            
+            propertyInfo.configure(with: configuration)
+            
+            return propertyInfo
+        }
+        .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 150))
+    }
+}
+#endif
