@@ -31,7 +31,6 @@ class TabBarController: UITabBarController {
         let item2 = FavoritesViewController()
         let item3 = AccountViewController()
         
-        
         // Items Style
         let icon1 = UITabBarItem(title: "Real Estate APP",
                                  image: UIImage(named: "home"),
@@ -48,9 +47,7 @@ class TabBarController: UITabBarController {
                                  selectedImage: UIImage(named: "user"))
         item3.tabBarItem = icon3
         
-        
+        // Set ViewControllers
         self.setViewControllers([item1,item2,item3], animated: false)
     }
-
-
 }
