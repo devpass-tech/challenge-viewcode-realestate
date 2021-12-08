@@ -9,7 +9,7 @@ import UIKit
 
 class PropertyInfoView: UIView {
     
-    lazy var stackView: UIStackView = {
+    private lazy var stackView: UIStackView = {
         let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
@@ -18,7 +18,7 @@ class PropertyInfoView: UIView {
         return stack
     }()
     
-    lazy var feesStackView: UIStackView = {
+    private lazy var feesStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
         stack.alignment = .center
@@ -27,7 +27,7 @@ class PropertyInfoView: UIView {
         return stack
     }()
     
-    lazy var amenitiesStackView: UIStackView = {
+    private lazy var amenitiesStackView: UIStackView = {
         let stack = UIStackView()
         stack.alignment = .center
         stack.distribution = .fill
@@ -35,65 +35,65 @@ class PropertyInfoView: UIView {
         return stack
     }()
     
-    lazy var feesSpacerView: UIView = {
+    private lazy var feesSpacerView: UIView = {
         let spacer = UIView()
         spacer.setContentHuggingPriority(.defaultLow, for: .horizontal)
         return spacer
     }()
     
-    lazy var amenitiesSpacerView: UIView = {
+    private lazy var amenitiesSpacerView: UIView = {
         let spacer = UIView()
         spacer.setContentHuggingPriority(.defaultLow, for: .horizontal)
         return spacer
     }()
     
-    lazy var priceLabel: UILabel = {
+    private lazy var priceLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
     }()
     
-    lazy var condLabel: UILabel = {
+    private lazy var condLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 15)
         return label
     }()
     
-    lazy var iptuLabel: UILabel = {
+    private lazy var iptuLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 15)
         return label
     }()
     
-    lazy var squareMetersLabel: UILabel = {
+    private lazy var squareMetersLabel: UILabel = {
         let label = UILabel()
         label.textColor = .systemGray
         label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
     
-    lazy var bedroomLabel: UILabel = {
+    private lazy var bedroomLabel: UILabel = {
         let label = UILabel()
         label.textColor = .systemGray
         label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
     
-    lazy var bathLabel: UILabel = {
+    private lazy var bathLabel: UILabel = {
         let label = UILabel()
         label.textColor = .systemGray
         label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
     
-    lazy var parkingLabel: UILabel = {
+    private lazy var parkingLabel: UILabel = {
         let label = UILabel()
         label.textColor = .systemGray
         label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
     
-    lazy var addressLabel: UILabel = {
+    private lazy var addressLabel: UILabel = {
         let label = UILabel()
         label.textColor = .systemGray
         label.font = UIFont.systemFont(ofSize: 15)
