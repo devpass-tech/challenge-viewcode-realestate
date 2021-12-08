@@ -16,6 +16,16 @@ class TabBarController: UITabBarController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // Tabbar Appearance
+        if #available(iOS 15, *) {
+           let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.backgroundColor = .systemGray6
+           tabBar.standardAppearance = tabBarAppearance
+           tabBar.scrollEdgeAppearance = tabBarAppearance
+        } else {
+            tabBar.barTintColor = .systemGray6
+        }
+        
         // Items ViewControllers
         let item1 = PropertyListViewController()
         let item2 = FavoritesViewController()
