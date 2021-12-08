@@ -1,5 +1,10 @@
 import UIKit
 
+
+struct PropertyDescriptionViewConfiguration {
+    var description: String
+}
+
 final class PropertyDescriptionView: UIView {
     
     private lazy var descriptionLabel: UILabel = {
@@ -26,6 +31,16 @@ final class PropertyDescriptionView: UIView {
         return textView
     }()
     
+    private lazy var seeMoreButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .systemBlue
+        button.setTitleColor(.white, for: .normal)
+        button.setTitle("Ver mais", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 5
+        return button
+    }()
+    
     private lazy var descriptionStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.distribution = .fill
@@ -44,6 +59,10 @@ final class PropertyDescriptionView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func configure(with viewConfiguration: PropertyDescriptionViewConfiguration) {
+        descriptionTextView.text = viewConfiguration.description
+    }
 }
 
 extension PropertyDescriptionView: ViewCode {
@@ -51,6 +70,7 @@ extension PropertyDescriptionView: ViewCode {
         addSubview(descriptionStackView)
         descriptionStackView.addArrangedSubview(descriptionLabel)
         descriptionStackView.addArrangedSubview(descriptionTextView)
+        descriptionStackView.addArrangedSubview(seeMoreButton)
     }
     
     func configureSubviewsConstraints() {
