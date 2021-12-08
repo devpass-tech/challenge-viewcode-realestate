@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C37FCF72760DB3200B8BB3D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37FCF62760DB3200B8BB3D /* TabBarController.swift */; };
 		78BD9057A1FB8D2DBBABB1A1 /* Pods_ViewCodeChallenge_RealEstateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */; };
 		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		17C8AC21B918A0A4A97A1C63 /* Pods-ViewCodeChallenge-RealEstate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstate.debug.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstate/Pods-ViewCodeChallenge-RealEstate.debug.xcconfig"; sourceTree = "<group>"; };
+		2C37FCF62760DB3200B8BB3D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2D9029D3074EB85D8EC9AF96 /* Pods-ViewCodeChallenge-RealEstateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstateTests.debug.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeChallenge_RealEstate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				980789CC275E942300CED39A /* Favorites */,
 				980789C9275E8F8E00CED39A /* Settings */,
 				980789D7275EA3BC00CED39A /* Account */,
+				2C37FCF62760DB3200B8BB3D /* TabBarController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			files = (
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				980789DC275EA40200CED39A /* ViewCode.swift in Sources */,
+				2C37FCF72760DB3200B8BB3D /* TabBarController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
