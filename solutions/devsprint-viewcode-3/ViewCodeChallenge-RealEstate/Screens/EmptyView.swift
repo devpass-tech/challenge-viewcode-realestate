@@ -43,9 +43,9 @@ final class EmptyView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func updateTextView(msg: EmptyViewConfiguration) {
-        self.titleText.text = msg.titleInformation
-        self.msgText.text = msg.msgInformation
+    public func configure(with configuration: EmptyViewConfiguration) {
+        self.titleText.text = configuration.titleInformation
+        self.msgText.text = configuration.msgInformation
     }
 }
 
