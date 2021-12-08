@@ -8,10 +8,6 @@
 import UIKit
 
 class PropertyListViewController: UIViewController {
-
-    private lazy var propertyDescriptionView: PropertyDescriptionView = {
-        PropertyDescriptionView()
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +20,6 @@ class PropertyListViewController: UIViewController {
 
             print(properties)
         }
-    }
-    
-    override func loadView() {
-        super.loadView()
-        view = propertyDescriptionView
     }
 }
 
