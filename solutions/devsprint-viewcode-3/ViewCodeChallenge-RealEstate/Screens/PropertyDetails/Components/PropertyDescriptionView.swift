@@ -13,8 +13,8 @@ final class PropertyDescriptionView: UIView {
     
     private lazy var descriptionTextView: UITextView = {
         let textView = UITextView()
-        textView.font = UIFont.systemFont(ofSize: 14, weight: .bold)
-        textView.textColor = .systemGray
+        textView.font = UIFont.preferredFont(forTextStyle: .body)
+        textView.textColor = .black
         textView.backgroundColor = .clear
         textView.contentMode = .left
         textView.textContainer.maximumNumberOfLines = 5
