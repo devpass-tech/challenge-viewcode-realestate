@@ -21,69 +21,82 @@ class PropertyInfoView: UIView {
     lazy var feesStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
-        stack.distribution = .equalCentering
-        stack.spacing = 2
+        stack.alignment = .center
+        stack.distribution = .fill
+        stack.spacing = 10
         return stack
     }()
     
     lazy var amenitiesStackView: UIStackView = {
         let stack = UIStackView()
-        stack.axis = .horizontal
-        stack.distribution = .equalSpacing
-        stack.spacing = 2
+        stack.alignment = .center
+        stack.distribution = .fill
+        stack.spacing = 10
         return stack
+    }()
+    
+    lazy var feesSpacerView: UIView = {
+        let spacer = UIView()
+        spacer.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        return spacer
+    }()
+    
+    lazy var amenitiesSpacerView: UIView = {
+        let spacer = UIView()
+        spacer.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        return spacer
     }()
     
     lazy var priceLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.preferredFont(forTextStyle: .largeTitle)
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
     }()
     
     lazy var condLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.preferredFont(forTextStyle: .title2)
+        label.font = UIFont.boldSystemFont(ofSize: 15)
         return label
     }()
     
     lazy var iptuLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.preferredFont(forTextStyle: .title2)
+        label.font = UIFont.boldSystemFont(ofSize: 15)
         return label
     }()
     
     lazy var squareMetersLabel: UILabel = {
         let label = UILabel()
         label.textColor = .systemGray
-        label.font = UIFont.preferredFont(forTextStyle: .title3)
+        label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
     
     lazy var bedroomLabel: UILabel = {
         let label = UILabel()
         label.textColor = .systemGray
-        label.font = UIFont.preferredFont(forTextStyle: .title3)
+        label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
     
     lazy var bathLabel: UILabel = {
         let label = UILabel()
         label.textColor = .systemGray
-        label.font = UIFont.preferredFont(forTextStyle: .title3)
+        label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
     
     lazy var parkingLabel: UILabel = {
         let label = UILabel()
         label.textColor = .systemGray
-        label.font = UIFont.preferredFont(forTextStyle: .title3)
+        label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
     
     lazy var addressLabel: UILabel = {
         let label = UILabel()
         label.textColor = .systemGray
-        label.font = UIFont.preferredFont(forTextStyle: .title3)
+        label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
     
@@ -118,10 +131,12 @@ extension PropertyInfoView: ViewCode {
         stackView.addArrangedSubview(addressLabel)
         feesStackView.addArrangedSubview(condLabel)
         feesStackView.addArrangedSubview(iptuLabel)
+        feesStackView.addArrangedSubview(feesSpacerView)
         amenitiesStackView.addArrangedSubview(squareMetersLabel)
         amenitiesStackView.addArrangedSubview(bedroomLabel)
         amenitiesStackView.addArrangedSubview(bathLabel)
         amenitiesStackView.addArrangedSubview(parkingLabel)
+        amenitiesStackView.addArrangedSubview(amenitiesSpacerView)
         addSubview(stackView)
     }
     
