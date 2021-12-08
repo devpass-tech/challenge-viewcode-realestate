@@ -25,6 +25,7 @@
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
 		B9BB37EE275F9EFB00396B9E /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB37ED275F9EFB00396B9E /* EmptyView.swift */; };
+		B9C2F2432761354C006DCEE5 /* EmptyViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C2F2422761354C006DCEE5 /* EmptyViewSnapshotTests.swift */; };
 		BA0E622192F02A954B644344 /* Pods_ViewCodeChallenge_RealEstate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */; };
 		E5D24EFF275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D24EFE275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift */; };
 /* End PBXBuildFile section */
@@ -62,11 +63,12 @@
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
 		A248A9DF28701EC3ACB31AE4 /* Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9BB37ED275F9EFB00396B9E /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		B9C2F2422761354C006DCEE5 /* EmptyViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewSnapshotTests.swift; sourceTree = "<group>"; };
 		C0768454975FD818D8504AC0 /* Pods-ViewCodeChallenge-RealEstate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstate.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstate/Pods-ViewCodeChallenge-RealEstate.release.xcconfig"; sourceTree = "<group>"; };
 		DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeChallenge_RealEstateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D24EFC275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D24EFE275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
-		B9BB37ED275F9EFB00396B9E /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				5B821E04275FE84400E5DFEF /* DividerViewSnapshotTests.swift */,
+				B9C2F2422761354C006DCEE5 /* EmptyViewSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B821E05275FE84400E5DFEF /* DividerViewSnapshotTests.swift in Sources */,
+				B9C2F2432761354C006DCEE5 /* EmptyViewSnapshotTests.swift in Sources */,
 				E5D24EFF275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

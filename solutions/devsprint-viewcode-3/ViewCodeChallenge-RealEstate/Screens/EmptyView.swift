@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 struct EmptyViewConfiguration {
     var titleInformation: String
     var msgInformation: String
@@ -37,35 +36,37 @@ final class EmptyView: UIView {
     
     init() {
         super.init(frame: .zero)
-        setupView()
+        configureSubviews()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupView() {
-        self.setupAddView()
-        self.setupContrains()
+    public func updateTextView(msg: EmptyViewConfiguration) {
+        self.titleText.text = msg.titleInformation
+        self.msgText.text = msg.msgInformation
     }
-    
-    private func setupAddView() {
-        self.backgroundColor = .white
+}
+
+extension EmptyView: ViewCode {
+    func configureSubviews() {
         self.addSubview(self.titleText)
         self.addSubview(self.msgText)
     }
     
-    private func setupContrains() {
-        self.titleText.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        self.titleText.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        
-        self.msgText.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        self.msgText.topAnchor.constraint(equalTo: titleText.bottomAnchor, constant: 10).isActive = true
+    func configureSubviewsConstraints() {
+        NSLayoutConstraint.activate([
+            self.titleText.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            self.titleText.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            
+            self.msgText.centerXAnchor.constraint(equalTo: centerXAnchor),
+            self.msgText.topAnchor.constraint(equalTo: titleText.bottomAnchor, constant: 10)
+        ])
     }
     
-    public func updateTextView(msg: EmptyViewConfiguration) {
-        self.titleText.text = msg.titleInformation
-        self.msgText.text = msg.msgInformation
+    func configureAdditionalBehaviors() {
+        self.backgroundColor = .white
     }
 }
 
