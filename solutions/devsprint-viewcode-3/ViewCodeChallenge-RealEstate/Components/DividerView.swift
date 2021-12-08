@@ -35,7 +35,7 @@ extension DividerView: ViewCode {
 #if canImport(SwiftUI) && DEBUG
 import SwiftUI
 
-struct FeaturePreviews: PreviewProvider {
+struct DividerViewPreview: PreviewProvider {
     static var previews: some View {
         UIViewPreview {
             let dividerView = DividerView()
