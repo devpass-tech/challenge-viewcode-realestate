@@ -69,3 +69,19 @@ extension ButtonView: ViewCode {
     
     func configureAdditionalBehaviors() {}
 }
+
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
+
+struct ButtonViewPreview: PreviewProvider {
+    static var previews: some View {
+        UIViewPreview {
+            let buttonView = ButtonView()
+            buttonView.configure(with: .init(title: "Ver mais"))
+            return buttonView
+        }
+        .padding(.horizontal, 15)
+        .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 60))
+    }
+}
+#endif
