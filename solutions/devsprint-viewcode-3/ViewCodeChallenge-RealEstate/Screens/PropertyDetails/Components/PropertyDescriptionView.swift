@@ -4,7 +4,7 @@ final class PropertyDescriptionView: UIView {
     
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.font = UIFont.boldSystemFont(ofSize: 14)
         label.textColor = .black
         label.text = "Descrição"
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -13,10 +13,13 @@ final class PropertyDescriptionView: UIView {
     
     private lazy var descriptionTextView: UITextView = {
         let textView = UITextView()
-        textView.font = UIFont.preferredFont(forTextStyle: .body)
+        textView.font = UIFont.systemFont(ofSize: 13)
         textView.textColor = .black
         textView.backgroundColor = .clear
         textView.contentMode = .left
+        textView.isEditable = false
+        textView.isSelectable = true
+        textView.textContainer.lineFragmentPadding = 0
         textView.textContainer.maximumNumberOfLines = 5
         textView.textContainer.lineBreakMode = .byTruncatingTail
         textView.translatesAutoresizingMaskIntoConstraints = false
@@ -25,7 +28,7 @@ final class PropertyDescriptionView: UIView {
     
     private lazy var descriptionStackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.distribution = .fillEqually
+        stackView.distribution = .fill
         stackView.axis = .vertical
         stackView.spacing = 5
         stackView.translatesAutoresizingMaskIntoConstraints = false

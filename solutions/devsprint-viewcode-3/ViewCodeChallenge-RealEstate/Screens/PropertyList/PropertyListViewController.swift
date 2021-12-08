@@ -8,7 +8,7 @@
 import UIKit
 
 class PropertyListViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,10 +20,6 @@ class PropertyListViewController: UIViewController {
 
             print(properties)
         }
-    }
-    
-    override func loadView() {
-        super.loadView()
     }
 }
 
