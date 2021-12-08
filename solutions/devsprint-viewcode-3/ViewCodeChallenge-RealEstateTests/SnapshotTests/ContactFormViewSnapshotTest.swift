@@ -14,6 +14,6 @@ class ContactFormViewSnapshotTest: XCTestCase {
     func testContactFormView() {
         let contactFormView = ContactFormView()
         assertSnapshot(matching: contactFormView,
-                       as: Snapshotting.image(size: CGSize(width: 400, height: 200)))
+                       as: Snapshotting.image(size: CGSize(width: 400, height: 250)))
     }
 }

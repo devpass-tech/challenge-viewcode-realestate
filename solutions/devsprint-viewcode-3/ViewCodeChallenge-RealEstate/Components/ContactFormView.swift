@@ -8,7 +8,14 @@
 import Foundation
 
 final class ContactFormView: UIView {
-    let nameTextField: UITextField = {
+    private let titleLabel: UILabel = {
+       let label = UILabel()
+        label.font = .systemFont(ofSize: 16, weight: .semibold)
+        label.text = "Tem interesse?"
+        return label
+    }()
+    
+    private let nameTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.layer.cornerRadius = 10
@@ -20,7 +27,7 @@ final class ContactFormView: UIView {
         return textField
     }()
     
-    let emailTextField: UITextField = {
+    private let emailTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Email"
@@ -32,7 +39,7 @@ final class ContactFormView: UIView {
         return textField
     }()
     
-    let submitButton: UIButton = {
+    private let submitButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Enviar contato", for: .normal)
@@ -42,13 +49,15 @@ final class ContactFormView: UIView {
         return button
     }()
     
-    lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [nameTextField,
+    private lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [titleLabel,
+                                                       nameTextField,
                                                        emailTextField,
                                                        submitButton
                                                       ])
         stackView.axis = .vertical
-        stackView.spacing = 20
+        stackView.spacing = 15
+        stackView.setCustomSpacing(20, after: titleLabel)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.alignment = .fill
         return stackView
@@ -94,7 +103,7 @@ struct ContactFormViewPreview: PreviewProvider {
             return contactFormView
         }
         .previewLayout(.fixed(width: UIScreen.main.bounds.width,
-                              height: 200))
+                              height: 250))
     }
 }
 #endif
