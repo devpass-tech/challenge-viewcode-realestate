@@ -38,7 +38,7 @@ final class LoadingView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configureLabelLoadingView(with configuration: LoadingViewConfiguration) {
+    func configure(with configuration: LoadingViewConfiguration) {
         label.text = configuration.labelText
     }
     
