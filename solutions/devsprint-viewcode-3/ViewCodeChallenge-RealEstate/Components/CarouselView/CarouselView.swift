@@ -7,31 +7,13 @@
 
 import UIKit
 
+struct CarouselViewConfiguration {
+    let images: [UIImage]
+    let page: Int
+}
+
 class CarouselView: UIView {
-    // MARK: Lifecycle
-
-    init() {
-        super.init(frame: .zero)
-        configureSubviews()
-        configureSubviewsConstraints()
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    // MARK: Internal
-
-    var dataSource: [UIImage?] = []
-
-    func configure(with dataSource: [UIImage?], at page: Int) {
-        self.dataSource = dataSource
-        self.page = page
-    }
-
-    // MARK: Private
-
-    private var page = 0
+    private var viewConfiguration: CarouselViewConfiguration?
 
     private lazy var carouselCollectionView: UICollectionView = {
         let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
@@ -53,6 +35,23 @@ class CarouselView: UIView {
         pageControl.accessibilityIdentifier = "page-Control"
         return pageControl
     }()
+
+    // MARK: Lifecycle
+
+    init() {
+        super.init(frame: .zero)
+        setupViews()
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    // MARK: Internal
+
+    func configure(with viewConfiguration: CarouselViewConfiguration) {
+        self.viewConfiguration = viewConfiguration
+    }
 }
 
 // MARK: - ViewCode
@@ -91,8 +90,9 @@ extension CarouselView: ViewCode {
 
         carouselCollectionView.collectionViewLayout = carouselLayout
 
-        pageControl.numberOfPages = dataSource.count
-        pageControl.currentPage = page
+        guard let viewConfiguration = viewConfiguration else { return }
+        pageControl.numberOfPages = viewConfiguration.images.count
+        pageControl.currentPage = viewConfiguration.page
     }
 }
 
@@ -100,21 +100,23 @@ extension CarouselView: ViewCode {
 
 extension CarouselView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        dataSource.count
+        viewConfiguration?.images.count ?? 0
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarouselCollectionViewCell.identifier,
+        guard
+            let viewConfiguration = viewConfiguration,
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarouselCollectionViewCell.identifier,
                                                             for: indexPath) as? CarouselCollectionViewCell
         else {
             return UICollectionViewCell()
         }
 
-        guard let image = dataSource[indexPath.row] else {
-            return UICollectionViewCell()
-        }
+        let image = viewConfiguration.images[indexPath.row]
+        
+        let cellConfiguration = CarouselCollectionViewCellConfiguration(image: image)
+        cell.configure(with: cellConfiguration)
 
-        cell.configure(with: image)
         return cell
     }
 }

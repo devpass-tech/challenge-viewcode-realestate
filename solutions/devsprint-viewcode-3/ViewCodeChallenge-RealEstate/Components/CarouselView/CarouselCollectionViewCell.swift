@@ -7,14 +7,29 @@
 
 import UIKit
 
+struct CarouselCollectionViewCellConfiguration {
+    let image: UIImage
+}
+
 class CarouselCollectionViewCell: UICollectionViewCell {
+    static let identifier = "CarouselId"
+
+    var cellConfiguration: CarouselCollectionViewCellConfiguration?
+
+    private let imageView: UIImageView = {
+        let view = UIImageView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .systemOrange
+        view.contentMode = .scaleAspectFill
+        view.accessibilityIdentifier = "image-View"
+        return view
+    }()
+
     // MARK: Lifecycle
 
     override init(frame: CGRect) {
         super.init(frame: .zero)
-        configureSubviews()
-        configureSubviewsConstraints()
-        configureAdditionalBehaviors()
+        setupViews()
     }
 
     convenience init() {
@@ -25,24 +40,9 @@ class CarouselCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    // MARK: Internal
-
-    static let identifier = "CarouselId"
-
-    func configure(with image: UIImage) {
-        self.imageView.image = image
+    func configure(with cellConfiguration: CarouselCollectionViewCellConfiguration) {
+        self.cellConfiguration = cellConfiguration
     }
-
-    // MARK: Private
-
-    private let imageView: UIImageView = {
-        let view = UIImageView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .systemOrange
-        view.contentMode = .scaleAspectFill
-        view.accessibilityIdentifier = "image-View"
-        return view
-    }()
 }
 
 // MARK: - ViewCode
@@ -54,8 +54,10 @@ extension CarouselCollectionViewCell: ViewCode {
 
     func configureSubviewsConstraints() {
         NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalTo: widthAnchor),
-            imageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.5),
+            imageView.topAnchor.constraint(equalTo: topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
 
