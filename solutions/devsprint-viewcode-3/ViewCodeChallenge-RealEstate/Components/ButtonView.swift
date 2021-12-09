@@ -9,6 +9,7 @@ import UIKit
 
 struct ButtonViewConfiguration {
     let title: String
+    var pressedButton: (() -> Void)?
 }
 
 class ButtonView: UIView {
@@ -22,7 +23,7 @@ class ButtonView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    var pressedButton: (() -> Void)?
+    private var pressedButton: (() -> Void)?
     
     // MARK: Initializers
     init() {
@@ -47,6 +48,7 @@ class ButtonView: UIView {
     
     // MARK: Methods
     func configure(with configuration: ButtonViewConfiguration) {
+        pressedButton = configuration.pressedButton
         button.setTitle(configuration.title, for: .normal)
         button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
     }
