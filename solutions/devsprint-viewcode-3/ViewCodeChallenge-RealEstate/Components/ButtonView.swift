@@ -14,19 +14,24 @@ struct ButtonViewConfiguration {
 
 class ButtonView: UIView {
     // MARK: Properties
-    private var button: UIButton = {
+    private lazy var button: UIButton = {
         let button = UIButton(type: .system)
         button.layer.cornerRadius = 10
         button.backgroundColor = .systemBlue
         button.titleLabel?.tintColor = .white
         button.titleLabel?.font = .systemFont(ofSize: 18)
+        button.setTitle(configuration.title, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
         return button
     }()
+    
     private var pressedButton: (() -> Void)?
+    private var configuration: ButtonViewConfiguration
     
     // MARK: Initializers
-    init() {
+    init(with configuration: ButtonViewConfiguration) {
+        self.configuration = configuration
         super.init(frame: .zero)
         setupViews()
     }
@@ -43,14 +48,7 @@ class ButtonView: UIView {
     // MARK: Actions
     @objc
     private func buttonPressed() {
-        pressedButton?()
-    }
-    
-    // MARK: Methods
-    func configure(with configuration: ButtonViewConfiguration) {
-        pressedButton = configuration.pressedButton
-        button.setTitle(configuration.title, for: .normal)
-        button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        configuration.pressedButton?()
     }
 }
 
@@ -78,8 +76,10 @@ import SwiftUI
 struct ButtonViewPreview: PreviewProvider {
     static var previews: some View {
         UIViewPreview {
-            let buttonView = ButtonView()
-            buttonView.configure(with: .init(title: "Ver mais"))
+            let configuration = ButtonViewConfiguration(title: "Ver mais") {
+                print("do Something!")
+            }
+            let buttonView = ButtonView(with: configuration)
             return buttonView
         }
         .padding(.horizontal, 15)
