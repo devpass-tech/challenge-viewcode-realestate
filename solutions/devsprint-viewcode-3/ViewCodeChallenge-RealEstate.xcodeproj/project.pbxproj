@@ -29,6 +29,10 @@
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
 		BA0E622192F02A954B644344 /* Pods_ViewCodeChallenge_RealEstate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */; };
 		E5D24EFF275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D24EFE275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift */; };
+		EB8A3358276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A3357276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift */; };
+		EBD7B13527616772004945A4 /* PropertyInfoConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7B13327616772004945A4 /* PropertyInfoConfiguration.swift */; };
+		EBD7B13627616772004945A4 /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7B13427616772004945A4 /* PropertyInfoView.swift */; };
+		EBD7B138276167AC004945A4 /* DividerViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7B137276167AC004945A4 /* DividerViewSnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeChallenge_RealEstateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D24EFC275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D24EFE275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallenge_RealEstateTests.swift; sourceTree = "<group>"; };
+		EB8A3357276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewSnapshotTests.swift; sourceTree = "<group>"; };
+		EBD7B13327616772004945A4 /* PropertyInfoConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoConfiguration.swift; sourceTree = "<group>"; };
+		EBD7B13427616772004945A4 /* PropertyInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
+		EBD7B137276167AC004945A4 /* DividerViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerViewSnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				5B821DFD275FA2C600E5DFEF /* DividerView.swift */,
+				EBD7B13227616772004945A4 /* PropertyInfo */,
 				5BB8193B27605F5600E9A781 /* ContactFormView.swift */,
 			);
 			path = Components;
@@ -290,11 +299,30 @@
 		E5D24EFD275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B821E03275FE81700E5DFEF /* SnapshotTests */,
+				EB8A33562761003E0085FF8F /* SnapshotTests */,
 				E5D24EFE275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
 			sourceTree = "<group>";
+		};
+		EB8A33562761003E0085FF8F /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB8A3357276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift */,
+				EBD7B137276167AC004945A4 /* DividerViewSnapshotTests.swift */,
+			);
+			path = SnapshotTests;
+			sourceTree = "<group>";
+		};
+		EBD7B13227616772004945A4 /* PropertyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7B13327616772004945A4 /* PropertyInfoConfiguration.swift */,
+				EBD7B13427616772004945A4 /* PropertyInfoView.swift */,
+			);
+			name = PropertyInfo;
+			path = "ViewCodeChallenge-RealEstate/Components/PropertyInfo";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -471,12 +499,14 @@
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
 				5B821E02275FD31100E5DFEF /* UIViewPreview.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
+				EBD7B13527616772004945A4 /* PropertyInfoConfiguration.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980789CB275E8FAF00CED39A /* Settings.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				5BB8193C27605F5600E9A781 /* ContactFormView.swift in Sources */,
 				5BE2E69627607E4E005E5597 /* UITextField+Padding.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				EBD7B13627616772004945A4 /* PropertyInfoView.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +518,8 @@
 				5B821E05275FE84400E5DFEF /* DividerViewSnapshotTests.swift in Sources */,
 				5BE2E69827607F09005E5597 /* ContactFormViewSnapshotTest.swift in Sources */,
 				E5D24EFF275F8E8400E54F9F /* ViewCodeChallenge_RealEstateTests.swift in Sources */,
+				EBD7B138276167AC004945A4 /* DividerViewSnapshotTests.swift in Sources */,
+				EB8A3358276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,7 +669,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = C97V5ZU9S5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ViewCodeChallenge-RealEstate/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -665,7 +697,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = C97V5ZU9S5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ViewCodeChallenge-RealEstate/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
