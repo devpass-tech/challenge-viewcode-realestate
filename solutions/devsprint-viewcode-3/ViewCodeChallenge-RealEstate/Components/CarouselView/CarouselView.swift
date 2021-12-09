@@ -23,7 +23,6 @@ class CarouselView: UIView {
         view.isPagingEnabled = true
         view.dataSource = self
         view.delegate = self
-        view.backgroundColor = .systemMint
         view.accessibilityIdentifier = "carousel-CollectionView"
         return view
     }()

@@ -13,13 +13,11 @@ struct CarouselCollectionViewCellConfiguration {
 
 class CarouselCollectionViewCell: UICollectionViewCell {
     static let identifier = "CarouselId"
-
     var cellConfiguration: CarouselCollectionViewCellConfiguration?
 
     private let imageView: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .systemOrange
         view.contentMode = .scaleAspectFill
         view.accessibilityIdentifier = "image-View"
         return view
@@ -32,16 +30,13 @@ class CarouselCollectionViewCell: UICollectionViewCell {
         setupViews()
     }
 
-    convenience init() {
-        self.init(frame: .zero)
-    }
-
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     func configure(with cellConfiguration: CarouselCollectionViewCellConfiguration) {
         self.cellConfiguration = cellConfiguration
+        imageView.image = cellConfiguration.image
     }
 }
 
