@@ -27,9 +27,9 @@ class TabBarController: UITabBarController {
         }
         
         // Items ViewControllers
-        let item1 = PropertyListViewController()
-        let item2 = FavoritesViewController()
-        let item3 = AccountViewController()
+        let item1 = UINavigationController(rootViewController:  PropertyListViewController())
+        let item2 = UINavigationController(rootViewController:  FavoritesViewController())
+        let item3 = UINavigationController(rootViewController:  AccountViewController())
         
         // Items Style
         let icon1 = UITabBarItem(title: "Real Estate APP",
