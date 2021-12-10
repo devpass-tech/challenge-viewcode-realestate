@@ -13,7 +13,7 @@ struct CarouselCollectionViewCellConfiguration {
 
 class CarouselCollectionViewCell: UICollectionViewCell {
     static let identifier = "CarouselId"
-    var cellConfiguration: CarouselCollectionViewCellConfiguration?
+    private var cellConfiguration: CarouselCollectionViewCellConfiguration?
 
     private let imageView: UIImageView = {
         let view = UIImageView()
