@@ -8,18 +8,18 @@
 import UIKit
 
 class PropertyListViewController: UIViewController {
-
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+            super.viewDidLoad()
 
-        self.view.backgroundColor = .white
+            self.view.backgroundColor = .white
 
-        let apiClient = RealEstateAPIClient()
+            let apiClient = RealEstateAPIClient()
 
-        apiClient.fetchProperties { properties in
+            apiClient.fetchProperties { properties in
 
-            print(properties)
+                print(properties)
+            }
         }
-    }
 }
 
