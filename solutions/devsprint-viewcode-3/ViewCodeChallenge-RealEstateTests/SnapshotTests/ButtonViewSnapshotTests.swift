@@ -11,9 +11,10 @@ import SnapshotTesting
 
 class ButtonViewSnapshotTests: XCTestCase {
     func test_buttonDefaultState() {
-        let buttonView = ButtonView()
-        buttonView.configure(with: .init(title: "Ver mais"))
-        let result = verifySnapshot(matching: buttonView, as: Snapshotting.image(size: CGSize(width: 360, height: 50)))
+        let buttonView = ButtonView(with: .init(title: "Ver mais",
+                                                pressedButton: nil))
+        let result = verifySnapshot(matching: buttonView,
+                                    as: Snapshotting.image(size: CGSize(width: 360, height: 50)))
         XCTAssertNil(result)
     }
 }
