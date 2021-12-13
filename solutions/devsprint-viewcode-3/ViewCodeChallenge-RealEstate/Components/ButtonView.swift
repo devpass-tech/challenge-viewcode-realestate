@@ -20,18 +20,15 @@ class ButtonView: UIView {
         button.backgroundColor = .systemBlue
         button.titleLabel?.tintColor = .white
         button.titleLabel?.font = .systemFont(ofSize: 18)
-        button.setTitle(configuration.title, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
         return button
     }()
     
     private var pressedButton: (() -> Void)?
-    private var configuration: ButtonViewConfiguration
-    
+
     // MARK: Initializers
-    init(with configuration: ButtonViewConfiguration) {
-        self.configuration = configuration
+    init() {
         super.init(frame: .zero)
         setupViews()
     }
@@ -48,7 +45,13 @@ class ButtonView: UIView {
     // MARK: Actions
     @objc
     private func buttonPressed() {
-        configuration.pressedButton?()
+        pressedButton?()
+    }
+
+    // MARK: Methods
+    func configure(with configuration: ButtonViewConfiguration) {
+        pressedButton = configuration.pressedButton
+        button.setTitle(configuration.title, for: .normal)
     }
 }
 
@@ -79,7 +82,8 @@ struct ButtonViewPreview: PreviewProvider {
             let configuration = ButtonViewConfiguration(title: "Ver mais") {
                 print("do Something!")
             }
-            let buttonView = ButtonView(with: configuration)
+            let buttonView = ButtonView()
+            buttonView.configure(with: configuration)
             return buttonView
         }
         .padding(.horizontal, 15)
