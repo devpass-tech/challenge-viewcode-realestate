@@ -5,7 +5,9 @@
 //  Created by Rodrigo Borges on 06/12/21.
 //
 
-protocol ViewCode {
+import UIKit
+
+protocol ViewCode where Self: UIView {
     func configureSubviews()
     func configureSubviewsConstraints()
     func configureAdditionalBehaviors()
