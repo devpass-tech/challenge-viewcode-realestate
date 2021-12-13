@@ -33,18 +33,18 @@ class TabBarController: UITabBarController {
         
         // Items Style
         let icon1 = UITabBarItem(title: "Real Estate APP",
-                                 image: UIImage(named: "home"),
-                                 selectedImage: UIImage(named: "home"))
+                                 image: Asset.home.image,
+                                 selectedImage: Asset.home.image)
         item1.tabBarItem = icon1
         
         let icon2 = UITabBarItem(title: "Favorites",
-                                 image: UIImage(named: "heart"),
-                                 selectedImage: UIImage(named: "heart"))
+                                 image: Asset.heart.image,
+                                 selectedImage: Asset.heart.image)
         item2.tabBarItem = icon2
         
         let icon3 = UITabBarItem(title: "Account",
-                                 image: UIImage(named: "user"),
-                                 selectedImage: UIImage(named: "user"))
+                                 image: Asset.user.image,
+                                 selectedImage: Asset.user.image)
         item3.tabBarItem = icon3
         
         // Set ViewControllers
