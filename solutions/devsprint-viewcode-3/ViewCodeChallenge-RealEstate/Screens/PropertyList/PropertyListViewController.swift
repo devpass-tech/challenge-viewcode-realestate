@@ -33,13 +33,13 @@ class PropertyListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.view.backgroundColor = .white
-
+        
         let apiClient = RealEstateAPIClient()
-
+        
         apiClient.fetchProperties { properties in
-
+            
             print(properties)
         }
     }
