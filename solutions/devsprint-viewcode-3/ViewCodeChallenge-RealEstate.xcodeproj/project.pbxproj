@@ -124,12 +124,16 @@
 		5B821DFC275FA2B900E5DFEF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B1F86D6527618B6300F71304 /* CarouselView */,
+				EBD7B13227616772004945A4 /* PropertyInfo */,
 				15CD5059276048D50013DA30 /* PropertyDescriptionView.swift */,
 				5BB8193B27605F5600E9A781 /* ContactFormView.swift */,
 				5B821DFD275FA2C600E5DFEF /* DividerView.swift */,
 				A2BA38B32761557800E8CAF1 /* ButtonView.swift */,
 				B9BB37ED275F9EFB00396B9E /* EmptyView.swift */,
 				5BA12CD427610B000068AE9C /* LoadingView.swift */,
+				5BB8193B27605F5600E9A781 /* ContactFormView.swift */,
+				B9BB37ED275F9EFB00396B9E /* EmptyView.swift */,
 				B1F86D6527618B6300F71304 /* CarouselView */,
 				EBD7B13227616772004945A4 /* PropertyInfo */,
 			);
@@ -269,11 +273,11 @@
 		986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */ = {
 			isa = PBXGroup;
 			children = (
+				980C0C1A2704F1F100F8100A /* AppDelegate */,
 				5BE2E69427607E38005E5597 /* Extensions */,
 				5B821E00275FD2FF00E5DFEF /* Utils */,
 				5B821DFC275FA2B900E5DFEF /* Components */,
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
-				980C0C1A2704F1F100F8100A /* AppDelegate */,
 				980C0C172704F1D500F8100A /* Screens */,
 				980C0C062704F1C700F8100A /* DataManager */,
 				980C0C1D2704F29100F8100A /* Models */,
