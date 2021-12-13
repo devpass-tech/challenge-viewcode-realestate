@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct PropertyTableViewCellConfigure {
+struct PropertyTableViewCellConfiguration {
     let carousel: CarouselViewConfiguration
     let propertyInfoConfig: PropertyInfoConfiguration
 }
@@ -44,7 +44,7 @@ class PropertyTableViewCell: UITableViewCell {
         return view
     }()
 
-    private var cellConfigure: PropertyTableViewCellConfigure?
+    private var cellConfigure: PropertyTableViewCellConfiguration?
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -55,7 +55,7 @@ class PropertyTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func configure(with config: PropertyTableViewCellConfigure) {
+    func configure(with config: PropertyTableViewCellConfiguration) {
         self.cellConfigure = config
 
         guard let cellConfigure = cellConfigure else  { return }

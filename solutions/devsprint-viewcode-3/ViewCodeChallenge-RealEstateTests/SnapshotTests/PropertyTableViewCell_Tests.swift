@@ -17,7 +17,7 @@ class PropertyTableViewCell_Tests: XCTestCase {
 
         let config = CarouselViewConfiguration(images: [UIImage(named: "pic1")!], page: 1)
         let properConfig = PropertyInfoConfiguration(price: "400,00", iptu: "1200", condoFee: "120,33", usableAreas: 43, parkingSpaces: 3, bathrooms: 3, bedrooms: 3, address: "Rua das Flores, 234, Jardins")
-        let cellConfig = PropertyTableViewCellConfigure(carousel: config, propertyInfoConfig: properConfig)
+        let cellConfig = PropertyTableViewCellConfiguration(carousel: config, propertyInfoConfig: properConfig)
 
         let sut = PropertyTableViewCell(frame: .zero)
         sut.configure(with: cellConfig)
