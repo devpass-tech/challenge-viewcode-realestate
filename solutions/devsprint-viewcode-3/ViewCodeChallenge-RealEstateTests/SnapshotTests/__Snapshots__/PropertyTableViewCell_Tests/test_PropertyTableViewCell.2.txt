@@ -8,11 +8,11 @@
    |    |    |    |    | <_UIScrollViewScrollIndicator; frame = (314 -39; 3 36); alpha = 0; autoresize = LM; layer = <CALayer>>
    |    |    |    |    |    | <UIView; frame = (0 0; 3 36); layer = <CALayer>>
    |    |    |    | <UIPageControl; frame = (0 130; 320 44); autoresize = W; gestureRecognizers = <NSArray>; layer = <CALayer>>
-   |    |    |    |    | <_UIPageControlContentView; frame = (141 9; 38 26); layer = <CALayer>>
-   |    |    |    |    |    | <UIVisualEffectView; frame = (0 0; 38 26); layer = <CALayer>> effect=<UIBlurEffect> style=UIBlurEffectStyleSystemThinMaterial
-   |    |    |    |    |    |    | <_UIVisualEffectBackdropView; frame = (0 0; 38 26); autoresize = W+H; userInteractionEnabled = NO; layer = <UICABackdropLayer>>
-   |    |    |    |    |    | <_UIPageControlIndicatorContentView; frame = (14.3333 0; 9.66667 26); autoresize = H; layer = <CALayer>>
-   |    |    |    |    |    |    | <_UIPageIndicatorView; frame = (0.166667 8.16667; 9.66667 9.66667); opaque = NO; userInteractionEnabled = NO; tintColor = UIExtendedSRGBColorSpace 1 1 1 1; layer = <CALayer>>
+   |    |    |    |    | <_UIPageControlContentView; frame = (140 8.66667; 40 27); layer = <CALayer>>
+   |    |    |    |    |    | <UIVisualEffectView; frame = (0 0; 40 27); layer = <CALayer>> effect=<UIBlurEffect> style=UIBlurEffectStyleSystemThinMaterial
+   |    |    |    |    |    |    | <_UIVisualEffectBackdropView; frame = (0 0; 40 27); autoresize = W+H; userInteractionEnabled = NO; layer = <UICABackdropLayer>>
+   |    |    |    |    |    | <_UIPageControlIndicatorContentView; frame = (14.3333 0; 11.6667 27); autoresize = H; layer = <CALayer>>
+   |    |    |    |    |    |    | <_UIPageIndicatorView; frame = (0.166667 8; 11.6667 11); opaque = NO; userInteractionEnabled = NO; tintColor = UIExtendedSRGBColorSpace 1 1 1 1; layer = <CALayer>>
    |    |    | <ViewCodeChallenge_RealEstate.PropertyInfoView; frame = (0 0; 320 44); layer = <CALayer>>
    |    |    |    | <UIStackView; frame = (16 16; 288 12); layer = <CALayer>>
    |    |    |    |    | <UILabel; frame = (0 0; 288 0); text = 'R$ 400,00'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
