@@ -73,7 +73,7 @@ extension CarouselView: ViewCode {
             carouselCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             carouselCollectionView.heightAnchor.constraint(equalToConstant: 200),
 
-            pageControl.topAnchor.constraint(equalTo: topAnchor, constant: 140),
+            pageControl.bottomAnchor.constraint(equalTo: carouselCollectionView.bottomAnchor, constant: -16),
             pageControl.leadingAnchor.constraint(equalTo: carouselCollectionView.leadingAnchor),
             pageControl.trailingAnchor.constraint(equalTo: carouselCollectionView.trailingAnchor),
             pageControl.heightAnchor.constraint(equalToConstant: 44),

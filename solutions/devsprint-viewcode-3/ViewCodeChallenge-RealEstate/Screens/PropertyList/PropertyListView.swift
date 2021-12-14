@@ -35,6 +35,7 @@ class PropertyListView: UIView {
 
     func configure(with config: PropertyViewConfiguration) {
         self.propertyViewConfiguration = config
+        propertyTableView.reloadData()
     }
 }
 
