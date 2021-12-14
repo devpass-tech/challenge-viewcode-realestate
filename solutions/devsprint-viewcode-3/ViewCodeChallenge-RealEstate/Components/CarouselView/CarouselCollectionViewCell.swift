@@ -19,7 +19,7 @@ class CarouselCollectionViewCell: UICollectionViewCell {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFill
-        view.accessibilityIdentifier = "image-View"
+        view.accessibilityIdentifier = "imageView"
         return view
     }()
 

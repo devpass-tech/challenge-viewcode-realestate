@@ -1,9 +1,9 @@
-//
-//  PropertyInfoView.swift
-//  ViewCodeChallenge-RealEstate
-//
-//  Created by Murillo R. Araújo on 07/12/21.
-//
+    //
+    //  PropertyInfoView.swift
+    //  ViewCodeChallenge-RealEstate
+    //
+    //  Created by Murillo R. Araújo on 07/12/21.
+    //
 
 import UIKit
 
@@ -13,8 +13,9 @@ class PropertyInfoView: UIView {
         let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
-        stack.distribution = .fillProportionally
-        stack.spacing = 5
+        stack.distribution = .fill
+        stack.spacing = 10
+        stack.accessibilityIdentifier = "stackView"
         return stack
     }()
     
@@ -24,6 +25,7 @@ class PropertyInfoView: UIView {
         stack.alignment = .center
         stack.distribution = .fill
         stack.spacing = 10
+        stack.accessibilityIdentifier = "feesStackView"
         return stack
     }()
     
@@ -32,36 +34,28 @@ class PropertyInfoView: UIView {
         stack.alignment = .center
         stack.distribution = .fill
         stack.spacing = 10
+        stack.accessibilityIdentifier = "amenitiesStackView"
         return stack
     }()
-    
-    private lazy var feesSpacerView: UIView = {
-        let spacer = UIView()
-        spacer.setContentHuggingPriority(.defaultLow, for: .horizontal)
-        return spacer
-    }()
-    
-    private lazy var amenitiesSpacerView: UIView = {
-        let spacer = UIView()
-        spacer.setContentHuggingPriority(.defaultLow, for: .horizontal)
-        return spacer
-    }()
-    
+
     private lazy var priceLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.accessibilityIdentifier = "priceLabel"
         return label
     }()
     
     private lazy var condLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.accessibilityIdentifier = "condLabel"
         return label
     }()
     
     private lazy var iptuLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.accessibilityIdentifier = "iptuLabel"
         return label
     }()
     
@@ -69,6 +63,7 @@ class PropertyInfoView: UIView {
         let label = UILabel()
         label.textColor = .systemGray
         label.font = UIFont.systemFont(ofSize: 15)
+        label.accessibilityIdentifier = "squareMetersLabel"
         return label
     }()
     
@@ -76,6 +71,7 @@ class PropertyInfoView: UIView {
         let label = UILabel()
         label.textColor = .systemGray
         label.font = UIFont.systemFont(ofSize: 15)
+        label.accessibilityIdentifier = "bedroomLabel"
         return label
     }()
     
@@ -83,6 +79,7 @@ class PropertyInfoView: UIView {
         let label = UILabel()
         label.textColor = .systemGray
         label.font = UIFont.systemFont(ofSize: 15)
+        label.accessibilityIdentifier = "bathLabel"
         return label
     }()
     
@@ -90,6 +87,7 @@ class PropertyInfoView: UIView {
         let label = UILabel()
         label.textColor = .systemGray
         label.font = UIFont.systemFont(ofSize: 15)
+        label.accessibilityIdentifier = "parkingLabel"
         return label
     }()
     
@@ -97,6 +95,7 @@ class PropertyInfoView: UIView {
         let label = UILabel()
         label.textColor = .systemGray
         label.font = UIFont.systemFont(ofSize: 15)
+        label.accessibilityIdentifier = "addressLabel"
         return label
     }()
     
@@ -119,7 +118,6 @@ class PropertyInfoView: UIView {
         parkingLabel.text = "\(configuration.parkingSpaces ?? 0) vagas"
         addressLabel.text = "\(configuration.address ?? "Sem endereço")"
     }
-    
 }
 
 extension PropertyInfoView: ViewCode {
@@ -131,12 +129,10 @@ extension PropertyInfoView: ViewCode {
         stackView.addArrangedSubview(addressLabel)
         feesStackView.addArrangedSubview(condLabel)
         feesStackView.addArrangedSubview(iptuLabel)
-        feesStackView.addArrangedSubview(feesSpacerView)
         amenitiesStackView.addArrangedSubview(squareMetersLabel)
         amenitiesStackView.addArrangedSubview(bedroomLabel)
         amenitiesStackView.addArrangedSubview(bathLabel)
         amenitiesStackView.addArrangedSubview(parkingLabel)
-        amenitiesStackView.addArrangedSubview(amenitiesSpacerView)
         addSubview(stackView)
     }
     
@@ -144,9 +140,7 @@ extension PropertyInfoView: ViewCode {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 16),
             stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
             stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16)
-            
         ])
     }
     
@@ -155,20 +149,20 @@ extension PropertyInfoView: ViewCode {
     }
 }
 
-#if canImport(SwiftUI) && DEBUG
-import SwiftUI
-
-struct PropertyInfoPreviews: PreviewProvider {
-    static var previews: some View {
-        UIViewPreview {
-            let propertyInfo = PropertyInfoView()
-            let configuration = PropertyInfoConfiguration(price: "400.000", iptu: "670", condoFee: "560", usableAreas: 60, parkingSpaces: 2, bathrooms: 2, bedrooms: 2, address: "Av. Taylor Swift")
-            
-            propertyInfo.configure(with: configuration)
-            
-            return propertyInfo
-        }
-        .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 150))
-    }
-}
-#endif
+    //#if canImport(SwiftUI) && DEBUG
+    //import SwiftUI
+    //
+    //struct PropertyInfoPreviews: PreviewProvider {
+    //    static var previews: some View {
+    //        UIViewPreview {
+    //            let propertyInfo = PropertyInfoView()
+    //            let configuration = PropertyInfoConfiguration(price: "400.000", iptu: "670", condoFee: "560", usableAreas: 60, parkingSpaces: 2, bathrooms: 2, bedrooms: 2, address: "Av. Taylor Swift")
+    //
+    //            propertyInfo.configure(with: configuration)
+    //
+    //            return propertyInfo
+    //        }
+    //        .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 150))
+    //    }
+    //}
+    //#endif

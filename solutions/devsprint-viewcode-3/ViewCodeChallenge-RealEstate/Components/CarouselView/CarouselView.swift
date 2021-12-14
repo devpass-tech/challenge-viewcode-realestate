@@ -9,14 +9,18 @@ import UIKit
 
 struct CarouselViewConfiguration {
     let images: [UIImage]
-    let page: Int
 }
 
 class CarouselView: UIView {
     private var viewConfiguration: CarouselViewConfiguration?
 
     private lazy var carouselCollectionView: UICollectionView = {
-        let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: UIScreen.screens.first?.bounds.width ?? 0, height: 200)
+        layout.sectionInset = .zero
+
+        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.register(CarouselCollectionViewCell.self, forCellWithReuseIdentifier: CarouselCollectionViewCell.identifier)
         view.showsHorizontalScrollIndicator = false
@@ -30,7 +34,7 @@ class CarouselView: UIView {
     private let pageControl: UIPageControl = {
         let pageControl = UIPageControl()
         pageControl.translatesAutoresizingMaskIntoConstraints = false
-        pageControl.backgroundStyle = .prominent
+        pageControl.backgroundStyle = .automatic
         pageControl.accessibilityIdentifier = "page-Control"
         return pageControl
     }()
@@ -67,9 +71,9 @@ extension CarouselView: ViewCode {
             carouselCollectionView.topAnchor.constraint(equalTo: topAnchor),
             carouselCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
             carouselCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            carouselCollectionView.heightAnchor.constraint(equalToConstant: 160),
+            carouselCollectionView.heightAnchor.constraint(equalToConstant: 200),
 
-            pageControl.topAnchor.constraint(equalTo: carouselCollectionView.bottomAnchor, constant: -30),
+            pageControl.topAnchor.constraint(equalTo: topAnchor, constant: 140),
             pageControl.leadingAnchor.constraint(equalTo: carouselCollectionView.leadingAnchor),
             pageControl.trailingAnchor.constraint(equalTo: carouselCollectionView.trailingAnchor),
             pageControl.heightAnchor.constraint(equalToConstant: 44),
@@ -82,16 +86,9 @@ extension CarouselView: ViewCode {
     }
 
     func configureAdditionalBehaviors() {
-        let carouselLayout = UICollectionViewFlowLayout()
-        carouselLayout.scrollDirection = .horizontal
-        carouselLayout.itemSize = .init(width: bounds.width, height: 150)
-        carouselLayout.sectionInset = .zero
-
-        carouselCollectionView.collectionViewLayout = carouselLayout
 
         guard let viewConfiguration = viewConfiguration else { return }
         pageControl.numberOfPages = viewConfiguration.images.count
-        pageControl.currentPage = viewConfiguration.page
     }
 }
 
@@ -102,11 +99,14 @@ extension CarouselView: UICollectionViewDataSource {
         viewConfiguration?.images.count ?? 0
     }
 
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        self.pageControl.currentPage = indexPath.row
+    }
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard
             let viewConfiguration = viewConfiguration,
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarouselCollectionViewCell.identifier,
-                                                            for: indexPath) as? CarouselCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarouselCollectionViewCell.identifier, for: indexPath) as? CarouselCollectionViewCell
         else {
             return UICollectionViewCell()
         }
