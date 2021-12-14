@@ -65,3 +65,28 @@ public struct PricingInfos: Codable {
     var monthlyCondoFee: String?
 }
 
+func makePropertyMock() -> Property {
+    let property: Property = .init(id: "",
+                                   description: "",
+                                   listingStatus: "",
+                                   createdAt: "",
+                                   updatedAt: "",
+                                   listingType: "",
+                                   usableAreas: 123,
+                                   parkingSpaces: nil,
+                                   bathrooms: 3,
+                                   bedrooms: 4,
+                                   images: [""],
+                                   owner: false,
+                                   pricingInfos: .init(period: .monthly,
+                                                       yearlyIptu: nil,
+                                                       price: "400",
+                                                       rentalTotalPrice: nil,
+                                                       businessType: .rental,
+                                                       monthlyCondoFee: nil),
+                                   address: .init(city: "",
+                                                  neighborhood: "",
+                                                  geoLocation: .init(precision: "",
+                                                                     location: .init(lon: 12, lat: 12))))
+    return property
+}

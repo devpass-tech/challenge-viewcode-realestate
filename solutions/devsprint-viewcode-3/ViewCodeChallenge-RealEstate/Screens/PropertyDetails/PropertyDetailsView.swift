@@ -114,7 +114,9 @@ extension PropertyDetailsView: ViewCode {
         ])
     }
     
-    func configureAdditionalBehaviors() {}
+    func configureAdditionalBehaviors() {
+        backgroundColor = .white
+    }
 }
 
 #if canImport(SwiftUI) && DEBUG

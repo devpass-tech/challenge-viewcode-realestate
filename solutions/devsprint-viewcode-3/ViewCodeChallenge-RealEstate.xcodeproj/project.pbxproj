@@ -152,7 +152,6 @@
 		5B821DFC275FA2B900E5DFEF /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B18DAA6E2763A26D0025F963 /* PropertyView */,
 				5B1ED6392767F1E600F68A77 /* MapLocationView.swift */,
 				15CD5059276048D50013DA30 /* PropertyDescriptionView.swift */,
 				5B821DFD275FA2C600E5DFEF /* DividerView.swift */,
