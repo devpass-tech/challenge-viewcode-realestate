@@ -1,13 +1,11 @@
 <ViewCodeChallenge_RealEstate.CarouselView; frame = (0 0; 0 0); layer = <CALayer>>
-   | <UICollectionView; frame = (0 0; 0 160); clipsToBounds = YES; gestureRecognizers = <NSArray>; layer = <CALayer>; contentOffset: {0, 0}; contentSize: {50, 160}; adjustedContentInset: {0, 0, 0, 0}; layout: <UICollectionViewFlowLayout>; dataSource: <ViewCodeChallenge_RealEstate.CarouselView; frame = (0 0; 0 0); layer = <CALayer>>>
-   |    | <ViewCodeChallenge_RealEstate.CarouselCollectionViewCell; baseClass = UICollectionViewCell; frame = (0 5; 0 150); layer = <CALayer>>
-   |    |    | <UIImageView; frame = (0 0; 0 150); opaque = NO; userInteractionEnabled = NO; layer = <CALayer>>
-   |    | <_UIScrollViewScrollIndicator; frame = (-6 50; 3 107); alpha = 0; autoresize = LM; layer = <CALayer>>
-   |    |    | <UIView; frame = (0 0; 3 107); layer = <CALayer>>
-   | <UIPageControl; frame = (0 130; 0 44); autoresize = W; gestureRecognizers = <NSArray>; layer = <CALayer>>
+   | <UICollectionView; frame = (0 0; 0 200); clipsToBounds = YES; gestureRecognizers = <NSArray>; layer = <CALayer>; contentOffset: {0, 0}; contentSize: {0, 200}; adjustedContentInset: {0, 0, 0, 0}; layout: <UICollectionViewFlowLayout>; dataSource: <ViewCodeChallenge_RealEstate.CarouselView; frame = (0 0; 0 0); layer = <CALayer>>>
+   |    | <ViewCodeChallenge_RealEstate.CarouselCollectionViewCell; baseClass = UICollectionViewCell; frame = (0 0; 375 200); hidden = YES; layer = <CALayer>>
+   |    |    | <UIImageView; frame = (0 0; 375 200); opaque = NO; userInteractionEnabled = NO; layer = <CALayer>>
+   |    | <_UIScrollViewScrollIndicator; frame = (-6 50; 3 147); alpha = 0; autoresize = LM; layer = <CALayer>>
+   |    |    | <UIView; frame = (0 0; 3 147); layer = <CALayer>>
+   | <UIPageControl; frame = (0 156; 0 44); autoresize = W; gestureRecognizers = <NSArray>; layer = <CALayer>>
    |    | <_UIPageControlContentView; frame = (-10 9; 20 26); layer = <CALayer>>
-   |    |    | <UIVisualEffectView; frame = (0 0; 20 26); layer = <CALayer>> effect=<UIBlurEffect> style=UIBlurEffectStyleSystemThinMaterial
-   |    |    |    | <_UIVisualEffectBackdropView; frame = (0 0; 20 26); autoresize = W+H; userInteractionEnabled = NO; layer = <UICABackdropLayer>>
    |    |    | <_UIPageControlIndicatorContentView; frame = (-7.3787e+19 0; 98 26); autoresize = H; layer = <CALayer>>
-   |    |    |    | <_UIPageIndicatorView; frame = (5 13; 0 0); transform = [0, 0, 0, 0, 0, 0]; opaque = NO; userInteractionEnabled = NO; tintColor = <UIDynamicSystemColor; name = _pageControlPlatterIndicatorColor>; layer = <CALayer>>
-   |    |    |    | <_UIPageIndicatorView; frame = (22.3333 13; 0 0); transform = [0, 0, 0, 0, 0, 0]; opaque = NO; userInteractionEnabled = NO; tintColor = UIExtendedSRGBColorSpace 1 1 1 1; layer = <CALayer>>
+   |    |    |    | <_UIPageIndicatorView; frame = (5 13; 0 0); transform = [0, 0, 0, 0, 0, 0]; opaque = NO; userInteractionEnabled = NO; tintColor = UIExtendedSRGBColorSpace 1 1 1 1; layer = <CALayer>>
+   |    |    |    | <_UIPageIndicatorView; frame = (22.3333 13; 0 0); transform = [0, 0, 0, 0, 0, 0]; opaque = NO; userInteractionEnabled = NO; tintColor = <UIDynamicSystemColor; name = _pageControlIndicatorColor>; layer = <CALayer>>

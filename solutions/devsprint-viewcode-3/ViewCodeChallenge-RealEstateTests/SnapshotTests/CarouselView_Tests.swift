@@ -25,7 +25,7 @@ class CarouselView_Tests: XCTestCase {
 
         let sut = CarouselView()
 
-        let viewConfiguration = CarouselViewConfiguration(images: images, page: 1)
+        let viewConfiguration = CarouselViewConfiguration(images: images)
         sut.configure(with: viewConfiguration)
 
         assertSnapshot(matching: sut, as: .image(size: size), record: false)
