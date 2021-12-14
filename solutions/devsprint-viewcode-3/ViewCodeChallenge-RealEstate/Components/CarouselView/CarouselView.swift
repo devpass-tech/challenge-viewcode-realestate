@@ -17,8 +17,6 @@ class CarouselView: UIView {
     private lazy var carouselCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: UIScreen.screens.first?.bounds.width ?? 0, height: 200)
-        layout.sectionInset = .zero
 
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -115,7 +113,7 @@ extension CarouselView: UICollectionViewDataSource {
         }
 
         let image = viewConfiguration.images[indexPath.row]
-        
+
         let cellConfiguration = CarouselCollectionViewCellConfiguration(image: image)
         cell.configure(with: cellConfiguration)
 
@@ -125,4 +123,21 @@ extension CarouselView: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegate
 
-extension CarouselView: UICollectionViewDelegate {}
+extension CarouselView: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: collectionView.frame.width, height: 200)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        .zero
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        0
+    }
+}
