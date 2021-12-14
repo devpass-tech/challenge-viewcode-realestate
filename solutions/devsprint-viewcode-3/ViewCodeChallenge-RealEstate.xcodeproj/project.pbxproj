@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		15CD505A276048D50013DA30 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD5059276048D50013DA30 /* PropertyDescriptionView.swift */; };
 		2C37FCF72760DB3200B8BB3D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37FCF62760DB3200B8BB3D /* TabBarController.swift */; };
+		2C4BC74C2767F26D00B37971 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BC74B2767F26D00B37971 /* swiftgen.yml */; };
+		2C4BC7502767F2E000B37971 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BC74F2767F2E000B37971 /* XCAssets+Generated.swift */; };
 		5B821DFE275FA2C600E5DFEF /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B821DFD275FA2C600E5DFEF /* DividerView.swift */; };
 		5B821E02275FD31100E5DFEF /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B821E01275FD31100E5DFEF /* UIViewPreview.swift */; };
 		5BA12CD527610B000068AE9C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA12CD427610B000068AE9C /* LoadingView.swift */; };
@@ -64,6 +66,8 @@
 /* Begin PBXFileReference section */
 		15CD5059276048D50013DA30 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		2C37FCF62760DB3200B8BB3D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		2C4BC74B2767F26D00B37971 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		2C4BC74F2767F2E000B37971 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		5B821DFD275FA2C600E5DFEF /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		5B821E01275FD31100E5DFEF /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 		5BA12CD427610B000068AE9C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -133,6 +137,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C4BC74E2767F2AF00B37971 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BC74F2767F2E000B37971 /* XCAssets+Generated.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 		5B821DFC275FA2B900E5DFEF /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +275,7 @@
 		986153C32704EE2B00838CA6 = {
 			isa = PBXGroup;
 			children = (
+				2C4BC74B2767F26D00B37971 /* swiftgen.yml */,
 				986153CE2704EE2B00838CA6 /* ViewCodeChallenge-RealEstate */,
 				E5D24EFD275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests */,
 				986153CD2704EE2B00838CA6 /* Products */,
@@ -299,6 +312,7 @@
 		98DAB52E2718BF2300BDC6B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2C4BC74E2767F2AF00B37971 /* SwiftGen */,
 				98DAB5312718CBE400BDC6B8 /* listings.json */,
 				986153D82704EE2F00838CA6 /* Assets.xcassets */,
 				986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */,
@@ -397,6 +411,7 @@
 			buildConfigurationList = 986153E02704EE3000838CA6 /* Build configuration list for PBXNativeTarget "ViewCodeChallenge-RealEstate" */;
 			buildPhases = (
 				3E56C0B5E53897A525B0A66B /* [CP] Check Pods Manifest.lock */,
+				2C4BC74D2767F28D00B37971 /* SwiftGen */,
 				986153C82704EE2B00838CA6 /* Sources */,
 				986153C92704EE2B00838CA6 /* Frameworks */,
 				986153CA2704EE2B00838CA6 /* Resources */,
@@ -476,6 +491,7 @@
 				986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */,
 				986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */,
 				98DAB5322718CBE400BDC6B8 /* listings.json in Resources */,
+				2C4BC74C2767F26D00B37971 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +505,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C4BC74D2767F28D00B37971 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi \n";
+		};
 		3E56C0B5E53897A525B0A66B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -578,6 +612,7 @@
 				B18DAA702763A2A20025F963 /* PropertyTableViewCell.swift in Sources */,
 				5BB8193C27605F5600E9A781 /* ContactFormView.swift in Sources */,
 				5BE2E69627607E4E005E5597 /* UITextField+Padding.swift in Sources */,
+				2C4BC7502767F2E000B37971 /* XCAssets+Generated.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				EB567BE62767F7E100AF2708 /* PropertyFullDescriptionView.swift in Sources */,
 				EB567BE82767F81D00AF2708 /* PropertyFullDescriptionViewController.swift in Sources */,
