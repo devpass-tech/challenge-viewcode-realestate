@@ -62,9 +62,6 @@ extension PropertyListView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         propertyViewConfiguration?.properties.count ?? 0
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        320
-    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PropertyTableViewCell.cellId, for: indexPath) as? PropertyTableViewCell else { return UITableViewCell() }

@@ -50,6 +50,10 @@ class CarouselView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: UIView.noIntrinsicMetric, height: 200)
+    }
+
     // MARK: Internal
 
     func configure(with viewConfiguration: CarouselViewConfiguration) {
@@ -73,7 +77,7 @@ extension CarouselView: ViewCode {
             carouselCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             carouselCollectionView.heightAnchor.constraint(equalToConstant: 200),
 
-            pageControl.bottomAnchor.constraint(equalTo: carouselCollectionView.bottomAnchor, constant: -16),
+            pageControl.bottomAnchor.constraint(equalTo: carouselCollectionView.bottomAnchor),
             pageControl.leadingAnchor.constraint(equalTo: carouselCollectionView.leadingAnchor),
             pageControl.trailingAnchor.constraint(equalTo: carouselCollectionView.trailingAnchor),
             pageControl.heightAnchor.constraint(equalToConstant: 44),
@@ -86,7 +90,6 @@ extension CarouselView: ViewCode {
     }
 
     func configureAdditionalBehaviors() {
-
         guard let viewConfiguration = viewConfiguration else { return }
         pageControl.numberOfPages = viewConfiguration.images.count
     }
