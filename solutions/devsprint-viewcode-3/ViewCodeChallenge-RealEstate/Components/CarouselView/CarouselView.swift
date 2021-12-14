@@ -123,3 +123,29 @@ extension CarouselView: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 
 extension CarouselView: UICollectionViewDelegate {}
+
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
+
+struct CarouselViewPreviews: PreviewProvider {
+    static var previews: some View {
+        UIViewPreview {
+            let images = [
+                UIImage(named: "pic1")!,
+                UIImage(named: "pic2")!,
+                UIImage(named: "pic3")!,
+                UIImage(named: "pic4")!,
+                UIImage(named: "pic5")!,
+                UIImage(named: "pic6")!,
+            ]
+            
+            let view = CarouselView()
+            let viewConfiguration = CarouselViewConfiguration(images: images, page: 1)
+            view.configure(with: viewConfiguration)
+            
+            return view
+        }
+        .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 170))
+    }
+}
+#endif
