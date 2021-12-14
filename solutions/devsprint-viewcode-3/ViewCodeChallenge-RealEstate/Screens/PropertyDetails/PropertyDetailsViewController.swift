@@ -9,14 +9,18 @@ import UIKit
 
 class PropertyDetailsViewController: UIViewController {
     // MARK: Properties
-    private lazy var customView: UIView = {
+    private lazy var customView: PropertyDetailsView = {
         let view = PropertyDetailsView()
         return view
     }()
     
     // MARK: Initializers
+//property: Property
     init() {
         super.init(nibName: nil, bundle: nil)
+//        let configuration = PropertyDetailsViewConfiguration(
+//            carouselViewConfiguration: .init(images: <#T##[UIImage]#>, page: <#T##Int#>),
+//            propertyInfoViewConfiguration: <#T##PropertyInfoConfiguration#>)
     }
     
     required init?(coder: NSCoder) {
@@ -45,5 +49,3 @@ struct PropertyDetailsViewControllerPreview: PreviewProvider {
         }
 }
 #endif
-
-
