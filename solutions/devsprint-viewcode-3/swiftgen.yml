@@ -1,0 +1,12 @@
+## Output config
+output_dir: ViewCodeChallenge-RealEstate/Resources/SwiftGen
+
+## XCAssets
+xcassets:
+
+  inputs:
+    - ViewCodeChallenge-RealEstate/Resources/Assets.xcassets
+    
+  outputs:
+    templateName: swift5
+    output: XCAssets+Generated.swift

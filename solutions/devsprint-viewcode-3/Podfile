@@ -12,6 +12,7 @@ target 'ViewCodeChallenge-RealEstate' do
 	#Pods for testing
 
 	pod 'SnapshotTesting'
+	pod 'SwiftGen'
 	end
 
 end
