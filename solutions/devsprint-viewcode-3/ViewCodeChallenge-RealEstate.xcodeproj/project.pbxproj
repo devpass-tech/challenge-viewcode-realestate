@@ -31,16 +31,19 @@
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98A281562766CEF600D600BC /* PropertyDescriptionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A281552766CEF600D600BC /* PropertyDescriptionViewTests.swift */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
-		B18DAA702763A2A20025F963 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18DAA6F2763A2A20025F963 /* PropertyTableViewCell.swift */; };
-		B18DAA722763BC010025F963 /* PropertyTableViewCell_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18DAA712763BC010025F963 /* PropertyTableViewCell_Tests.swift */; };
 		A22DB302276464C70057275D /* ButtonViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DB301276464C70057275D /* ButtonViewSnapshotTests.swift */; };
 		A22DB303276466830057275D /* EmptyViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE4A402762D9D30091AFD9 /* EmptyViewSnapshotTests.swift */; };
 		A2BA38B42761557800E8CAF1 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA38B32761557800E8CAF1 /* ButtonView.swift */; };
+		B18DAA702763A2A20025F963 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18DAA6F2763A2A20025F963 /* PropertyTableViewCell.swift */; };
+		B18DAA722763BC010025F963 /* PropertyTableViewCell_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18DAA712763BC010025F963 /* PropertyTableViewCell_Tests.swift */; };
 		B1DE4A3F2762D9AA0091AFD9 /* CarouselView_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE4A3E2762D9AA0091AFD9 /* CarouselView_Tests.swift */; };
 		B1F86D6827618B6300F71304 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F86D6627618B6300F71304 /* CarouselCollectionViewCell.swift */; };
 		B1F86D6927618B6300F71304 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F86D6727618B6300F71304 /* CarouselView.swift */; };
 		B9BB37EE275F9EFB00396B9E /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB37ED275F9EFB00396B9E /* EmptyView.swift */; };
 		BA0E622192F02A954B644344 /* Pods_ViewCodeChallenge_RealEstate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */; };
+		EB567BE62767F7E100AF2708 /* PropertyFullDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB567BE52767F7E100AF2708 /* PropertyFullDescriptionView.swift */; };
+		EB567BE82767F81D00AF2708 /* PropertyFullDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB567BE72767F81D00AF2708 /* PropertyFullDescriptionViewController.swift */; };
+		EB7362902769076F00FD8EEA /* PropertyFullDescriptionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73628F2769076F00FD8EEA /* PropertyFullDescriptionConfiguration.swift */; };
 		EB8A3358276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A3357276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift */; };
 		EBD7B13527616772004945A4 /* PropertyInfoConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7B13327616772004945A4 /* PropertyInfoConfiguration.swift */; };
 		EBD7B13627616772004945A4 /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7B13427616772004945A4 /* PropertyInfoView.swift */; };
@@ -86,10 +89,10 @@
 		98A281552766CEF600D600BC /* PropertyDescriptionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewTests.swift; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
 		9CBFFC21F22F882A8493875E /* Pods-ViewCodeChallenge-RealEstate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstate.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstate/Pods-ViewCodeChallenge-RealEstate.release.xcconfig"; sourceTree = "<group>"; };
-		B18DAA6F2763A2A20025F963 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
-		B18DAA712763BC010025F963 /* PropertyTableViewCell_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell_Tests.swift; sourceTree = "<group>"; };
 		A22DB301276464C70057275D /* ButtonViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewSnapshotTests.swift; sourceTree = "<group>"; };
 		A2BA38B32761557800E8CAF1 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B18DAA6F2763A2A20025F963 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
+		B18DAA712763BC010025F963 /* PropertyTableViewCell_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell_Tests.swift; sourceTree = "<group>"; };
 		B1DE4A3E2762D9AA0091AFD9 /* CarouselView_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselView_Tests.swift; sourceTree = "<group>"; };
 		B1DE4A402762D9D30091AFD9 /* EmptyViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewSnapshotTests.swift; sourceTree = "<group>"; };
 		B1F86D6627618B6300F71304 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -98,6 +101,9 @@
 		C0F77C1694D966A39B35CC75 /* Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; sourceTree = "<group>"; };
 		DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeChallenge_RealEstateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D24EFC275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB567BE52767F7E100AF2708 /* PropertyFullDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyFullDescriptionView.swift; sourceTree = "<group>"; };
+		EB567BE72767F81D00AF2708 /* PropertyFullDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyFullDescriptionViewController.swift; sourceTree = "<group>"; };
+		EB73628F2769076F00FD8EEA /* PropertyFullDescriptionConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyFullDescriptionConfiguration.swift; sourceTree = "<group>"; };
 		EB8A3357276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewSnapshotTests.swift; sourceTree = "<group>"; };
 		EBD7B13327616772004945A4 /* PropertyInfoConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoConfiguration.swift; sourceTree = "<group>"; };
 		EBD7B13427616772004945A4 /* PropertyInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
@@ -129,13 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				B18DAA6E2763A26D0025F963 /* PropertyView */,
-				B1F86D6527618B6300F71304 /* CarouselView */,
-				EBD7B13227616772004945A4 /* PropertyInfo */,
 				15CD5059276048D50013DA30 /* PropertyDescriptionView.swift */,
-				5BB8193B27605F5600E9A781 /* ContactFormView.swift */,
 				5B821DFD275FA2C600E5DFEF /* DividerView.swift */,
 				A2BA38B32761557800E8CAF1 /* ButtonView.swift */,
-				B9BB37ED275F9EFB00396B9E /* EmptyView.swift */,
 				5BA12CD427610B000068AE9C /* LoadingView.swift */,
 				5BB8193B27605F5600E9A781 /* ContactFormView.swift */,
 				B9BB37ED275F9EFB00396B9E /* EmptyView.swift */,
@@ -212,6 +214,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				EB567BE42767F2B000AF2708 /* PropertyDescription */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 				980789CC275E942300CED39A /* Favorites */,
@@ -345,6 +348,16 @@
 				EB8A33562761003E0085FF8F /* SnapshotTests */,
 			);
 			path = "ViewCodeChallenge-RealEstateTests";
+			sourceTree = "<group>";
+		};
+		EB567BE42767F2B000AF2708 /* PropertyDescription */ = {
+			isa = PBXGroup;
+			children = (
+				EB567BE52767F7E100AF2708 /* PropertyFullDescriptionView.swift */,
+				EB73628F2769076F00FD8EEA /* PropertyFullDescriptionConfiguration.swift */,
+				EB567BE72767F81D00AF2708 /* PropertyFullDescriptionViewController.swift */,
+			);
+			path = PropertyDescription;
 			sourceTree = "<group>";
 		};
 		EB8A33562761003E0085FF8F /* SnapshotTests */ = {
@@ -555,6 +568,7 @@
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980789CB275E8FAF00CED39A /* Settings.swift in Sources */,
 				A2BA38B42761557800E8CAF1 /* ButtonView.swift in Sources */,
+				EB7362902769076F00FD8EEA /* PropertyFullDescriptionConfiguration.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				15CD505A276048D50013DA30 /* PropertyDescriptionView.swift in Sources */,
 				B1F86D6827618B6300F71304 /* CarouselCollectionViewCell.swift in Sources */,
@@ -562,6 +576,8 @@
 				5BB8193C27605F5600E9A781 /* ContactFormView.swift in Sources */,
 				5BE2E69627607E4E005E5597 /* UITextField+Padding.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				EB567BE62767F7E100AF2708 /* PropertyFullDescriptionView.swift in Sources */,
+				EB567BE82767F81D00AF2708 /* PropertyFullDescriptionViewController.swift in Sources */,
 				5BA12CD527610B000068AE9C /* LoadingView.swift in Sources */,
 				EBD7B13627616772004945A4 /* PropertyInfoView.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
@@ -576,7 +592,6 @@
 				B1DE4A3F2762D9AA0091AFD9 /* CarouselView_Tests.swift in Sources */,
 				5BB0C4232762900400487518 /* LoadingViewSnapshotTests.swift in Sources */,
 				B18DAA722763BC010025F963 /* PropertyTableViewCell_Tests.swift in Sources */,
-				B1DE4A412762D9D30091AFD9 /* EmptyViewSnapshotTests.swift in Sources */,
 				98A281562766CEF600D600BC /* PropertyDescriptionViewTests.swift in Sources */,
 				5BB0C4252762904300487518 /* ContactFormViewSnapshotTest.swift in Sources */,
 				EBD7B138276167AC004945A4 /* DividerViewSnapshotTests.swift in Sources */,
