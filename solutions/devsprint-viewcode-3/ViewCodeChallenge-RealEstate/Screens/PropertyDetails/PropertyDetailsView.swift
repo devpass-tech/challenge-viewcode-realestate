@@ -106,7 +106,6 @@ extension PropertyDetailsView: ViewCode {
             
             stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             
-            carouselView.heightAnchor.constraint(equalToConstant: 175),
             propertyInfoView.heightAnchor.constraint(equalToConstant: 150),
             mapView.heightAnchor.constraint(equalToConstant: 170),
             propertyDescriptionView.heightAnchor.constraint(equalToConstant: 200),
