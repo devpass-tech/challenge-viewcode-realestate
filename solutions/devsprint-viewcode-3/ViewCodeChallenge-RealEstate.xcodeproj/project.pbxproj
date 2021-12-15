@@ -34,6 +34,7 @@
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98A281562766CEF600D600BC /* PropertyDescriptionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A281552766CEF600D600BC /* PropertyDescriptionViewTests.swift */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		A20751B3276961EC00264DF6 /* PropertyDetailsViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20751B2276961EC00264DF6 /* PropertyDetailsViewSnapshotTests.swift */; };
 		A22DB302276464C70057275D /* ButtonViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DB301276464C70057275D /* ButtonViewSnapshotTests.swift */; };
 		A22DB303276466830057275D /* EmptyViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE4A402762D9D30091AFD9 /* EmptyViewSnapshotTests.swift */; };
 		A232E03527683D8C004C2C8E /* PropertyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A232E03427683D8C004C2C8E /* PropertyDetailsView.swift */; };
@@ -97,6 +98,7 @@
 		98A281552766CEF600D600BC /* PropertyDescriptionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewTests.swift; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
 		9CBFFC21F22F882A8493875E /* Pods-ViewCodeChallenge-RealEstate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstate.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstate/Pods-ViewCodeChallenge-RealEstate.release.xcconfig"; sourceTree = "<group>"; };
+		A20751B2276961EC00264DF6 /* PropertyDetailsViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewSnapshotTests.swift; sourceTree = "<group>"; };
 		A22DB301276464C70057275D /* ButtonViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewSnapshotTests.swift; sourceTree = "<group>"; };
 		A232E03427683D8C004C2C8E /* PropertyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsView.swift; sourceTree = "<group>"; };
 		A2BA38B32761557800E8CAF1 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
@@ -395,6 +397,7 @@
 				EB8A3357276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift */,
 				B18DAA712763BC010025F963 /* PropertyTableViewCell_Tests.swift */,
 				EB73629127690AE900FD8EEA /* PropertyFullDescriptionViewTests.swift */,
+				A20751B2276961EC00264DF6 /* PropertyDetailsViewSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 			files = (
 				A22DB302276464C70057275D /* ButtonViewSnapshotTests.swift in Sources */,
 				B1DE4A3F2762D9AA0091AFD9 /* CarouselView_Tests.swift in Sources */,
+				A20751B3276961EC00264DF6 /* PropertyDetailsViewSnapshotTests.swift in Sources */,
 				5BB0C4232762900400487518 /* LoadingViewSnapshotTests.swift in Sources */,
 				B18DAA722763BC010025F963 /* PropertyTableViewCell_Tests.swift in Sources */,
 				98A281562766CEF600D600BC /* PropertyDescriptionViewTests.swift in Sources */,
