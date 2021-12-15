@@ -15,6 +15,16 @@ class PropertyListView: UIView {
 
     private var propertyViewConfiguration: PropertyViewConfiguration?
 
+    private lazy var emptyView: EmptyView = {
+        let config = EmptyViewConfiguration(titleInformation: "No listings found",
+                                            msgInformation: "Search for cities and neighborhoods using the search bar above")
+        let view = EmptyView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.configure(with: config)
+//        view.alpha = 0
+        return view
+    }()
+
     private lazy var propertyTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -23,6 +33,10 @@ class PropertyListView: UIView {
         tableView.dataSource = self
         return tableView
     }()
+
+//    func configureBackgroundTableView(with view: UIView) {
+//        propertyTableView.backgroundView = view
+//    }
 
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -37,11 +51,26 @@ class PropertyListView: UIView {
         self.propertyViewConfiguration = config
         propertyTableView.reloadData()
     }
+
+    func showEmptyView() {
+//        self.addSubview(self.emptyView)
+        UIView.animate(withDuration: 0.75) {
+            self.propertyTableView.alpha = 0
+        }
+    }
+
+    func hideEmptyView() {
+//        emptyView.removeFromSuperview()
+        UIView.animate(withDuration: 0.25) {
+            self.propertyTableView.alpha = 1
+        }
+    }
 }
 
 // MARK: - ViewCode
 extension PropertyListView: ViewCode {
     func configureSubviews() {
+        addSubview(emptyView)
         addSubview(propertyTableView)
     }
 
@@ -50,11 +79,17 @@ extension PropertyListView: ViewCode {
             propertyTableView.topAnchor.constraint(equalTo: topAnchor),
             propertyTableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             propertyTableView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            propertyTableView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            propertyTableView.bottomAnchor.constraint(equalTo: bottomAnchor),
+
+            emptyView.topAnchor.constraint(equalTo: topAnchor),
+            emptyView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            emptyView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            emptyView.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
 
     func configureAdditionalBehaviors() {}
+    
 }
 
 // MARK: - UITableViewDataSource
