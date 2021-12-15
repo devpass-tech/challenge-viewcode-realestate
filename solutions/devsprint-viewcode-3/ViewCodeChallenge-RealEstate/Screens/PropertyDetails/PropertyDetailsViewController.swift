@@ -36,22 +36,21 @@ class PropertyDetailsViewController: UIViewController {
     }
     
     private func getPropertyDetailsViewConfiguration(of property: Property) -> PropertyDetailsViewConfiguration {
-        let carouselConfiguration: CarouselViewConfiguration = .init(images: [.init(named: "pic1")!,
-                                                                              .init(named: "pic2")!,
-                                                                              .init(named: "pic3")!])
+        let images = property.images.compactMap { UIImage(named: $0) }
+        let carouselConfiguration: CarouselViewConfiguration = .init(images: images)
         
-        let propertyInfoConfiguration: PropertyInfoConfiguration = .init(price: "401.000",
-                                                                         iptu: "670",
-                                                                         condoFee: "560",
-                                                                         usableAreas: 60,
-                                                                         parkingSpaces: 2,
-                                                                         bathrooms: 2,
-                                                                         bedrooms: 2,
-                                                                         address: "Av. Taylor Swift")
+        let propertyInfoConfiguration: PropertyInfoConfiguration = .init(price: property.pricingInfos.price,
+                                                                         iptu: property.pricingInfos.yearlyIptu,
+                                                                         condoFee: property.pricingInfos.monthlyCondoFee,
+                                                                         usableAreas: property.usableAreas,
+                                                                         parkingSpaces: property.parkingSpaces,
+                                                                         bathrooms: property.bathrooms,
+                                                                         bedrooms: property.bedrooms,
+                                                                         address: property.address.neighborhood)
         
-        let mapConfiguration: MapLocationViewModel = .init(title: "Lorem ipsum", lat: -31.765696, lng: -52.315801)
+        let mapConfiguration: MapLocationViewModel = .init(title: property.address.neighborhood, lat: property.address.geoLocation.location.lat, lng: property.address.geoLocation.location.lon)
         
-        let descriptionConfiguration: PropertyDescriptionViewConfiguration = .init(description: "Lorem Ipsum")
+        let descriptionConfiguration: PropertyDescriptionViewConfiguration = .init(description: property.description)
         
         let configuration: PropertyDetailsViewConfiguration = .init(carouselViewConfiguration: carouselConfiguration,
                                                                     propertyInfoViewConfiguration: propertyInfoConfiguration,
