@@ -15,6 +15,15 @@ class PropertyListView: UIView {
 
     private var propertyViewConfiguration: PropertyViewConfiguration?
 
+    private lazy var emptyView: EmptyView = {
+        let config = EmptyViewConfiguration(titleInformation: "No listings found",
+                                            msgInformation: "Search for cities and neighborhoods using the search bar above")
+        let view = EmptyView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.configure(with: config)
+        return view
+    }()
+
     private lazy var propertyTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -37,11 +46,24 @@ class PropertyListView: UIView {
         self.propertyViewConfiguration = config
         propertyTableView.reloadData()
     }
+
+    func showEmptyView() {
+        UIView.animate(withDuration: 0.75) {
+            self.propertyTableView.alpha = 0
+        }
+    }
+
+    func hideEmptyView() {
+        UIView.animate(withDuration: 0.25) {
+            self.propertyTableView.alpha = 1
+        }
+    }
 }
 
 // MARK: - ViewCode
 extension PropertyListView: ViewCode {
     func configureSubviews() {
+        addSubview(emptyView)
         addSubview(propertyTableView)
     }
 
@@ -50,11 +72,17 @@ extension PropertyListView: ViewCode {
             propertyTableView.topAnchor.constraint(equalTo: topAnchor),
             propertyTableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             propertyTableView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            propertyTableView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            propertyTableView.bottomAnchor.constraint(equalTo: bottomAnchor),
+
+            emptyView.topAnchor.constraint(equalTo: topAnchor),
+            emptyView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            emptyView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            emptyView.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
 
     func configureAdditionalBehaviors() {}
+    
 }
 
 // MARK: - UITableViewDataSource

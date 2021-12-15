@@ -23,7 +23,6 @@ class PropertyListViewController: UIViewController {
 
     init() {
         super.init(nibName: nil, bundle: nil)
-
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         title = "Real Estate App"
@@ -57,7 +56,19 @@ class PropertyListViewController: UIViewController {
 extension PropertyListViewController: UISearchResultsUpdating, UISearchControllerDelegate, UISearchBarDelegate {
 
     func updateSearchResults(for searchController: UISearchController) {
+        let textTyped =  searchController.searchBar.text?.trimmingCharacters(in: .whitespacesAndNewlines)
 
+        guard let text = textTyped, text.count != 0 else {
+            propertyListView.hideEmptyView()
+            return
+        }
+
+        guard text.localizedCaseInsensitiveCompare("empty") == .orderedSame else {
+            propertyListView.hideEmptyView()
+            return
+        }
+
+        propertyListView.showEmptyView()
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
