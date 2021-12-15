@@ -8,9 +8,6 @@
 import UIKit
 
 class TextFieldView: UITextField {
-
-    private var textInset: UIEdgeInsets
-
     // MARK: Lifecycle
     init(textInset: UIEdgeInsets = UIEdgeInsets(top: 10,
                                                 left: 12,
@@ -39,4 +36,8 @@ class TextFieldView: UITextField {
         let rect = super.textRect(forBounds: bounds)
         return rect.inset(by: textInset)
     }
+
+    // MARK: Private
+    private var textInset: UIEdgeInsets
+
 }
