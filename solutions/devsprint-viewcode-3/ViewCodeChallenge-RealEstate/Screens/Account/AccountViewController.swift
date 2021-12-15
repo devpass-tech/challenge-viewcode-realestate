@@ -9,9 +9,20 @@ import UIKit
 
 class AccountViewController: UIViewController {
 
+    override func loadView() {
+        super.loadView()
+        let accountView = AccountView()
+        accountView.delegate = self
+        view = accountView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
 
-        self.view.backgroundColor = .darkGray
+extension AccountViewController: AccountViewDelegate {
+    func didTappedButton() {
+            // TODO: button pressed
     }
 }

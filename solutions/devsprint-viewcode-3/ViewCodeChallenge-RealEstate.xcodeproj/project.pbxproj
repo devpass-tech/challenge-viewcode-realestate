@@ -38,12 +38,14 @@
 		A22DB303276466830057275D /* EmptyViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE4A402762D9D30091AFD9 /* EmptyViewSnapshotTests.swift */; };
 		A2BA38B42761557800E8CAF1 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA38B32761557800E8CAF1 /* ButtonView.swift */; };
 		B126C9A42769531E00BAF315 /* PropertyListViewController_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126C9A32769531E00BAF315 /* PropertyListViewController_Tests.swift */; };
+		B126C9A627695CD800BAF315 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126C9A527695CD800BAF315 /* AccountView.swift */; };
 		B18DAA702763A2A20025F963 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18DAA6F2763A2A20025F963 /* PropertyTableViewCell.swift */; };
 		B18DAA722763BC010025F963 /* PropertyTableViewCell_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18DAA712763BC010025F963 /* PropertyTableViewCell_Tests.swift */; };
 		B1B5B5AE2767F3A300999190 /* PropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B5B5AD2767F3A300999190 /* PropertyListView.swift */; };
 		B1DE4A3F2762D9AA0091AFD9 /* CarouselView_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE4A3E2762D9AA0091AFD9 /* CarouselView_Tests.swift */; };
 		B1F86D6827618B6300F71304 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F86D6627618B6300F71304 /* CarouselCollectionViewCell.swift */; };
 		B1F86D6927618B6300F71304 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F86D6727618B6300F71304 /* CarouselView.swift */; };
+		B1FC278227696CD8008C7822 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC278127696CD8008C7822 /* TextFieldView.swift */; };
 		B9BB37EE275F9EFB00396B9E /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB37ED275F9EFB00396B9E /* EmptyView.swift */; };
 		BA0E622192F02A954B644344 /* Pods_ViewCodeChallenge_RealEstate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */; };
 		EB567BE62767F7E100AF2708 /* PropertyFullDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB567BE52767F7E100AF2708 /* PropertyFullDescriptionView.swift */; };
@@ -101,6 +103,7 @@
 		A22DB301276464C70057275D /* ButtonViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewSnapshotTests.swift; sourceTree = "<group>"; };
 		A2BA38B32761557800E8CAF1 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B126C9A32769531E00BAF315 /* PropertyListViewController_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewController_Tests.swift; sourceTree = "<group>"; };
+		B126C9A527695CD800BAF315 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		B18DAA6F2763A2A20025F963 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		B18DAA712763BC010025F963 /* PropertyTableViewCell_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell_Tests.swift; sourceTree = "<group>"; };
 		B1B5B5AD2767F3A300999190 /* PropertyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListView.swift; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 		B1DE4A402762D9D30091AFD9 /* EmptyViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewSnapshotTests.swift; sourceTree = "<group>"; };
 		B1F86D6627618B6300F71304 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		B1F86D6727618B6300F71304 /* CarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		B1FC278127696CD8008C7822 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		B9BB37ED275F9EFB00396B9E /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		C0F77C1694D966A39B35CC75 /* Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; sourceTree = "<group>"; };
 		DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeChallenge_RealEstateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +167,7 @@
 				B9BB37ED275F9EFB00396B9E /* EmptyView.swift */,
 				B1F86D6527618B6300F71304 /* CarouselView */,
 				EBD7B13227616772004945A4 /* PropertyInfo */,
+				B1FC278127696CD8008C7822 /* TextFieldView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 		980789D7275EA3BC00CED39A /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				B126C9A527695CD800BAF315 /* AccountView.swift */,
 				980789D8275EA3C900CED39A /* AccountViewController.swift */,
 			);
 			path = Account;
@@ -610,6 +616,7 @@
 				A2BA38B42761557800E8CAF1 /* ButtonView.swift in Sources */,
 				EB7362902769076F00FD8EEA /* PropertyFullDescriptionConfiguration.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
+				B1FC278227696CD8008C7822 /* TextFieldView.swift in Sources */,
 				15CD505A276048D50013DA30 /* PropertyDescriptionView.swift in Sources */,
 				B1F86D6827618B6300F71304 /* CarouselCollectionViewCell.swift in Sources */,
 				B18DAA702763A2A20025F963 /* PropertyTableViewCell.swift in Sources */,
@@ -621,6 +628,7 @@
 				EB567BE82767F81D00AF2708 /* PropertyFullDescriptionViewController.swift in Sources */,
 				5BA12CD527610B000068AE9C /* LoadingView.swift in Sources */,
 				EBD7B13627616772004945A4 /* PropertyInfoView.swift in Sources */,
+				B126C9A627695CD800BAF315 /* AccountView.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

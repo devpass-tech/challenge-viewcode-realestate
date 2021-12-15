@@ -25,7 +25,7 @@ class ButtonView: UIView {
         return button
     }()
     
-    private var pressedButton: (() -> Void)?
+    var pressedButton: (() -> Void)?
 
     // MARK: Initializers
     init() {
