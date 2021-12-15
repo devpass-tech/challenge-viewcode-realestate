@@ -43,6 +43,7 @@
 		B1F86D6827618B6300F71304 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F86D6627618B6300F71304 /* CarouselCollectionViewCell.swift */; };
 		B1F86D6927618B6300F71304 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F86D6727618B6300F71304 /* CarouselView.swift */; };
 		B9BB37EE275F9EFB00396B9E /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB37ED275F9EFB00396B9E /* EmptyView.swift */; };
+		B9C2F246276A6AE5006DCEE5 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C2F245276A6AE5006DCEE5 /* SettingView.swift */; };
 		BA0E622192F02A954B644344 /* Pods_ViewCodeChallenge_RealEstate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */; };
 		EB8A3358276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A3357276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift */; };
 		EBD7B13527616772004945A4 /* PropertyInfoConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD7B13327616772004945A4 /* PropertyInfoConfiguration.swift */; };
@@ -101,6 +102,7 @@
 		B1F86D6627618B6300F71304 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		B1F86D6727618B6300F71304 /* CarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		B9BB37ED275F9EFB00396B9E /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		B9C2F245276A6AE5006DCEE5 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		C0F77C1694D966A39B35CC75 /* Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; sourceTree = "<group>"; };
 		DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeChallenge_RealEstateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D24EFC275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 		5B821DFC275FA2B900E5DFEF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B9C2F244276A6AC8006DCEE5 /* SettingView */,
 				5B1ED6392767F1E600F68A77 /* MapLocationView.swift */,
 				15CD5059276048D50013DA30 /* PropertyDescriptionView.swift */,
 				5B821DFD275FA2C600E5DFEF /* DividerView.swift */,
@@ -350,6 +353,14 @@
 				B1F86D6627618B6300F71304 /* CarouselCollectionViewCell.swift */,
 			);
 			path = CarouselView;
+			sourceTree = "<group>";
+		};
+		B9C2F244276A6AC8006DCEE5 /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				B9C2F245276A6AE5006DCEE5 /* SettingView.swift */,
+			);
+			path = SettingView;
 			sourceTree = "<group>";
 		};
 		E5D24EFD275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests */ = {
@@ -595,6 +606,7 @@
 				B18DAA702763A2A20025F963 /* PropertyTableViewCell.swift in Sources */,
 				5BB8193C27605F5600E9A781 /* ContactFormView.swift in Sources */,
 				5BE2E69627607E4E005E5597 /* UITextField+Padding.swift in Sources */,
+				B9C2F246276A6AE5006DCEE5 /* SettingView.swift in Sources */,
 				2C4BC7502767F2E000B37971 /* XCAssets+Generated.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				5BA12CD527610B000068AE9C /* LoadingView.swift in Sources */,
