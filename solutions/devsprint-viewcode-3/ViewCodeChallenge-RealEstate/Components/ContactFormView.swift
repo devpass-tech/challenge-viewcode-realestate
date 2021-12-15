@@ -39,13 +39,11 @@ final class ContactFormView: UIView {
         return textField
     }()
     
-    private let submitButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Enviar contato", for: .normal)
-        button.backgroundColor = .systemBlue
-        button.layer.cornerRadius = 8
-        button.clipsToBounds = true
+    private let submitButton: ButtonView = {
+        let button = ButtonView()
+        let buttonViewModel = ButtonViewConfiguration (title: "Enviar Contato", pressedButton: nil)
+        button.configure(with: buttonViewModel)
+        
         return button
     }()
     
