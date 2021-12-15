@@ -38,8 +38,7 @@ class PropertyDetailsViewController: UIViewController {
     private func getPropertyDetailsViewConfiguration(of property: Property) -> PropertyDetailsViewConfiguration {
         let carouselConfiguration: CarouselViewConfiguration = .init(images: [.init(named: "pic1")!,
                                                                               .init(named: "pic2")!,
-                                                                              .init(named: "pic3")!],
-                                                                     page: 0)
+                                                                              .init(named: "pic3")!])
         
         let propertyInfoConfiguration: PropertyInfoConfiguration = .init(price: "401.000",
                                                                          iptu: "670",
