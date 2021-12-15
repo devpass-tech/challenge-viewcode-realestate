@@ -21,7 +21,6 @@ class PropertyListView: UIView {
         let view = EmptyView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.configure(with: config)
-//        view.alpha = 0
         return view
     }()
 
@@ -33,10 +32,6 @@ class PropertyListView: UIView {
         tableView.dataSource = self
         return tableView
     }()
-
-//    func configureBackgroundTableView(with view: UIView) {
-//        propertyTableView.backgroundView = view
-//    }
 
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -53,14 +48,12 @@ class PropertyListView: UIView {
     }
 
     func showEmptyView() {
-//        self.addSubview(self.emptyView)
         UIView.animate(withDuration: 0.75) {
             self.propertyTableView.alpha = 0
         }
     }
 
     func hideEmptyView() {
-//        emptyView.removeFromSuperview()
         UIView.animate(withDuration: 0.25) {
             self.propertyTableView.alpha = 1
         }
