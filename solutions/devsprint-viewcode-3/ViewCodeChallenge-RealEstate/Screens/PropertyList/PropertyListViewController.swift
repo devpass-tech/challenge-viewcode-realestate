@@ -10,6 +10,8 @@ import UIKit
 class PropertyListViewController: UIViewController {
 
     private let propertyListView = PropertyListView()
+    
+    private let apiClient = RealEstateAPIClient()
 
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
@@ -43,12 +45,11 @@ class PropertyListViewController: UIViewController {
         getData()
     }
 
-    private func getData() {
-        let apiClient = RealEstateAPIClient()
-
+    private func getData(completionHandler: @escaping () -> Void = {} ) {
         apiClient.fetchProperties { properties in
             let propertyViewConfig = PropertyViewConfiguration(properties: properties)
             self.propertyListView.configure(with: propertyViewConfig)
+            completionHandler()
         }
     }
 }
@@ -56,7 +57,7 @@ class PropertyListViewController: UIViewController {
 extension PropertyListViewController: UISearchResultsUpdating, UISearchControllerDelegate, UISearchBarDelegate {
 
     func updateSearchResults(for searchController: UISearchController) {
-        let textTyped =  searchController.searchBar.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let textTyped = searchController.searchBar.text?.trimmingCharacters(in: .whitespacesAndNewlines)
 
         guard let text = textTyped, text.count != 0 else {
             propertyListView.hideEmptyView()
@@ -67,11 +68,16 @@ extension PropertyListViewController: UISearchResultsUpdating, UISearchControlle
             propertyListView.hideEmptyView()
             return
         }
-
+        
         propertyListView.showEmptyView()
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-
+        propertyListView.showLoading()
+        getData {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                self.propertyListView.hideLoading()
+            }
+        }
     }
 }
