@@ -69,7 +69,7 @@ extension PropertyDetailsViewController {
     func showMap() {
         let viewController = MapLocationViewController()
         viewController.configure(with: property)
-        showDetailViewController(viewController, sender: self)
+        present(viewController, animated: true, completion: nil)
     }
 }
 
