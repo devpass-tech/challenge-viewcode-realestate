@@ -9,7 +9,11 @@ import UIKit
 
 class PropertyListViewController: UIViewController {
 
-    private let propertyListView = PropertyListView()
+    private lazy var propertyListView: PropertyListView = {
+        var view = PropertyListView()
+        view.delegate = self
+        return view
+    }()
     
     private let apiClient = RealEstateAPIClient()
 
@@ -32,7 +36,6 @@ class PropertyListViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
-        propertyListView.delegate = self
         view = propertyListView
     }
 
@@ -83,10 +86,10 @@ extension PropertyListViewController: UISearchResultsUpdating, UISearchControlle
     }
 }
 
-extension PropertyListViewController: ClickCellDelegate {
+extension PropertyListViewController: PropertyListViewDelegate {
     
-    func seguePropertyDetailsViewController() {
-        let vc = PropertyDetailsViewController()
+    func seguePropertyDetailsViewController(with property: Property) {
+        let vc = PropertyDetailsViewController(property: property)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
