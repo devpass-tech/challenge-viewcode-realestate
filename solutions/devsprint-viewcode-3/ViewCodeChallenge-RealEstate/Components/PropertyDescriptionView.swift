@@ -1,6 +1,5 @@
 import UIKit
 
-
 struct PropertyDescriptionViewConfiguration {
     var description: String
 }
@@ -48,7 +47,6 @@ final class PropertyDescriptionView: UIView {
         return stackView
     }()
     
-    
     init() {
         super.init(frame: .zero)
         setupViews()
@@ -81,3 +79,19 @@ extension PropertyDescriptionView: ViewCode {
     }
     func configureAdditionalBehaviors() {}
 }
+
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
+
+struct PropertyDescriptionViewPreview: PreviewProvider {
+    static var previews: some View {
+        UIViewPreview {
+            let dividerView = PropertyDescriptionView()
+       
+            return dividerView
+        }
+        .previewLayout(.fixed(width: UIScreen.main.bounds.width,
+                              height: 100))
+    }
+}
+#endif
