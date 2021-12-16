@@ -11,15 +11,9 @@ struct PropertyViewConfiguration {
     let properties: [Property]
 }
 
-protocol PropertyListViewDelegate: AnyObject {
-    func seguePropertyDetailsViewController(with property: Property)
-}
-
 class PropertyListView: UIView {
 
     private var propertyViewConfiguration: PropertyViewConfiguration?
-    
-    weak var delegate: PropertyListViewDelegate?
 
     private lazy var emptyView: EmptyView = {
         let config = EmptyViewConfiguration(titleInformation: "No listings found",
@@ -148,10 +142,4 @@ extension PropertyListView: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension PropertyListView: UITableViewDelegate {
-    
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let property = propertyViewConfiguration?.properties[indexPath.row] else { return }
-        delegate?.seguePropertyDetailsViewController(with: property)
-    }
-}
+extension PropertyListView: UITableViewDelegate {}
