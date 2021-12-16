@@ -1,6 +1,5 @@
 import UIKit
 
-
 struct PropertyDescriptionViewConfiguration {
     var description: String
 }
@@ -47,7 +46,6 @@ final class PropertyDescriptionView: UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
-    
     
     init() {
         super.init(frame: .zero)
