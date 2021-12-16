@@ -11,9 +11,15 @@ struct PropertyViewConfiguration {
     let properties: [Property]
 }
 
+protocol ClickCellDelegate: AnyObject {
+    func seguePropertyDetailsViewController()
+}
+
 class PropertyListView: UIView {
 
     private var propertyViewConfiguration: PropertyViewConfiguration?
+    
+    weak var delegate: ClickCellDelegate?
 
     private lazy var propertyTableView: UITableView = {
         let tableView = UITableView()
@@ -87,4 +93,10 @@ extension PropertyListView: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension PropertyListView: UITableViewDelegate {}
+extension PropertyListView: UITableViewDelegate {
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        guard let property = propertyViewConfiguration?.properties[indexPath.row] else { return }
+        delegate?.seguePropertyDetailsViewController()
+    }
+}

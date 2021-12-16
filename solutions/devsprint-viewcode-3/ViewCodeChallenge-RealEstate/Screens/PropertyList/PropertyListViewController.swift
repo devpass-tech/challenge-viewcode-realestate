@@ -31,6 +31,7 @@ class PropertyListViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
+        propertyListView.delegate = self
         view = propertyListView
     }
 
@@ -62,5 +63,13 @@ extension PropertyListViewController: UISearchResultsUpdating, UISearchControlle
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
 
+    }
+}
+
+extension PropertyListViewController: ClickCellDelegate {
+    
+    func seguePropertyDetailsViewController() {
+        let vc = PropertyDetailsViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
