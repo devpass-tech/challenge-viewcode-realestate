@@ -1,0 +1,3 @@
+<ViewCodeChallenge_RealEstate.EmptyView; frame = (0 0; 390 844); autoresize = W+H; layer = <CALayer>>
+   | <UILabel; frame = (94.3333 405.333; 201.333 33.6667); text = 'No listings found'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   | <UILabel; frame = (14.6667 449; 361 14.3333); text = 'Search for cities and nei...'; userInteractionEnabled = NO; layer = <_UILabelLayer>>

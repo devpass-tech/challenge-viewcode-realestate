@@ -13,6 +13,7 @@ struct PropertyTableViewCellConfiguration {
 }
 
 class PropertyTableViewCell: UITableViewCell {
+    static let cellId = "PropertyTableViewCell"
 
     private var stackView: UIStackView = {
         let stackView = UIStackView()
@@ -25,21 +26,18 @@ class PropertyTableViewCell: UITableViewCell {
 
     private var carouselView: CarouselView = {
         let view = CarouselView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.accessibilityIdentifier = "carousel-View"
         return view
     }()
 
     private var propertyInfoView : PropertyInfoView = {
         let view = PropertyInfoView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.accessibilityIdentifier = "property-Info-View"
+        view.accessibilityIdentifier = "propertyInfoView"
         return view
     }()
 
     private var dividerView: DividerView = {
         let view = DividerView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.accessibilityIdentifier = "divider-View"
         return view
     }()
@@ -66,10 +64,10 @@ class PropertyTableViewCell: UITableViewCell {
 
 extension PropertyTableViewCell: ViewCode {
     func configureSubviews() {
-        contentView.addSubview(stackView)
         stackView.addArrangedSubview(carouselView)
         stackView.addArrangedSubview(propertyInfoView)
         stackView.addArrangedSubview(dividerView)
+        contentView.addSubview(stackView)
     }
 
     func configureSubviewsConstraints() {

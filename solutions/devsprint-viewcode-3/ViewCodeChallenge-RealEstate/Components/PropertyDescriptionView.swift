@@ -1,6 +1,5 @@
 import UIKit
 
-
 struct PropertyDescriptionViewConfiguration {
     var description: String
 }
@@ -31,13 +30,11 @@ final class PropertyDescriptionView: UIView {
         return textView
     }()
     
-    private lazy var seeMoreButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .systemBlue
-        button.setTitleColor(.white, for: .normal)
-        button.setTitle("Ver mais", for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.layer.cornerRadius = 5
+    private lazy var seeMoreButton: ButtonView = {
+        let button = ButtonView()
+        let buttonViewModel = ButtonViewConfiguration (title: "Ver mais", pressedButton: nil)
+        button.configure(with: buttonViewModel)
+        
         return button
     }()
     
@@ -49,7 +46,6 @@ final class PropertyDescriptionView: UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
-    
     
     init() {
         super.init(frame: .zero)
@@ -83,3 +79,19 @@ extension PropertyDescriptionView: ViewCode {
     }
     func configureAdditionalBehaviors() {}
 }
+
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
+
+struct PropertyDescriptionViewPreview: PreviewProvider {
+    static var previews: some View {
+        UIViewPreview {
+            let dividerView = PropertyDescriptionView()
+       
+            return dividerView
+        }
+        .previewLayout(.fixed(width: UIScreen.main.bounds.width,
+                              height: 100))
+    }
+}
+#endif

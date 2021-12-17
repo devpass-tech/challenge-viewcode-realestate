@@ -9,6 +9,14 @@ import UIKit
 
 class PropertyListViewController: UIViewController {
 
+    private lazy var propertyListView: PropertyListView = {
+        var view = PropertyListView()
+        view.delegate = self
+        return view
+    }()
+    
+    private let apiClient = RealEstateAPIClient()
+
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.delegate = self
@@ -21,11 +29,15 @@ class PropertyListViewController: UIViewController {
 
     init() {
         super.init(nibName: nil, bundle: nil)
-
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settingBtn(sender:)))
         title = "Real Estate App"
+    }
+
+    override func loadView() {
+        super.loadView()
+        view = propertyListView
     }
 
     required init?(coder: NSCoder) {
@@ -34,14 +46,15 @@ class PropertyListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.view.backgroundColor = .white
-        
-        let apiClient = RealEstateAPIClient()
-        
+        getData()
+    }
+
+    private func getData(completionHandler: @escaping () -> Void = {} ) {
         apiClient.fetchProperties { properties in
-            
-            print(properties)
+            let propertyViewConfig = PropertyViewConfiguration(properties: properties)
+            self.propertyListView.configure(with: propertyViewConfig)
+            completionHandler()
         }
     }
     
@@ -54,10 +67,35 @@ class PropertyListViewController: UIViewController {
 extension PropertyListViewController: UISearchResultsUpdating, UISearchControllerDelegate, UISearchBarDelegate {
 
     func updateSearchResults(for searchController: UISearchController) {
+        let textTyped = searchController.searchBar.text?.trimmingCharacters(in: .whitespacesAndNewlines)
 
+        guard let text = textTyped, text.count != 0 else {
+            propertyListView.hideEmptyView()
+            return
+        }
+
+        guard text.localizedCaseInsensitiveCompare("empty") == .orderedSame else {
+            propertyListView.hideEmptyView()
+            return
+        }
+        
+        propertyListView.showEmptyView()
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        propertyListView.showLoading()
+        getData {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                self.propertyListView.hideLoading()
+            }
+        }
+    }
+}
 
+extension PropertyListViewController: PropertyListViewDelegate {
+    
+    func seguePropertyDetailsViewController(with property: Property) {
+        let vc = PropertyDetailsViewController(property: property)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
