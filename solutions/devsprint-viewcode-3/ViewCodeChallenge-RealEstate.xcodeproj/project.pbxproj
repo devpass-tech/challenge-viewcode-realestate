@@ -40,6 +40,7 @@
 		A232E03527683D8C004C2C8E /* PropertyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A232E03427683D8C004C2C8E /* PropertyDetailsView.swift */; };
 		A2BA38B42761557800E8CAF1 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BA38B32761557800E8CAF1 /* ButtonView.swift */; };
 		B126C9A42769531E00BAF315 /* PropertyListViewController_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B126C9A32769531E00BAF315 /* PropertyListViewController_Tests.swift */; };
+		B1381707276BC0FC005DDE7A /* MapLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1381706276BC0FC005DDE7A /* MapLocationViewController.swift */; };
 		B18DAA702763A2A20025F963 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18DAA6F2763A2A20025F963 /* PropertyTableViewCell.swift */; };
 		B18DAA722763BC010025F963 /* PropertyTableViewCell_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18DAA712763BC010025F963 /* PropertyTableViewCell_Tests.swift */; };
 		B1B5B5AE2767F3A300999190 /* PropertyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B5B5AD2767F3A300999190 /* PropertyListView.swift */; };
@@ -106,6 +107,7 @@
 		A232E03427683D8C004C2C8E /* PropertyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsView.swift; sourceTree = "<group>"; };
 		A2BA38B32761557800E8CAF1 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B126C9A32769531E00BAF315 /* PropertyListViewController_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewController_Tests.swift; sourceTree = "<group>"; };
+		B1381706276BC0FC005DDE7A /* MapLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewController.swift; sourceTree = "<group>"; };
 		B18DAA6F2763A2A20025F963 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		B18DAA712763BC010025F963 /* PropertyTableViewCell_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell_Tests.swift; sourceTree = "<group>"; };
 		B1B5B5AD2767F3A300999190 /* PropertyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListView.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				EB567BE42767F2B000AF2708 /* PropertyDescription */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
+				B1381705276BC0FC005DDE7A /* MapLocation */,
 				980789CC275E942300CED39A /* Favorites */,
 				980789C9275E8F8E00CED39A /* Settings */,
 				980789D7275EA3BC00CED39A /* Account */,
@@ -354,6 +357,14 @@
 				C0F77C1694D966A39B35CC75 /* Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B1381705276BC0FC005DDE7A /* MapLocation */ = {
+			isa = PBXGroup;
+			children = (
+				B1381706276BC0FC005DDE7A /* MapLocationViewController.swift */,
+			);
+			path = MapLocation;
 			sourceTree = "<group>";
 		};
 		B1F86D6527618B6300F71304 /* CarouselView */ = {
@@ -617,6 +628,7 @@
 				980789CB275E8FAF00CED39A /* Settings.swift in Sources */,
 				5B1ED63A2767F1E600F68A77 /* MapLocationView.swift in Sources */,
 				A2BA38B42761557800E8CAF1 /* ButtonView.swift in Sources */,
+				B1381707276BC0FC005DDE7A /* MapLocationViewController.swift in Sources */,
 				A232E03527683D8C004C2C8E /* PropertyDetailsView.swift in Sources */,
 				EB7362902769076F00FD8EEA /* PropertyFullDescriptionConfiguration.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
