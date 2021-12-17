@@ -9,8 +9,7 @@ import Foundation
 import UIKit
 
 class SettingView: UIView {
-    
-    var listTableView: UITableView = {
+   private var listTableView: UITableView = {
         let tb = UITableView.init(frame: .zero, style: .grouped)
         tb.translatesAutoresizingMaskIntoConstraints = false
         tb.register(SettingTableViewCell.self, forCellReuseIdentifier: "cell")
@@ -19,24 +18,32 @@ class SettingView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = .white
-        listTableView.dataSource = self
-        listTableView.delegate = self
         setupViews()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    func setupViews() {
+}
+
+extension SettingView: ViewCode {
+    func configureSubviews() {
         self.addSubview(listTableView)
+    }
+    
+    func configureSubviewsConstraints() {
         NSLayoutConstraint.activate([
             listTableView.topAnchor.constraint(equalTo: self.topAnchor),
             listTableView.leftAnchor.constraint(equalTo: self.leftAnchor),
             listTableView.rightAnchor.constraint(equalTo: self.rightAnchor),
             listTableView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
+    }
+    
+    func configureAdditionalBehaviors() {
+        backgroundColor = .white
+        listTableView.dataSource = self
+        listTableView.delegate = self
     }
 }
 

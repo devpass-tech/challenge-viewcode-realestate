@@ -11,8 +11,6 @@ class SettingsViewController: UIViewController {
  
     init() {
         super.init(nibName: nil, bundle: nil)
-        
-        navigationItem.hidesSearchBarWhenScrolling = false
         title = "Settings"
     }
 
