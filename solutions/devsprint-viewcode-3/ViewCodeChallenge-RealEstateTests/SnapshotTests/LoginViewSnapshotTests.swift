@@ -15,7 +15,7 @@ class LoginViewSnapshotTests: XCTestCase {
     func testLoginView() throws {
         let loginView = LoginView()
         assertSnapshot(matching: loginView,
-                       as: Snapshotting.image(size: CGSize(width: 400, height: 250)), record: false)
+                       as: Snapshotting.image(size: CGSize(width: 400, height: 450)), record: false)
     }
 
     

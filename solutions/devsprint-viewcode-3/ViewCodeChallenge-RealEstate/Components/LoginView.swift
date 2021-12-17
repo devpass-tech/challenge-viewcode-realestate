@@ -10,8 +10,6 @@ import UIKit
 
 final class LoginView: UIView {
     
-    
-    
     private var accountLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -90,8 +88,6 @@ final class LoginView: UIView {
 extension LoginView: ViewCode {
     func configureSubviews() {
         addSubview(stackView)
-        
-        
     }
 
     func configureSubviewsConstraints() {
@@ -106,7 +102,6 @@ extension LoginView: ViewCode {
             resetPassawordButton.heightAnchor.constraint(equalToConstant: 50),
         ])
     }
-    
     func configureAdditionalBehaviors() {
         self.backgroundColor = .white
     }
