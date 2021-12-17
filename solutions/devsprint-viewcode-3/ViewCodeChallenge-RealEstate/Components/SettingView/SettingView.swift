@@ -10,16 +10,8 @@ import UIKit
 
 class SettingView: UIView {
     
-    let textApp: UILabel = {
-        let lb = UILabel()
-        lb.text = "APP VERSION"
-        lb.textAlignment = .left
-        lb.font = .preferredFont(forTextStyle: .caption1, compatibleWith: .none)
-        return lb
-    }()
-    
     var listTableView: UITableView = {
-        let tb = UITableView()
+        let tb = UITableView.init(frame: .zero, style: .grouped)
         tb.translatesAutoresizingMaskIntoConstraints = false
         tb.register(SettingTableViewCell.self, forCellReuseIdentifier: "cell")
         tb.backgroundColor = .lightGray
@@ -41,23 +33,23 @@ class SettingView: UIView {
     func setupViews() {
         self.addSubview(listTableView)
         NSLayoutConstraint.activate([
-            listTableView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
-            listTableView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0),
-            listTableView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0),
-            listTableView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0)
+            listTableView.topAnchor.constraint(equalTo: self.topAnchor),
+            listTableView.leftAnchor.constraint(equalTo: self.leftAnchor),
+            listTableView.rightAnchor.constraint(equalTo: self.rightAnchor),
+            listTableView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
     }
 }
 
 extension SettingView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    
-        return self.textApp.text
+        
+        return  "APP VERSION"
     }
 }
 
 extension SettingView: UITableViewDataSource {
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -66,9 +58,7 @@ extension SettingView: UITableViewDataSource {
         guard let cell = listTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? SettingTableViewCell else { return UITableViewCell() }
         
         cell.textLabel?.text = "Version 1.0"
-    
+        
         return cell
     }
-    
-    
 }
