@@ -27,6 +27,7 @@ class PropertyListViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settingBtn(sender:)))
         title = "Real Estate App"
     }
 
@@ -51,6 +52,11 @@ class PropertyListViewController: UIViewController {
             self.propertyListView.configure(with: propertyViewConfig)
             completionHandler()
         }
+    }
+    
+    @objc func settingBtn(sender: UIBarButtonItem) {
+        let settingScreen  = UINavigationController(rootViewController: SettingsViewController())
+        present(settingScreen, animated: true)
     }
 }
 
