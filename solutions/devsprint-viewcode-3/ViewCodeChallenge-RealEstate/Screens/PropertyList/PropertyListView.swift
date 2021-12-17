@@ -15,6 +15,23 @@ class PropertyListView: UIView {
 
     private var propertyViewConfiguration: PropertyViewConfiguration?
 
+    private lazy var emptyView: EmptyView = {
+        let config = EmptyViewConfiguration(titleInformation: "No listings found",
+                                            msgInformation: "Search for cities and neighborhoods using the search bar above")
+        let view = EmptyView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.configure(with: config)
+        return view
+    }()
+    
+    private lazy var loadingView: LoadingView = {
+        let loadingViewConfigure = LoadingViewConfiguration(labelText: "Searching for listings")
+        let loadingView = LoadingView()
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        loadingView.configure(with: loadingViewConfigure)
+        return loadingView
+    }()
+
     private lazy var propertyTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -37,11 +54,39 @@ class PropertyListView: UIView {
         self.propertyViewConfiguration = config
         propertyTableView.reloadData()
     }
+
+    func showEmptyView() {
+        UIView.animate(withDuration: 0.75) {
+            self.propertyTableView.alpha = 0
+        }
+    }
+
+    func hideEmptyView() {
+        UIView.animate(withDuration: 0.25) {
+            self.propertyTableView.alpha = 1
+        }
+    }
+    
+    func showLoading() {
+        UIView.animate(withDuration: 0.25) {
+            self.propertyTableView.alpha = 0
+            self.loadingView.isHidden = false
+        }
+    }
+    
+    func hideLoading() {
+        UIView.animate(withDuration: 0.25) {
+            self.propertyTableView.alpha = 1
+            self.loadingView.isHidden = true
+        }
+    }
 }
 
 // MARK: - ViewCode
 extension PropertyListView: ViewCode {
     func configureSubviews() {
+        addSubview(emptyView)
+        addSubview(loadingView)
         addSubview(propertyTableView)
     }
 
@@ -50,7 +95,17 @@ extension PropertyListView: ViewCode {
             propertyTableView.topAnchor.constraint(equalTo: topAnchor),
             propertyTableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             propertyTableView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            propertyTableView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            propertyTableView.bottomAnchor.constraint(equalTo: bottomAnchor),
+
+            emptyView.topAnchor.constraint(equalTo: topAnchor),
+            emptyView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            emptyView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            emptyView.bottomAnchor.constraint(equalTo: bottomAnchor),
+        
+            loadingView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            loadingView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            loadingView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            loadingView.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
 

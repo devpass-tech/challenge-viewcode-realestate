@@ -123,6 +123,8 @@ extension CarouselView: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegate
 
+extension CarouselView: UICollectionViewDelegate {}
+
 extension CarouselView: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -141,3 +143,29 @@ extension CarouselView: UICollectionViewDelegateFlowLayout {
         0
     }
 }
+
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
+
+struct CarouselViewPreviews: PreviewProvider {
+    static var previews: some View {
+        UIViewPreview {
+            let images = [
+                UIImage(named: "pic1")!,
+                UIImage(named: "pic2")!,
+                UIImage(named: "pic3")!,
+                UIImage(named: "pic4")!,
+                UIImage(named: "pic5")!,
+                UIImage(named: "pic6")!,
+            ]
+            
+            let view = CarouselView()
+            let viewConfiguration = CarouselViewConfiguration(images: images)
+            view.configure(with: viewConfiguration)
+            
+            return view
+        }
+        .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 170))
+    }
+}
+#endif
