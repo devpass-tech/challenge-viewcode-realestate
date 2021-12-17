@@ -14,7 +14,6 @@ class SettingView: UIView {
         let tb = UITableView.init(frame: .zero, style: .grouped)
         tb.translatesAutoresizingMaskIntoConstraints = false
         tb.register(SettingTableViewCell.self, forCellReuseIdentifier: "cell")
-        tb.backgroundColor = .lightGray
         return tb
     }()
     
