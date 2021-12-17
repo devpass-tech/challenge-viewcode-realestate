@@ -46,7 +46,7 @@ class PropertyListViewController: UIViewController {
     }
     
     @objc func settingBtn(sender: UIBarButtonItem) {
-        let settingScreen  = SettingsViewController()
+        let settingScreen  = UINavigationController(rootViewController: SettingsViewController())
         present(settingScreen, animated: true)
     }
 }
