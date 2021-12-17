@@ -78,17 +78,17 @@ extension PropertyDetailsViewController: PropertyDetailsViewDelegate {
     func didTapMapView() {
         let viewController = MapLocationViewController()
         viewController.configure(with: property)
-        show(viewController, sender: self)
+        present(viewController, animated: true, completion: nil)
     }
 }
 
-//#if canImport(SwiftUI) && DEBUG
-//import SwiftUI
-//
-//struct PropertyDetailsViewControllerPreview: PreviewProvider {
-//    static var previews: some View {
-//        let viewController = PropertyDetailsViewController(property: makePropertyMock())
-//            return UINavigationController(rootViewController: viewController).preview
-//        }
-//}
-//#endif
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
+
+struct PropertyDetailsViewControllerPreview: PreviewProvider {
+    static var previews: some View {
+        let viewController = PropertyDetailsViewController(property: makePropertyMock())
+            return UINavigationController(rootViewController: viewController).preview
+        }
+}
+#endif

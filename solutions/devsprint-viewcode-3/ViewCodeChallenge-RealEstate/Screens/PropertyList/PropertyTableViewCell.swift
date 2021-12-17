@@ -81,7 +81,6 @@ extension PropertyTableViewCell: ViewCode {
 
     func configureAdditionalBehaviors() {
         backgroundColor = .white
-        #warning("corrigir comportamento do tap e swipe na imagem")
         contentView.isUserInteractionEnabled = false
     }
 }
