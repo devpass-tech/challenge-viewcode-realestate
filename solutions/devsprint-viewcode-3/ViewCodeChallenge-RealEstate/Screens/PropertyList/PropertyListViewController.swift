@@ -9,9 +9,13 @@ import UIKit
 
 class PropertyListViewController: UIViewController {
 
-    private let propertyListView = PropertyListView()
-    
     private let apiClient = RealEstateAPIClient()
+
+    private lazy var propertyListView: PropertyListView = {
+        let view = PropertyListView()
+        view.delegate = self
+        return view
+    }()
 
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
@@ -68,7 +72,7 @@ extension PropertyListViewController: UISearchResultsUpdating, UISearchControlle
             propertyListView.hideEmptyView()
             return
         }
-        
+
         propertyListView.showEmptyView()
     }
 
@@ -79,5 +83,12 @@ extension PropertyListViewController: UISearchResultsUpdating, UISearchControlle
                 self.propertyListView.hideLoading()
             }
         }
+    }
+}
+
+extension PropertyListViewController: PropertyListViewDelegate {
+    func didTapCell(_ property: Property) {
+        let viewController = PropertyDetailsViewController(property: property)
+        show(viewController, sender: self)
     }
 }

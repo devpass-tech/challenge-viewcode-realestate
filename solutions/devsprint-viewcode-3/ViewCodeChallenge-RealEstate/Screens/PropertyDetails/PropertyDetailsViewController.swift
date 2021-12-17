@@ -14,6 +14,7 @@ class PropertyDetailsViewController: UIViewController {
     // MARK: Properties
     private lazy var customView: PropertyDetailsView = {
         let view = PropertyDetailsView()
+        view.delegate = self
         return view
     }()
     
@@ -73,13 +74,21 @@ extension PropertyDetailsViewController {
     }
 }
 
-#if canImport(SwiftUI) && DEBUG
-import SwiftUI
-
-struct PropertyDetailsViewControllerPreview: PreviewProvider {
-    static var previews: some View {
-        let viewController = PropertyDetailsViewController(property: makePropertyMock())
-            return UINavigationController(rootViewController: viewController).preview
-        }
+extension PropertyDetailsViewController: PropertyDetailsViewDelegate {
+    func didTapMapView() {
+        let viewController = MapLocationViewController()
+        viewController.configure(with: property)
+        show(viewController, sender: self)
+    }
 }
-#endif
+
+//#if canImport(SwiftUI) && DEBUG
+//import SwiftUI
+//
+//struct PropertyDetailsViewControllerPreview: PreviewProvider {
+//    static var previews: some View {
+//        let viewController = PropertyDetailsViewController(property: makePropertyMock())
+//            return UINavigationController(rootViewController: viewController).preview
+//        }
+//}
+//#endif

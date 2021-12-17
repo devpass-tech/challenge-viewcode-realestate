@@ -11,7 +11,13 @@ struct PropertyViewConfiguration {
     let properties: [Property]
 }
 
+protocol PropertyListViewDelegate: AnyObject {
+    func didTapCell(_ property: Property)
+}
+
 class PropertyListView: UIView {
+
+    weak var delegate: PropertyListViewDelegate?
 
     private var propertyViewConfiguration: PropertyViewConfiguration?
 
@@ -142,4 +148,9 @@ extension PropertyListView: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension PropertyListView: UITableViewDelegate {}
+extension PropertyListView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let property = propertyViewConfiguration?.properties[indexPath.row] else { return }
+        delegate?.didTapCell(property)
+    }
+}
