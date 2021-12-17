@@ -8,6 +8,9 @@
 import UIKit
 
 class PropertyDetailsViewController: UIViewController {
+
+    private var property: Property
+
     // MARK: Properties
     private lazy var customView: PropertyDetailsView = {
         let view = PropertyDetailsView()
@@ -16,6 +19,7 @@ class PropertyDetailsViewController: UIViewController {
     
     // MARK: Initializers
     init(property: Property) {
+        self.property = property
         super.init(nibName: nil, bundle: nil)
         let configuration = getPropertyDetailsViewConfiguration(of: property)
         customView.configure(with: configuration)
@@ -57,6 +61,15 @@ class PropertyDetailsViewController: UIViewController {
                                                                     mapViewConfiguration: mapConfiguration,
                                                                     descriptionViewConfiguration: descriptionConfiguration)
         return configuration
+    }
+}
+
+extension PropertyDetailsViewController {
+
+    func showMap() {
+        let viewController = MapLocationViewController()
+        viewController.configure(with: property)
+        present(viewController, animated: true, completion: nil)
     }
 }
 

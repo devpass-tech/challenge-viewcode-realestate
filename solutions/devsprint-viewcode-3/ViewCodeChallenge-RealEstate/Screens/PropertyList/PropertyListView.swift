@@ -11,9 +11,15 @@ struct PropertyViewConfiguration {
     let properties: [Property]
 }
 
+protocol PropertyListViewDelegate: AnyObject {
+    func seguePropertyDetailsViewController(with property: Property)
+}
+
 class PropertyListView: UIView {
 
     private var propertyViewConfiguration: PropertyViewConfiguration?
+    
+    weak var delegate: PropertyListViewDelegate?
 
     private lazy var emptyView: EmptyView = {
         let config = EmptyViewConfiguration(titleInformation: "No listings found",
@@ -22,6 +28,14 @@ class PropertyListView: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.configure(with: config)
         return view
+    }()
+    
+    private lazy var loadingView: LoadingView = {
+        let loadingViewConfigure = LoadingViewConfiguration(labelText: "Searching for listings")
+        let loadingView = LoadingView()
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        loadingView.configure(with: loadingViewConfigure)
+        return loadingView
     }()
 
     private lazy var propertyTableView: UITableView = {
@@ -58,12 +72,27 @@ class PropertyListView: UIView {
             self.propertyTableView.alpha = 1
         }
     }
+    
+    func showLoading() {
+        UIView.animate(withDuration: 0.25) {
+            self.propertyTableView.alpha = 0
+            self.loadingView.isHidden = false
+        }
+    }
+    
+    func hideLoading() {
+        UIView.animate(withDuration: 0.25) {
+            self.propertyTableView.alpha = 1
+            self.loadingView.isHidden = true
+        }
+    }
 }
 
 // MARK: - ViewCode
 extension PropertyListView: ViewCode {
     func configureSubviews() {
         addSubview(emptyView)
+        addSubview(loadingView)
         addSubview(propertyTableView)
     }
 
@@ -78,11 +107,15 @@ extension PropertyListView: ViewCode {
             emptyView.leadingAnchor.constraint(equalTo: leadingAnchor),
             emptyView.trailingAnchor.constraint(equalTo: trailingAnchor),
             emptyView.bottomAnchor.constraint(equalTo: bottomAnchor),
+        
+            loadingView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            loadingView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            loadingView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            loadingView.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
 
     func configureAdditionalBehaviors() {}
-    
 }
 
 // MARK: - UITableViewDataSource
@@ -115,4 +148,10 @@ extension PropertyListView: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension PropertyListView: UITableViewDelegate {}
+extension PropertyListView: UITableViewDelegate {
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let property = propertyViewConfiguration?.properties[indexPath.row] else { return }
+        delegate?.seguePropertyDetailsViewController(with: property)
+    }
+}

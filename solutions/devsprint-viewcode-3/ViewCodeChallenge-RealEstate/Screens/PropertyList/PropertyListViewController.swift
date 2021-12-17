@@ -9,7 +9,13 @@ import UIKit
 
 class PropertyListViewController: UIViewController {
 
-    private let propertyListView = PropertyListView()
+    private lazy var propertyListView: PropertyListView = {
+        var view = PropertyListView()
+        view.delegate = self
+        return view
+    }()
+    
+    private let apiClient = RealEstateAPIClient()
 
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
@@ -25,6 +31,7 @@ class PropertyListViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settingBtn(sender:)))
         title = "Real Estate App"
     }
 
@@ -43,20 +50,24 @@ class PropertyListViewController: UIViewController {
         getData()
     }
 
-    private func getData() {
-        let apiClient = RealEstateAPIClient()
-
+    private func getData(completionHandler: @escaping () -> Void = {} ) {
         apiClient.fetchProperties { properties in
             let propertyViewConfig = PropertyViewConfiguration(properties: properties)
             self.propertyListView.configure(with: propertyViewConfig)
+            completionHandler()
         }
+    }
+    
+    @objc func settingBtn(sender: UIBarButtonItem) {
+        let settingScreen  = UINavigationController(rootViewController: SettingsViewController())
+        present(settingScreen, animated: true)
     }
 }
 
 extension PropertyListViewController: UISearchResultsUpdating, UISearchControllerDelegate, UISearchBarDelegate {
 
     func updateSearchResults(for searchController: UISearchController) {
-        let textTyped =  searchController.searchBar.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let textTyped = searchController.searchBar.text?.trimmingCharacters(in: .whitespacesAndNewlines)
 
         guard let text = textTyped, text.count != 0 else {
             propertyListView.hideEmptyView()
@@ -67,11 +78,24 @@ extension PropertyListViewController: UISearchResultsUpdating, UISearchControlle
             propertyListView.hideEmptyView()
             return
         }
-
+        
         propertyListView.showEmptyView()
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        propertyListView.showLoading()
+        getData {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                self.propertyListView.hideLoading()
+            }
+        }
+    }
+}
 
+extension PropertyListViewController: PropertyListViewDelegate {
+    
+    func seguePropertyDetailsViewController(with property: Property) {
+        let vc = PropertyDetailsViewController(property: property)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
