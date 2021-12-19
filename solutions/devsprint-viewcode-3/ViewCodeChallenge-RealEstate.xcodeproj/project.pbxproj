@@ -52,6 +52,8 @@
 		B9BB37EE275F9EFB00396B9E /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB37ED275F9EFB00396B9E /* EmptyView.swift */; };
 		B9C2F246276A6AE5006DCEE5 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C2F245276A6AE5006DCEE5 /* SettingView.swift */; };
 		BA0E622192F02A954B644344 /* Pods_ViewCodeChallenge_RealEstate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B14E9BF8057CAC0B47901 /* Pods_ViewCodeChallenge_RealEstate.framework */; };
+		E51A5269276D12040030BA9E /* LoginViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51A5268276D12040030BA9E /* LoginViewSnapshotTests.swift */; };
+		E593636E2763A626006A1C15 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E593636D2763A626006A1C15 /* LoginView.swift */; };
 		EB567BE62767F7E100AF2708 /* PropertyFullDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB567BE52767F7E100AF2708 /* PropertyFullDescriptionView.swift */; };
 		EB567BE82767F81D00AF2708 /* PropertyFullDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB567BE72767F81D00AF2708 /* PropertyFullDescriptionViewController.swift */; };
 		EB7362902769076F00FD8EEA /* PropertyFullDescriptionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73628F2769076F00FD8EEA /* PropertyFullDescriptionConfiguration.swift */; };
@@ -123,6 +125,8 @@
 		B9C2F245276A6AE5006DCEE5 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		C0F77C1694D966A39B35CC75 /* Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; path = "Target Support Files/Pods-ViewCodeChallenge-RealEstateTests/Pods-ViewCodeChallenge-RealEstateTests.release.xcconfig"; sourceTree = "<group>"; };
 		DD911AD64E3795DDC3B1DEA5 /* Pods_ViewCodeChallenge_RealEstateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewCodeChallenge_RealEstateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E51A5268276D12040030BA9E /* LoginViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewSnapshotTests.swift; sourceTree = "<group>"; };
+		E593636D2763A626006A1C15 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E5D24EFC275F8E8400E54F9F /* ViewCodeChallenge-RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewCodeChallenge-RealEstateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB567BE52767F7E100AF2708 /* PropertyFullDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyFullDescriptionView.swift; sourceTree = "<group>"; };
 		EB567BE72767F81D00AF2708 /* PropertyFullDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyFullDescriptionViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +170,11 @@
 		5B821DFC275FA2B900E5DFEF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+
+				E593636D2763A626006A1C15 /* LoginView.swift */,
+
 				B9C2F244276A6AC8006DCEE5 /* SettingView */,
+
 				5B1ED6392767F1E600F68A77 /* MapLocationView.swift */,
 				15CD5059276048D50013DA30 /* PropertyDescriptionView.swift */,
 				5B821DFD275FA2C600E5DFEF /* DividerView.swift */,
@@ -424,6 +432,7 @@
 				A20751B2276961EC00264DF6 /* PropertyDetailsViewSnapshotTests.swift */,
 				B126C9A32769531E00BAF315 /* PropertyListViewController_Tests.swift */,
 				B1FC27832769FBB2008C7822 /* EmptyView_Tests.swift */,
+				E51A5268276D12040030BA9E /* LoginViewSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -651,6 +660,7 @@
 				B1F86D6827618B6300F71304 /* CarouselCollectionViewCell.swift in Sources */,
 				B18DAA702763A2A20025F963 /* PropertyTableViewCell.swift in Sources */,
 				5BB8193C27605F5600E9A781 /* ContactFormView.swift in Sources */,
+				E593636E2763A626006A1C15 /* LoginView.swift in Sources */,
 				5BE2E69627607E4E005E5597 /* UITextField+Padding.swift in Sources */,
 				B9C2F246276A6AE5006DCEE5 /* SettingView.swift in Sources */,
 				2C4BC7502767F2E000B37971 /* XCAssets+Generated.swift in Sources */,
@@ -677,6 +687,7 @@
 				98A281562766CEF600D600BC /* PropertyDescriptionViewTests.swift in Sources */,
 				EB73629227690AE900FD8EEA /* PropertyFullDescriptionViewTests.swift in Sources */,
 				5BB0C4252762904300487518 /* ContactFormViewSnapshotTest.swift in Sources */,
+				E51A5269276D12040030BA9E /* LoginViewSnapshotTests.swift in Sources */,
 				EBD7B138276167AC004945A4 /* DividerViewSnapshotTests.swift in Sources */,
 				A22DB303276466830057275D /* EmptyViewSnapshotTests.swift in Sources */,
 				EB8A3358276100C00085FF8F /* PropertyInfoViewSnapshotTests.swift in Sources */,
