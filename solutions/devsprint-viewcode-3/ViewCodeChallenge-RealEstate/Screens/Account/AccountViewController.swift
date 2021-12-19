@@ -10,8 +10,12 @@ import UIKit
 class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        navigationItem.title = "Account"
+    }
+    
+    
+    override func loadView() {
+        self.view = LoginView(frame: .zero)
 
-        self.view.backgroundColor = .darkGray
     }
 }
