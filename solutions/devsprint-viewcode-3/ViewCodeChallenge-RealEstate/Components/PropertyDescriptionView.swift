@@ -2,6 +2,7 @@ import UIKit
 
 struct PropertyDescriptionViewConfiguration {
     var description: String
+    var pressedButton: (() -> Void)?
 }
 
 final class PropertyDescriptionView: UIView {
@@ -32,9 +33,6 @@ final class PropertyDescriptionView: UIView {
     
     private lazy var seeMoreButton: ButtonView = {
         let button = ButtonView()
-        let buttonViewModel = ButtonViewConfiguration (title: "Ver mais", pressedButton: nil)
-        button.configure(with: buttonViewModel)
-        
         return button
     }()
     
@@ -58,6 +56,8 @@ final class PropertyDescriptionView: UIView {
     
     func configure(with viewConfiguration: PropertyDescriptionViewConfiguration) {
         descriptionTextView.text = viewConfiguration.description
+        let buttonViewModel = ButtonViewConfiguration(title: "Ver mais", pressedButton: viewConfiguration.pressedButton)
+        seeMoreButton.configure(with: buttonViewModel)
     }
 }
 

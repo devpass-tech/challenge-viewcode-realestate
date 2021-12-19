@@ -19,7 +19,7 @@ class PropertyDetailsViewController: UIViewController {
     }()
     
     // MARK: Initializers
-    init(property: Property) {
+    init(with property: Property) {
         self.property = property
         super.init(nibName: nil, bundle: nil)
         let configuration = getPropertyDetailsViewConfiguration(of: property)
@@ -53,15 +53,25 @@ class PropertyDetailsViewController: UIViewController {
                                                                          bedrooms: property.bedrooms,
                                                                          address: property.address.neighborhood)
         
-        let mapConfiguration: MapLocationViewModel = .init(title: property.address.neighborhood, lat: property.address.geoLocation.location.lat, lng: property.address.geoLocation.location.lon)
+        let mapConfiguration: MapLocationViewModel = .init(title: property.address.neighborhood,
+                                                           lat: property.address.geoLocation.location.lat,
+                                                           lng: property.address.geoLocation.location.lon)
         
-        let descriptionConfiguration: PropertyDescriptionViewConfiguration = .init(description: property.description)
+        let descriptionConfiguration: PropertyDescriptionViewConfiguration = .init(description: property.description, pressedButton: buttonTapped)
+        
         
         let configuration: PropertyDetailsViewConfiguration = .init(carouselViewConfiguration: carouselConfiguration,
                                                                     propertyInfoViewConfiguration: propertyInfoConfiguration,
                                                                     mapViewConfiguration: mapConfiguration,
                                                                     descriptionViewConfiguration: descriptionConfiguration)
         return configuration
+    }
+
+    private func buttonTapped()  {
+        let viewController = PropertyFullDescriptionViewController()
+        let config = PropertyFullDescriptionConfiguration(title: "Descrição", description: property.description)
+        viewController.configure(with: config)
+        present(viewController, animated: true, completion: nil)
     }
 }
 
@@ -87,7 +97,7 @@ import SwiftUI
 
 struct PropertyDetailsViewControllerPreview: PreviewProvider {
     static var previews: some View {
-        let viewController = PropertyDetailsViewController(property: makePropertyMock())
+        let viewController = PropertyDetailsViewController(with: makePropertyMock())
             return UINavigationController(rootViewController: viewController).preview
         }
 }

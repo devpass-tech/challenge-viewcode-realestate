@@ -79,8 +79,8 @@ extension ContactFormView: ViewCode {
     func configureSubviewsConstraints() {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             nameTextField.heightAnchor.constraint(equalToConstant: 50),
             emailTextField.heightAnchor.constraint(equalToConstant: 50),
             submitButton.heightAnchor.constraint(equalToConstant: 50),

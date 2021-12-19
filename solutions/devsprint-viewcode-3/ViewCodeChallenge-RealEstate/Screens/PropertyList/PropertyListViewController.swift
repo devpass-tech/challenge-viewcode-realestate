@@ -94,7 +94,7 @@ extension PropertyListViewController: UISearchResultsUpdating, UISearchControlle
 
 extension PropertyListViewController: PropertyListViewDelegate {
     func didTapCell(_ property: Property) {
-        let viewController = PropertyDetailsViewController(property: property)
+        let viewController = PropertyDetailsViewController(with: property)
         show(viewController, sender: self)
     }
 }
