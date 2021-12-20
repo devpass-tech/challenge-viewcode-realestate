@@ -81,5 +81,6 @@ extension PropertyTableViewCell: ViewCode {
 
     func configureAdditionalBehaviors() {
         backgroundColor = .white
+        contentView.isUserInteractionEnabled = false
     }
 }

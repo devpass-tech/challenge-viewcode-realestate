@@ -255,9 +255,9 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				EB567BE42767F2B000AF2708 /* PropertyDescription */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
+				EB567BE42767F2B000AF2708 /* PropertyDescription */,
 				B1381705276BC0FC005DDE7A /* MapLocation */,
 				980789CC275E942300CED39A /* Favorites */,
 				980789C9275E8F8E00CED39A /* Settings */,
@@ -280,8 +280,8 @@
 		980C0C192704F1E800F8100A /* PropertyDetails */ = {
 			isa = PBXGroup;
 			children = (
-				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
 				A232E03427683D8C004C2C8E /* PropertyDetailsView.swift */,
+				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
 			);
 			path = PropertyDetails;
 			sourceTree = "<group>";

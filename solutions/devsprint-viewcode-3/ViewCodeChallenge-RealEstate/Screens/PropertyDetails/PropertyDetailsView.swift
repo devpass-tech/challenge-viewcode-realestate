@@ -14,7 +14,14 @@ struct PropertyDetailsViewConfiguration {
     let descriptionViewConfiguration: PropertyDescriptionViewConfiguration
 }
 
+protocol PropertyDetailsViewDelegate: AnyObject {
+    func didTapMapView()
+}
+
 final class PropertyDetailsView: UIView {
+
+    weak var delegate: PropertyDetailsViewDelegate?
+
     // MARK: Views
     let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -42,8 +49,10 @@ final class PropertyDetailsView: UIView {
     }()
     
     private lazy var mapView: MapLocationView = {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapMapView))
         let view = MapLocationView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.addGestureRecognizer(tap)
         return view
     }()
     
@@ -75,6 +84,11 @@ final class PropertyDetailsView: UIView {
         propertyInfoView.configure(with: configuration.propertyInfoViewConfiguration)
         mapView.configure(with: configuration.mapViewConfiguration)
         propertyDescriptionView.configure(with: configuration.descriptionViewConfiguration)
+    }
+
+    @objc
+    private func didTapMapView() {
+        delegate?.didTapMapView()
     }
 }
 
