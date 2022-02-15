@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "986153CB2704EE2B00838CA6"
-               BuildableName = "ViewCodeChallenge-RealEstate.app"
+               BuildableName = "RealEstateApp.app"
                BlueprintName = "RealEstateApp"
                ReferencedContainer = "container:RealEstateApp.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "986153CB2704EE2B00838CA6"
-            BuildableName = "ViewCodeChallenge-RealEstate.app"
+            BuildableName = "RealEstateApp.app"
             BlueprintName = "RealEstateApp"
             ReferencedContainer = "container:RealEstateApp.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "986153CB2704EE2B00838CA6"
-            BuildableName = "ViewCodeChallenge-RealEstate.app"
+            BuildableName = "RealEstateApp.app"
             BlueprintName = "RealEstateApp"
             ReferencedContainer = "container:RealEstateApp.xcodeproj">
          </BuildableReference>
