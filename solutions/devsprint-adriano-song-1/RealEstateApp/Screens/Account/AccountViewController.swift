@@ -11,7 +11,11 @@ class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = .white
+        navigationItem.title = "Conta"
+        //self.view.backgroundColor = .white
+    }
+    
+    override func loadView() {
+        self.view = LoginView()
     }
 }

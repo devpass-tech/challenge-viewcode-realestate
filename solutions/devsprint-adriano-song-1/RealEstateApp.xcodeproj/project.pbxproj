@@ -23,6 +23,8 @@
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
 		B9B613DEF511548F05059AB9 /* Pods_RealEstateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1303A647C915386F71C1E845 /* Pods_RealEstateApp.framework */; };
 		CE18F3F927BC839E00F6D8E0 /* RealEstateAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18F3F827BC839E00F6D8E0 /* RealEstateAppTests.swift */; };
+		CED9FEF327BEF960006DC94A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9FEF227BEF960006DC94A /* LoginView.swift */; };
+		CEF9570827BF315D009BFCE6 /* LoginViewSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9570727BF315D009BFCE6 /* LoginViewSnapshotTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
 		CE18F3F627BC839E00F6D8E0 /* RealEstateAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealEstateAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE18F3F827BC839E00F6D8E0 /* RealEstateAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateAppTests.swift; sourceTree = "<group>"; };
+		CED9FEF227BEF960006DC94A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CEF9570727BF315D009BFCE6 /* LoginViewSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewSnapshotTest.swift; sourceTree = "<group>"; };
 		D290F12C84EFA493F776DB7C /* Pods-RealEstateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.release.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +147,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CED9FEF127BEF86E006DC94A /* LoginView */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 				980789CC275E942300CED39A /* Favorites */,
@@ -233,8 +238,17 @@
 			isa = PBXGroup;
 			children = (
 				CE18F3F827BC839E00F6D8E0 /* RealEstateAppTests.swift */,
+				CEF9570727BF315D009BFCE6 /* LoginViewSnapshotTest.swift */,
 			);
 			path = RealEstateAppTests;
+			sourceTree = "<group>";
+		};
+		CED9FEF127BEF86E006DC94A /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				CED9FEF227BEF960006DC94A /* LoginView.swift */,
+			);
+			path = LoginView;
 			sourceTree = "<group>";
 		};
 		FEB3A9AA307913B484A4B624 /* Frameworks */ = {
@@ -422,6 +436,7 @@
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980789CB275E8FAF00CED39A /* Settings.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
+				CED9FEF327BEF960006DC94A /* LoginView.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
 			);
@@ -431,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF9570827BF315D009BFCE6 /* LoginViewSnapshotTest.swift in Sources */,
 				CE18F3F927BC839E00F6D8E0 /* RealEstateAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
