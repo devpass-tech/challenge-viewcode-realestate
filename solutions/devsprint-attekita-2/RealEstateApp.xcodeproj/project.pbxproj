@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
+		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
+		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
+		980789DC275EA40200CED39A /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789DB275EA40200CED39A /* ViewCode.swift */; };
+		980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */; };
+		980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */; };
+		980C0C1F2704F3C400F8100A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980C0C1E2704F3C400F8100A /* Property.swift */; };
+		9841E71B27D68748005A67DC /* RealEstateAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9841E71A27D68748005A67DC /* RealEstateAppTests.swift */; };
+		9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9841E72227D687D6005A67DC /* DebugViewController.swift */; };
+		986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153CF2704EE2B00838CA6 /* AppDelegate.swift */; };
+		986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153D12704EE2B00838CA6 /* SceneDelegate.swift */; };
+		986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986153D32704EE2B00838CA6 /* PropertyListViewController.swift */; };
+		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
+		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
+		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9841E71C27D68748005A67DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 986153C42704EE2B00838CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 986153CB2704EE2B00838CA6;
+			remoteInfo = RealEstateApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		980789DB275EA40200CED39A /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealEstateAPIClient.swift; sourceTree = "<group>"; };
+		980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
+		980C0C1E2704F3C400F8100A /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		9841E71827D68748005A67DC /* RealEstateAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealEstateAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9841E71A27D68748005A67DC /* RealEstateAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateAppTests.swift; sourceTree = "<group>"; };
+		9841E72227D687D6005A67DC /* DebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		986153CC2704EE2B00838CA6 /* RealEstateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEstateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		986153CF2704EE2B00838CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		986153D12704EE2B00838CA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		986153D32704EE2B00838CA6 /* PropertyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewController.swift; sourceTree = "<group>"; };
+		986153D82704EE2F00838CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9841E71527D68748005A67DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986153C92704EE2B00838CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		980789C9275E8F8E00CED39A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				980789CA275E8FAF00CED39A /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		980789CC275E942300CED39A /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				980789CD275E943C00CED39A /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		980789D7275EA3BC00CED39A /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				980789D8275EA3C900CED39A /* AccountViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		980789DA275EA3EE00CED39A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				980789DB275EA40200CED39A /* ViewCode.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		980C0C062704F1C700F8100A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				980C0C072704F1C700F8100A /* APIClient */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		980C0C072704F1C700F8100A /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				980C0C0A2704F1C700F8100A /* RealEstateAPIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		980C0C172704F1D500F8100A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				980C0C182704F1DE00F8100A /* PropertyList */,
+				980C0C192704F1E800F8100A /* PropertyDetails */,
+				980789CC275E942300CED39A /* Favorites */,
+				980789C9275E8F8E00CED39A /* Settings */,
+				980789D7275EA3BC00CED39A /* Account */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		980C0C182704F1DE00F8100A /* PropertyList */ = {
+			isa = PBXGroup;
+			children = (
+				986153D32704EE2B00838CA6 /* PropertyListViewController.swift */,
+			);
+			path = PropertyList;
+			sourceTree = "<group>";
+		};
+		980C0C192704F1E800F8100A /* PropertyDetails */ = {
+			isa = PBXGroup;
+			children = (
+				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
+			);
+			path = PropertyDetails;
+			sourceTree = "<group>";
+		};
+		980C0C1A2704F1F100F8100A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				986153CF2704EE2B00838CA6 /* AppDelegate.swift */,
+				986153D12704EE2B00838CA6 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		980C0C1D2704F29100F8100A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				980C0C1E2704F3C400F8100A /* Property.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9841E71927D68748005A67DC /* RealEstateAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9841E71A27D68748005A67DC /* RealEstateAppTests.swift */,
+			);
+			path = RealEstateAppTests;
+			sourceTree = "<group>";
+		};
+		9841E72127D687D6005A67DC /* DebugYourViews */ = {
+			isa = PBXGroup;
+			children = (
+				9841E72227D687D6005A67DC /* DebugViewController.swift */,
+			);
+			path = DebugYourViews;
+			sourceTree = "<group>";
+		};
+		986153C32704EE2B00838CA6 = {
+			isa = PBXGroup;
+			children = (
+				986153CE2704EE2B00838CA6 /* RealEstateApp */,
+				9841E71927D68748005A67DC /* RealEstateAppTests */,
+				986153CD2704EE2B00838CA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		986153CD2704EE2B00838CA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				986153CC2704EE2B00838CA6 /* RealEstateApp.app */,
+				9841E71827D68748005A67DC /* RealEstateAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		986153CE2704EE2B00838CA6 /* RealEstateApp */ = {
+			isa = PBXGroup;
+			children = (
+				98DAB52E2718BF2300BDC6B8 /* Resources */,
+				980C0C1A2704F1F100F8100A /* AppDelegate */,
+				980C0C172704F1D500F8100A /* Screens */,
+				9841E72127D687D6005A67DC /* DebugYourViews */,
+				980C0C062704F1C700F8100A /* DataManager */,
+				980C0C1D2704F29100F8100A /* Models */,
+				980789DA275EA3EE00CED39A /* Protocols */,
+			);
+			path = RealEstateApp;
+			sourceTree = "<group>";
+		};
+		98DAB52E2718BF2300BDC6B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98DAB5312718CBE400BDC6B8 /* listings.json */,
+				986153D82704EE2F00838CA6 /* Assets.xcassets */,
+				986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */,
+				986153DD2704EE2F00838CA6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9841E71727D68748005A67DC /* RealEstateAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9841E72027D68748005A67DC /* Build configuration list for PBXNativeTarget "RealEstateAppTests" */;
+			buildPhases = (
+				9841E71427D68748005A67DC /* Sources */,
+				9841E71527D68748005A67DC /* Frameworks */,
+				9841E71627D68748005A67DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9841E71D27D68748005A67DC /* PBXTargetDependency */,
+			);
+			name = RealEstateAppTests;
+			productName = RealEstateAppTests;
+			productReference = 9841E71827D68748005A67DC /* RealEstateAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		986153CB2704EE2B00838CA6 /* RealEstateApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 986153E02704EE3000838CA6 /* Build configuration list for PBXNativeTarget "RealEstateApp" */;
+			buildPhases = (
+				986153C82704EE2B00838CA6 /* Sources */,
+				986153C92704EE2B00838CA6 /* Frameworks */,
+				986153CA2704EE2B00838CA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealEstateApp;
+			productName = "ViewCodeChallenge-RealEstate";
+			productReference = 986153CC2704EE2B00838CA6 /* RealEstateApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		986153C42704EE2B00838CA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					9841E71727D68748005A67DC = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 986153CB2704EE2B00838CA6;
+					};
+					986153CB2704EE2B00838CA6 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 986153C72704EE2B00838CA6 /* Build configuration list for PBXProject "RealEstateApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 986153C32704EE2B00838CA6;
+			productRefGroup = 986153CD2704EE2B00838CA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				986153CB2704EE2B00838CA6 /* RealEstateApp */,
+				9841E71727D68748005A67DC /* RealEstateAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9841E71627D68748005A67DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986153CA2704EE2B00838CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */,
+				986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */,
+				98DAB5322718CBE400BDC6B8 /* listings.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9841E71427D68748005A67DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9841E71B27D68748005A67DC /* RealEstateAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986153C82704EE2B00838CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
+				980789DC275EA40200CED39A /* ViewCode.swift in Sources */,
+				9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */,
+				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
+				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
+				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
+				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
+				980789CB275E8FAF00CED39A /* Settings.swift in Sources */,
+				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
+				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9841E71D27D68748005A67DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 986153CB2704EE2B00838CA6 /* RealEstateApp */;
+			targetProxy = 9841E71C27D68748005A67DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				986153DB2704EE2F00838CA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9841E71E27D68748005A67DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.RealEstateAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealEstateApp.app/RealEstateApp";
+			};
+			name = Debug;
+		};
+		9841E71F27D68748005A67DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.RealEstateAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealEstateApp.app/RealEstateApp";
+			};
+			name = Release;
+		};
+		986153DE2704EE2F00838CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		986153DF2704EE2F00838CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		986153E12704EE3000838CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8F644M47X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RealEstateApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.RealEstateApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		986153E22704EE3000838CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8F644M47X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RealEstateApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.RealEstateApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9841E72027D68748005A67DC /* Build configuration list for PBXNativeTarget "RealEstateAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9841E71E27D68748005A67DC /* Debug */,
+				9841E71F27D68748005A67DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		986153C72704EE2B00838CA6 /* Build configuration list for PBXProject "RealEstateApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986153DE2704EE2F00838CA6 /* Debug */,
+				986153DF2704EE2F00838CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		986153E02704EE3000838CA6 /* Build configuration list for PBXNativeTarget "RealEstateApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986153E12704EE3000838CA6 /* Debug */,
+				986153E22704EE3000838CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 986153C42704EE2B00838CA6 /* Project object */;
+}
