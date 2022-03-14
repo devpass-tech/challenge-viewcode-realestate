@@ -14,6 +14,7 @@ class PropertyListViewController: UIViewController {
 
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Real Estate App 🏡"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settingsBarButton(sender:)))
 
         self.view.backgroundColor = .white
 
@@ -23,6 +24,11 @@ class PropertyListViewController: UIViewController {
 
             print(properties)
         }
+    }
+    
+    @objc func settingsBarButton(sender: UIBarButtonItem) {
+        let settingsScreen = UINavigationController(rootViewController: SettingsViewController())
+        present(settingsScreen, animated: true)
     }
 }
 
