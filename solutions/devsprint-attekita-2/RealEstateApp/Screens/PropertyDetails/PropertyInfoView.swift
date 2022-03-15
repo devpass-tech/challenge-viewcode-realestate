@@ -114,7 +114,8 @@ class PropertyInfoView: UIView, ViewCode {
         bedrooms: Int,
         bathrooms: Int,
         garage: Int,
-        address: String? = nil
+        address: String? = nil,
+        frame: CGRect = CGRect.zero
     ) {
         priceLabel.text = price
         
@@ -132,7 +133,7 @@ class PropertyInfoView: UIView, ViewCode {
         let resultAddress = address ?? "Sem endereço"
         addressLabel.text = resultAddress
         
-        super.init(frame: CGRect.zero)
+        super.init(frame: frame)
         setupViews()
     }
     
