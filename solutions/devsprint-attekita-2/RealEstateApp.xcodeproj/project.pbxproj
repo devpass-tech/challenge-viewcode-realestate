@@ -24,6 +24,7 @@
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
 		9F6DB05F8ABC2A182B91B899 /* Pods_RealEstateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22F60A4E11CC0BDA1EB2EDD /* Pods_RealEstateApp.framework */; };
+		A5115BFA27DFF97800559D7F /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5115BF927DFF97800559D7F /* PropertyInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
 		A21766F50A493CA1F2C24EF2 /* Pods-RealEstateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.release.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.release.xcconfig"; sourceTree = "<group>"; };
+		A5115BF927DFF97800559D7F /* PropertyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
 		E22F60A4E11CC0BDA1EB2EDD /* Pods_RealEstateApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,7 +93,6 @@
 				875B6BAF56921DB0BCEF3287 /* Pods-RealEstateAppTests.debug.xcconfig */,
 				5F41B1ED8C0A6ABA644E78F3 /* Pods-RealEstateAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -176,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
+				A5115BF927DFF97800559D7F /* PropertyInfoView.swift */,
 			);
 			path = PropertyDetails;
 			sourceTree = "<group>";
@@ -439,6 +441,7 @@
 				9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
+				A5115BFA27DFF97800559D7F /* PropertyInfoView.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980789CB275E8FAF00CED39A /* Settings.swift in Sources */,
