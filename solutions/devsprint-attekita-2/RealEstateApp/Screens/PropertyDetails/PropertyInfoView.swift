@@ -9,8 +9,8 @@ import UIKit
 
 struct PropertyInfoViewModel {
     var price: String
-    var condominiumFee: Decimal? = nil
-    var urbanTax: Decimal? = nil
+    var condominiumFee: String? = nil
+    var urbanTax: String? = nil
     var area: Int
     var bedrooms: Int
     var bathrooms: Int
@@ -18,7 +18,7 @@ struct PropertyInfoViewModel {
     var address: String? = nil
 }
 
-class PropertyInfoView: UIView, ViewCode {
+final class PropertyInfoView: UIView, ViewCode {
     // MARK: - Controls
     private let mainStackView: UIStackView = {
         let mainStackView = UIStackView()
@@ -33,7 +33,6 @@ class PropertyInfoView: UIView, ViewCode {
         priceLabel.textAlignment = .left
         priceLabel.font = .boldSystemFont(ofSize: 22)
         priceLabel.textColor = .black
-        
         return priceLabel
     }()
     
@@ -50,7 +49,6 @@ class PropertyInfoView: UIView, ViewCode {
         condominiumFeeLabel.textAlignment = .left
         condominiumFeeLabel.font = .boldSystemFont(ofSize: 14)
         condominiumFeeLabel.textColor = .black
-        
         return condominiumFeeLabel
     }()
     
@@ -59,7 +57,6 @@ class PropertyInfoView: UIView, ViewCode {
         urbanTaxLabel.textAlignment = .left
         urbanTaxLabel.font = .boldSystemFont(ofSize: 14)
         urbanTaxLabel.textColor = .black
-        
         return urbanTaxLabel
     }()
     
@@ -76,7 +73,6 @@ class PropertyInfoView: UIView, ViewCode {
         areaLabel.textAlignment = .left
         areaLabel.font = .systemFont(ofSize: 14)
         areaLabel.textColor = .gray
-        
         return areaLabel
     }()
     
@@ -85,7 +81,6 @@ class PropertyInfoView: UIView, ViewCode {
         bedroomsLabel.textAlignment = .left
         bedroomsLabel.font = .systemFont(ofSize: 14)
         bedroomsLabel.textColor = .gray
-        
         return bedroomsLabel
     }()
     
@@ -94,7 +89,6 @@ class PropertyInfoView: UIView, ViewCode {
         bathroomsLabel.textAlignment = .left
         bathroomsLabel.font = .systemFont(ofSize: 14)
         bathroomsLabel.textColor = .gray
-        
         return bathroomsLabel
     }()
     
@@ -103,7 +97,6 @@ class PropertyInfoView: UIView, ViewCode {
         garageLabel.textAlignment = .left
         garageLabel.font = .systemFont(ofSize: 14)
         garageLabel.textColor = .gray
-        
         return garageLabel
     }()
     
@@ -112,7 +105,6 @@ class PropertyInfoView: UIView, ViewCode {
         addressLabel.textAlignment = .left
         addressLabel.font = .systemFont(ofSize: 14)
         addressLabel.textColor = .gray
-        
         return addressLabel
     }()
     
@@ -123,10 +115,10 @@ class PropertyInfoView: UIView, ViewCode {
     ) {
         priceLabel.text = viewModel.price
         
-        let resultCondominiumFee = viewModel.condominiumFee ?? 0
+        let resultCondominiumFee = viewModel.condominiumFee ?? ""
         condominiumFeeLabel.text = "Condomínio R$ \(resultCondominiumFee)"
         
-        let resultUrbanTax = viewModel.urbanTax ?? 0
+        let resultUrbanTax = viewModel.urbanTax ?? ""
         urbanTaxLabel.text = "IPTU R$ \(resultUrbanTax)"
         
         areaLabel.text = "\(viewModel.area) m²"
@@ -173,7 +165,7 @@ class PropertyInfoView: UIView, ViewCode {
         let mainStackViewConstraints = [
             mainStackView.topAnchor.constraint(equalTo: topAnchor, constant: 15),
             mainStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
-            mainStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 15),
+            mainStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
             mainStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 15)
         ]
         NSLayoutConstraint.activate(mainStackViewConstraints)
