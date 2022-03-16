@@ -7,6 +7,17 @@
 
 import UIKit
 
+struct PropertyInfoViewModel {
+    var price: String
+    var condominiumFee: Decimal? = nil
+    var urbanTax: Decimal? = nil
+    var area: Int
+    var bedrooms: Int
+    var bathrooms: Int
+    var garage: Int
+    var address: String? = nil
+}
+
 class PropertyInfoView: UIView, ViewCode {
     // MARK: - Controls
     private let mainStackView: UIStackView = {
@@ -107,30 +118,23 @@ class PropertyInfoView: UIView, ViewCode {
     
     // MARK: - Init
     init(
-        price: String,
-        condominiumFee: Decimal? = nil,
-        urbanTax: Decimal? = nil,
-        area: Int,
-        bedrooms: Int,
-        bathrooms: Int,
-        garage: Int,
-        address: String? = nil,
+        viewModel: PropertyInfoViewModel,
         frame: CGRect = CGRect.zero
     ) {
-        priceLabel.text = price
+        priceLabel.text = viewModel.price
         
-        let resultCondominiumFee = condominiumFee ?? 0
+        let resultCondominiumFee = viewModel.condominiumFee ?? 0
         condominiumFeeLabel.text = "Condomínio R$ \(resultCondominiumFee)"
         
-        let resultUrbanTax = urbanTax ?? 0
+        let resultUrbanTax = viewModel.urbanTax ?? 0
         urbanTaxLabel.text = "IPTU R$ \(resultUrbanTax)"
         
-        areaLabel.text = "\(area) m²"
-        bedroomsLabel.text = "\(bedrooms) quartos"
-        bathroomsLabel.text = "\(bathrooms) banheiros"
-        garageLabel.text = "\(garage) vagas"
+        areaLabel.text = "\(viewModel.area) m²"
+        bedroomsLabel.text = "\(viewModel.bedrooms) quartos"
+        bathroomsLabel.text = "\(viewModel.bathrooms) banheiros"
+        garageLabel.text = "\(viewModel.garage) vagas"
         
-        let resultAddress = address ?? "Sem endereço"
+        let resultAddress = viewModel.address ?? "Sem endereço"
         addressLabel.text = resultAddress
         
         super.init(frame: frame)

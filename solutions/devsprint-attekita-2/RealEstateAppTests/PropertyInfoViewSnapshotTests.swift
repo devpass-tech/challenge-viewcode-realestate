@@ -15,12 +15,13 @@ class SettingsSnapshotTests: XCTestCase {
     
     func testingPropertyInfoView() {
         let view = PropertyInfoView(
-            price: "R$ 405.000",
-            condominiumFee: 495,
-            area: 69,
-            bedrooms: 3,
-            bathrooms: 2,
-            garage: 1,
+            viewModel: PropertyInfoViewModel(
+                price: "R$ 405.000",
+                condominiumFee: 495,
+                area: 69,
+                bedrooms: 3,
+                bathrooms: 2,
+                garage: 1),
             frame: CGRect(x: 0, y: 0, width: 500, height: 100)
         )
         
