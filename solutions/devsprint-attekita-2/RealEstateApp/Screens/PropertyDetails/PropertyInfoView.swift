@@ -168,7 +168,7 @@ final class PropertyInfoView: UIView, ViewCode {
             mainStackView.topAnchor.constraint(equalTo: topAnchor, constant: 15),
             mainStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             mainStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
-            mainStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 15)
+            mainStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15)
         ]
         NSLayoutConstraint.activate(mainStackViewConstraints)
     }
