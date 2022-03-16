@@ -115,11 +115,13 @@ final class PropertyInfoView: UIView, ViewCode {
     ) {
         priceLabel.text = viewModel.price
         
-        let resultCondominiumFee = viewModel.condominiumFee ?? ""
-        condominiumFeeLabel.text = "Condomínio R$ \(resultCondominiumFee)"
+        if let condominiumFee = viewModel.condominiumFee {
+            condominiumFeeLabel.text = "Condomínio R$ \(condominiumFee)"
+        }
         
-        let resultUrbanTax = viewModel.urbanTax ?? ""
-        urbanTaxLabel.text = "IPTU R$ \(resultUrbanTax)"
+        if let urbanTax = viewModel.urbanTax {
+            urbanTaxLabel.text = "IPTU R$ \(urbanTax)"
+        }
         
         areaLabel.text = "\(viewModel.area) m²"
         bedroomsLabel.text = "\(viewModel.bedrooms) quartos"
