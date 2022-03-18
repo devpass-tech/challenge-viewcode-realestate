@@ -10,7 +10,7 @@ import XCTest
 import SnapshotTesting
 @testable import RealEstateApp
 
-class SettingsSnapshotTests: XCTestCase {
+final class SettingsSnapshotTests: XCTestCase {
     let isRecording = false
     
     func testingPropertyInfoView() {

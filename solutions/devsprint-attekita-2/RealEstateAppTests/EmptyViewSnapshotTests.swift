@@ -9,7 +9,7 @@ import XCTest
 import SnapshotTesting
 @testable import RealEstateApp
 
-class EmptyViewSnapshotTests: XCTestCase {
+final class EmptyViewSnapshotTests: XCTestCase {
     let isRecording = false
     
     func testingEmptyView() {

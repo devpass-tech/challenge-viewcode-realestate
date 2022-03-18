@@ -13,7 +13,7 @@ struct EmptyViewConfiguration {
     var subtitle: String
 }
 
-class EmptyView: UIView, ViewCode {
+final class EmptyView: UIView, ViewCode {
     // MARK: - Controls
     private let stackView: UIStackView = {
         let stackView = UIStackView()
@@ -67,10 +67,9 @@ class EmptyView: UIView, ViewCode {
     
     func configureSubviewsConstraints() {
         let stackViewConstraints = [
-            stackView.topAnchor.constraint(equalTo: topAnchor, constant: 15),
+            stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15)
         ]
         NSLayoutConstraint.activate(stackViewConstraints)
     }
