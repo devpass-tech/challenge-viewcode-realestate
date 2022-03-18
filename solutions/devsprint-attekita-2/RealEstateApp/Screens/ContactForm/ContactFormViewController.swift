@@ -13,8 +13,11 @@ class ContactFormViewController: UIViewController {
     private let contactForm: ContactFormView = ContactFormView()
     
     // MARK: - LifeCycle
+    override func loadView() {
+        view = contactForm
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view = contactForm
     }
 }
