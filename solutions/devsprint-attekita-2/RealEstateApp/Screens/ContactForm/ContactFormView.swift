@@ -82,6 +82,12 @@ final class ContactFormView: UIView {
         return button
     }
     
+    // MARK: - Public Methods
+    func createContactWith(name: String, and email: String) {
+        nameTextField.text = name
+        emailTextField.text = email
+    }
+    
     // MARK: - Constraints
     private func setupConstraints() {
         NSLayoutConstraint.activate([
