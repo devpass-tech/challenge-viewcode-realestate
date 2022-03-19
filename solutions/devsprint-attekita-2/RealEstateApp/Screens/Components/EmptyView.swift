@@ -52,20 +52,20 @@ final class EmptyView: UIView, ViewCode {
     }
     
     // MARK: - Methods
-    func updateView(with configuration: EmptyViewConfiguration) {
+    internal func updateView(with configuration: EmptyViewConfiguration) {
         titleLabel.text = configuration.title
         subtitleLabel.text = configuration.subtitle
     }
     
     // MARK: - ViewCode protocol
-    func configureSubviews() {
+    internal func configureSubviews() {
         stackView.addArrangedSubview(titleLabel)
         stackView.addArrangedSubview(subtitleLabel)
         
         addSubview(stackView)
     }
     
-    func configureSubviewsConstraints() {
+    internal func configureSubviewsConstraints() {
         let stackViewConstraints = [
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
@@ -74,7 +74,7 @@ final class EmptyView: UIView, ViewCode {
         NSLayoutConstraint.activate(stackViewConstraints)
     }
     
-    func configureAdditionalBehaviors() {
+    internal func configureAdditionalBehaviors() {
         subviews.forEach({ subview in
             subview.translatesAutoresizingMaskIntoConstraints = false
         })
