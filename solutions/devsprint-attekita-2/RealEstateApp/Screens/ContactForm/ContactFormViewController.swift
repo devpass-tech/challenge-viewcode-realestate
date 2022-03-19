@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ContactFormViewController: UIViewController {
+final class ContactFormViewController: UIViewController {
     
     // MARK: - Variables
     private let contactForm: ContactFormView = ContactFormView()
