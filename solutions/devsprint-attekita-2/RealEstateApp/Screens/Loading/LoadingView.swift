@@ -7,13 +7,15 @@
 
 import UIKit
 
+
 final class LoadingView: UIView {
 	private enum Strings {
-		static let loadingText = "Searching for lists..."
+		static let loadingText = "Searching for listings..."
 	}
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
+		setupUI()
 	}
 	
 	required init?(coder: NSCoder) {
@@ -22,19 +24,26 @@ final class LoadingView: UIView {
 	
 	private lazy var loadingLabel: UILabel = {
 		let label = UILabel()
+		label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
 		label.text = Strings.loadingText
 		label.translatesAutoresizingMaskIntoConstraints = false
 		return label
 	}()
 	
 	lazy var activityView: UIActivityIndicatorView = {
-		let activityView = UIActivityIndicatorView(style: .whiteLarge)
+		let activityView = UIActivityIndicatorView()
 		activityView.translatesAutoresizingMaskIntoConstraints = false
 		activityView.center = self.center
-		activityView.color = .black
+		activityView.style = .medium
+		activityView.color = .gray
 		activityView.startAnimating()
 		return activityView
 	}()
+	
+	private func setupUI() {
+		loadSubViews()
+		setupConstraints()
+	}
 	
 	private func loadSubViews() {
 		addSubview(loadingLabel)
@@ -42,9 +51,10 @@ final class LoadingView: UIView {
 	}
 	
 	private func setupConstraints() {
-		loadingLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+		loadingLabel.bottomAnchor.constraint(equalTo: activityView.topAnchor, constant: -20).isActive = true
 		loadingLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-		activityView.topAnchor.constraint(equalTo: loadingLabel.bottomAnchor).isActive = true
+		activityView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
 		activityView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+		
 	}
 }

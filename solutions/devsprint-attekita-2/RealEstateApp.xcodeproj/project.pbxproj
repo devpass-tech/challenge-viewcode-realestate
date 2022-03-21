@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2FDD7F99B58F788E7839E1D5 /* Pods_RealEstateAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B9E4EFE4EE07450D35BF41 /* Pods_RealEstateAppTests.framework */; };
 		4EF1A3B91F0B8A33430A2633 /* Pods_RealEstateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167C08539C729EFC19B8D33A /* Pods_RealEstateApp.framework */; };
+		5744E2F427E2901800C6FFF9 /* LoadingSnapshostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744E2F327E2901800C6FFF9 /* LoadingSnapshostTests.swift */; };
 		5783DFD027E133DC0028B5D8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5783DFCF27E133DC0028B5D8 /* LoadingView.swift */; };
 		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
@@ -43,6 +44,7 @@
 		25FE6BE2B7A08865023575F6 /* Pods-RealEstateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.release.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.release.xcconfig"; sourceTree = "<group>"; };
 		388BD67417A58AF36D76C8D4 /* Pods-RealEstateAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		44953484D8667A65B1569930 /* Pods-RealEstateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.release.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5744E2F327E2901800C6FFF9 /* LoadingSnapshostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSnapshostTests.swift; sourceTree = "<group>"; };
 		5783DFCF27E133DC0028B5D8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -96,12 +98,12 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5783DFCE27E133BE0028B5D8 /* LoadingView */ = {
+		5783DFCE27E133BE0028B5D8 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
 				5783DFCF27E133DC0028B5D8 /* LoadingView.swift */,
 			);
-			path = LoadingView;
+			path = Loading;
 			sourceTree = "<group>";
 		};
 		61CE7529D5AD2FF29A9EC78C /* Frameworks */ = {
@@ -164,7 +166,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				5783DFCE27E133BE0028B5D8 /* LoadingView */,
+				5783DFCE27E133BE0028B5D8 /* Loading */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 				980789CC275E942300CED39A /* Favorites */,
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				9841E71A27D68748005A67DC /* RealEstateAppTests.swift */,
+				5744E2F327E2901800C6FFF9 /* LoadingSnapshostTests.swift */,
 			);
 			path = RealEstateAppTests;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5744E2F427E2901800C6FFF9 /* LoadingSnapshostTests.swift in Sources */,
 				9841E71B27D68748005A67DC /* RealEstateAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
