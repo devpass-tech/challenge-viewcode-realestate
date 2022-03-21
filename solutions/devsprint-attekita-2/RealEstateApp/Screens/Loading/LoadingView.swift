@@ -55,6 +55,5 @@ final class LoadingView: UIView {
 		loadingLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
 		activityView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
 		activityView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-		
 	}
 }

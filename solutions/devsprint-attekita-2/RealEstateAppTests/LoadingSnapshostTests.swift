@@ -14,7 +14,6 @@ class LoadingSnapshotTests: XCTestCase {
 	
 	func testingLoading() {
 		let viewController = DebugViewController()
-		
 		SnapshotTesting.isRecording = isRecording
 		assertSnapshot(matching: viewController, as: .image(on: .iPhone8))
 	}
