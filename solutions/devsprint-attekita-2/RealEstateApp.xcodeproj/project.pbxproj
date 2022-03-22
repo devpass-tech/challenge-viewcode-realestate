@@ -28,7 +28,10 @@
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
 		9F6DB05F8ABC2A182B91B899 /* Pods_RealEstateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22F60A4E11CC0BDA1EB2EDD /* Pods_RealEstateApp.framework */; };
+		A50889D627E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */; };
 		A5115BFA27DFF97800559D7F /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5115BF927DFF97800559D7F /* PropertyInfoView.swift */; };
+		A570709027E294B700B7C742 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570708F27E294B700B7C742 /* EmptyView.swift */; };
+		A58A675327E29A7800E78230 /* EmptyViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */; };
 		A5E4BF0227E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4BF0127E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +73,10 @@
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
 		A21766F50A493CA1F2C24EF2 /* Pods-RealEstateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.release.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.release.xcconfig"; sourceTree = "<group>"; };
+		A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		A5115BF927DFF97800559D7F /* PropertyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
+		A570708F27E294B700B7C742 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewSnapshotTests.swift; sourceTree = "<group>"; };
 		A5E4BF0127E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewSnapshotTests.swift; sourceTree = "<group>"; };
 		E22F60A4E11CC0BDA1EB2EDD /* Pods_RealEstateApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -190,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				7EBEDF1F27E923AB000F316E /* Tabbar */,
+				A570708E27E294AA00B7C742 /* Components */,
 				7EF231D527E4199700F9FAAA /* ContactForm */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
@@ -240,6 +247,8 @@
 				7EF231DA27E423E800F9FAAA /* ContactFormTests */,
 				9841E71A27D68748005A67DC /* RealEstateAppTests.swift */,
 				A5E4BF0127E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift */,
+				A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */,
+				A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */,
 			);
 			path = RealEstateAppTests;
 			sourceTree = "<group>";
@@ -295,6 +304,14 @@
 				986153DD2704EE2F00838CA6 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A570708E27E294AA00B7C742 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A570708F27E294B700B7C742 /* EmptyView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,6 +485,8 @@
 				7EF231DC27E4241E00F9FAAA /* ContactFormViewSnapshotTests.swift in Sources */,
 				9841E71B27D68748005A67DC /* RealEstateAppTests.swift in Sources */,
 				A5E4BF0227E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift in Sources */,
+				A58A675327E29A7800E78230 /* EmptyViewSnapshotTests.swift in Sources */,
+				A50889D627E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
+				A570709027E294B700B7C742 /* EmptyView.swift in Sources */,
 				980789DC275EA40200CED39A /* ViewCode.swift in Sources */,
 				9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */,
 				7EBEDF2127E923E2000F316E /* TabbarViewController.swift in Sources */,
