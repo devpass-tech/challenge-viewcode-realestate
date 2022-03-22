@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		705C41CC4C5D106B6EDBC1DD /* Pods_RealEstateAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262CD3A8085881CD5F27392C /* Pods_RealEstateAppTests.framework */; };
-		7EBEDF2127E923E2000F316E /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBEDF2027E923E2000F316E /* TabbarViewController.swift */; };
+		7E1A79D127EA7977007889A9 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1A79D027EA7977007889A9 /* TabbarViewController.swift */; };
 		7EF231D727E419B900F9FAAA /* ContactFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF231D627E419B900F9FAAA /* ContactFormViewController.swift */; };
 		7EF231D927E419F600F9FAAA /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF231D827E419F600F9FAAA /* ContactFormView.swift */; };
 		7EF231DC27E4241E00F9FAAA /* ContactFormViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF231DB27E4241E00F9FAAA /* ContactFormViewSnapshotTests.swift */; };
@@ -49,7 +49,7 @@
 		262CD3A8085881CD5F27392C /* Pods_RealEstateAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59ABF628BE3D592FF821DB69 /* Pods-RealEstateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5F41B1ED8C0A6ABA644E78F3 /* Pods-RealEstateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.release.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		7EBEDF2027E923E2000F316E /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		7E1A79D027EA7977007889A9 /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		7EF231D627E419B900F9FAAA /* ContactFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewController.swift; sourceTree = "<group>"; };
 		7EF231D827E419F600F9FAAA /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
 		7EF231DB27E4241E00F9FAAA /* ContactFormViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewSnapshotTests.swift; sourceTree = "<group>"; };
@@ -121,12 +121,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7EBEDF1F27E923AB000F316E /* Tabbar */ = {
+		7E1A79CF27EA7977007889A9 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				7EBEDF2027E923E2000F316E /* TabbarViewController.swift */,
+				7E1A79D027EA7977007889A9 /* TabbarViewController.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
 		7EF231D527E4199700F9FAAA /* ContactForm */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,7 +197,7 @@
 		980C0C172704F1D500F8100A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				7EBEDF1F27E923AB000F316E /* Tabbar */,
+				7E1A79CF27EA7977007889A9 /* Tabbar */,
 				A570708E27E294AA00B7C742 /* Components */,
 				7EF231D527E4199700F9FAAA /* ContactForm */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
@@ -494,11 +496,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E1A79D127EA7977007889A9 /* TabbarViewController.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				A570709027E294B700B7C742 /* EmptyView.swift in Sources */,
 				980789DC275EA40200CED39A /* ViewCode.swift in Sources */,
 				9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */,
-				7EBEDF2127E923E2000F316E /* TabbarViewController.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
 				A5115BFA27DFF97800559D7F /* PropertyInfoView.swift in Sources */,
