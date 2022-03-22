@@ -29,6 +29,8 @@
 		9F6DB05F8ABC2A182B91B899 /* Pods_RealEstateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22F60A4E11CC0BDA1EB2EDD /* Pods_RealEstateApp.framework */; };
 		A50889D627E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */; };
 		A5115BFA27DFF97800559D7F /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5115BF927DFF97800559D7F /* PropertyInfoView.swift */; };
+		A53BFC1527EA84C40010FAD3 /* MapLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BFC1427EA84C40010FAD3 /* MapLocationViewController.swift */; };
+		A53BFC1727EA8FCC0010FAD3 /* MapLocationViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BFC1627EA8FCC0010FAD3 /* MapLocationViewControllerSnapshotTests.swift */; };
 		A570709027E294B700B7C742 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570708F27E294B700B7C742 /* EmptyView.swift */; };
 		A58A675327E29A7800E78230 /* EmptyViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */; };
 		A5E4BF0227E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4BF0127E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift */; };
@@ -73,6 +75,8 @@
 		A21766F50A493CA1F2C24EF2 /* Pods-RealEstateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.release.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.release.xcconfig"; sourceTree = "<group>"; };
 		A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		A5115BF927DFF97800559D7F /* PropertyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
+		A53BFC1427EA84C40010FAD3 /* MapLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewController.swift; sourceTree = "<group>"; };
+		A53BFC1627EA8FCC0010FAD3 /* MapLocationViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		A570708F27E294B700B7C742 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewSnapshotTests.swift; sourceTree = "<group>"; };
 		A5E4BF0127E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewSnapshotTests.swift; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				A570708E27E294AA00B7C742 /* Components */,
+				A53BFC1327EA84890010FAD3 /* MapLocation */,
 				7EF231D527E4199700F9FAAA /* ContactForm */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
@@ -240,6 +245,7 @@
 				A5E4BF0127E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift */,
 				A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */,
 				A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */,
+				A53BFC1627EA8FCC0010FAD3 /* MapLocationViewControllerSnapshotTests.swift */,
 			);
 			path = RealEstateAppTests;
 			sourceTree = "<group>";
@@ -295,6 +301,14 @@
 				986153DD2704EE2F00838CA6 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A53BFC1327EA84890010FAD3 /* MapLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A53BFC1427EA84C40010FAD3 /* MapLocationViewController.swift */,
+			);
+			path = MapLocation;
 			sourceTree = "<group>";
 		};
 		A570708E27E294AA00B7C742 /* Components */ = {
@@ -473,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53BFC1727EA8FCC0010FAD3 /* MapLocationViewControllerSnapshotTests.swift in Sources */,
 				7EF231DC27E4241E00F9FAAA /* ContactFormViewSnapshotTests.swift in Sources */,
 				9841E71B27D68748005A67DC /* RealEstateAppTests.swift in Sources */,
 				A5E4BF0227E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift in Sources */,
@@ -485,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53BFC1527EA84C40010FAD3 /* MapLocationViewController.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				A570709027E294B700B7C742 /* EmptyView.swift in Sources */,
 				980789DC275EA40200CED39A /* ViewCode.swift in Sources */,
