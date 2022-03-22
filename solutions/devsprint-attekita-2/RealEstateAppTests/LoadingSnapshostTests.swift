@@ -10,11 +10,8 @@ import SnapshotTesting
 @testable import RealEstateApp
 
 class LoadingSnapshotTests: XCTestCase {
-	let isRecording = false
-	
 	func testingLoading() {
-		let viewController = DebugViewController()
-		SnapshotTesting.isRecording = isRecording
-		assertSnapshot(matching: viewController, as: .image(on: .iPhone8))
+		let view = LoadingView(frame: CGRect(x: 0, y: 0, width: 200, height: 800))
+		assertSnapshot(matching: view, as: .image)
 	}
 }

@@ -19,14 +19,14 @@ import UIKit
 
 class DebugViewController: UIViewController {
 
-    private let myView: LoadingView = {
+    private let myView: UIView = {
 
-        let view = LoadingView()
+        let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
-    private let myViewHeight: CGFloat = 500
+    private let myViewHeight: CGFloat = 100
 
     init() {
         super.init(nibName: nil, bundle: nil)
