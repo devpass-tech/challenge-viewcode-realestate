@@ -24,8 +24,8 @@ final class MapLocationViewController: UIViewController {
     }
     
     // MARK: - Override Methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func loadView() {
+        super.loadView()
         
         setupUI()
     }
