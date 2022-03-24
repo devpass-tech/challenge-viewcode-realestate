@@ -36,6 +36,8 @@
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
 		A50889D627E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */; };
 		A5115BFA27DFF97800559D7F /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5115BF927DFF97800559D7F /* PropertyInfoView.swift */; };
+		A53BFC1527EA84C40010FAD3 /* MapLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BFC1427EA84C40010FAD3 /* MapLocationViewController.swift */; };
+		A53BFC1727EA8FCC0010FAD3 /* MapLocationViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BFC1627EA8FCC0010FAD3 /* MapLocationViewControllerSnapshotTests.swift */; };
 		A570709027E294B700B7C742 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570708F27E294B700B7C742 /* EmptyView.swift */; };
 		A58A675327E29A7800E78230 /* EmptyViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */; };
 		A5E4BF0227E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4BF0127E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift */; };
@@ -90,6 +92,8 @@
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
 		A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		A5115BF927DFF97800559D7F /* PropertyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
+		A53BFC1427EA84C40010FAD3 /* MapLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewController.swift; sourceTree = "<group>"; };
+		A53BFC1627EA8FCC0010FAD3 /* MapLocationViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		A570708F27E294B700B7C742 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewSnapshotTests.swift; sourceTree = "<group>"; };
 		A5E4BF0127E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewSnapshotTests.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 				5760F77D27EA7882005D9787 /* PropertyDescription */,
 				5783DFCE27E133BE0028B5D8 /* Loading */,
 				A570708E27E294AA00B7C742 /* Components */,
+				A53BFC1327EA84890010FAD3 /* MapLocation */,
 				7EF231D527E4199700F9FAAA /* ContactForm */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
@@ -278,6 +283,7 @@
 				575DB90527EC8ABA00CB80F8 /* PropertyMoreDescriptionSnapshotTests.swift */,
 				A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */,
 				A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */,
+				A53BFC1627EA8FCC0010FAD3 /* MapLocationViewControllerSnapshotTests.swift */,
 			);
 			path = RealEstateAppTests;
 			sourceTree = "<group>";
@@ -333,6 +339,14 @@
 				986153DD2704EE2F00838CA6 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A53BFC1327EA84890010FAD3 /* MapLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A53BFC1427EA84C40010FAD3 /* MapLocationViewController.swift */,
+			);
+			path = MapLocation;
 			sourceTree = "<group>";
 		};
 		A28F63DCCE52FB6F3DE52284 /* Frameworks */ = {
@@ -521,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5744E2F427E2901800C6FFF9 /* LoadingSnapshostTests.swift in Sources */,
+				A53BFC1727EA8FCC0010FAD3 /* MapLocationViewControllerSnapshotTests.swift in Sources */,
 				7EF231DC27E4241E00F9FAAA /* ContactFormViewSnapshotTests.swift in Sources */,
 				9841E71B27D68748005A67DC /* RealEstateAppTests.swift in Sources */,
 				575DB90627EC8ABA00CB80F8 /* PropertyMoreDescriptionSnapshotTests.swift in Sources */,
@@ -534,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53BFC1527EA84C40010FAD3 /* MapLocationViewController.swift in Sources */,
 				7E1A79D127EA7977007889A9 /* TabbarViewController.swift in Sources */,
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
 				A570709027E294B700B7C742 /* EmptyView.swift in Sources */,
