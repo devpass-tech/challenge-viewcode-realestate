@@ -11,6 +11,13 @@
 		5760F77F27EA78C8005D9787 /* PropertyDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5760F77E27EA78C8005D9787 /* PropertyDescriptionViewController.swift */; };
 		5760F78127EA7900005D9787 /* PropertyMoreDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5760F78027EA7900005D9787 /* PropertyMoreDescriptionView.swift */; };
 		705C41CC4C5D106B6EDBC1DD /* Pods_RealEstateAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262CD3A8085881CD5F27392C /* Pods_RealEstateAppTests.framework */; };
+		1B547828A3D7E2D81CE80C80 /* Pods_RealEstateAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3A557C5DFE60787056C655 /* Pods_RealEstateAppTests.framework */; };
+		318BFE1A8D865B33E7BBC2AC /* Pods_RealEstateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1510F692CBC5448C0AD8860C /* Pods_RealEstateApp.framework */; };
+		5744E2F427E2901800C6FFF9 /* LoadingSnapshostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744E2F327E2901800C6FFF9 /* LoadingSnapshostTests.swift */; };
+		5783DFD027E133DC0028B5D8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5783DFCF27E133DC0028B5D8 /* LoadingView.swift */; };
+		7EF231D727E419B900F9FAAA /* ContactFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF231D627E419B900F9FAAA /* ContactFormViewController.swift */; };
+		7EF231D927E419F600F9FAAA /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF231D827E419F600F9FAAA /* ContactFormView.swift */; };
+		7EF231DC27E4241E00F9FAAA /* ContactFormViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF231DB27E4241E00F9FAAA /* ContactFormViewSnapshotTests.swift */; };
 		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
 		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
@@ -26,8 +33,10 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
-		9F6DB05F8ABC2A182B91B899 /* Pods_RealEstateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22F60A4E11CC0BDA1EB2EDD /* Pods_RealEstateApp.framework */; };
+		A50889D627E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */; };
 		A5115BFA27DFF97800559D7F /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5115BF927DFF97800559D7F /* PropertyInfoView.swift */; };
+		A570709027E294B700B7C742 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570708F27E294B700B7C742 /* EmptyView.swift */; };
+		A58A675327E29A7800E78230 /* EmptyViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */; };
 		A5E4BF0227E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4BF0127E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +58,16 @@
 		59ABF628BE3D592FF821DB69 /* Pods-RealEstateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5F41B1ED8C0A6ABA644E78F3 /* Pods-RealEstateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.release.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		875B6BAF56921DB0BCEF3287 /* Pods-RealEstateAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F3A557C5DFE60787056C655 /* Pods_RealEstateAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1510F692CBC5448C0AD8860C /* Pods_RealEstateApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1860B152C759C400529AB509 /* Pods-RealEstateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.release.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.release.xcconfig"; sourceTree = "<group>"; };
+		497AE83FE28231BCED488EC8 /* Pods-RealEstateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5744E2F327E2901800C6FFF9 /* LoadingSnapshostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSnapshostTests.swift; sourceTree = "<group>"; };
+		5783DFCF27E133DC0028B5D8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		6C2EF75F00C647339EC53E6A /* Pods-RealEstateAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EF231D627E419B900F9FAAA /* ContactFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewController.swift; sourceTree = "<group>"; };
+		7EF231D827E419F600F9FAAA /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
+		7EF231DB27E4241E00F9FAAA /* ContactFormViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewSnapshotTests.swift; sourceTree = "<group>"; };
 		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -67,10 +86,12 @@
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
-		A21766F50A493CA1F2C24EF2 /* Pods-RealEstateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.release.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.release.xcconfig"; sourceTree = "<group>"; };
+		A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		A5115BF927DFF97800559D7F /* PropertyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoView.swift; sourceTree = "<group>"; };
+		A570708F27E294B700B7C742 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewSnapshotTests.swift; sourceTree = "<group>"; };
 		A5E4BF0127E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewSnapshotTests.swift; sourceTree = "<group>"; };
-		E22F60A4E11CC0BDA1EB2EDD /* Pods_RealEstateApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06ACD35A95E5D1EE2379C70 /* Pods-RealEstateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.release.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				705C41CC4C5D106B6EDBC1DD /* Pods_RealEstateAppTests.framework in Frameworks */,
+				1B547828A3D7E2D81CE80C80 /* Pods_RealEstateAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6DB05F8ABC2A182B91B899 /* Pods_RealEstateApp.framework in Frameworks */,
+				318BFE1A8D865B33E7BBC2AC /* Pods_RealEstateApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,21 +117,37 @@
 		091E9D7080B72B327B24431F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				59ABF628BE3D592FF821DB69 /* Pods-RealEstateApp.debug.xcconfig */,
-				A21766F50A493CA1F2C24EF2 /* Pods-RealEstateApp.release.xcconfig */,
-				875B6BAF56921DB0BCEF3287 /* Pods-RealEstateAppTests.debug.xcconfig */,
-				5F41B1ED8C0A6ABA644E78F3 /* Pods-RealEstateAppTests.release.xcconfig */,
+				497AE83FE28231BCED488EC8 /* Pods-RealEstateApp.debug.xcconfig */,
+				1860B152C759C400529AB509 /* Pods-RealEstateApp.release.xcconfig */,
+				6C2EF75F00C647339EC53E6A /* Pods-RealEstateAppTests.debug.xcconfig */,
+				B06ACD35A95E5D1EE2379C70 /* Pods-RealEstateAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5542087F8B065F5B42B4D66C /* Frameworks */ = {
+		5783DFCE27E133BE0028B5D8 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
-				E22F60A4E11CC0BDA1EB2EDD /* Pods_RealEstateApp.framework */,
-				262CD3A8085881CD5F27392C /* Pods_RealEstateAppTests.framework */,
+				5783DFCF27E133DC0028B5D8 /* LoadingView.swift */,
 			);
-			name = Frameworks;
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		7EF231D527E4199700F9FAAA /* ContactForm */ = {
+			isa = PBXGroup;
+			children = (
+				7EF231D627E419B900F9FAAA /* ContactFormViewController.swift */,
+				7EF231D827E419F600F9FAAA /* ContactFormView.swift */,
+			);
+			path = ContactForm;
+			sourceTree = "<group>";
+		};
+		7EF231DA27E423E800F9FAAA /* ContactFormTests */ = {
+			isa = PBXGroup;
+			children = (
+				7EF231DB27E4241E00F9FAAA /* ContactFormViewSnapshotTests.swift */,
+			);
+			path = ContactFormTests;
 			sourceTree = "<group>";
 		};
 		5760F77D27EA7882005D9787 /* PropertyDescription */ = {
@@ -174,6 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				5760F77D27EA7882005D9787 /* PropertyDescription */,
+				5783DFCE27E133BE0028B5D8 /* Loading */,
+				A570708E27E294AA00B7C742 /* Components */,
+				7EF231D527E4199700F9FAAA /* ContactForm */,
 				980C0C182704F1DE00F8100A /* PropertyList */,
 				980C0C192704F1E800F8100A /* PropertyDetails */,
 				980789CC275E942300CED39A /* Favorites */,
@@ -220,9 +260,13 @@
 		9841E71927D68748005A67DC /* RealEstateAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				7EF231DA27E423E800F9FAAA /* ContactFormTests */,
 				9841E71A27D68748005A67DC /* RealEstateAppTests.swift */,
+				5744E2F327E2901800C6FFF9 /* LoadingSnapshostTests.swift */,
 				A5E4BF0127E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift */,
 				575DB90527EC8ABA00CB80F8 /* PropertyMoreDescriptionSnapshotTests.swift */,
+				A58A675227E29A7700E78230 /* EmptyViewSnapshotTests.swift */,
+				A50889D527E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift */,
 			);
 			path = RealEstateAppTests;
 			sourceTree = "<group>";
@@ -242,7 +286,7 @@
 				9841E71927D68748005A67DC /* RealEstateAppTests */,
 				986153CD2704EE2B00838CA6 /* Products */,
 				091E9D7080B72B327B24431F /* Pods */,
-				5542087F8B065F5B42B4D66C /* Frameworks */,
+				A28F63DCCE52FB6F3DE52284 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -280,6 +324,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A28F63DCCE52FB6F3DE52284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1510F692CBC5448C0AD8860C /* Pods_RealEstateApp.framework */,
+				0F3A557C5DFE60787056C655 /* Pods_RealEstateAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A570708E27E294AA00B7C742 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A570708F27E294B700B7C742 /* EmptyView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,11 +348,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9841E72027D68748005A67DC /* Build configuration list for PBXNativeTarget "RealEstateAppTests" */;
 			buildPhases = (
-				FF68807F639BBB4EFA5D4407 /* [CP] Check Pods Manifest.lock */,
+				BBAFBC349BC2E92ECF992D2A /* [CP] Check Pods Manifest.lock */,
 				9841E71427D68748005A67DC /* Sources */,
 				9841E71527D68748005A67DC /* Frameworks */,
 				9841E71627D68748005A67DC /* Resources */,
-				05128D7D78BA374F79A8377B /* [CP] Embed Pods Frameworks */,
+				70385D7316578F3087335553 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,7 +368,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 986153E02704EE3000838CA6 /* Build configuration list for PBXNativeTarget "RealEstateApp" */;
 			buildPhases = (
-				CFF10F8731177070B3309AA4 /* [CP] Check Pods Manifest.lock */,
+				AB49A63420933251A8B81E9B /* [CP] Check Pods Manifest.lock */,
 				986153C82704EE2B00838CA6 /* Sources */,
 				986153C92704EE2B00838CA6 /* Frameworks */,
 				986153CA2704EE2B00838CA6 /* Resources */,
@@ -380,7 +441,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05128D7D78BA374F79A8377B /* [CP] Embed Pods Frameworks */ = {
+		70385D7316578F3087335553 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,7 +458,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CFF10F8731177070B3309AA4 /* [CP] Check Pods Manifest.lock */ = {
+		AB49A63420933251A8B81E9B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -419,7 +480,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF68807F639BBB4EFA5D4407 /* [CP] Check Pods Manifest.lock */ = {
+		BBAFBC349BC2E92ECF992D2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -448,9 +509,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5744E2F427E2901800C6FFF9 /* LoadingSnapshostTests.swift in Sources */,
+				7EF231DC27E4241E00F9FAAA /* ContactFormViewSnapshotTests.swift in Sources */,
 				9841E71B27D68748005A67DC /* RealEstateAppTests.swift in Sources */,
 				575DB90627EC8ABA00CB80F8 /* PropertyMoreDescriptionSnapshotTests.swift in Sources */,
 				A5E4BF0227E111CC00B25BA9 /* PropertyInfoViewSnapshotTests.swift in Sources */,
+				A58A675327E29A7800E78230 /* EmptyViewSnapshotTests.swift in Sources */,
+				A50889D627E5320700AA7A32 /* PropertyListViewControllerSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,19 +524,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				986153D42704EE2B00838CA6 /* PropertyListViewController.swift in Sources */,
+				A570709027E294B700B7C742 /* EmptyView.swift in Sources */,
 				980789DC275EA40200CED39A /* ViewCode.swift in Sources */,
 				9841E72327D687D6005A67DC /* DebugViewController.swift in Sources */,
 				5760F78127EA7900005D9787 /* PropertyMoreDescriptionView.swift in Sources */,
 				980C0C1F2704F3C400F8100A /* Property.swift in Sources */,
 				980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */,
+				5783DFD027E133DC0028B5D8 /* LoadingView.swift in Sources */,
 				A5115BFA27DFF97800559D7F /* PropertyInfoView.swift in Sources */,
 				986153D02704EE2B00838CA6 /* AppDelegate.swift in Sources */,
+				7EF231D927E419F600F9FAAA /* ContactFormView.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
 				980789CB275E8FAF00CED39A /* Settings.swift in Sources */,
 				5760F77F27EA78C8005D9787 /* PropertyDescriptionViewController.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
+				7EF231D727E419B900F9FAAA /* ContactFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +568,7 @@
 /* Begin XCBuildConfiguration section */
 		9841E71E27D68748005A67DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 875B6BAF56921DB0BCEF3287 /* Pods-RealEstateAppTests.debug.xcconfig */;
+			baseConfigurationReference = 6C2EF75F00C647339EC53E6A /* Pods-RealEstateAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -518,7 +587,7 @@
 		};
 		9841E71F27D68748005A67DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F41B1ED8C0A6ABA644E78F3 /* Pods-RealEstateAppTests.release.xcconfig */;
+			baseConfigurationReference = B06ACD35A95E5D1EE2379C70 /* Pods-RealEstateAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -653,7 +722,7 @@
 		};
 		986153E12704EE3000838CA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59ABF628BE3D592FF821DB69 /* Pods-RealEstateApp.debug.xcconfig */;
+			baseConfigurationReference = 497AE83FE28231BCED488EC8 /* Pods-RealEstateApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -681,7 +750,7 @@
 		};
 		986153E22704EE3000838CA6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A21766F50A493CA1F2C24EF2 /* Pods-RealEstateApp.release.xcconfig */;
+			baseConfigurationReference = 1860B152C759C400529AB509 /* Pods-RealEstateApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
