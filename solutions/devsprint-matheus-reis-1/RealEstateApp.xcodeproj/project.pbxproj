@@ -22,6 +22,7 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		A5D44401C6D8E5FE1AFEFE72 /* libPods-RealEstateApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 922539B50B552DC82947974F /* libPods-RealEstateApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DB66F94687B64FF75968E7F /* Pods-RealEstateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.debug.xcconfig"; sourceTree = "<group>"; };
+		922539B50B552DC82947974F /* libPods-RealEstateApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealEstateApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		986153DB2704EE2F00838CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
+		BB11EA793FCEF46948D406A2 /* Pods-RealEstateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.release.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +71,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D44401C6D8E5FE1AFEFE72 /* libPods-RealEstateApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FF15F09FA019058FA13256C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DB66F94687B64FF75968E7F /* Pods-RealEstateApp.debug.xcconfig */,
+				BB11EA793FCEF46948D406A2 /* Pods-RealEstateApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		788B09739403AD747E9428FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				922539B50B552DC82947974F /* libPods-RealEstateApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		980789C9275E8F8E00CED39A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +211,8 @@
 				986153CE2704EE2B00838CA6 /* RealEstateApp */,
 				9841E71927D68748005A67DC /* RealEstateAppTests */,
 				986153CD2704EE2B00838CA6 /* Products */,
+				3FF15F09FA019058FA13256C /* Pods */,
+				788B09739403AD747E9428FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 986153E02704EE3000838CA6 /* Build configuration list for PBXNativeTarget "RealEstateApp" */;
 			buildPhases = (
+				1A3B16132E6E90DA9C4F8AA3 /* [CP] Check Pods Manifest.lock */,
 				986153C82704EE2B00838CA6 /* Sources */,
 				986153C92704EE2B00838CA6 /* Frameworks */,
 				986153CA2704EE2B00838CA6 /* Resources */,
@@ -320,6 +346,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A3B16132E6E90DA9C4F8AA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealEstateApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9841E71427D68748005A67DC /* Sources */ = {
@@ -524,6 +575,7 @@
 		};
 		986153E12704EE3000838CA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB66F94687B64FF75968E7F /* Pods-RealEstateApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -551,6 +603,7 @@
 		};
 		986153E22704EE3000838CA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB11EA793FCEF46948D406A2 /* Pods-RealEstateApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
