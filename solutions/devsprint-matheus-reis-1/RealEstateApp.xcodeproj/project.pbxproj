@@ -206,11 +206,10 @@
 			children = (
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
 				980C0C1A2704F1F100F8100A /* AppDelegate */,
-				980C0C172704F1D500F8100A /* Screens */,
-				CEBA6DCB2821616E00436DD6 /* Components */,
 				9841E72127D687D6005A67DC /* DebugYourViews */,
 				980C0C062704F1C700F8100A /* DataManager */,
 				980C0C1D2704F29100F8100A /* Models */,
+				CEBA6DCC282162DF00436DD6 /* UI */,
 				980789DA275EA3EE00CED39A /* Protocols */,
 			);
 			path = RealEstateApp;
@@ -239,6 +238,15 @@
 			children = (
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		CEBA6DCC282162DF00436DD6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				980C0C172704F1D500F8100A /* Screens */,
+				CEBA6DCB2821616E00436DD6 /* Components */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
