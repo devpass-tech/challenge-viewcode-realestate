@@ -144,6 +144,7 @@
 		980C0C192704F1E800F8100A /* PropertyDetails */ = {
 			isa = PBXGroup;
 			children = (
+				CEBA6DCA28215CAF00436DD6 /* Components */,
 				980C0C1B2704F23E00F8100A /* PropertyDetailsViewController.swift */,
 			);
 			path = PropertyDetails;
@@ -206,6 +207,7 @@
 				98DAB52E2718BF2300BDC6B8 /* Resources */,
 				980C0C1A2704F1F100F8100A /* AppDelegate */,
 				980C0C172704F1D500F8100A /* Screens */,
+				CEBA6DCB2821616E00436DD6 /* Components */,
 				9841E72127D687D6005A67DC /* DebugYourViews */,
 				980C0C062704F1C700F8100A /* DataManager */,
 				980C0C1D2704F29100F8100A /* Models */,
@@ -223,6 +225,20 @@
 				986153DD2704EE2F00838CA6 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEBA6DCA28215CAF00436DD6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CEBA6DCB2821616E00436DD6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
