@@ -7,7 +7,8 @@
 
 import UIKit
 
-class ContactFormView: UIView {
+class ContactFormView: UIView, ViewCode {
+     
     lazy var title: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -50,24 +51,22 @@ class ContactFormView: UIView {
     
     init() {
         super.init(frame: .zero)
-        configViews()
-        buildViews()
-        setupConstraints()
+        setupViews()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configViews() {
-        
+    func configureAdditionalBehaviors() {
+        backgroundColor = .white
     }
     
-    func buildViews() {
+    func configureSubviews() {
         [title, name, email, button].forEach(addSubview)
     }
     
-    func setupConstraints() {
+    func configureSubviewsConstraints() {
         NSLayoutConstraint.activate([
             title.topAnchor.constraint(equalTo: topAnchor, constant: 12),
             title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
