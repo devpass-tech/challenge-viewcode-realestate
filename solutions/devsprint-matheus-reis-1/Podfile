@@ -1,0 +1,11 @@
+target 'RealEstateApp' do
+
+  use_frameworks!
+
+  target 'RealEstateAppTests' do
+    inherit! :search_paths
+
+    pod 'SnapshotTesting', '~> 1.9.0'
+  end
+
+end
