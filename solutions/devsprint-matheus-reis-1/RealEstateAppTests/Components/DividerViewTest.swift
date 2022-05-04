@@ -7,11 +7,8 @@
 
 import Foundation
 import XCTest
-//import SnapshotTesting
-
-@testable import RealEstateApp
 import SnapshotTesting
-
+@testable import RealEstateApp
 
 class DividerViewTest: XCTestCase {
     
