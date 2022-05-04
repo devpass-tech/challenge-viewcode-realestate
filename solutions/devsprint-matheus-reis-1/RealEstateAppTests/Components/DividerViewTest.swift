@@ -21,7 +21,7 @@ class DividerViewTest: XCTestCase {
        
     }
 
-    func testDefaultState() {
+    func testDividerView() {
         assertSnapshot(matching: sut, as: .image)
     }
 }
