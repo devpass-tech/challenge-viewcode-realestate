@@ -2,7 +2,7 @@
 //  PropertyDescriptionViewController.swift
 //  RealEstateApp
 //
-//  Created by Cora on 05/05/22.
+//  Created by Anderson Oliveira on 05/05/22.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  PropertyDescriptionTest.swift
 //  RealEstateAppTests
 //
-//  Created by Cora on 05/05/22.
+//  Created by Anderson Oliveira on 05/05/22.
 //
 
 import Foundation
@@ -18,9 +18,6 @@ class PropertyDescriptionTest: XCTestCase {
     override func setUpWithError() throws { }
     
     func testPropertyDescriptionView() {
-        print(sut.frame.height)
-        sut.frame.size.height = UIScreen.main.bounds.height
-        sut.frame.size.width = UIScreen.main.bounds.width
-        assertSnapshot(matching: sut, as: .image)
+        assertSnapshot(matching: sut, as: .image(size: UIScreen.main.bounds.size))
     }
 }
