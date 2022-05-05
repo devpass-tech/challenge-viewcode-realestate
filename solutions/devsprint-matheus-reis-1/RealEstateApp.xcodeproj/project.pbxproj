@@ -28,6 +28,7 @@
 		986153D92704EE2F00838CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986153D82704EE2F00838CA6 /* Assets.xcassets */; };
 		986153DC2704EE2F00838CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986153DA2704EE2F00838CA6 /* LaunchScreen.storyboard */; };
 		98DAB5322718CBE400BDC6B8 /* listings.json in Resources */ = {isa = PBXBuildFile; fileRef = 98DAB5312718CBE400BDC6B8 /* listings.json */; };
+		C5A581E428247303006ED869 /* __Snapshots__ in Resources */ = {isa = PBXBuildFile; fileRef = C5A581E328247303006ED869 /* __Snapshots__ */; };
 		D51D05E486E13B0231AA4390 /* Pods_RealEstateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85988EAA6C1BBE05B7A1A67 /* Pods_RealEstateApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		986153DD2704EE2F00838CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98DAB5312718CBE400BDC6B8 /* listings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listings.json; sourceTree = SOURCE_ROOT; };
 		B85988EAA6C1BBE05B7A1A67 /* Pods_RealEstateApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5A581E328247303006ED869 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; name = __Snapshots__; path = Components/__Snapshots__; sourceTree = "<group>"; };
 		F30BEACE449CF176C77BC1C3 /* Pods-RealEstateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.release.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.release.xcconfig"; sourceTree = "<group>"; };
 		F81F9CF3E67C523691F26F23 /* Pods-RealEstateAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				87E92D1828240FB4003A4901 /* PropertyDescription */,
+				C5A581E328247303006ED869 /* __Snapshots__ */,
 				870D527428229CB600ADB91C /* Components */,
 				9841E71A27D68748005A67DC /* RealEstateAppTests.swift */,
 			);
@@ -404,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A581E428247303006ED869 /* __Snapshots__ in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
