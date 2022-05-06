@@ -56,9 +56,6 @@ final class PropertyDescriptionView: UIView, PropertyDescriptionViewProtocol, Vi
     }
     
     func configureAdditionalBehaviors() {
-//        [titleLabel,divider,descriptionLabel].forEach {
-//            $0.translatesAutoresizingMaskIntoConstraints = false
-//        }
         
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 12),
