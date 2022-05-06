@@ -15,10 +15,6 @@ final class PropertyDescriptionViewController: UIViewController {
         self.view = propertyView
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     init(){
         super.init(nibName: nil, bundle: nil)
     }
