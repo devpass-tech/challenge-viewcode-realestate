@@ -8,6 +8,11 @@
 import UIKit
 
 class PropertyListViewController: UIViewController {
+    
+    lazy var propertyInfo: PropertyInfoView = {
+        let propertyInfo = PropertyInfoView()
+        return propertyInfo
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,12 @@ class PropertyListViewController: UIViewController {
 
             print(properties)
         }
+        
+        propertyInfo.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(propertyInfo)
+        NSLayoutConstraint.activate([
+            
+        ])
     }
 }
 
