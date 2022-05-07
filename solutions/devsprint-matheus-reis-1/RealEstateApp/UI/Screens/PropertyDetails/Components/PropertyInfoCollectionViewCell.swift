@@ -20,23 +20,21 @@ class PropertyInfoCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private let priceLabel: UILabel = {
+    public lazy var priceLabel: UILabel = {
         let priceLabel = UILabel()
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
         priceLabel.textAlignment = .left
         priceLabel.font = .boldSystemFont(ofSize: 22)
         priceLabel.textColor = .black
-        priceLabel.text = "R$ 405.000"
         return priceLabel
     }()
     
-    private let condominiumFeeLabel: UILabel = {
+    public lazy var condominiumFeeLabel: UILabel = {
         let condominiumFeeLabel = UILabel()
         condominiumFeeLabel.translatesAutoresizingMaskIntoConstraints = false
         condominiumFeeLabel.textAlignment = .left
         condominiumFeeLabel.font = .boldSystemFont(ofSize: 14)
         condominiumFeeLabel.textColor = .black
-        condominiumFeeLabel.text = "Condominío R$ 495"
         return condominiumFeeLabel
     }()
 
@@ -46,57 +44,51 @@ class PropertyInfoCollectionViewCell: UICollectionViewCell {
         urbanTaxLabel.textAlignment = .left
         urbanTaxLabel.font = .boldSystemFont(ofSize: 14)
         urbanTaxLabel.textColor = .black
-        urbanTaxLabel.text = "IPTU R$ 0"
         return urbanTaxLabel
     }()
 
-    private let areaLabel: UILabel = {
+    public lazy var areaLabel: UILabel = {
         let areaLabel = UILabel()
         areaLabel.translatesAutoresizingMaskIntoConstraints = false
         areaLabel.textAlignment = .left
         areaLabel.font = .systemFont(ofSize: 14)
         areaLabel.textColor = .gray
-        areaLabel.text = "69 m2"
         return areaLabel
     }()
 
-    private let bedroomsLabel: UILabel = {
+    public lazy var bedroomsLabel: UILabel = {
         let bedroomsLabel = UILabel()
         bedroomsLabel.translatesAutoresizingMaskIntoConstraints = false
         bedroomsLabel.textAlignment = .left
         bedroomsLabel.font = .systemFont(ofSize: 14)
         bedroomsLabel.textColor = .gray
-        bedroomsLabel.text = "3 quartos"
         return bedroomsLabel
     }()
 
-    private let bathroomsLabel: UILabel = {
+    public lazy var bathroomsLabel: UILabel = {
         let bathroomsLabel = UILabel()
         bathroomsLabel.translatesAutoresizingMaskIntoConstraints = false
         bathroomsLabel.textAlignment = .left
         bathroomsLabel.font = .systemFont(ofSize: 14)
         bathroomsLabel.textColor = .gray
-        bathroomsLabel.text = "2 banheiros"
         return bathroomsLabel
     }()
 
-    private let garageLabel: UILabel = {
+    public lazy var garageLabel: UILabel = {
         let garageLabel = UILabel()
         garageLabel.translatesAutoresizingMaskIntoConstraints = false
         garageLabel.textAlignment = .left
         garageLabel.font = .systemFont(ofSize: 14)
         garageLabel.textColor = .gray
-        garageLabel.text = "1 vagas"
         return garageLabel
     }()
 
-    private let addressLabel: UILabel = {
+    public lazy var addressLabel: UILabel = {
         let addressLabel = UILabel()
         addressLabel.translatesAutoresizingMaskIntoConstraints = false
         addressLabel.textAlignment = .left
         addressLabel.font = .systemFont(ofSize: 14)
         addressLabel.textColor = .gray
-        addressLabel.text = "Sem endereço"
         return addressLabel
     }()
 

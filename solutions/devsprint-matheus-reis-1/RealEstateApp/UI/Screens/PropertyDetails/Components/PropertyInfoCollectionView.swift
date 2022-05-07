@@ -13,11 +13,11 @@ class PropertyInfoCollectionView: UICollectionView {
     init() {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         // make sure that there is a slightly larger gap at the top of each row
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+        layout.sectionInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
         // set a standard item size of 60 * 60
-        layout.itemSize = CGSize(width: 60, height: 60)
+        layout.itemSize = CGSize(width: 300, height: 80)
         // the layout scrolls horizontally
-        layout.scrollDirection = .horizontal
+        layout.scrollDirection = .vertical
         super.init(frame: .zero, collectionViewLayout: layout)
     }
     
