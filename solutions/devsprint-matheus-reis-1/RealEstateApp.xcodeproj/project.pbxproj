@@ -8,16 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		174298EAE281BB8A91117B4D /* Pods_RealEstateAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F721F8B9A69ED63D505144B /* Pods_RealEstateAppTests.framework */; };
-<<<<<<< HEAD
 		7074FE972825FAC60058834F /* PropertyInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074FE962825FAC60058834F /* PropertyInfoTests.swift */; };
 		707FA74C2821CEBC00E9B782 /* PropertyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FA74B2821CEBC00E9B782 /* PropertyInfoView.swift */; };
 		707FA74F2822CE5C00E9B782 /* PropertyInfoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FA74E2822CE5C00E9B782 /* PropertyInfoCollectionView.swift */; };
 		707FA7512822CEDB00E9B782 /* PropertyInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FA7502822CEDB00E9B782 /* PropertyInfoCollectionViewCell.swift */; };
 		707FA7562822FB0B00E9B782 /* PropertyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FA7552822FB0B00E9B782 /* PropertyInfoViewController.swift */; };
-=======
 		870D527328229BAA00ADB91C /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D527228229BAA00ADB91C /* DividerView.swift */; };
 		870D527728229CDE00ADB91C /* DividerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D527628229CDE00ADB91C /* DividerViewTest.swift */; };
->>>>>>> fee37ba310fdaf23392365a1cf3583aeef44e14b
 		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
 		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
@@ -51,16 +48,13 @@
 		17504FA7A5C5927AEB83D49E /* Pods-RealEstateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateApp.debug.xcconfig"; path = "Target Support Files/Pods-RealEstateApp/Pods-RealEstateApp.debug.xcconfig"; sourceTree = "<group>"; };
 		68BBE62A95EEF51FD1332B6D /* Pods-RealEstateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.release.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6F721F8B9A69ED63D505144B /* Pods_RealEstateAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealEstateAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-<<<<<<< HEAD
 		7074FE962825FAC60058834F /* PropertyInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoTests.swift; sourceTree = "<group>"; };
 		707FA74B2821CEBC00E9B782 /* PropertyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PropertyInfoView.swift; path = RealEstateApp/UI/Screens/PropertyDetails/PropertyInfo/View/PropertyInfoView.swift; sourceTree = SOURCE_ROOT; };
 		707FA74E2822CE5C00E9B782 /* PropertyInfoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoCollectionView.swift; sourceTree = "<group>"; };
 		707FA7502822CEDB00E9B782 /* PropertyInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoCollectionViewCell.swift; sourceTree = "<group>"; };
 		707FA7552822FB0B00E9B782 /* PropertyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoViewController.swift; sourceTree = "<group>"; };
-=======
 		870D527228229BAA00ADB91C /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		870D527628229CDE00ADB91C /* DividerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerViewTest.swift; sourceTree = "<group>"; };
->>>>>>> fee37ba310fdaf23392365a1cf3583aeef44e14b
 		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +110,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		7074FE952825FAB60058834F /* PropertyInfoTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,14 +141,12 @@
 				707FA7552822FB0B00E9B782 /* PropertyInfoViewController.swift */,
 			);
 			path = Controller;
-=======
 		870D527428229CB600ADB91C /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				870D527628229CDE00ADB91C /* DividerViewTest.swift */,
 			);
 			path = Components;
->>>>>>> fee37ba310fdaf23392365a1cf3583aeef44e14b
 			sourceTree = "<group>";
 		};
 		980789C9275E8F8E00CED39A /* Settings */ = {
@@ -256,12 +247,12 @@
 		9841E71927D68748005A67DC /* RealEstateAppTests */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				7074FE952825FAB60058834F /* PropertyInfoTests */,
-=======
 				C5A581E328247303006ED869 /* __Snapshots__ */,
 				870D527428229CB600ADB91C /* Components */,
->>>>>>> fee37ba310fdaf23392365a1cf3583aeef44e14b
+				7074FE952825FAB60058834F /* PropertyInfoTests */,
+				C5A581E328247303006ED869 /* __Snapshots__ */,
+				870D527428229CB600ADB91C /* Components */,
 				9841E71A27D68748005A67DC /* RealEstateAppTests.swift */,
 			);
 			path = RealEstateAppTests;
