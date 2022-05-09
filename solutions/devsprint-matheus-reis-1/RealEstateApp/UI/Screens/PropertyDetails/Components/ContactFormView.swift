@@ -40,13 +40,13 @@ class ContactFormView: UIView, ViewCode {
     }()
     
     lazy var button: UIButton = {
-        let btn = UIButton()
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.backgroundColor = .blue
-        btn.setTitle("Enviar contato", for: .normal)
-        btn.layer.cornerRadius = 8
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .blue
+        button.setTitle("Enviar contato", for: .normal)
+        button.layer.cornerRadius = 8
         
-        return btn
+        return button
     }()
     
     init() {
