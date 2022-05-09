@@ -20,6 +20,6 @@ class ContactFormViewTest: XCTestCase {
      }
 
      func testContactFormView() {
-         assertSnapshot(matching: sut, as: .image)
+         assertSnapshot(matching: sut, as: .image(size: CGSize(width: 414, height: 250 )))
      }
  }
