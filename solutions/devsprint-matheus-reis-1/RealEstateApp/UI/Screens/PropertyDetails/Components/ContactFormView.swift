@@ -22,7 +22,6 @@ class ContactFormView: UIView, ViewCode {
     lazy var nameTextField: UITextField = {
         let textfield = UITextField()
         textfield.translatesAutoresizingMaskIntoConstraints = false
-//        textfield.placeholder = "  Nome"
         textfield.attributedPlaceholder = NSAttributedString(
             string: " Nome",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
