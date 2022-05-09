@@ -22,7 +22,10 @@ class ContactFormView: UIView, ViewCode {
     lazy var nameTextField: UITextField = {
         let textfield = UITextField()
         textfield.translatesAutoresizingMaskIntoConstraints = false
-        textfield.placeholder = "  Nome"
+//        textfield.placeholder = "  Nome"
+        textfield.attributedPlaceholder = NSAttributedString(
+            string: " Nome",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
         textfield.layer.borderColor = UIColor.lightGray.cgColor
         textfield.layer.borderWidth = 0.8
         textfield.layer.cornerRadius = 2
@@ -33,7 +36,9 @@ class ContactFormView: UIView, ViewCode {
     lazy var emailTextField: UITextField = {
         let textfield = UITextField()
         textfield.translatesAutoresizingMaskIntoConstraints = false
-        textfield.placeholder = "  Email"
+        textfield.attributedPlaceholder = NSAttributedString(
+            string: " Email",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
         textfield.layer.borderColor = UIColor.lightGray.cgColor
         textfield.layer.borderWidth = 0.8
         textfield.layer.cornerRadius = 2
