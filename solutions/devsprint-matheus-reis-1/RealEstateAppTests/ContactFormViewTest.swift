@@ -9,7 +9,7 @@ import Foundation
 import XCTest
 
 @testable import RealEstateApp
-//import SnapshotTesting
+import SnapshotTesting
 
 class ContactFormViewTest: XCTestCase {
 
@@ -20,6 +20,6 @@ class ContactFormViewTest: XCTestCase {
      }
 
      func testContactFormView() {
-//         assertSnapshot(matching: sut, as: .image)
+         assertSnapshot(matching: sut, as: .image)
      }
  }
