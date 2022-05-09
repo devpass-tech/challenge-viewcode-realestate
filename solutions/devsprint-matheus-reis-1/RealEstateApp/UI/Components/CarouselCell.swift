@@ -9,16 +9,16 @@ import Foundation
 import UIKit
 
 final class CarouselCell: UICollectionViewCell, ViewCode {
-   
+    
     static var identifier = "CarouselCell"
     
-   private lazy var imageCell: UIImageView = {
-       let image = UIImageView()
-       image.contentMode = .scaleAspectFill
+    private lazy var imageCell: UIImageView = {
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFill
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
-
+    
     override init(frame: CGRect){
         super.init(frame: .zero)
         setupViews()
