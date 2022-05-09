@@ -25,7 +25,7 @@ class ContactFormView: UIView, ViewCode {
 //        textfield.placeholder = "  Nome"
         textfield.attributedPlaceholder = NSAttributedString(
             string: " Nome",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         textfield.layer.borderColor = UIColor.lightGray.cgColor
         textfield.layer.borderWidth = 0.8
         textfield.layer.cornerRadius = 2
@@ -38,7 +38,7 @@ class ContactFormView: UIView, ViewCode {
         textfield.translatesAutoresizingMaskIntoConstraints = false
         textfield.attributedPlaceholder = NSAttributedString(
             string: " Email",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         textfield.layer.borderColor = UIColor.lightGray.cgColor
         textfield.layer.borderWidth = 0.8
         textfield.layer.cornerRadius = 2
