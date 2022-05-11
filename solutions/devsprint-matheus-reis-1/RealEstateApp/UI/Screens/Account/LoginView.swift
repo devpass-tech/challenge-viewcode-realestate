@@ -21,7 +21,7 @@ final class LoginView: UIView, ViewCode {
     
     private lazy var loginTitleLabel: UILabel = {
         let title = UILabel()
-        title.font = .systemFont(ofSize: 15, weight: .bold)
+        title.font = .systemFont(ofSize: 16, weight: .bold)
         title.text = "Login with your account"
         title.textAlignment = .center
         title.translatesAutoresizingMaskIntoConstraints = false
