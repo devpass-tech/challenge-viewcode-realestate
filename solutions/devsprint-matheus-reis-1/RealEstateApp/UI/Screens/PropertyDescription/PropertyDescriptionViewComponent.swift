@@ -24,14 +24,14 @@ final class PropertyDescriptionViewComponent: UIView, ViewCode {
         let title = UILabel()
         title.text = "Descrição"
         title.font = .systemFont(ofSize: 16, weight: .bold)
-        title.translatesAutoresizingMaskIntoConstraints = false
+//        title.translatesAutoresizingMaskIntoConstraints = false
         return title
     }()
     
     private lazy var descriptionLabel: UILabel = {
         let description = UILabel()
         description.numberOfLines = 5
-        description.translatesAutoresizingMaskIntoConstraints = false
+//        description.translatesAutoresizingMaskIntoConstraints = false
         return description
     }()
     
@@ -40,8 +40,8 @@ final class PropertyDescriptionViewComponent: UIView, ViewCode {
         button.setTitle("Ver mais", for: .normal)
         button.backgroundColor = UIColor(red: 66/255, green: 148/255, blue: 244/255, alpha: 1)
         button.layer.cornerRadius = 8
-        button.addTarget(self, action: #selector(calFullDescription), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(callFullDescription), for: .touchUpInside)
+//        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
@@ -58,13 +58,13 @@ final class PropertyDescriptionViewComponent: UIView, ViewCode {
         descriptionLabel.text = description
     }
     
-    @objc func calFullDescription(){
+    @objc func callFullDescription(){
         guard let text =  descriptionLabel.text else { return }
         delegate?.callFullDescriptionView(descriptionLabel: text)
     }
     
     func configureSubviews() {
-        [stackView].forEach(addSubview)
+        addSubview(stackView)
         [titleLabel,descriptionLabel,seeMoreButton].forEach(stackView.addArrangedSubview)
     }
     
