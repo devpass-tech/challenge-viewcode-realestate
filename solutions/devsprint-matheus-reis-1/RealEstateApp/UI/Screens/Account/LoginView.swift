@@ -7,14 +7,6 @@
 
 import UIKit
 
-// setar title viewdidload da viewcontroller para Account
-// title label login with your account
-// dois text fields (com placeholder)
-//  um button
-// forget password
-// tudo em stack view
-// chamar o email.becomeFirstResponder() na viewcontroller, depois da view carregar
-
 final class LoginView: UIView, ViewCode {
     
     private lazy var stackView: UIStackView = {
@@ -31,7 +23,7 @@ final class LoginView: UIView, ViewCode {
         let title = UILabel()
         title.font = .systemFont(ofSize: 15, weight: .bold)
         title.text = "Login with your account"
-    
+        title.textAlignment = .center
         title.translatesAutoresizingMaskIntoConstraints = false
         return title
     }()
@@ -107,4 +99,3 @@ final class LoginView: UIView, ViewCode {
         backgroundColor = .white
     }
 }
-
