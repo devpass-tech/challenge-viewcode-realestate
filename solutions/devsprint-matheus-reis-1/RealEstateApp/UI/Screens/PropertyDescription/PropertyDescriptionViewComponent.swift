@@ -24,14 +24,12 @@ final class PropertyDescriptionViewComponent: UIView, ViewCode {
         let title = UILabel()
         title.text = "Descrição"
         title.font = .systemFont(ofSize: 16, weight: .bold)
-//        title.translatesAutoresizingMaskIntoConstraints = false
         return title
     }()
     
     private lazy var descriptionLabel: UILabel = {
         let description = UILabel()
         description.numberOfLines = 5
-//        description.translatesAutoresizingMaskIntoConstraints = false
         return description
     }()
     
@@ -41,7 +39,6 @@ final class PropertyDescriptionViewComponent: UIView, ViewCode {
         button.backgroundColor = UIColor(red: 66/255, green: 148/255, blue: 244/255, alpha: 1)
         button.layer.cornerRadius = 8
         button.addTarget(self, action: #selector(callFullDescription), for: .touchUpInside)
-//        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     

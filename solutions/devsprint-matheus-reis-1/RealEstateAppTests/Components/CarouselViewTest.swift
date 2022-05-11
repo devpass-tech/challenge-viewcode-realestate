@@ -14,10 +14,6 @@ class CarouselViewTest: XCTestCase {
     
     var sut = CarouselView(images: ["pic1","pic3","pic9"])
     
-    override func setUpWithError() throws {
-        
-    }
-    
     func testFullCarouselView() {
         sut.translatesAutoresizingMaskIntoConstraints = false
         sut.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * CGFloat(sut.images.count)).isActive = true
