@@ -22,7 +22,6 @@ class CarouselViewTest: XCTestCase {
         sut.translatesAutoresizingMaskIntoConstraints = false
         sut.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * CGFloat(sut.images.count)).isActive = true
         sut.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height).isActive = true
-        print(sut.widthAnchor)
         
         assertSnapshot(matching: sut, as: .image(size: UIScreen.main.bounds.size))
     }
