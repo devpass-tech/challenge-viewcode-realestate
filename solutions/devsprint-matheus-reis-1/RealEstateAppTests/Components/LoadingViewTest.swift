@@ -13,12 +13,8 @@ import SnapshotTesting
 class LoadingViewTest: XCTestCase {
     
     var sut =  LoadingView()
-    
-    override func setUpWithError() throws {
-       
-    }
 
-    func testDividerView() {
+    func testLoadingView() {
         assertSnapshot(matching: sut, as: .image(size: CGSize(width: 414, height: 250 )))
     }
 }

@@ -23,7 +23,6 @@ class LoadingView: UIView, ViewCode{
     private lazy var activityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView(style: .gray)
         indicator.translatesAutoresizingMaskIntoConstraints = false
-        indicator.startAnimating()
         
         return indicator
     }()
