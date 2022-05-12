@@ -13,13 +13,18 @@ import XCTest
 
 class PropertyInfoTests: XCTestCase {
     
-    var sut = PropertyInfoViewController()
+    var viewController = PropertyInfoViewController()
+    var view = PropertyInfoView()
     
     func testPropertyInfoViewController() {
-        assertSnapshot(matching: sut, as: .image)
+        assertSnapshot(matching: viewController, as: .image)
+    }
+    
+    func testPropertyInfoView() {
+        assertSnapshot(matching: view, as: .image)
     }
     
     func testPropertyInfoViewControllerInIphone11() {
-        assertSnapshot(matching: sut, as: .image(on: .iPhoneXsMax))
+        assertSnapshot(matching: viewController, as: .image(on: .iPhoneXsMax))
     }
 }
