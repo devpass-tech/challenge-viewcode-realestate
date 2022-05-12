@@ -28,13 +28,13 @@ final class EmptyView: UIView, ViewCode {
     }()
     
     private lazy var textLabel: UILabel = {
-        let text = UILabel()
-        text.font = .systemFont(ofSize: 18)
-        text.textAlignment = .center
-        text.textColor = .systemGray
-        text.numberOfLines = 0
-        text.text =  "Search for cities and neighborhoods using the search bar above"
-        return text
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 18)
+        label.textAlignment = .center
+        label.textColor = .systemGray
+        label.numberOfLines = 0
+        label.text =  "Search for cities and neighborhoods using the search bar above"
+        return label
     }()
     
     init(){
