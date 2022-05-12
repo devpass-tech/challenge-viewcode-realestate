@@ -13,15 +13,16 @@
 		8710E25E2823ED5A00C67702 /* PropertyDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710E25D2823ED5A00C67702 /* PropertyDescriptionViewController.swift */; };
 		8710E2602823ED5F00C67702 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710E25F2823ED5F00C67702 /* PropertyDescriptionView.swift */; };
 		8716759728253D6400E7E77D /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716759628253D6400E7E77D /* ContactFormView.swift */; };
+		871C5518282D9B5A00061D10 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C5517282D9B5A00061D10 /* EmptyView.swift */; };
+		871C551A282DA00800061D10 /* EmptyViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C5519282DA00800061D10 /* EmptyViewTest.swift */; };
 		872745942829494E00AA5221 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872745932829494E00AA5221 /* CarouselView.swift */; };
 		8727459628294ADF00AA5221 /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8727459528294ADF00AA5221 /* CarouselCell.swift */; };
 		8727459A282960BF00AA5221 /* CarouselViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87274599282960BF00AA5221 /* CarouselViewTest.swift */; };
+		87326C2C282BE85600E8C11B /* PropertyDescriptionViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87326C2B282BE85600E8C11B /* PropertyDescriptionViewComponent.swift */; };
+		87326C2E282C064800E8C11B /* PropertyDescriptionViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87326C2D282C064800E8C11B /* PropertyDescriptionViewTest.swift */; };
 		87C59C6F282AA31300BB862E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C59C6E282AA31300BB862E /* LoginView.swift */; };
 		87E92D1A28240FC5003A4901 /* PropertyDescriptionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */; };
 		87F01973282C31FE00F3C634 /* LoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F01972282C31FE00F3C634 /* LoginViewTests.swift */; };
-		87326C2C282BE85600E8C11B /* PropertyDescriptionViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87326C2B282BE85600E8C11B /* PropertyDescriptionViewComponent.swift */; };
-		87326C2E282C064800E8C11B /* PropertyDescriptionViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87326C2D282C064800E8C11B /* PropertyDescriptionViewTest.swift */; };
-		87E92D1A28240FC5003A4901 /* PropertyDescriptionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */; };
 		87FACFEB282300C200CDA67E /* ContactFormViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FACFEA282300C200CDA67E /* ContactFormViewTest.swift */; };
 		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
@@ -60,15 +61,16 @@
 		8710E25D2823ED5A00C67702 /* PropertyDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewController.swift; sourceTree = "<group>"; };
 		8710E25F2823ED5F00C67702 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		8716759628253D6400E7E77D /* ContactFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
+		871C5517282D9B5A00061D10 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		871C5519282DA00800061D10 /* EmptyViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewTest.swift; sourceTree = "<group>"; };
 		872745932829494E00AA5221 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		8727459528294ADF00AA5221 /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
 		87274599282960BF00AA5221 /* CarouselViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewTest.swift; sourceTree = "<group>"; };
+		87326C2B282BE85600E8C11B /* PropertyDescriptionViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewComponent.swift; sourceTree = "<group>"; };
+		87326C2D282C064800E8C11B /* PropertyDescriptionViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewTest.swift; sourceTree = "<group>"; };
 		87C59C6E282AA31300BB862E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionTest.swift; sourceTree = "<group>"; };
 		87F01972282C31FE00F3C634 /* LoginViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTests.swift; sourceTree = "<group>"; };
-		87326C2B282BE85600E8C11B /* PropertyDescriptionViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewComponent.swift; sourceTree = "<group>"; };
-		87326C2D282C064800E8C11B /* PropertyDescriptionViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewTest.swift; sourceTree = "<group>"; };
-		87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionTest.swift; sourceTree = "<group>"; };
 		87FACFE82821CAF600CDA67E /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
 		87FACFEA282300C200CDA67E /* ContactFormViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewTest.swift; sourceTree = "<group>"; };
 		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				870D527628229CDE00ADB91C /* DividerViewTest.swift */,
 				87274599282960BF00AA5221 /* CarouselViewTest.swift */,
+				871C5519282DA00800061D10 /* EmptyViewTest.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -157,9 +160,10 @@
 		87E92D1828240FB4003A4901 /* PropertyDescription */ = {
 			isa = PBXGroup;
 			children = (
-				87FACFE82821CAF600CDA67E /* ContactFormView.swift */,
+				87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */,
+				87326C2D282C064800E8C11B /* PropertyDescriptionViewTest.swift */,
 			);
-			name = "Recovered References";
+			path = PropertyDescription;
 			sourceTree = "<group>";
 		};
 		87F01971282C31C400F3C634 /* LoginViewTests */ = {
@@ -168,15 +172,6 @@
 				87F01972282C31FE00F3C634 /* LoginViewTests.swift */,
 			);
 			path = LoginViewTests;
-			sourceTree = "<group>";
-		};
-		87E92D1828240FB4003A4901 /* PropertyDescription */ = {
-			isa = PBXGroup;
-			children = (
-				87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */,
-				87326C2D282C064800E8C11B /* PropertyDescriptionViewTest.swift */,
-			);
-			path = PropertyDescription;
 			sourceTree = "<group>";
 		};
 		980789C9275E8F8E00CED39A /* Settings */ = {
@@ -356,6 +351,7 @@
 				870D527228229BAA00ADB91C /* DividerView.swift */,
 				872745932829494E00AA5221 /* CarouselView.swift */,
 				8727459528294ADF00AA5221 /* CarouselCell.swift */,
+				871C5517282D9B5A00061D10 /* EmptyView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -547,6 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				871C551A282DA00800061D10 /* EmptyViewTest.swift in Sources */,
 				9841E71B27D68748005A67DC /* RealEstateAppTests.swift in Sources */,
 				87E92D1A28240FC5003A4901 /* PropertyDescriptionTest.swift in Sources */,
 				87326C2E282C064800E8C11B /* PropertyDescriptionViewTest.swift in Sources */,
@@ -577,6 +574,7 @@
 				8710E25E2823ED5A00C67702 /* PropertyDescriptionViewController.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				8727459628294ADF00AA5221 /* CarouselCell.swift in Sources */,
+				871C5518282D9B5A00061D10 /* EmptyView.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				87326C2C282BE85600E8C11B /* PropertyDescriptionViewComponent.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
