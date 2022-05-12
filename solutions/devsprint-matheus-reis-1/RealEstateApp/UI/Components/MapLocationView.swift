@@ -13,7 +13,6 @@ final class MapLocationView: UIView, ViewCode {
     
     private lazy var mapLocation: MKMapView = {
         let map = MKMapView()
-        map.isScrollEnabled = false
         map.translatesAutoresizingMaskIntoConstraints = false
         return map
     }()
