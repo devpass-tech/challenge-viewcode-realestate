@@ -17,10 +17,9 @@ final class MapLocationView: UIView, ViewCode {
         return map
     }()
     
-    init(location: Location){
+    init(){
         super.init(frame: .zero)
         setupViews()
-        setLocation(with: location)
     }
     @available(*, unavailable)
     required init?(coder: NSCoder) {
