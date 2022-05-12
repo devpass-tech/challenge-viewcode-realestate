@@ -20,9 +20,10 @@ class LoadingView: UIView, ViewCode{
         return title
     }()
     
-    private lazy var activityIndicator: UIActivityIndicatorView = {
+    lazy var activityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView(style: .gray)
         indicator.translatesAutoresizingMaskIntoConstraints = false
+        indicator.startAnimating()
         
         return indicator
     }()
@@ -44,6 +45,14 @@ class LoadingView: UIView, ViewCode{
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func toggleAnimation() {
+        if activityIndicator.isAnimating {
+            activityIndicator.stopAnimating()
+        } else {
+            activityIndicator.startAnimating()
+        }
     }
     
     func configureAdditionalBehaviors() {

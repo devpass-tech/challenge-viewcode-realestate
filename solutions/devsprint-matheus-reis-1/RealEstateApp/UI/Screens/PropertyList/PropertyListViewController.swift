@@ -12,9 +12,9 @@ class PropertyListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "Real Estate App 🏡"
-
+//        navigationController?.navigationBar.prefersLargeTitles = true
+//        navigationItem.title = "Real Estate App 🏡"
+        view = LoadingView()
         self.view.backgroundColor = .white
 
         let apiClient = RealEstateAPIClient()
@@ -23,6 +23,16 @@ class PropertyListViewController: UIViewController {
 
             print(properties)
         }
+        
+//        let loadingView = LoadingView()
+//        
+//        func toggleAnimation() {
+//            if loadingView.activityIndicator.isAnimating {
+//                loadingView.activityIndicator.startAnimating()
+//            } else {
+//                loadingView.activityIndicator.stopAnimating()
+//            }
+//        }
     }
 }
 
