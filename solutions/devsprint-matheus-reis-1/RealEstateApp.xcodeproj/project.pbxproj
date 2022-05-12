@@ -19,6 +19,9 @@
 		87C59C6F282AA31300BB862E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C59C6E282AA31300BB862E /* LoginView.swift */; };
 		87E92D1A28240FC5003A4901 /* PropertyDescriptionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */; };
 		87F01973282C31FE00F3C634 /* LoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F01972282C31FE00F3C634 /* LoginViewTests.swift */; };
+		87326C2C282BE85600E8C11B /* PropertyDescriptionViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87326C2B282BE85600E8C11B /* PropertyDescriptionViewComponent.swift */; };
+		87326C2E282C064800E8C11B /* PropertyDescriptionViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87326C2D282C064800E8C11B /* PropertyDescriptionViewTest.swift */; };
+		87E92D1A28240FC5003A4901 /* PropertyDescriptionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */; };
 		87FACFEB282300C200CDA67E /* ContactFormViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FACFEA282300C200CDA67E /* ContactFormViewTest.swift */; };
 		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
@@ -63,6 +66,9 @@
 		87C59C6E282AA31300BB862E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionTest.swift; sourceTree = "<group>"; };
 		87F01972282C31FE00F3C634 /* LoginViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTests.swift; sourceTree = "<group>"; };
+		87326C2B282BE85600E8C11B /* PropertyDescriptionViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewComponent.swift; sourceTree = "<group>"; };
+		87326C2D282C064800E8C11B /* PropertyDescriptionViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewTest.swift; sourceTree = "<group>"; };
+		87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionTest.swift; sourceTree = "<group>"; };
 		87FACFE82821CAF600CDA67E /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
 		87FACFEA282300C200CDA67E /* ContactFormViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewTest.swift; sourceTree = "<group>"; };
 		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 			children = (
 				8710E25D2823ED5A00C67702 /* PropertyDescriptionViewController.swift */,
 				8710E25F2823ED5F00C67702 /* PropertyDescriptionView.swift */,
+				87326C2B282BE85600E8C11B /* PropertyDescriptionViewComponent.swift */,
 			);
 			path = PropertyDescription;
 			sourceTree = "<group>";
@@ -150,9 +157,9 @@
 		87E92D1828240FB4003A4901 /* PropertyDescription */ = {
 			isa = PBXGroup;
 			children = (
-				87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */,
+				87FACFE82821CAF600CDA67E /* ContactFormView.swift */,
 			);
-			path = PropertyDescription;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		87F01971282C31C400F3C634 /* LoginViewTests */ = {
@@ -161,6 +168,15 @@
 				87F01972282C31FE00F3C634 /* LoginViewTests.swift */,
 			);
 			path = LoginViewTests;
+			sourceTree = "<group>";
+		};
+		87E92D1828240FB4003A4901 /* PropertyDescription */ = {
+			isa = PBXGroup;
+			children = (
+				87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */,
+				87326C2D282C064800E8C11B /* PropertyDescriptionViewTest.swift */,
+			);
+			path = PropertyDescription;
 			sourceTree = "<group>";
 		};
 		980789C9275E8F8E00CED39A /* Settings */ = {
@@ -533,6 +549,7 @@
 			files = (
 				9841E71B27D68748005A67DC /* RealEstateAppTests.swift in Sources */,
 				87E92D1A28240FC5003A4901 /* PropertyDescriptionTest.swift in Sources */,
+				87326C2E282C064800E8C11B /* PropertyDescriptionViewTest.swift in Sources */,
 				87FACFEB282300C200CDA67E /* ContactFormViewTest.swift in Sources */,
 				8727459A282960BF00AA5221 /* CarouselViewTest.swift in Sources */,
 				87F01973282C31FE00F3C634 /* LoginViewTests.swift in Sources */,
@@ -561,6 +578,7 @@
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				8727459628294ADF00AA5221 /* CarouselCell.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				87326C2C282BE85600E8C11B /* PropertyDescriptionViewComponent.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

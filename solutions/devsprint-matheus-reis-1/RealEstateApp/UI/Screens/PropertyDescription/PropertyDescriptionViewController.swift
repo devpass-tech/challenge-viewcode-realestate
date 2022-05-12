@@ -8,14 +8,23 @@
 import Foundation
 import UIKit
 
+protocol PropertyDescriptionViewControllerProtocol {
+    func callFullDescriptionView(descriptionLabel: String)
+}
+
 final class PropertyDescriptionViewController: UIViewController {
-    private var propertyView = PropertyDescriptionView(descriptionLabel: "")
+    
+    private var descriptionString: String
+    
+    private var propertyView = PropertyDescriptionView()
     
     override func loadView() {
         self.view = propertyView
+        propertyView.updateDescription(description: descriptionString)
     }
     
-    init(){
+    init(descriptionLabel: String){
+        descriptionString = descriptionLabel
         super.init(nibName: nil, bundle: nil)
     }
     @available(*, unavailable)

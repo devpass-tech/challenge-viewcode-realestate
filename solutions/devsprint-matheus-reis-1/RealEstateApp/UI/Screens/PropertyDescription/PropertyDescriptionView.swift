@@ -12,7 +12,6 @@ protocol PropertyDescriptionViewProtocol {
     func updateDescription(description: String)
 }
 
-
 final class PropertyDescriptionView: UIView, PropertyDescriptionViewProtocol, ViewCode {
     
     private let divider = DividerView()
@@ -33,10 +32,9 @@ final class PropertyDescriptionView: UIView, PropertyDescriptionViewProtocol, Vi
         return description
     }()
     
-    init(descriptionLabel: String){
+    init(){
         super.init(frame: .zero)
         setupViews()
-        self.descriptionLabel.text = descriptionLabel
     }
     @available(*, unavailable)
     required init?(coder: NSCoder) {
