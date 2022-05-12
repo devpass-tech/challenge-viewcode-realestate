@@ -12,9 +12,9 @@ class PropertyListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "Real Estate App 🏡"
-
+//        navigationController?.navigationBar.prefersLargeTitles = true
+//        navigationItem.title = "Real Estate App 🏡"
+        view = ButtonView()
         self.view.backgroundColor = .white
 
         let apiClient = RealEstateAPIClient()
