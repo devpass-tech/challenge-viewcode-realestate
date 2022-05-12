@@ -19,8 +19,9 @@
 		87C59C6F282AA31300BB862E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C59C6E282AA31300BB862E /* LoginView.swift */; };
 		87E92D1A28240FC5003A4901 /* PropertyDescriptionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */; };
 		87F01973282C31FE00F3C634 /* LoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F01972282C31FE00F3C634 /* LoginViewTests.swift */; };
+		87F01975282C3F0800F3C634 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F01974282C3F0800F3C634 /* SettingsView.swift */; };
 		87FACFEB282300C200CDA67E /* ContactFormViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FACFEA282300C200CDA67E /* ContactFormViewTest.swift */; };
-		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
+		980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* SettingsViewController.swift */; };
 		980789CE275E943D00CED39A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CD275E943C00CED39A /* FavoritesViewController.swift */; };
 		980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789D8275EA3C900CED39A /* AccountViewController.swift */; };
 		980789DC275EA40200CED39A /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789DB275EA40200CED39A /* ViewCode.swift */; };
@@ -63,9 +64,10 @@
 		87C59C6E282AA31300BB862E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionTest.swift; sourceTree = "<group>"; };
 		87F01972282C31FE00F3C634 /* LoginViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTests.swift; sourceTree = "<group>"; };
+		87F01974282C3F0800F3C634 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		87FACFE82821CAF600CDA67E /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
 		87FACFEA282300C200CDA67E /* ContactFormViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewTest.swift; sourceTree = "<group>"; };
-		980789CA275E8FAF00CED39A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		980789CA275E8FAF00CED39A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		980789CD275E943C00CED39A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		980789D8275EA3C900CED39A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		980789DB275EA40200CED39A /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
@@ -166,7 +168,8 @@
 		980789C9275E8F8E00CED39A /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				980789CA275E8FAF00CED39A /* Settings.swift */,
+				980789CA275E8FAF00CED39A /* SettingsViewController.swift */,
+				87F01974282C3F0800F3C634 /* SettingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -555,13 +558,14 @@
 				872745942829494E00AA5221 /* CarouselView.swift in Sources */,
 				870D527328229BAA00ADB91C /* DividerView.swift in Sources */,
 				986153D22704EE2B00838CA6 /* SceneDelegate.swift in Sources */,
-				980789CB275E8FAF00CED39A /* Settings.swift in Sources */,
+				980789CB275E8FAF00CED39A /* SettingsViewController.swift in Sources */,
 				87C59C6F282AA31300BB862E /* LoginView.swift in Sources */,
 				8710E25E2823ED5A00C67702 /* PropertyDescriptionViewController.swift in Sources */,
 				980C0C1C2704F23E00F8100A /* PropertyDetailsViewController.swift in Sources */,
 				8727459628294ADF00AA5221 /* CarouselCell.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
+				87F01975282C3F0800F3C634 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
