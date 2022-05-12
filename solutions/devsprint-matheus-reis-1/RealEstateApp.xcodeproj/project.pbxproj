@@ -10,6 +10,8 @@
 		7F4F120A35DBE76C22DB97C3 /* Pods_RealEstateAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7E225F7AB6E1954A5345B3 /* Pods_RealEstateAppTests.framework */; };
 		870D527328229BAA00ADB91C /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D527228229BAA00ADB91C /* DividerView.swift */; };
 		870D527728229CDE00ADB91C /* DividerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D527628229CDE00ADB91C /* DividerViewTest.swift */; };
+		87393F03282C44A70044AFBA /* LoadingViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87393F02282C44A70044AFBA /* LoadingViewTest.swift */; };
+		87EF9B6C282B226F00E9A6E3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EF9B6B282B226F00E9A6E3 /* LoadingView.swift */; };
 		8710E25E2823ED5A00C67702 /* PropertyDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710E25D2823ED5A00C67702 /* PropertyDescriptionViewController.swift */; };
 		8710E2602823ED5F00C67702 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710E25F2823ED5F00C67702 /* PropertyDescriptionView.swift */; };
 		8716759728253D6400E7E77D /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716759628253D6400E7E77D /* ContactFormView.swift */; };
@@ -58,6 +60,8 @@
 		68BBE62A95EEF51FD1332B6D /* Pods-RealEstateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.release.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		870D527228229BAA00ADB91C /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		870D527628229CDE00ADB91C /* DividerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerViewTest.swift; sourceTree = "<group>"; };
+		87393F02282C44A70044AFBA /* LoadingViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewTest.swift; sourceTree = "<group>"; };
+		87EF9B6B282B226F00E9A6E3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		8710E25D2823ED5A00C67702 /* PropertyDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewController.swift; sourceTree = "<group>"; };
 		8710E25F2823ED5F00C67702 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		8716759628253D6400E7E77D /* ContactFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				870D527628229CDE00ADB91C /* DividerViewTest.swift */,
+				87393F02282C44A70044AFBA /* LoadingViewTest.swift */,
 				87274599282960BF00AA5221 /* CarouselViewTest.swift */,
 				871C5519282DA00800061D10 /* EmptyViewTest.swift */,
 			);
@@ -349,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				870D527228229BAA00ADB91C /* DividerView.swift */,
+				87EF9B6B282B226F00E9A6E3 /* LoadingView.swift */,
 				872745932829494E00AA5221 /* CarouselView.swift */,
 				8727459528294ADF00AA5221 /* CarouselCell.swift */,
 				871C5517282D9B5A00061D10 /* EmptyView.swift */,
@@ -544,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				871C551A282DA00800061D10 /* EmptyViewTest.swift in Sources */,
+				87393F03282C44A70044AFBA /* LoadingViewTest.swift in Sources */,
 				9841E71B27D68748005A67DC /* RealEstateAppTests.swift in Sources */,
 				87E92D1A28240FC5003A4901 /* PropertyDescriptionTest.swift in Sources */,
 				87326C2E282C064800E8C11B /* PropertyDescriptionViewTest.swift in Sources */,
@@ -576,6 +583,7 @@
 				8727459628294ADF00AA5221 /* CarouselCell.swift in Sources */,
 				871C5518282D9B5A00061D10 /* EmptyView.swift in Sources */,
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
+				87EF9B6C282B226F00E9A6E3 /* LoadingView.swift in Sources */,
 				87326C2C282BE85600E8C11B /* PropertyDescriptionViewComponent.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
 			);
