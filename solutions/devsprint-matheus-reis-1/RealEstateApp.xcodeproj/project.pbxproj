@@ -301,22 +301,14 @@
 		9841E71927D68748005A67DC /* RealEstateAppTests */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-<<<<<<< HEAD
 				7074FE952825FAB60058834F /* PropertyInfoTests */,
-=======
 				87E92D1828240FB4003A4901 /* PropertyDescription */,
->>>>>>> main
-				C5A581E328247303006ED869 /* __Snapshots__ */,
-				870D527428229CB600ADB91C /* Components */,
-=======
-				7074FE952825FAB60058834F /* PropertyInfoTests */,
 				C5A581E328247303006ED869 /* __Snapshots__ */,
 				870D527428229CB600ADB91C /* Components */,
 				7074FE952825FAB60058834F /* PropertyInfoTests */,
-				C5A581E328247303006ED869 /* __Snapshots__ */,
 				870D527428229CB600ADB91C /* Components */,
->>>>>>> c3ca5ddb7a4094af937834522ed98f8a22fc7075
+				7074FE952825FAB60058834F /* PropertyInfoTests */,
+				870D527428229CB600ADB91C /* Components */,
 				9841E71A27D68748005A67DC /* RealEstateAppTests.swift */,
 				87FACFEA282300C200CDA67E /* ContactFormViewTest.swift */,
 			);
