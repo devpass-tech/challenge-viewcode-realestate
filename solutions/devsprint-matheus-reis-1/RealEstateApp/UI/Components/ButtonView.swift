@@ -12,15 +12,7 @@ struct ButtonViewConfiguration {
     var buttonText: String
 }
 
-class ButtonView: UIView, ViewCode {
-    lazy var buttonView: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .blue
-        button.layer.cornerRadius = 8
-        
-        return button
-    }()
+class ButtonView: UIButton, ViewCode {
     
     init() {
         super.init(frame: .zero)
@@ -32,22 +24,24 @@ class ButtonView: UIView, ViewCode {
     }
     
     func updateView(with configuration: ButtonViewConfiguration) {
-        buttonView.setTitle(configuration.buttonText, for: .normal)
+        setTitle(configuration.buttonText, for: .normal)
     }
     
     func configureAdditionalBehaviors() {
-        backgroundColor = .white
+        translatesAutoresizingMaskIntoConstraints = false
+        backgroundColor = .blue
+        layer.cornerRadius = 8
     }
     
     func configureSubviews() {
-        addSubview(buttonView)
+        
     }
     
     func configureSubviewsConstraints() {
         NSLayoutConstraint.activate([
-            buttonView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
-            buttonView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
-            buttonView.heightAnchor.constraint(equalToConstant: 42),
+            leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
+            trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
+            heightAnchor.constraint(equalToConstant: 42),
         ])
     }
 }
