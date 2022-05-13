@@ -65,3 +65,7 @@ public struct PricingInfos: Codable {
     var monthlyCondoFee: String?
 }
 
+public struct EmptyViewConfiguration: Codable {
+    var titleLabel: String
+    var textLabel: String
+}
