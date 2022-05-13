@@ -15,6 +15,7 @@
 		8710E25E2823ED5A00C67702 /* PropertyDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710E25D2823ED5A00C67702 /* PropertyDescriptionViewController.swift */; };
 		8710E2602823ED5F00C67702 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710E25F2823ED5F00C67702 /* PropertyDescriptionView.swift */; };
 		8716759728253D6400E7E77D /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716759628253D6400E7E77D /* ContactFormView.swift */; };
+		871C550C282D745100061D10 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C550B282D745100061D10 /* MapLocationView.swift */; };
 		871C5518282D9B5A00061D10 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C5517282D9B5A00061D10 /* EmptyView.swift */; };
 		871C551A282DA00800061D10 /* EmptyViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C5519282DA00800061D10 /* EmptyViewTest.swift */; };
 		872745942829494E00AA5221 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872745932829494E00AA5221 /* CarouselView.swift */; };
@@ -65,6 +66,7 @@
 		8710E25D2823ED5A00C67702 /* PropertyDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewController.swift; sourceTree = "<group>"; };
 		8710E25F2823ED5F00C67702 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		8716759628253D6400E7E77D /* ContactFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
+		871C550B282D745100061D10 /* MapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
 		871C5517282D9B5A00061D10 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		871C5519282DA00800061D10 /* EmptyViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewTest.swift; sourceTree = "<group>"; };
 		872745932829494E00AA5221 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				87EF9B6B282B226F00E9A6E3 /* LoadingView.swift */,
 				872745932829494E00AA5221 /* CarouselView.swift */,
 				8727459528294ADF00AA5221 /* CarouselCell.swift */,
+				871C550B282D745100061D10 /* MapLocationView.swift */,
 				871C5517282D9B5A00061D10 /* EmptyView.swift */,
 			);
 			path = Components;
@@ -585,6 +588,7 @@
 				980C0C112704F1C700F8100A /* RealEstateAPIClient.swift in Sources */,
 				87EF9B6C282B226F00E9A6E3 /* LoadingView.swift in Sources */,
 				87326C2C282BE85600E8C11B /* PropertyDescriptionViewComponent.swift in Sources */,
+				871C550C282D745100061D10 /* MapLocationView.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
