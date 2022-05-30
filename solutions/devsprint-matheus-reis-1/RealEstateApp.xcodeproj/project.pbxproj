@@ -10,8 +10,6 @@
 		7F4F120A35DBE76C22DB97C3 /* Pods_RealEstateAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7E225F7AB6E1954A5345B3 /* Pods_RealEstateAppTests.framework */; };
 		870D527328229BAA00ADB91C /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D527228229BAA00ADB91C /* DividerView.swift */; };
 		870D527728229CDE00ADB91C /* DividerViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D527628229CDE00ADB91C /* DividerViewTest.swift */; };
-		87393F03282C44A70044AFBA /* LoadingViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87393F02282C44A70044AFBA /* LoadingViewTest.swift */; };
-		87EF9B6C282B226F00E9A6E3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EF9B6B282B226F00E9A6E3 /* LoadingView.swift */; };
 		8710E25E2823ED5A00C67702 /* PropertyDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710E25D2823ED5A00C67702 /* PropertyDescriptionViewController.swift */; };
 		8710E2602823ED5F00C67702 /* PropertyDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710E25F2823ED5F00C67702 /* PropertyDescriptionView.swift */; };
 		8716759728253D6400E7E77D /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716759628253D6400E7E77D /* ContactFormView.swift */; };
@@ -23,8 +21,12 @@
 		8727459A282960BF00AA5221 /* CarouselViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87274599282960BF00AA5221 /* CarouselViewTest.swift */; };
 		87326C2C282BE85600E8C11B /* PropertyDescriptionViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87326C2B282BE85600E8C11B /* PropertyDescriptionViewComponent.swift */; };
 		87326C2E282C064800E8C11B /* PropertyDescriptionViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87326C2D282C064800E8C11B /* PropertyDescriptionViewTest.swift */; };
+		87393F03282C44A70044AFBA /* LoadingViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87393F02282C44A70044AFBA /* LoadingViewTest.swift */; };
+		87521E77282DBFCA007B5166 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87521E76282DBFCA007B5166 /* ButtonView.swift */; };
+		87521E79282DC97D007B5166 /* ButtonViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87521E78282DC97D007B5166 /* ButtonViewTest.swift */; };
 		87C59C6F282AA31300BB862E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C59C6E282AA31300BB862E /* LoginView.swift */; };
 		87E92D1A28240FC5003A4901 /* PropertyDescriptionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */; };
+		87EF9B6C282B226F00E9A6E3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EF9B6B282B226F00E9A6E3 /* LoadingView.swift */; };
 		87F01973282C31FE00F3C634 /* LoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F01972282C31FE00F3C634 /* LoginViewTests.swift */; };
 		87FACFEB282300C200CDA67E /* ContactFormViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FACFEA282300C200CDA67E /* ContactFormViewTest.swift */; };
 		980789CB275E8FAF00CED39A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980789CA275E8FAF00CED39A /* Settings.swift */; };
@@ -61,8 +63,6 @@
 		68BBE62A95EEF51FD1332B6D /* Pods-RealEstateAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealEstateAppTests.release.xcconfig"; path = "Target Support Files/Pods-RealEstateAppTests/Pods-RealEstateAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		870D527228229BAA00ADB91C /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		870D527628229CDE00ADB91C /* DividerViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerViewTest.swift; sourceTree = "<group>"; };
-		87393F02282C44A70044AFBA /* LoadingViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewTest.swift; sourceTree = "<group>"; };
-		87EF9B6B282B226F00E9A6E3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		8710E25D2823ED5A00C67702 /* PropertyDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewController.swift; sourceTree = "<group>"; };
 		8710E25F2823ED5F00C67702 /* PropertyDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionView.swift; sourceTree = "<group>"; };
 		8716759628253D6400E7E77D /* ContactFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
@@ -74,8 +74,12 @@
 		87274599282960BF00AA5221 /* CarouselViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewTest.swift; sourceTree = "<group>"; };
 		87326C2B282BE85600E8C11B /* PropertyDescriptionViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewComponent.swift; sourceTree = "<group>"; };
 		87326C2D282C064800E8C11B /* PropertyDescriptionViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionViewTest.swift; sourceTree = "<group>"; };
+		87393F02282C44A70044AFBA /* LoadingViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewTest.swift; sourceTree = "<group>"; };
+		87521E76282DBFCA007B5166 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		87521E78282DC97D007B5166 /* ButtonViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewTest.swift; sourceTree = "<group>"; };
 		87C59C6E282AA31300BB862E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		87E92D1928240FC5003A4901 /* PropertyDescriptionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDescriptionTest.swift; sourceTree = "<group>"; };
+		87EF9B6B282B226F00E9A6E3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		87F01972282C31FE00F3C634 /* LoginViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTests.swift; sourceTree = "<group>"; };
 		87FACFE82821CAF600CDA67E /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
 		87FACFEA282300C200CDA67E /* ContactFormViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewTest.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				870D527628229CDE00ADB91C /* DividerViewTest.swift */,
 				87393F02282C44A70044AFBA /* LoadingViewTest.swift */,
 				87274599282960BF00AA5221 /* CarouselViewTest.swift */,
+				87521E78282DC97D007B5166 /* ButtonViewTest.swift */,
 				871C5519282DA00800061D10 /* EmptyViewTest.swift */,
 			);
 			path = Components;
@@ -359,6 +364,7 @@
 				87EF9B6B282B226F00E9A6E3 /* LoadingView.swift */,
 				872745932829494E00AA5221 /* CarouselView.swift */,
 				8727459528294ADF00AA5221 /* CarouselCell.swift */,
+				87521E76282DBFCA007B5166 /* ButtonView.swift */,
 				871C550B282D745100061D10 /* MapLocationView.swift */,
 				871C5517282D9B5A00061D10 /* EmptyView.swift */,
 			);
@@ -559,6 +565,7 @@
 				87326C2E282C064800E8C11B /* PropertyDescriptionViewTest.swift in Sources */,
 				87FACFEB282300C200CDA67E /* ContactFormViewTest.swift in Sources */,
 				8727459A282960BF00AA5221 /* CarouselViewTest.swift in Sources */,
+				87521E79282DC97D007B5166 /* ButtonViewTest.swift in Sources */,
 				87F01973282C31FE00F3C634 /* LoginViewTests.swift in Sources */,
 				870D527728229CDE00ADB91C /* DividerViewTest.swift in Sources */,
 			);
@@ -590,6 +597,7 @@
 				87326C2C282BE85600E8C11B /* PropertyDescriptionViewComponent.swift in Sources */,
 				871C550C282D745100061D10 /* MapLocationView.swift in Sources */,
 				980789D9275EA3C900CED39A /* AccountViewController.swift in Sources */,
+				87521E77282DBFCA007B5166 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
